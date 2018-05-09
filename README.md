@@ -1,25 +1,13 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# yld.io website
+Shiny new website, built with [Gatsby](https://www.gatsbyjs.org/)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Commands
 
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
-```
+- `yarn build` - production build
+- `yarn develop` - spin up a local development server
+- `yarn format` - format code with [Prettier](https://prettier.io/)
+- `yarn test` - run unit tests
+- `yarn test:watch` - run unit tests in watch mode
 
 ## Deploy
 
