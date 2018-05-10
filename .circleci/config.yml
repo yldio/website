@@ -51,7 +51,7 @@ jobs:
   feature-tests:
     <<: *defaults
     docker:
-      - image: circleci/node:8.11.1-browsers
+      - image: cypress/base:8
     steps:
       - checkout
       - attach_workspace:
