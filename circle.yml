@@ -27,6 +27,15 @@ jobs:
           key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
+  lint:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Code Lint
+          command: yarn lint
   build:
     <<: *defaults
     steps:
@@ -70,12 +79,15 @@ workflows:
   build-and-test:
     jobs:
       - install
+      - lint:
+          requires:
+            - install
       - build:
           requires:
-            - install
+            - lint
       - unit-tests:
           requires:
-            - install
+            - lint
       - feature-tests:
           requires:
             - build
