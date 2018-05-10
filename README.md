@@ -27,8 +27,28 @@ Shiny new website, built with [Gatsby](https://www.gatsbyjs.org/)
 * `yarn format` - format code with [Prettier](https://prettier.io/)
 * `yarn test` - run unit tests
 * `yarn test:watch` - run unit tests in watch mode
+* `yarn test:features` - run end to end tests
+* `yarn cypress` - open cypress UI for easy development
 
-## Useful Editor Integrations
+_You can also run the commands with `npm run` instead of `yarn`_
+
+## Deployment
+
+Deployment is automatically handled by Netlify for each branch, with `master` being our production branch.
+
+Once you make a pull request, you should see a link to the current deployment for that branch once Netlify is done.
+
+Pull requests should only be merged to master if our CI pipeline is green, and we are happy with the code.
+
+Once merged into master, the build pipeline will once again run and deploy to production.
+
+## Useful Links
+
+#### API Documentation
+
+* [Cypress](https://docs.cypress.io/api/introduction/api.html)
+
+#### Editor Integrations
 
 We maintain a consistent code style using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/). Below are some useful editor integrations that will make development easier (your pull request will fail if `yarn lint` fails).
 
@@ -44,13 +64,3 @@ We maintain a consistent code style using [ESLint](https://eslint.org/) and [Pre
 [prettier-vscode]: https://github.com/prettier/prettier-vscode/
 [vim-syntastic]: https://github.com/vim-syntastic/syntastic
 [vim-prettier]: https://github.com/prettier/vim-prettier
-
-## Deployment
-
-Deployment is automatically handled by Netlify for each branch, with `master` being our production branch.
-
-Once you make a pull request, you should see a link to the current deployment for that branch once Netlify is done.
-
-Pull requests should only be merged to master if our CI pipeline is green, and we are happy with the code.
-
-Once merged into master, the build pipeline will once again run and deploy to production.

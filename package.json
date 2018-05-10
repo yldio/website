@@ -17,16 +17,22 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.{js,jsx}'",
+    "serve": "gatsby serve",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint 'src/**/*.{js,jsx}'"
+    "test:features": "cypress run",
+    "lint": "eslint '{src,spec,cypress}/**/*.{js,jsx}'",
+    "cypress": "cypress open"
   },
   "devDependencies": {
+    "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-cypress": "^2.0.1",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
