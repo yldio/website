@@ -50,6 +50,8 @@ jobs:
           command: yarn test
   feature-tests:
     <<: *defaults
+    docker:
+      - image: circleci/node:8.11.1-browsers
     steps:
       - checkout
       - attach_workspace:
