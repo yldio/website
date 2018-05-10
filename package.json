@@ -17,6 +17,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.{js,jsx}'",
+    "serve": "gatsby serve",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:features": "cypress run",
