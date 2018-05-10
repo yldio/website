@@ -11,9 +11,7 @@
     "react": "^16.3.2",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -21,7 +19,8 @@
     "format": "prettier --write 'src/**/*.{js,jsx}'",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint 'src/**/*.{js,jsx}'"
+    "test:features": "cypress run",
+    "lint": "eslint '{src,spec,cypress}/**/*.{js,jsx}'"
   },
   "devDependencies": {
     "cypress": "^2.1.0",
