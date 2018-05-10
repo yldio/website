@@ -2,6 +2,8 @@
 
 Shiny new website, built with [Gatsby](https://www.gatsbyjs.org/)
 
+[See it in action](https://yld.netlify.com/)
+
 ## Getting Started
 
 1.  Clone the repository  
