@@ -1,10 +1,12 @@
-# yld.io website
+# yld.io website ![circle][circle-badge] ![prettier][prettier-badge]
 
-[![CircleCI](https://circleci.com/gh/yldio/website.svg?style=svg)](https://circleci.com/gh/yldio/website)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+Shiny new website, built with [Gatsby].
 
-Shiny new website, built with [Gatsby].  
 [See it in action!][production]
+
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[circle]: https://circleci.com/gh/yldio/website
+[circle-badge]: https://circleci.com/gh/yldio/website.svg?style=svg
 
 ## Getting Started
 
