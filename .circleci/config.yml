@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: ~/app
+  working_directory: /home/circleci/app
   docker:
     - image: circleci/node:8.11.1
 
