@@ -7,6 +7,9 @@ restore-cache: &restore-cache
   name: Restore Yarn Package Cache
   keys:
     - yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+    - yarn-packages-{{ .Branch }}-
+    - yarn-packages-master-
+    - yarn-packages-
 
 version: 2
 jobs:
