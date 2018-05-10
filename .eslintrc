@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "graphql": true
+  },
+  "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ]
+  },
+  "plugins": ["eslint-plugin-import"],
+  "overrides": [
+    {
+      "files": ["**/*spec.{js,jsx}"],
+      "env": { "jest": true },
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true,
+            "optionalDependencies": false,
+            "peerDependencies": false
+          }
+        ]
+      }
+    }
+  ]
+}
