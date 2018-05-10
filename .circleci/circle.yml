@@ -1,0 +1,55 @@
+defaults: &defaults
+  working_directory: ~/app
+  docker:
+    - image: circleci/node:8.11.1
+
+restore-cache: &restore-cache
+  name: Restore Yarn Package Cache
+  keys:
+    - yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+version: 2
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Build Application
+          command: yarn build
+  unit-tests:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Unit Tests
+          command: yarn test
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - install
+      - build:
+          requires:
+            - install
+      - unit-tests:
+          requires:
+            - install
