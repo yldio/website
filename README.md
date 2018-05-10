@@ -1,8 +1,10 @@
 # yld.io website
 
-Shiny new website, built with [Gatsby]
+[![CircleCI](https://circleci.com/gh/yldio/website.svg?style=svg)](https://circleci.com/gh/yldio/website)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-[See it in action][production]
+Shiny new website, built with [Gatsby].  
+[See it in action!][production]
 
 ## Getting Started
 
