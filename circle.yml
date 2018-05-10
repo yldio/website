@@ -1,0 +1,93 @@
+defaults: &defaults
+  working_directory: /home/circleci/app
+  docker:
+    - image: circleci/node:8.11.1
+
+restore-cache: &restore-cache
+  name: Restore Yarn Package Cache
+  keys:
+    - yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+    - yarn-packages-{{ .Branch }}-
+    - yarn-packages-master-
+    - yarn-packages-
+
+version: 2
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Install Dependencies
+          command: yarn
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules/
+  lint:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Code Lint
+          command: yarn lint
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Build Application
+          command: yarn build
+      - persist_to_workspace:
+          root: .
+          paths: public
+  unit-tests:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Unit Tests
+          command: yarn test
+  feature-tests:
+    <<: *defaults
+    docker:
+      - image: cypress/base:8
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Start application server
+          command: yarn serve
+          background: true
+      - run:
+          name: Feature Tests
+          command: yarn test:features
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - install
+      - lint:
+          requires:
+            - install
+      - build:
+          requires:
+            - lint
+      - unit-tests:
+          requires:
+            - lint
+      - feature-tests:
+          requires:
+            - build
