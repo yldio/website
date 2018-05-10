@@ -21,7 +21,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:features": "cypress run",
-    "lint": "eslint '{src,spec,cypress}/**/*.{js,jsx}'"
+    "lint": "eslint '{src,spec,cypress}/**/*.{js,jsx}'",
+    "cypress": "cypress open"
   },
   "devDependencies": {
     "cypress": "^2.1.0",
