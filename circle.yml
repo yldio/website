@@ -6,10 +6,10 @@ defaults: &defaults
 restore-cache: &restore-cache
   name: Restore Yarn Package Cache
   keys:
-    - yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
-    - yarn-packages-{{ .Branch }}-
-    - yarn-packages-master-
-    - yarn-packages-
+    - v1-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+    - v1-yarn-packages-{{ .Branch }}-
+    - v1-yarn-packages-master-
+    - v1-yarn-packages-
 
 version: 2
 jobs:
@@ -24,7 +24,7 @@ jobs:
           command: yarn
       - save_cache:
           name: Save Yarn Package Cache
-          key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v1-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
   lint:
