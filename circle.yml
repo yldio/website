@@ -84,10 +84,10 @@ workflows:
             - install
       - build:
           requires:
-            - lint
+            - install
       - unit-tests:
           requires:
-            - lint
+            - install
       - feature-tests:
           requires:
             - build
