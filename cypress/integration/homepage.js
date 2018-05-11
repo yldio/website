@@ -5,7 +5,7 @@ describe('features/homepage', () => {
     cy.title().should('eq', 'Gatsby Default Starter');
   });
 
-  it('allows navigation to page 2', () => {
+  it.skip('allows navigation to page 2', () => {
     cy.visit('/');
     cy.contains('Go to page 2').click();
 
