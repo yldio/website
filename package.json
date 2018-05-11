@@ -15,6 +15,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "ci:build": "yarn build",
+    "ci:lint": "yarn lint",
+    "ci:start-server": "yarn serve -p 8000",
+    "ci:unit-tests": "yarn test",
+    "ci:feature-tests": "yarn test:features",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.{js,jsx}'",
     "serve": "gatsby serve",
