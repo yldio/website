@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
+import applyGlobalStyles from '../styles/globals';
 import Header from '../components/Header';
-import './index.css';
+
+applyGlobalStyles();
 
 const Layout = ({ children, data }) => (
   <div>
