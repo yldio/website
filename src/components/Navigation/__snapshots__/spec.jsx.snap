@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Navigation snapshot 1`] = `
+<styled.ul>
+  <styled.li>
+    <Styled(GatsbyLink)
+      to="/"
+    >
+      Home
+    </Styled(GatsbyLink)>
+  </styled.li>
+  <styled.li>
+    <Styled(GatsbyLink)
+      to="/services"
+    >
+      Services
+    </Styled(GatsbyLink)>
+  </styled.li>
+  <styled.li>
+    <Styled(GatsbyLink)
+      to="/our-approach"
+    >
+      Our Approach
+    </Styled(GatsbyLink)>
+  </styled.li>
+  <styled.li>
+    <Styled(GatsbyLink)
+      to="/community"
+    >
+      Community
+    </Styled(GatsbyLink)>
+  </styled.li>
+  <styled.li>
+    <Styled(GatsbyLink)
+      to="/about-us"
+    >
+      About Us
+    </Styled(GatsbyLink)>
+  </styled.li>
+  <styled.li>
+    <Styled(GatsbyLink)
+      to="/join-us"
+    >
+      Join Us
+    </Styled(GatsbyLink)>
+  </styled.li>
+</styled.ul>
+`;

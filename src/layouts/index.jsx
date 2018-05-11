@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import applyGlobalStyles from '../styles/applyGlobalStyles';
+import Header from '../components/Header';
 
 applyGlobalStyles();
 
@@ -15,6 +16,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    <Header />
     {children()}
   </Fragment>
 );

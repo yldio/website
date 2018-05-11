@@ -38,6 +38,12 @@
           }
         ]
       }
+    },
+    {
+      "files": ["**/styled.js"],
+      "rules": {
+        "import/prefer-default-export": 0
+      }
     }
   ]
 }

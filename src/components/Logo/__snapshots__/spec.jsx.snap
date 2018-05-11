@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Logo snapshot 1`] = `
+<Styled(GatsbyLink)
+  to="/"
+>
+  <styled.h1>
+    yld
+  </styled.h1>
+</Styled(GatsbyLink)>
+`;

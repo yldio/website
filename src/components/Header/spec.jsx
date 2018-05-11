@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Header from './index';
 
 test('components/Header snapshot', () => {
-  const wrapper = shallow(<Header siteTitle="YLD" />);
+  const wrapper = shallow(<Header />);
 
   expect(wrapper).toMatchSnapshot();
 });
