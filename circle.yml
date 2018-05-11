@@ -35,7 +35,7 @@ jobs:
           <<: *restore-cache
       - run:
           name: Code Lint
-          command: yarn lint
+          command: yarn ci:lint
   build:
     <<: *defaults
     steps:
@@ -44,7 +44,7 @@ jobs:
           <<: *restore-cache
       - run:
           name: Build Application
-          command: yarn build
+          command: yarn ci:build
       - persist_to_workspace:
           root: .
           paths: public
@@ -56,7 +56,7 @@ jobs:
           <<: *restore-cache
       - run:
           name: Unit Tests
-          command: yarn test
+          command: yarn ci:unit-tests
   feature-tests:
     <<: *defaults
     docker:
@@ -69,11 +69,11 @@ jobs:
           <<: *restore-cache
       - run:
           name: Start application server
-          command: yarn serve
+          command: yarn ci:start-server
           background: true
       - run:
           name: Feature Tests
-          command: yarn test:features
+          command: yarn ci:feature-tests
 workflows:
   version: 2
   build-and-test:

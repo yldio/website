@@ -10,3 +10,6 @@ yarn-error.log
 # Test outputs we shouldn't commit
 cypress/videos
 cypress/screenshots
+
+# Environment configuration we shouldn't commit
+/cypress.env.json
