@@ -1,5 +1,3 @@
-/* eslint-disable arrow-parens */
-
 /**
  * Implement Gatsby's Node APIs in this file.
  *
