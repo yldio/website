@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": ["airbnb"],
+  "extends": ["airbnb", "plugin:prettier/recommended"],
   "env": {
     "browser": true
   },
@@ -23,7 +23,7 @@
       }
     ]
   },
-  "plugins": ["eslint-plugin-import"],
+  "plugins": ["prettier", "eslint-plugin-import"],
   "overrides": [
     {
       "files": ["**/*spec.{js,jsx}"],
