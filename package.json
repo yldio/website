@@ -14,13 +14,12 @@
     "styled-components": "^3.2.6",
     "styled-normalize": "^4.0.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "ci:build": "yarn build",
+    "ci:build:debug": "yarn build --noUglify",
     "ci:lint": "yarn lint",
     "ci:start-server": "yarn serve -p 8000",
     "ci:unit-tests": "yarn test",
