@@ -1,13 +1,7 @@
 # netlify.toml API Reference: https://www.netlify.com/docs/netlify-toml-reference/
 
-[context.production]
-  command = "yarn ci:build"
-
 [context.production.environment]
   GATSBY_CONTEXT = 'production'
-
-[context.deploy-preview]
-  command = "yarn ci:build:debug"
 
 [context.deploy-preview.environment]
   GATSBY_CONTEXT = 'development'
