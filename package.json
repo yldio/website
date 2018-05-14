@@ -4,17 +4,23 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "dotenv": "^5.0.1",
     "gatsby": "^1.9.259",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-source-graphcms": "^0.0.1",
+    "graphql-tag": "^2.9.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-helmet": "^5.2.0",
+    "react-markdown": "^3.3.2",
     "styled-components": "^3.2.6",
     "styled-normalize": "^4.0.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -33,16 +39,19 @@
     "cypress": "cypress open"
   },
   "devDependencies": {
+    "babel-jest": "^22.4.3",
     "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-cypress": "^2.0.1",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
     "prettier": "^1.12.0",

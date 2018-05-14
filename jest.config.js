@@ -6,4 +6,5 @@ module.exports = {
     '<rootDir>/src/**/*spec.{js,jsx}',
   ],
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/public/'],
+  transform: { '^.+\\.jsx?$': '<rootDir>/spec/transformer.js' },
 };
