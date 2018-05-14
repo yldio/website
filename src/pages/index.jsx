@@ -1,5 +1,10 @@
-import config from '../config';
+import React from 'react';
+import Link from 'gatsby-link';
 
-const IndexPage = () => (config.get('development') ? 'Hello, world!' : null);
+const IndexPage = () => (
+  <div>
+    <Link to="/blog">Visit the blog</Link>
+  </div>
+);
 
 export default IndexPage;
