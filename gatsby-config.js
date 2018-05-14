@@ -16,6 +16,7 @@ module.exports = {
           allPosts {
             id
             title
+            slug
             content
             authors {
               name
