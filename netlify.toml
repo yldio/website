@@ -1,0 +1,8 @@
+# netlify.toml API Reference: https://www.netlify.com/docs/netlify-toml-reference/
+
+[context.production.environment]
+  GATSBY_CONTEXT = 'production'
+
+[context.deploy-preview.environment]
+  GATSBY_CONTEXT = 'development'
+  NODE_ENV = 'development'
