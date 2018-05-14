@@ -10,5 +10,4 @@
   command = "yarn ci:build:debug"
 
 [context.deploy-preview.environment]
-  GATSBY_CONTEXT = 'production'
-  NODE_ENV = 'development'
+  GATSBY_CONTEXT = 'development'
