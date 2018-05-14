@@ -39,6 +39,7 @@
     "cypress": "cypress open"
   },
   "devDependencies": {
+    "babel-jest": "^22.4.3",
     "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",

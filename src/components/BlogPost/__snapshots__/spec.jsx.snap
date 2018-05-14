@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/BlogPost snapshot 1`] = `
+<React.Fragment>
+  <styled.h1>
+    New YLD Blog
+  </styled.h1>
+  <ReactMarkdown
+    astPlugins={Array []}
+    escapeHtml={true}
+    plugins={Array []}
+    rawSourcePos={false}
+    renderers={Object {}}
+    skipHtml={false}
+    source="Some markdown content..."
+    sourcePos={false}
+    transformLinkUri={[Function]}
+  />
+  <p>
+    Nuno
+  </p>
+</React.Fragment>
+`;
