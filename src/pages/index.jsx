@@ -6,7 +6,7 @@ const IndexPage = () => (
     <Helmet
       title="YLD | Home"
       meta={[
-        { name: 'description', content: '' },
+        { name: 'description', content: 'YLD Homepage' },
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
