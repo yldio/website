@@ -1,12 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/BuildBetter snapshot 1`] = `
-<React.Fragment>
-  <h1>
-    Build Better.
-  </h1>
-  <p>
-    Great companies go beyond their customers expectations, over and over again. Building this capability in your company is our mission, and our promise. We enable your organisation to deliver world-class technology and customer experiences.
-  </p>
-</React.Fragment>
+<styled.div>
+  <styled.h2>
+    Build better
+  </styled.h2>
+  <styled.p>
+    Great companies go beyond their customers expectations, over and over again. Building this capability in your company is our mission, and our promise.
+  </styled.p>
+  <styled.p>
+    We enable your organisation to deliver world-class technology and customer experiences.
+  </styled.p>
+</styled.div>
 `;
