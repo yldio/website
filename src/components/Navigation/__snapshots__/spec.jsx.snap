@@ -18,6 +18,13 @@ exports[`components/Navigation snapshot 1`] = `
   </styled.li>
   <styled.li>
     <Styled(GatsbyLink)
+      to="/community"
+    >
+      Community
+    </Styled(GatsbyLink)>
+  </styled.li>
+  <styled.li>
+    <Styled(GatsbyLink)
       to="/about-us"
     >
       About Us

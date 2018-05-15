@@ -11,6 +11,9 @@ export default function Navigation() {
         <Link to="/services">Services</Link>
       </Item>
       <Item>
+        <Link to="/community">Community</Link>
+      </Item>
+      <Item>
         <SecondLastLink to="/about-us">About Us</SecondLastLink>
       </Item>
       <Item>

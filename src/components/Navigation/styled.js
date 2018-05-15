@@ -23,10 +23,10 @@ export const Link = styled(GatsbyLink)`
   text-decoration: none;
 
   &:hover:after {
-    bottom: -1em;
+    bottom: 0;
     content: '';
     background-color: ${highlight};
-    height: 3px;
+    height: 2px;
     left: ${spacing(1.5)};
     position: absolute;
     width: calc(100% - ${spacing(3)});
@@ -46,7 +46,7 @@ export const LastLink = Link.extend`
   border: 1px solid #ddd;
   border-radius: 1px;
   color: ${textOnDark};
-  padding: 12px 32px;
+  padding: ${spacing(1.3)} ${spacing(3)};
 
   &:hover:after {
     display: none;
