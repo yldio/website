@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-import { gridWidth } from '../../styles/spacing';
+import { gridWidth, gridColWidth, spacing } from '../../styles/spacing';
 
 const Container = styled.div`
   margin: 0 auto;
-  max-width: ${gridWidth}px;
+  padding: 0 ${gridColWidth}px;
+  max-width: ${gridWidth + gridColWidth}px;
 `;
 
 export default Container;

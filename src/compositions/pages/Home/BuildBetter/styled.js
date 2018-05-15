@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { highlight, text } from '../../../../styles/colours';
+import { columns } from '../../../../styles/spacing';
 
 export const Title = styled.h2`
   color: ${text};
@@ -16,5 +17,5 @@ export const Body = styled.p`
   color: ${text};
   font-size: 1.25rem;
   line-height: 2em;
-  padding-right: 40%;
+  max-width: ${columns(10)}px;
 `;
