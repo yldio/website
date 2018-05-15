@@ -12,10 +12,6 @@ export const Title = styled.h2`
   }
 `;
 
-export const Highlight = styled.span`
-  color: ${highlight};
-`;
-
 export const Body = styled.p`
   color: ${text};
   font-size: 1.25rem;
