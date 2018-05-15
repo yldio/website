@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Logo snapshot 1`] = `
-<Styled(GatsbyLink)
+<GatsbyLink
   to="/"
 >
-  <img
+  <styled.img
+    alt="YLD Logo"
     src="/src/components/Logo/logo.svg"
   />
-</Styled(GatsbyLink)>
+</GatsbyLink>
 `;

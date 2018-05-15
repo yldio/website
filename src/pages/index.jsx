@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 
-import config from '../config';
-
 const IndexPage = () => (
   <Fragment>
     <Helmet
