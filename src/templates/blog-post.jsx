@@ -25,7 +25,7 @@ export default BlogPostTemplate;
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
-    post: posts(slug: { eq: $slug }) {
+    post: contentfulPost(slug: { eq: $slug }) {
       ...BlogPostFrontmatter
     }
   }

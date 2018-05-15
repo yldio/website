@@ -1,19 +1,20 @@
 module.exports = `
-  {
-    allPosts {
-      edges {
-        node {
-          slug
+{
+  allContentfulPost {
+    edges {
+      node {
+        slug
+        author {
+          name
+        }
+        title {
           title
-          content
-          authors {
-            name
-            avatar {
-              url
-            }
-          }
+        }
+        body {
+          body
         }
       }
     }
   }
+}
 `;

@@ -3,13 +3,11 @@ import { shallow } from 'enzyme';
 import BlogPost from './index';
 
 test('components/BlogPost snapshot', () => {
-  const authors = [{ name: 'Nuno' }];
-
   const wrapper = shallow(
     <BlogPost
-      title="New YLD Blog"
-      content="Some markdown content..."
-      authors={authors}
+      title={{ title: 'New YLD Blog' }}
+      body={{ body: 'Some markdown content...' }}
+      author={{ name: 'Nuno' }}
     />,
   );
 

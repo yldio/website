@@ -17,7 +17,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return graphql(queryBlogPosts).then(result => {
     if (result.errors) return Promise.reject(new Error(result.errors));
 
-    const blogPosts = result.data.allPosts.edges;
+    const blogPosts = result.data.allContentfulPost.edges;
 
     blogPosts.forEach(({ node: post }) => {
       const pageConfig = {

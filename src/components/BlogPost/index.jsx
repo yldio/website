@@ -7,35 +7,38 @@ const Title = styled.h1`
   font-size: 3em;
 `;
 
-const BlogPost = ({ title, content, authors }) => (
+const BlogPost = ({ title, body, author }) => (
   <Fragment>
-    <Title>{title}</Title>
-    <Markdown source={content} />
-    <p>{authors.map(author => author.name)}</p>
+    <Title>{title.title}</Title>
+    <Markdown source={body.body} />
+    <p>{author.name}</p>
   </Fragment>
 );
 
 BlogPost.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  authors: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  title: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+  }).isRequired,
+  body: PropTypes.shape({
+    body: PropTypes.string.isRequired,
+  }).isRequired,
+  author: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default BlogPost;
 
 export const fragment = graphql`
-  fragment BlogPostFrontmatter on Posts {
-    title
-    content
-    authors {
+  fragment BlogPostFrontmatter on ContentfulPost {
+    title {
+      title
+    }
+    body {
+      body
+    }
+    author {
       name
-      avatar {
-        url
-      }
     }
   }
 `;

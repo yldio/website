@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 import { propTypes as blogPostPropTypes } from '../components/BlogPost';
 
 const BlogPage = ({ data }) => {
-  const posts = data.allPosts.edges;
+  const posts = data.allContentfulPost.edges;
   return (
     <ul>
       {posts.map(({ node: post }) => (
         <li key={post.slug}>
-          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          <Link to={`/blog/${post.slug}`}>{post.title.title}</Link>
         </li>
       ))}
     </ul>
@@ -41,18 +41,11 @@ BlogPage.defaultProps = {
 
 export const query = graphql`
   query AllBlogPostsQuery {
-    allPosts {
+    allContentfulPost {
       edges {
         node {
           slug
-          title
-          content
-          authors {
-            name
-            avatar {
-              url
-            }
-          }
+          ...BlogPostFrontmatter
         }
       }
     }
