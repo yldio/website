@@ -1,7 +1,8 @@
 import React from 'react';
 
+import Button from '../../../../components/Button';
 import Container from '../../../../components/Container';
-import { Title, Body } from './styled';
+import { Body, Title } from './styled';
 
 const BuildBetter = () => (
   <Container>
@@ -15,6 +16,7 @@ const BuildBetter = () => (
       We enable your organisation to deliver world-class technology and customer
       experiences.
     </Body>
+    <Button href="#case-studies">Case Studies ↓</Button>
   </Container>
 );
 

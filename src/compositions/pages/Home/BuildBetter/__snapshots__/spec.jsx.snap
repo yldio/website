@@ -11,5 +11,11 @@ exports[`compositions/homepage/BuildBetter snapshot 1`] = `
   <styled.p>
     We enable your organisation to deliver world-class technology and customer experiences.
   </styled.p>
+  <Button
+    component="a"
+    href="#case-studies"
+  >
+    Case Studies ↓
+  </Button>
 </styled.div>
 `;

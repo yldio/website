@@ -18,4 +18,5 @@ export const Body = styled.p`
   font-size: 1.25rem;
   line-height: 2em;
   max-width: ${columns(10)}px;
+  margin: 40px 0;
 `;

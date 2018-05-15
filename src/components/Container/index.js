@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { gridWidth, gridColWidth, spacing } from '../../styles/spacing';
+import { gridWidth, gridColWidth } from '../../styles/spacing';
 
 const Container = styled.div`
   margin: 0 auto;
