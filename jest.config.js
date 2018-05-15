@@ -6,4 +6,8 @@ module.exports = {
     '<rootDir>/src/**/*spec.{js,jsx}',
   ],
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/public/'],
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.(svg)$': '<rootDir>/spec/jest-transform-asset',
+  },
 };
