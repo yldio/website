@@ -4,8 +4,8 @@ exports[`components/Logo snapshot 1`] = `
 <Styled(GatsbyLink)
   to="/"
 >
-  <styled.h1>
-    yld
-  </styled.h1>
+  <img
+    src="/src/components/Logo/logo.svg"
+  />
 </Styled(GatsbyLink)>
 `;

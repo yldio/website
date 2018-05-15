@@ -1,7 +1,8 @@
 import GatsbyLink from 'gatsby-link';
 import styled from 'styled-components';
 
-import { text } from '../../styles/colours';
+import { highlight, text, textOnDark } from '../../styles/colours';
+import { spacing } from '../../styles/spacing';
 
 export const List = styled.ul`
   list-style-type: none;
@@ -16,21 +17,38 @@ export const Item = styled.li`
 export const Link = styled(GatsbyLink)`
   color: ${text};
   display: inline-block;
-  font-size: 1.1em;
-  padding: 10px 15px;
+  font-size: 18px;
+  padding: ${spacing()} ${spacing(1.5)};
+  position: relative;
   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+  &:hover:after {
+    bottom: -1em;
+    content: '';
+    background-color: ${highlight};
+    height: 3px;
+    left: ${spacing(1.5)};
+    position: absolute;
+    width: calc(100% - ${spacing(3)});
   }
 `;
 
 export const SecondLastLink = Link.extend`
-  padding-right: 30px;
+  padding-right: ${spacing(3)};
+
+  &:hover:after {
+    width: calc(100% - ${spacing(4.5)});
+  }
 `;
 
 export const LastLink = Link.extend`
+  background-color: ${highlight};
   border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px 30px;
+  border-radius: 1px;
+  color: ${textOnDark};
+  padding: 12px 32px;
+
+  &:hover:after {
+    display: none;
+  }
 `;

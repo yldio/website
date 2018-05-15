@@ -12,7 +12,6 @@ const IndexPage = () => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    {config.get('development') ? 'Hello, world!' : null}
   </Fragment>
 );
 

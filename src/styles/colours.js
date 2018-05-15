@@ -1,2 +1,3 @@
-export const text = '#50525C';
-export const highlight = '#5559D0';
+export const text = '#1C203C';
+export const textOnDark = '#FFF';
+export const highlight = '#4D62D8';

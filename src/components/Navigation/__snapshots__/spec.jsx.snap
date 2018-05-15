@@ -4,9 +4,9 @@ exports[`components/Navigation snapshot 1`] = `
 <styled.ul>
   <styled.li>
     <Styled(GatsbyLink)
-      to="/"
+      to="/case-studies"
     >
-      Home
+      Case Studies
     </Styled(GatsbyLink)>
   </styled.li>
   <styled.li>
@@ -14,20 +14,6 @@ exports[`components/Navigation snapshot 1`] = `
       to="/services"
     >
       Services
-    </Styled(GatsbyLink)>
-  </styled.li>
-  <styled.li>
-    <Styled(GatsbyLink)
-      to="/our-approach"
-    >
-      Our Approach
-    </Styled(GatsbyLink)>
-  </styled.li>
-  <styled.li>
-    <Styled(GatsbyLink)
-      to="/community"
-    >
-      Community
     </Styled(GatsbyLink)>
   </styled.li>
   <styled.li>
