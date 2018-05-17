@@ -32,6 +32,7 @@ export const Body = styled.div`
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(161, 160, 197, 0.1);
   color: ${text};
+  min-height: 7.5rem;
   height: 100%;
   padding: ${spacing(3)};
 `;
