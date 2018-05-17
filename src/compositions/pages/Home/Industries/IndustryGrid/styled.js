@@ -31,7 +31,7 @@ export const Icon = styled(FontAwesomeIcon)`
 
 export const Body = styled.div`
   background: white;
-  border: 1px solid borderLight;
+  border: 1px solid ${borderLight};
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(161, 160, 197, 0.1);
   color: ${text};
