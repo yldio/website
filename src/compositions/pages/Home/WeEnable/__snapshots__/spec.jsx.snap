@@ -6,5 +6,7 @@ exports[`compositions/homepage/WeEnable snapshot 1`] = `
     description={null}
     title="We enable you to..."
   />
+  <CheckList />
+  <styled.hr />
 </styled.div>
 `;

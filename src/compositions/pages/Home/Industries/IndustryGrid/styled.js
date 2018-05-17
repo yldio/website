@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import {
+  borderLight,
   highlight,
   text,
   textLighter,
   textOnDark,
 } from '../../../../../styles/colours';
+
 import { spacing } from '../../../../../styles/spacing';
 import breakpoints from '../../../../../styles/breakpoints';
 
@@ -28,7 +31,7 @@ export const Icon = styled(FontAwesomeIcon)`
 
 export const Body = styled.div`
   background: white;
-  border: 1px solid #e4e8ef;
+  border: 1px solid borderLight;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(161, 160, 197, 0.1);
   color: ${text};
