@@ -1,8 +1,10 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
-// import Button from '../../../../components/Button';
+import Button from '../../../../components/Button';
 import PageSection from '../../../../components/PageSection';
 import TileGrid, { Tile } from '../../../../components/TileGrid';
+import { CallToAction } from './styled';
 
 const CaseStudies = () => (
   <PageSection wide>
@@ -24,6 +26,11 @@ const CaseStudies = () => (
         interface.
       </Tile>
     </TileGrid>
+    <CallToAction>
+      <Button component={Link} to="/case-studies">
+        View More
+      </Button>
+    </CallToAction>
   </PageSection>
 );
 
