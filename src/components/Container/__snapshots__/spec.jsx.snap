@@ -3,5 +3,7 @@
 exports[`components/Container snapshot 1`] = `
 <styled.div
   wide={false}
-/>
+>
+  Some content
+</styled.div>
 `;
