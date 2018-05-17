@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { gridColWidth, gridWidth } from '../../styles/spacing';
+import { gridColWidth, gridWidth, spacing } from '../../styles/spacing';
 import { text, textLight } from '../../styles/colours';
 
 export const Container = styled.header`
@@ -8,6 +8,7 @@ export const Container = styled.header`
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: ${spacing(6)};
 `;
 
 export const Title = styled.h2`

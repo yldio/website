@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
+<styled.div>
+  <PageSectionHeader
+    description={
+      <UNDEFINED>
+        <styled.span>
+          We thrive by working, thinking, and growing like a technology driven organisation. This is our mission, and our promise. Here’s how we do it:
+        </styled.span>
+        <Styled(GatsbyLink)
+          to="/case-studies"
+        >
+          Learn how we transform organisations →
+        </Styled(GatsbyLink)>
+      </UNDEFINED>
+    }
+    title="How we do it"
+  />
+  <styled.hr />
+</styled.div>
+`;
