@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/TileGrid/Tile snapshot 1`] = `
+<styled.li
+  colour="normal"
+>
+  <styled.div>
+    <styled.h5>
+      hello
+    </styled.h5>
+    <styled.p>
+      hello, world! i represent some tiled content
+    </styled.p>
+  </styled.div>
+</styled.li>
+`;
