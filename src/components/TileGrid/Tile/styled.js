@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoints from '../../../styles/breakpoints';
 
 import {
   highlight,
@@ -27,7 +28,11 @@ export const Container = styled.li`
   display: flex;
   position: relative;
   min-height: 400px;
-  width: 50%;
+  width: 100%;
+
+  ${breakpoints.desktop`
+    width: 50%;
+  `};
 `;
 
 export const Content = styled.div`
