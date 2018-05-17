@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/homepage/Industries snapshot 1`] = `
+<styled.div>
+  <PageSectionHeader
+    description="We’re proud to work with some amazing clients. No matter how big or small, their trust and collaboration allow us meticulous plan, craft and build their technology future."
+    title="Industries"
+  />
+</styled.div>
+`;
