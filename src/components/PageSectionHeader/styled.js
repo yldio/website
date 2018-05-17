@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { gridColWidth, gridWidth } from '../../styles/spacing';
-import { text, textLighter } from '../../styles/colours';
+import { text, textLight } from '../../styles/colours';
 
 export const Container = styled.header`
   display: flex;
@@ -20,7 +20,7 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.p`
-  color: ${textLighter};
+  color: ${textLight};
   font-size: 1.25rem;
   line-height: 1.55;
   margin: 0;
