@@ -7,3 +7,9 @@ test('components/Container snapshot', () => {
 
   expect(wrapper).toMatchSnapshot();
 });
+
+test('components/Container snapshot (wide)', () => {
+  const wrapper = shallow(<Container wide>Some content</Container>);
+
+  expect(wrapper).toMatchSnapshot();
+});

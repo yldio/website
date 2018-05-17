@@ -1,19 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { StyledContainer } from './styled';
+import styled from 'styled-components';
 
-const Container = ({ children, wide }) => (
-  <StyledContainer wide={wide}>{children}</StyledContainer>
-);
+import { gridWidth, gridWidthWide, gridColWidth } from '../../styles/spacing';
 
-Container.propTypes = {
-  children: PropTypes.node,
-  wide: PropTypes.bool,
+const maxWidth = {
+  normal: `${gridWidth + gridColWidth}px`,
+  wide: `${gridWidthWide + gridColWidth}px`,
 };
 
-Container.defaultProps = {
-  children: null,
-  wide: false,
-};
+const Container = styled.div`
+  margin: 0 auto;
+  padding: 0 ${gridColWidth / 2}px;
+  max-width: ${props => (props.wide ? maxWidth.wide : maxWidth.normal)};
+`;
 
 export default Container;

@@ -1,9 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/Container snapshot 1`] = `
-<styled.div
-  wide={false}
+exports[`components/Container snapshot (wide) 1`] = `
+<div
+  className="sc-bdVaJa kmZgnx"
 >
   Some content
-</styled.div>
+</div>
+`;
+
+exports[`components/Container snapshot 1`] = `
+<div
+  className="sc-bdVaJa ipwjvv"
+>
+  Some content
+</div>
 `;
