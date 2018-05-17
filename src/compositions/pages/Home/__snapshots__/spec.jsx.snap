@@ -4,5 +4,6 @@ exports[`compositions/homepage/Home snapshot 1`] = `
 <React.Fragment>
   <BuildBetter />
   <CaseStudies />
+  <Industries />
 </React.Fragment>
 `;

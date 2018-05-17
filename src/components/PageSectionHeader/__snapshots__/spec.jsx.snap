@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/PageSection snapshot 1`] = `
+<styled.header>
+  <styled.h2>
+    Hello, world!
+  </styled.h2>
+</styled.header>
+`;
+
+exports[`components/PageSection snapshot with description 1`] = `
+<styled.header>
+  <styled.h2>
+    Hello, world!
+  </styled.h2>
+  <styled.p>
+    This is some support copy
+  </styled.p>
+</styled.header>
+`;
