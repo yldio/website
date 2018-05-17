@@ -14,9 +14,8 @@ export const Title = styled.h2`
   color: ${text};
   font-size: 3.75rem;
   font-weight: 500;
-  margin-right: ${gridColWidth / 2}px;
   margin: 0;
-  min-width: ${gridWidth * 1 / 2}px;
+  margin-right: ${gridColWidth / 2}px;
 `;
 
 export const Description = styled.p`
