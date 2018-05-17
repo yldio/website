@@ -4,7 +4,7 @@ import React from 'react';
 import Container from '../../../../components/Container';
 import TileGrid, { Tile } from '../../../../components/TileGrid';
 
-const BuildBetter = () => (
+const CaseStudies = () => (
   <Container wide>
     <TileGrid>
       <Tile title="Trainline">
@@ -27,4 +27,4 @@ const BuildBetter = () => (
   </Container>
 );
 
-export default BuildBetter;
+export default CaseStudies;
