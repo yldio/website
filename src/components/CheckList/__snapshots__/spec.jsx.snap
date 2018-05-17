@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/CheckList snapshot 1`] = `
+<styled.ul>
+  <Item>
+    Hello, world
+  </Item>
+  <Item>
+    I am another item
+  </Item>
+  <Item>
+    And a third
+  </Item>
+</styled.ul>
+`;
