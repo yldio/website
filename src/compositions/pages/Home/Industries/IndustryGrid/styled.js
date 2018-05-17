@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { text, textLighter } from '../../styles/colours';
-import { spacing } from '../../styles/spacing';
-import breakpoints from '../../styles/breakpoints';
+import { text, textLighter } from '../../../../../styles/colours';
+import { spacing } from '../../../../../styles/spacing';
+import breakpoints from '../../../../../styles/breakpoints';
 
 export const Item = styled.li`
   padding: ${spacing()};
