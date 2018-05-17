@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/Button snapshot 1`] = `<styled.a />`;
+exports[`components/Button anchor snapshot 1`] = `<styled.a />`;
+
+exports[`components/Button basic snapshot 1`] = `<styled.a />`;
+
+exports[`components/Button button snapshot 1`] = `<styled.button />`;
+
+exports[`components/Button custom component snapshot 1`] = `<Styled(mockComponent) />`;

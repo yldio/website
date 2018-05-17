@@ -5,22 +5,31 @@ import Button from './index';
 describe('components/Button', () => {
   const mockComponent = props => <div {...props} />;
 
-  test('snapshot', () => {
+  test('basic snapshot', () => {
     const wrapper = shallow(<Button />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
   test('custom component snapshot', () => {
-    const wrapper = shallow(<Button component={mockComponent} />);
-    expect(wrapper.text()).toContain('Styled(mockComponent)');
+    const custom = shallow(<Button component={mockComponent} />);
+    expect(custom).toMatchSnapshot();
   });
 
-  test('accepts a button or an anchor tag', () => {
+  test('anchor snapshot', () => {
     const anchor = shallow(<Button component="a" />);
-    expect(anchor.text()).toContain('styled.a');
+    expect(anchor).toMatchSnapshot();
+  });
 
-    const btn = shallow(<Button component="button" />);
-    expect(btn.text()).toContain('styled.button');
+  test('button snapshot', () => {
+    const button = shallow(<Button component="button" />);
+    expect(button).toMatchSnapshot();
+  });
+
+  test('forwards props to component', () => {
+    const props = { test: true };
+    const wrapper = shallow(<Button component={mockComponent} {...props} />);
+
+    expect(wrapper.props()).toEqual(props);
   });
 });
