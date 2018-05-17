@@ -10,6 +10,7 @@ const IndexPage = () => (
       meta={[
         { name: 'description', content: 'YLD Homepage' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ]}
     />
     <HomePage />
