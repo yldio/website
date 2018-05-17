@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Button from '../../../../components/Button';
-import Container from '../../../../components/Container';
+import PageSection from '../../../../components/PageSection';
 import { Body, Title } from './styled';
 
 const BuildBetter = () => (
-  <Container>
+  <PageSection>
     <Title>Build better</Title>
     <Body>
       Great companies go beyond their customers expectations, over and over
@@ -17,7 +17,7 @@ const BuildBetter = () => (
       experiences.
     </Body>
     <Button href="#case-studies">Case Studies ↓</Button>
-  </Container>
+  </PageSection>
 );
 
 export default BuildBetter;

@@ -9,5 +9,6 @@ export const withButtonStyles = Component => styled(Component)`
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+  min-width: 10em;
   padding: 20px;
 `;

@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`components/Container snapshot (wide) 1`] = `
+<div
+  className="sc-bdVaJa cAUiFA"
+>
+  Some content
+</div>
+`;
+
 exports[`components/Container snapshot 1`] = `
 <div
-  className="sc-bdVaJa jYZbxL"
-/>
+  className="sc-bdVaJa ipwjvv"
+>
+  Some content
+</div>
 `;

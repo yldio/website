@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`compositions/homepage/Home snapshot 1`] = `<BuildBetter />`;
+exports[`compositions/homepage/Home snapshot 1`] = `
+<React.Fragment>
+  <BuildBetter />
+  <CaseStudies />
+</React.Fragment>
+`;
