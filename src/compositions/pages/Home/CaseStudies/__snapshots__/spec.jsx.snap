@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/homepage/CaseStudies snapshot 1`] = `
+<Container
+  wide={true}
+>
+  <styled.ul>
+    <Tile
+      colour="normal"
+      title="Trainline"
+    >
+      A legacy platform that faced a huge pressure to have an updated interface.
+    </Tile>
+    <Tile
+      colour="darker"
+      title="The Economist"
+    >
+      A legacy platform that faced a huge pressure to have an updated interface.
+    </Tile>
+    <Tile
+      colour="dark"
+      title="Joyent"
+    >
+      A legacy platform that faced a huge pressure to have an updated interface.
+    </Tile>
+    <Tile
+      colour="normal"
+      title="DoctorLink"
+    >
+      A legacy platform that faced a huge pressure to have an updated interface.
+    </Tile>
+  </styled.ul>
+</Container>
+`;

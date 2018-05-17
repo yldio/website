@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/BuildBetter snapshot 1`] = `
-<styled.div>
+<Container
+  wide={false}
+>
   <styled.h2>
     Build better
   </styled.h2>
@@ -17,5 +19,5 @@ exports[`compositions/homepage/BuildBetter snapshot 1`] = `
   >
     Case Studies ↓
   </Button>
-</styled.div>
+</Container>
 `;

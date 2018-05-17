@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import BuildBetter from './BuildBetter';
+import CaseStudies from './CaseStudies';
 
-const HomePage = () => <BuildBetter />;
+const HomePage = () => (
+  <Fragment>
+    <BuildBetter />
+    <CaseStudies />
+  </Fragment>
+);
 
 export default HomePage;
