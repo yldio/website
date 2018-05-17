@@ -2,17 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Content, ContentTitle, ContentBody } from './styled';
 
-const Tile = ({ colour }) => (
+const Tile = ({ children, colour, title }) => (
   <Container colour={colour}>
     <Content>
-      <ContentTitle>hello</ContentTitle>
-      <ContentBody>hello, world! i represent some tiled content</ContentBody>
+      <ContentTitle>{title}</ContentTitle>
+      <ContentBody>{children}</ContentBody>
     </Content>
   </Container>
 );
 
 Tile.propTypes = {
   colour: PropTypes.oneOf(['normal', 'dark', 'darker']),
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 Tile.defaultProps = {

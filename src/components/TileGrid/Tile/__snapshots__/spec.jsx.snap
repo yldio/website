@@ -6,10 +6,10 @@ exports[`components/TileGrid/Tile snapshot 1`] = `
 >
   <styled.div>
     <styled.h5>
-      hello
+      Hello, world
     </styled.h5>
     <styled.p>
-      hello, world! i represent some tiled content
+      This is some example content.
     </styled.p>
   </styled.div>
 </styled.li>
