@@ -1,11 +1,11 @@
 import React from 'react';
 
 // import Button from '../../../../components/Button';
-import Container from '../../../../components/Container';
+import PageSection from '../../../../components/PageSection';
 import TileGrid, { Tile } from '../../../../components/TileGrid';
 
 const CaseStudies = () => (
-  <Container wide>
+  <PageSection wide>
     <TileGrid>
       <Tile title="Trainline">
         A legacy platform that faced a huge pressure to have an updated
@@ -24,7 +24,7 @@ const CaseStudies = () => (
         interface.
       </Tile>
     </TileGrid>
-  </Container>
+  </PageSection>
 );
 
 export default CaseStudies;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import Container from '../../../../components/Container';
 import { highlight, text } from '../../../../styles/colours';
-import { spacing, gridWidth } from '../../../../styles/spacing';
+import { gridWidth } from '../../../../styles/spacing';
 
 export const Title = styled.h2`
   color: ${text};
@@ -12,11 +11,6 @@ export const Title = styled.h2`
     content: '.';
     color: ${highlight};
   }
-`;
-
-export const Section = Container.extend`
-  margin-bottom: ${spacing(10)};
-  margin-top: ${spacing(10)};
 `;
 
 export const Body = styled.p`
