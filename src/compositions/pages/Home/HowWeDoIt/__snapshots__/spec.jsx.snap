@@ -8,18 +8,16 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
         <styled.span>
           We thrive by working, thinking, and growing like a technology driven organisation. This is our mission, and our promise. Here’s how we do it:
         </styled.span>
-        <Styled(GatsbyLink)
-          to="/case-studies"
+        <Link
+          href="/case-studies"
         >
           Learn how we transform organisations →
-        </Styled(GatsbyLink)>
+        </Link>
       </UNDEFINED>
     }
     title="How we do it"
   />
-  <styled.div>
-    <ProductList />
-  </styled.div>
+  <ProductList />
   <Styled(styled.hr) />
 </styled.section>
 `;
