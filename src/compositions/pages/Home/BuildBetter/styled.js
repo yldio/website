@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { highlight, text } from '../../../../styles/colours';
+import { highlight, text, textLight } from '../../../../styles/colours';
 import { gridWidth } from '../../../../styles/spacing';
 
 export const Title = styled.h2`
@@ -14,7 +14,7 @@ export const Title = styled.h2`
 `;
 
 export const Body = styled.p`
-  color: ${text};
+  color: ${textLight};
   font-size: 1.25rem;
   line-height: 2em;
   max-width: ${gridWidth * 2 / 3}px;

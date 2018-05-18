@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import breakpoints from '../../styles/breakpoints';
 import { spacing } from '../../styles/spacing';
-import { textLight } from '../../styles/colours';
+import { textLighter } from '../../styles/colours';
 
 export const List = styled.ul`
   display: flex;
@@ -13,7 +13,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  color: ${textLight};
+  color: ${textLighter};
   display: flex;
   flex-direction: row;
   font-size: 1.25rem;
