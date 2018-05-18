@@ -2,18 +2,18 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import breakpoints from '../../styles/breakpoints';
 import { spacing } from '../../styles/spacing';
-import { textLight } from '../../styles/colours';
+import { textLighter } from '../../styles/colours';
 
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: ${spacing(6)} 0;
+  margin: 0;
   padding: 0;
 `;
 
 export const ListItem = styled.li`
-  color: ${textLight};
+  color: ${textLighter};
   display: flex;
   flex-direction: row;
   font-size: 1.25rem;

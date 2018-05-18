@@ -1,7 +1,7 @@
 import GatsbyLink from 'gatsby-link';
 import styled from 'styled-components';
 
-import { highlight, text, textOnDark } from '../../styles/colours';
+import { highlight, textLight, textOnDark } from '../../styles/colours';
 import { spacing } from '../../styles/spacing';
 
 export const List = styled.ul`
@@ -15,7 +15,7 @@ export const Item = styled.li`
 `;
 
 export const Link = styled(GatsbyLink)`
-  color: ${text};
+  color: ${textLight};
   display: inline-block;
   font-size: 18px;
   padding: ${spacing()} ${spacing(1.5)};

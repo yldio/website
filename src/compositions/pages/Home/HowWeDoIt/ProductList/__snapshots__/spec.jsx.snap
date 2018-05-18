@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ProductList snapshot 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.img
+      alt="our approach"
+      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+    />
+    <styled.span>
+      Our Approach
+    </styled.span>
+    <styled.span>
+      Digital Transformation
+    </styled.span>
+    <styled.span>
+      Engineering Consultancy
+    </styled.span>
+    <styled.span>
+      Product Consultancy
+    </styled.span>
+    <Styled(GatsbyLink)
+      to="/services#approach"
+    >
+      More on Approach →
+    </Styled(GatsbyLink)>
+  </styled.div>
+  <styled.div>
+    <styled.img
+      alt="design & product"
+      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+    />
+    <styled.span>
+      Design & Product
+    </styled.span>
+    <styled.span>
+      Design Systems & Design Operations
+    </styled.span>
+    <styled.span>
+      Design Sprints
+    </styled.span>
+    <styled.span>
+      User Interface Design & Branding
+    </styled.span>
+    <styled.span>
+      Research, Usability and User Experience
+    </styled.span>
+    <Styled(GatsbyLink)
+      to="/services#design"
+    >
+      More on Design →
+    </Styled(GatsbyLink)>
+  </styled.div>
+  <styled.div>
+    <styled.img
+      alt="engineering"
+      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+    />
+    <styled.span>
+      Engineering
+    </styled.span>
+    <styled.span>
+      Engineering Leadership
+    </styled.span>
+    <styled.span>
+      Back End & Node.js
+    </styled.span>
+    <styled.span>
+      Front End & React.js
+    </styled.span>
+    <styled.span>
+      DevOps & Kubernetes
+    </styled.span>
+    <styled.span>
+      Mobile & React Native
+    </styled.span>
+    <Styled(GatsbyLink)
+      to="/services#engineering"
+    >
+      More on Engineering →
+    </Styled(GatsbyLink)>
+  </styled.div>
+  <styled.div>
+    <styled.img
+      alt="training"
+      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+    />
+    <styled.span>
+      Training
+    </styled.span>
+    <styled.span>
+      Node Training
+    </styled.span>
+    <styled.span>
+      React Training
+    </styled.span>
+    <styled.span>
+      Design Systems Training
+    </styled.span>
+    <styled.span>
+      UX Research Training
+    </styled.span>
+    <styled.span>
+      UX Design Training
+    </styled.span>
+    <Styled(GatsbyLink)
+      to="/services#training"
+    >
+      More on Training →
+    </Styled(GatsbyLink)>
+  </styled.div>
+</styled.div>
+`;
