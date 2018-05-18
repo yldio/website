@@ -5,6 +5,7 @@ import CaseStudies from './CaseStudies';
 import Industries from './Industries';
 import WeEnable from './WeEnable';
 import HowWeDoIt from './HowWeDoIt';
+import Community from './Community';
 
 const HomePage = () => (
   <Fragment>
@@ -13,6 +14,7 @@ const HomePage = () => (
     <Industries />
     <WeEnable />
     <HowWeDoIt />
+    <Community />
   </Fragment>
 );
 
