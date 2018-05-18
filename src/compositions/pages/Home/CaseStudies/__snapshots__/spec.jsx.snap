@@ -30,13 +30,13 @@ exports[`compositions/homepage/CaseStudies snapshot 1`] = `
       A legacy platform that faced a huge pressure to have an updated interface.
     </Tile>
   </styled.ul>
-  <styled.div>
+  <styled.p>
     <Button
       component={[Function]}
-      to="/case-studies"
+      href="/case-studies"
     >
       View More
     </Button>
-  </styled.div>
+  </styled.p>
 </styled.section>
 `;
