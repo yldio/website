@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import GatsbyLink from 'gatsby-link';
-import { spacing } from '../../styles/spacing';
-import { highlight, textLight, textLighter } from '../../styles/colours';
+import { spacing } from '../../../../../styles/spacing';
+
+import {
+  highlight,
+  textLight,
+  textLighter,
+} from '../../../../../styles/colours';
 
 export const Container = styled.div`
   background: #ffffff;
@@ -19,8 +24,6 @@ export const ProductColumn = styled.div`
   position: relative;
   width: 25%;
 `;
-
-// http://placekitten.com/200/300
 
 export const Image = styled.img`
   height: auto;
