@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import GatsbyLink from 'gatsby-link';
 import { spacing } from '../../../../../styles/spacing';
 import breakpoints from '../../../../../styles/breakpoints';
+import Panel from '../../../../../components/Panel';
 
 import {
   highlight,
@@ -9,13 +10,9 @@ import {
   textLighter,
 } from '../../../../../styles/colours';
 
-export const Container = styled.div`
-  background: #ffffff;
-  border-radius: 4px;
-  box-shadow: 0 3px 10px rgba(161, 160, 197, 0.2);
+export const Container = Panel.extend`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   padding: ${spacing(4)} ${spacing(2)};
 `;
 
