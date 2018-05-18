@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import WeEnable from './index';
+import Community from './index';
 
-test('compositions/homepage/WeEnable snapshot', () => {
-  const wrapper = shallow(<WeEnable />);
+test('compositions/Home/Community snapshot', () => {
+  const wrapper = shallow(<Community />);
 
   expect(wrapper).toMatchSnapshot();
 });
