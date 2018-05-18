@@ -1,6 +1,8 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Post from './index';
+
+jest.mock('gatsby-link');
 
 describe('components/Post', () => {
   const defaultProps = {
@@ -20,10 +22,9 @@ describe('components/Post', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test.skip('date formatting', () => {
+  test('date formatting', () => {
     const props = { ...defaultProps, date: '2018-05-18T14:38:23.996+01:00' };
-
-    const wrapper = shallow(<Post {...props} />);
+    const wrapper = mount(<Post {...props} />);
 
     expect(wrapper.find('time').text()).toEqual('May 18');
   });
