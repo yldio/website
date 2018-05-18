@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 import Post from '../../../../../components/Post';
 import { BlogPost, BlogPosts, Title } from './styled';
 
+import Button from '../../../../../components/Button';
+import Link from '../../../../../components/Link';
+
 const RecentBlogPosts = () => (
   <Fragment>
     <Title>Recent Blog Posts</Title>
@@ -33,6 +36,9 @@ const RecentBlogPosts = () => (
         </Post>
       </BlogPost>
     </BlogPosts>
+    <Button component={Link} href="/blog">
+      View Blog
+    </Button>
   </Fragment>
 );
 

@@ -8,6 +8,7 @@ export const BlogPosts = styled.ul`
   flex-wrap: wrap;
   list-style-type: none;
   margin: ${spacing(-1.5)};
+  margin-bottom: ${spacing(6.5)};
   padding: 0;
 `;
 
