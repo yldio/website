@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ProductList snapshot 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.img
+      alt="cat"
+      src="http://placekitten.com/195/156"
+    />
+    <styled.span>
+      Our Approach
+    </styled.span>
+    <styled.span>
+      Digital Transformation
+    </styled.span>
+    <styled.span>
+      Engineering Consultancy
+    </styled.span>
+    <styled.span>
+      Product Consultancy
+    </styled.span>
+    <Styled(GatsbyLink)
+      to="/services"
+    >
+      More on Approach →
+    </Styled(GatsbyLink)>
+  </styled.div>
+  <styled.div>
+    <styled.img
+      alt="cat"
+      src="http://placekitten.com/195/156"
+    />
+    <styled.span />
+    <styled.span />
+  </styled.div>
+  <styled.div>
+    <styled.img
+      alt="cat"
+      src="http://placekitten.com/195/156"
+    />
+    <styled.span />
+    <styled.span />
+  </styled.div>
+  <styled.div>
+    <styled.img
+      alt="cat"
+      src="http://placekitten.com/195/156"
+    />
+    <styled.span />
+    <styled.span />
+  </styled.div>
+</styled.div>
+`;

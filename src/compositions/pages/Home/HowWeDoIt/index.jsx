@@ -3,9 +3,9 @@ import React, { Fragment } from 'react';
 import PageSection from '../../../../components/PageSection';
 import PageSectionHeader from '../../../../components/PageSectionHeader';
 import PageRule from '../../../../components/PageRule';
-import ProductGrid from '../../../../components/ProductGrid';
+import ProductList from '../../../../components/ProductList';
 
-import { Link, Description } from './styled';
+import { Link, Description, ProductListWrapper } from './styled';
 
 const HeaderDescription = (
   <Fragment>
@@ -20,7 +20,9 @@ const HeaderDescription = (
 const HowWeDoIt = () => (
   <PageSection>
     <PageSectionHeader description={HeaderDescription} title="How we do it" />
-    <ProductGrid />
+    <ProductListWrapper>
+      <ProductList />
+    </ProductListWrapper>
     <PageRule />
   </PageSection>
 );

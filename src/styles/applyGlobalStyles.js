@@ -18,6 +18,8 @@ export default function applyGlobalStyles() {
     body {
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       line-height: 1.5;
     }
   `;

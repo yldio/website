@@ -17,6 +17,9 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
     }
     title="How we do it"
   />
+  <styled.div>
+    <ProductList />
+  </styled.div>
   <styled.hr />
 </styled.div>
 `;
