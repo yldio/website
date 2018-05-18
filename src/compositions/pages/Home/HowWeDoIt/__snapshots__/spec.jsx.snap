@@ -20,6 +20,6 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
   <styled.div>
     <ProductList />
   </styled.div>
-  <styled.hr />
+  <Styled(styled.hr) />
 </styled.div>
 `;

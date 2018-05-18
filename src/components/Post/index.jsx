@@ -1,17 +1,48 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { format } from 'date-fns';
 
-import Panel, { panelPadding } from '../Panel';
-import Rule from '../Rule';
+import Link from '../../components/Link';
 
-const PostRule = styled(Rule)`
-  margin: ${panelPadding} -${panelPadding};
-`;
+import {
+  Article,
+  Authored,
+  Body,
+  Footer,
+  PostRule,
+  Time,
+  Title,
+  Thumbnail,
+} from './styled';
 
-const Post = ({ title, body, image, event, date }) => (
-  <Panel>
+const Post = ({ title, children, image, sourceText, sourceLink, date }) => (
+  <Article>
+    <header>
+      <Title>{title}</Title>
+    </header>
+    <Body>{children}</Body>
     <PostRule />
-  </Panel>
+    <Footer>
+      <Thumbnail src={image} />
+      <Authored>
+        <Link href={sourceLink}>{sourceText}</Link>
+        <Time datetime={date}>{format(date, 'MMM DD')}</Time>
+      </Authored>
+    </Footer>
+  </Article>
 );
+
+Post.propTypes = {
+  children: PropTypes.node,
+  date: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  sourceLink: PropTypes.string.isRequired,
+  sourceText: PropTypes.string.isRequired,
+};
+
+Post.defaultProps = {
+  children: [],
+};
 
 export default Post;

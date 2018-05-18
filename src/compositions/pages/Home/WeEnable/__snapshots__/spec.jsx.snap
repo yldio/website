@@ -26,6 +26,6 @@ exports[`compositions/homepage/WeEnable snapshot 1`] = `
       Grow a technology culture
     </Item>
   </CheckList>
-  <styled.hr />
+  <Styled(styled.hr) />
 </styled.div>
 `;

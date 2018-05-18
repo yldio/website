@@ -6,7 +6,6 @@ const Rule = styled.hr`
   border: none;
   height: 1px;
   margin: 0;
-  width: 100%;
 `;
 
 export default Rule;
