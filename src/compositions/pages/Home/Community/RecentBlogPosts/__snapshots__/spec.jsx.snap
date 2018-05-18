@@ -29,5 +29,11 @@ exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
       </Post>
     </styled.li>
   </styled.ul>
+  <Button
+    component={[Function]}
+    href="/blog"
+  >
+    View Blog
+  </Button>
 </React.Fragment>
 `;
