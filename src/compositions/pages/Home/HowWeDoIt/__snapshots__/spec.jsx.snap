@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
-<styled.div>
+<styled.section>
   <PageSectionHeader
     description={
       <UNDEFINED>
@@ -21,5 +21,5 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
     <ProductList />
   </styled.div>
   <Styled(styled.hr) />
-</styled.div>
+</styled.section>
 `;
