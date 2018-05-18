@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
-  borderLight,
   highlight,
   text,
   textLighter,
@@ -11,6 +10,7 @@ import {
 
 import { spacing } from '../../../../../styles/spacing';
 import breakpoints from '../../../../../styles/breakpoints';
+import Panel from '../../../../../components/Panel';
 
 export const Item = styled.li`
   padding: ${spacing(1.5)};
@@ -29,15 +29,11 @@ export const Icon = styled(FontAwesomeIcon)`
   margin-right: ${spacing(0.5)};
 `;
 
-export const Body = styled.div`
-  background: white;
-  border: 1px solid ${borderLight};
+export const Body = Panel.extend`
   border-radius: 3px;
-  box-shadow: 0 0 10px rgba(161, 160, 197, 0.1);
   color: ${text};
   min-height: 7.5rem;
   height: 100%;
-  padding: ${spacing(3)};
 `;
 
 export const CTABody = Body.extend`

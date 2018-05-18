@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Link external link snapshot 1`] = `
+<styled.a
+  href="https://test.com/"
+>
+  Test
+</styled.a>
+`;
+
+exports[`components/Link internal link snapshot 1`] = `
+<Styled(GatsbyLink)
+  to="/test"
+>
+  Test
+</Styled(GatsbyLink)>
+`;
