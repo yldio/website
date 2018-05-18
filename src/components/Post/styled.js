@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-import Panel, { panelPadding } from '../Panel';
+import Panel from '../Panel';
 import Rule from '../Rule';
 import { spacing } from '../../styles/spacing';
 import { textLight, textLighter } from '../../styles/colours';
 
 export const PostRule = styled(Rule)`
-  margin: ${panelPadding} -${panelPadding};
+  margin: ${spacing(1.5)} ${spacing(-3)};
 `;
 
 export const Thumbnail = styled.img`
@@ -20,8 +20,8 @@ export const Title = styled.h4`
   color: ${textLight};
   font-size: 1.375rem;
   font-weight: 400;
-  margin-top: 0;
   margin-bottom: ${spacing()};
+  margin-top: 0;
 `;
 
 export const Footer = styled.footer`
@@ -39,9 +39,16 @@ export const Authored = styled.p`
   margin: 0;
 `;
 
-export const Body = styled.section`
+export const Body = styled.main`
   color: ${textLighter};
   font-size: 1.125rem;
+  padding-bottom: ${spacing(1.5)};
 `;
 
-export const Article = Panel.withComponent('article');
+export const Header = styled.header`
+  padding-top: ${spacing(1.5)};
+`;
+
+export const Article = Panel.withComponent('article').extend`
+  padding: ${spacing(1.5)} ${spacing(3)};
+`;

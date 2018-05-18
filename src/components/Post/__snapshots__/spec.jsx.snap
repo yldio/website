@@ -2,16 +2,16 @@
 
 exports[`components/Post snapshot 1`] = `
 <styled.article>
-  <header>
+  <styled.header>
     <styled.h4>
       We’re Hiring! YLD on the look out for Front-End Devs and DevOps.
     </styled.h4>
-  </header>
-  <styled.section>
+  </styled.header>
+  <styled.main>
     I think its one of the simplest yet most powerful extensions inVision
     hasn't launched. As animation and transition in inVision evolve it
     should grow even more powerful
-  </styled.section>
+  </styled.main>
   <Styled(styled.hr) />
   <styled.footer>
     <styled.img

@@ -9,6 +9,7 @@ import {
   Authored,
   Body,
   Footer,
+  Header,
   PostRule,
   Time,
   Title,
@@ -17,9 +18,9 @@ import {
 
 const Post = ({ title, children, image, sourceText, sourceLink, date }) => (
   <Article>
-    <header>
+    <Header>
       <Title>{title}</Title>
-    </header>
+    </Header>
     <Body>{children}</Body>
     <PostRule />
     <Footer>
