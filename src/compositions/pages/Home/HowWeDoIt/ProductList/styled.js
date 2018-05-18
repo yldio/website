@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import GatsbyLink from 'gatsby-link';
 import { spacing } from '../../../../../styles/spacing';
+import breakpoints from '../../../../../styles/breakpoints';
 
 import {
   highlight,
@@ -13,6 +14,7 @@ export const Container = styled.div`
   border-radius: 4px;
   box-shadow: 0 3px 10px rgba(161, 160, 197, 0.2);
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: ${spacing(4)} ${spacing(2)};
 `;
@@ -22,7 +24,15 @@ export const ProductColumn = styled.div`
   padding: 0 ${spacing(2)} ${spacing(5)} ${spacing(2)};
   margin: ${spacing(2)} 0;
   position: relative;
-  width: 25%;
+  width: 100%;
+
+  ${breakpoints.phablet`
+    width: 50%;
+  `};
+
+  ${breakpoints.desktop`
+    width: 25%;
+  `};
 `;
 
 export const Image = styled.img`
