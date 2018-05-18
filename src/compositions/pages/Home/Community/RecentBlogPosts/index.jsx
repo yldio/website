@@ -7,7 +7,9 @@ import Link from '../../../../../components/Link';
 
 const RecentBlogPosts = () => (
   <Fragment>
-    <Title>Recent Blog Posts</Title>
+    <header>
+      <Title>Recent Blog Posts</Title>
+    </header>
     <BlogPosts>
       <BlogPost>
         <Post

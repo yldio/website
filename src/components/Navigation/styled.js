@@ -43,7 +43,6 @@ export const SecondLastLink = Link.extend`
 
 export const LastLink = Link.extend`
   background-color: ${highlight};
-  border: 1px solid #ddd;
   border-radius: 1px;
   color: ${textOnDark};
   padding: ${spacing(1.3)} ${spacing(3)};

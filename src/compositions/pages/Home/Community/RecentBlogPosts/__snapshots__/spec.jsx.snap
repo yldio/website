@@ -2,9 +2,11 @@
 
 exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
 <React.Fragment>
-  <styled.h3>
-    Recent Blog Posts
-  </styled.h3>
+  <header>
+    <styled.h3>
+      Recent Blog Posts
+    </styled.h3>
+  </header>
   <styled.ul>
     <styled.li>
       <Post

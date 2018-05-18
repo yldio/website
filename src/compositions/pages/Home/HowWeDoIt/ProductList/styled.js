@@ -1,22 +1,20 @@
 import styled from 'styled-components';
-import GatsbyLink from 'gatsby-link';
 import { spacing } from '../../../../../styles/spacing';
 import breakpoints from '../../../../../styles/breakpoints';
 import Panel from '../../../../../components/Panel';
 
-import {
-  highlight,
-  textLight,
-  textLighter,
-} from '../../../../../styles/colours';
+import { textLight, textLighter } from '../../../../../styles/colours';
 
-export const Container = Panel.extend`
+export const Container = Panel.withComponent('ul').extend`
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   padding: ${spacing(4)} ${spacing(2)};
+  margin-left: ${spacing(-4)};
+  margin-right: ${spacing(-4)};
 `;
 
-export const ProductColumn = styled.div`
+export const ProductColumn = styled.li`
   font-size: 1.125rem;
   padding: 0 ${spacing(2)} ${spacing(5)} ${spacing(2)};
   margin: ${spacing(2)} 0;
@@ -38,23 +36,26 @@ export const Image = styled.img`
   width: 100%;
 `;
 
-export const Product = styled.span`
+export const ProductSublist = styled.ul`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+`;
+
+export const Product = styled.li`
   color: ${textLighter};
-  display: block;
   margin-bottom: ${spacing(2)};
 `;
 
-export const Title = Product.extend`
+export const Title = styled.header`
   color: ${textLight};
   font-weight: 500;
-  font-size: inherit;
+  margin-bottom: ${spacing(2)};
 `;
 
-export const Link = styled(GatsbyLink)`
+export const Footer = styled.footer`
   bottom: 0;
-  color: ${highlight};
   font-weight: 500;
   left: ${spacing(2)};
   position: absolute;
-  text-decoration: none;
 `;

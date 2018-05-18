@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/WeEnable snapshot 1`] = `
-<styled.div>
+<styled.section>
   <PageSectionHeader
     description={null}
     title="We enable you to..."
@@ -27,5 +27,5 @@ exports[`compositions/homepage/WeEnable snapshot 1`] = `
     </Item>
   </CheckList>
   <Styled(styled.hr) />
-</styled.div>
+</styled.section>
 `;
