@@ -22,6 +22,13 @@ describe('components/Post', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  test('snapshot with stretch=false', () => {
+    const props = { ...defaultProps, stretch: false };
+
+    const wrapper = shallow(<Post {...props} />);
+    expect(wrapper).toMatchSnapshot();
+  });
+
   test('date formatting', () => {
     const props = { ...defaultProps, date: '2018-05-18T14:38:23.996+01:00' };
     const wrapper = mount(<Post {...props} />);

@@ -32,3 +32,38 @@ exports[`components/Post snapshot 1`] = `
   </styled.footer>
 </styled.article>
 `;
+
+exports[`components/Post snapshot with stretch=false 1`] = `
+<styled.article
+  stretch={false}
+>
+  <styled.header>
+    <styled.h4>
+      We’re Hiring! YLD on the look out for Front-End Devs and DevOps.
+    </styled.h4>
+  </styled.header>
+  <styled.main>
+    I think its one of the simplest yet most powerful extensions inVision
+    hasn't launched. As animation and transition in inVision evolve it
+    should grow even more powerful
+  </styled.main>
+  <Styled(styled.hr) />
+  <styled.footer>
+    <styled.img
+      src="https://placekitten.com/128/128"
+    />
+    <styled.p>
+      <Link
+        href="/people/nuno-job"
+      >
+        Nuno Job
+      </Link>
+      <styled.time
+        datetime="2018-05-18T14:38:23.996+01:00"
+      >
+        May 18
+      </styled.time>
+    </styled.p>
+  </styled.footer>
+</styled.article>
+`;

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
+<React.Fragment>
+  <header>
+    <styled.h3>
+      Recent Blog Posts
+    </styled.h3>
+  </header>
+  <styled.ul>
+    <styled.li>
+      <Post
+        date="2018-05-18T14:38:23.996+01:00"
+        image="https://placekitten.com/128/128"
+        sourceLink="/people/nuno-job"
+        sourceText="Nuno Job"
+        title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
+      >
+        I think its one of the simplest yet most powerful extensions inVision hasn't launched. As animation and transition in inVision evolve it should grow even more powerful
+      </Post>
+    </styled.li>
+    <styled.li>
+      <Post
+        date="2018-05-18T14:38:23.996+01:00"
+        image="https://placekitten.com/128/128"
+        sourceLink="/people/nuno-job"
+        sourceText="Nuno Job"
+        title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
+      >
+        I think its one of the simplest yet most powerful extensions inVision hasn't launched. As animation and transition in inVision evolve it should grow even more powerful
+      </Post>
+    </styled.li>
+  </styled.ul>
+  <Button
+    component={[Function]}
+    href="/blog"
+  >
+    View Blog
+  </Button>
+</React.Fragment>
+`;
+
+exports[`compositions/Home/Community/UpcomingEvents snapshot 1`] = `
+<section>
+  <header>
+    <styled.h3>
+      Upcoming Events
+    </styled.h3>
+  </header>
+  <styled.ul>
+    <styled.li>
+      <Post
+        date="2018-05-18T14:38:23.996+01:00"
+        image="https://placekitten.com/128/128"
+        sourceLink="/people/nuno-job"
+        sourceText="Digital Product London"
+        stretch={true}
+        title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
+      >
+        I think its one of the simplest yet most powerful extensions inVision hasn't launched.
+      </Post>
+    </styled.li>
+    <styled.li>
+      <Post
+        date="2018-05-18T14:38:23.996+01:00"
+        image="https://placekitten.com/128/128"
+        sourceLink="/people/nuno-job"
+        sourceText="Digital Product London"
+        stretch={true}
+        title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
+      >
+        I think its one of the simplest yet most powerful extensions inVision hasn't launched.
+      </Post>
+    </styled.li>
+    <styled.li>
+      <Post
+        date="2018-05-18T14:38:23.996+01:00"
+        image="https://placekitten.com/128/128"
+        sourceLink="/people/nuno-job"
+        sourceText="Digital Product London"
+        stretch={true}
+        title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
+      >
+        I think its one of the simplest yet most powerful extensions inVision hasn't launched.
+      </Post>
+    </styled.li>
+  </styled.ul>
+  <Button
+    component={[Function]}
+    href="/blog"
+  >
+    View Blog
+  </Button>
+</section>
+`;

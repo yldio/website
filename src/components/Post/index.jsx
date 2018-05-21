@@ -16,8 +16,16 @@ import {
   Thumbnail,
 } from './styled';
 
-const Post = ({ title, children, image, sourceText, sourceLink, date }) => (
-  <Article>
+const Post = ({
+  stretch,
+  title,
+  children,
+  image,
+  sourceText,
+  sourceLink,
+  date,
+}) => (
+  <Article stretch={stretch}>
     <Header>
       <Title>{title}</Title>
     </Header>
@@ -40,10 +48,12 @@ Post.propTypes = {
   title: PropTypes.string.isRequired,
   sourceLink: PropTypes.string.isRequired,
   sourceText: PropTypes.string.isRequired,
+  stretch: PropTypes.bool,
 };
 
 Post.defaultProps = {
   children: [],
+  stretch: true,
 };
 
 export default Post;

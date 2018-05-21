@@ -3,7 +3,7 @@ import { textLight } from '../../../../../styles/colours';
 import { spacing } from '../../../../../styles/spacing';
 import breakpoints from '../../../../../styles/breakpoints';
 
-export const BlogPosts = styled.ul`
+export const Events = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -12,13 +12,17 @@ export const BlogPosts = styled.ul`
   padding: 0;
 `;
 
-export const BlogPost = styled.li`
+export const Event = styled.li`
   display: block;
   padding: ${spacing(1.25)};
   width: 100%;
 
   ${breakpoints.tablet`
     width: 50%;
+  `};
+
+  ${breakpoints.desktop`
+    width: ${100 / 3}%;
   `};
 `;
 
