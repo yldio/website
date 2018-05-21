@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Contact, Line, Link, List, Office } from './styled';
 
-const ContactList = () => (
+const FooterContactList = () => (
   <List>
     <Contact>
       <address>
@@ -36,4 +36,4 @@ const ContactList = () => (
   </List>
 );
 
-export default ContactList;
+export default FooterContactList;

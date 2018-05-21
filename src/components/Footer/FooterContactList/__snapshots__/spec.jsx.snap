@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/FooterContactList snapshot 1`] = `
+<styled.ul>
+  <styled.li>
+    <address>
+      <styled.h6>
+        London
+      </styled.h6>
+      <styled.p>
+        124 Aldersgate Street
+      </styled.p>
+      <styled.p>
+        EC1A 4JQ
+      </styled.p>
+      <styled.p>
+        <Styled(Link)
+          href="tel:+44-203-514-4678"
+        >
+          +44 (0) 203 514 4678
+        </Styled(Link)>
+      </styled.p>
+      <styled.p>
+        <Styled(Link)
+          href="mailto:hello@yld.io"
+        >
+          hello@yld.io
+        </Styled(Link)>
+      </styled.p>
+    </address>
+  </styled.li>
+  <styled.li>
+    <address>
+      <styled.h6>
+        Lisbon
+      </styled.h6>
+      <styled.p>
+        Rua Ramalho Ortigão 8
+      </styled.p>
+      <styled.p>
+        3rd floor left
+      </styled.p>
+      <styled.p>
+        1070-230
+      </styled.p>
+    </address>
+  </styled.li>
+  <styled.li>
+    <address>
+      <styled.h6>
+        Porto
+      </styled.h6>
+      <styled.p>
+        124 Aldersgate Street
+      </styled.p>
+      <styled.p>
+        EC1A 4JQ
+      </styled.p>
+      <styled.p>
+        1070-230
+      </styled.p>
+    </address>
+  </styled.li>
+</styled.ul>
+`;
