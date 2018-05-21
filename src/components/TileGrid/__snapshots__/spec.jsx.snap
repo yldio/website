@@ -5,3 +5,25 @@ exports[`components/TileGrid snapshot 1`] = `
   className="sc-ifAKCX cNJjXZ"
 />
 `;
+
+exports[`components/TileGrid snapshot with tiles 1`] = `
+<ul
+  className="sc-bwzfXH eOrwOX"
+>
+  <styled.li
+    colour="normal"
+  >
+    Hello
+  </styled.li>
+  <styled.li
+    colour="dark"
+  >
+    World
+  </styled.li>
+  <styled.li
+    colour="darker"
+  >
+    !
+  </styled.li>
+</ul>
+`;
