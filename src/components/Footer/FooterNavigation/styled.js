@@ -12,17 +12,17 @@ export const Category = styled.ul`
 `;
 
 export const Item = styled.li`
-  color: ${props => (props.title ? 'FFFFFF' : footerText)};
+  color: ${props => (props.header ? 'FFFFFF' : footerText)};
   margin-bottom: ${spacing()};
   margin-top: 0;
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: ${props => (props.title ? 500 : 400)};
+  font-weight: ${props => (props.header ? 500 : 400)};
 `;
 
-export const Nav = styled.div`
+export const Nav = styled.nav`
   display: flex;
-  margin-top: ${spacing(5)};
+  margin: ${spacing(5)} 0;
 `;
 
 export const Link = styled(DefaultLink)`

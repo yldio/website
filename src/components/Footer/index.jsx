@@ -2,14 +2,16 @@ import React from 'react';
 
 import { Container, StyledFooter } from './styled';
 
-import ContactList from './FooterContactList';
-import Navigation from './FooterNavigation';
+import FooterContactList from './FooterContactList';
+import FooterNavigation from './FooterNavigation';
+import FooterClosing from './FooterClosing';
 
 const Footer = () => (
   <StyledFooter>
     <Container>
-      <ContactList />
-      <Navigation />
+      <FooterContactList />
+      <FooterNavigation />
+      <FooterClosing />
     </Container>
   </StyledFooter>
 );

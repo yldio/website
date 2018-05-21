@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/FooterNavigation snapshot 1`] = `
-<styled.div>
+<styled.nav>
   <styled.ul>
     <styled.li
-      title={true}
+      header={true}
     >
       What we do
     </styled.li>
@@ -32,7 +32,7 @@ exports[`components/FooterNavigation snapshot 1`] = `
   </styled.ul>
   <styled.ul>
     <styled.li
-      title={true}
+      header={true}
     >
       Our work
     </styled.li>
@@ -53,7 +53,7 @@ exports[`components/FooterNavigation snapshot 1`] = `
   </styled.ul>
   <styled.ul>
     <styled.li
-      title={true}
+      header={true}
     >
       Who we are
     </styled.li>
@@ -74,7 +74,7 @@ exports[`components/FooterNavigation snapshot 1`] = `
   </styled.ul>
   <styled.ul>
     <styled.li
-      title={true}
+      header={true}
     >
       Our Community
     </styled.li>
@@ -100,5 +100,5 @@ exports[`components/FooterNavigation snapshot 1`] = `
       </Styled(Link)>
     </styled.li>
   </styled.ul>
-</styled.div>
+</styled.nav>
 `;

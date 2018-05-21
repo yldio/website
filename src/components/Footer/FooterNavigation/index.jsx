@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Nav, Category, Item, Link } from './styled';
 
-const Navigation = () => (
+const FooterNavigation = () => (
   <Nav>
     <Category>
-      <Item title>What we do</Item>
+      <Item header>What we do</Item>
       <Item>
         <Link href="/services">Services</Link>
       </Item>
@@ -17,7 +17,7 @@ const Navigation = () => (
       </Item>
     </Category>
     <Category>
-      <Item title>Our work</Item>
+      <Item header>Our work</Item>
       <Item>
         <Link href="/case-studies">Case Studies</Link>
       </Item>
@@ -26,7 +26,7 @@ const Navigation = () => (
       </Item>
     </Category>
     <Category>
-      <Item title>Who we are</Item>
+      <Item header>Who we are</Item>
       <Item>
         <Link href="/about-us">About Us</Link>
       </Item>
@@ -35,7 +35,7 @@ const Navigation = () => (
       </Item>
     </Category>
     <Category>
-      <Item title>Our Community</Item>
+      <Item header>Our Community</Item>
       <Item>
         <Link href="/talks">Talks</Link>
       </Item>
@@ -49,4 +49,4 @@ const Navigation = () => (
   </Nav>
 );
 
-export default Navigation;
+export default FooterNavigation;
