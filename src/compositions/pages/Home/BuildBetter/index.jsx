@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Button from '../../../../components/Button';
-import PageSection from '../../../../components/PageSection';
+import Button from 'components/Button';
+import PageSection from 'components/PageSection';
 import { Body, Title } from './styled';
 
 const BuildBetter = () => (

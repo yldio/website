@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { highlight, textOnDark } from '../../styles/colours';
+import { highlight, textOnDark } from 'styles/colours';
 
 export const withButtonStyles = Component => styled(Component)`
   background: ${highlight};

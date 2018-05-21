@@ -1,7 +1,7 @@
 import React from 'react';
 
-import PageSection from '../../../../components/PageSection';
-import PageSectionHeader from '../../../../components/PageSectionHeader';
+import PageSection from 'components/PageSection';
+import PageSectionHeader from 'components/PageSectionHeader';
 import RecentBlogPosts from './RecentBlogPosts';
 import UpcomingEvents from './UpcomingEvents';
 import { Rule } from './styled';

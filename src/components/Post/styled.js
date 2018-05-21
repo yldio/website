@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import Panel from '../Panel';
-import Rule from '../Rule';
-import { spacing } from '../../styles/spacing';
-import { textLight, textLighter } from '../../styles/colours';
+import Panel from 'components/Panel';
+import Rule from 'components/Rule';
+import { spacing } from 'styles/spacing';
+import { textLight, textLighter } from 'styles/colours';
 
 export const PostRule = styled(Rule)`
   margin: ${spacing(1.5)} ${spacing(-3)};
