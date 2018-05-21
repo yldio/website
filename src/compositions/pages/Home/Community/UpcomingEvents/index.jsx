@@ -15,7 +15,7 @@ const UpcomingEvents = () => (
         <Post
           date="2018-05-18T14:38:23.996+01:00"
           image="https://placekitten.com/128/128"
-          sourceLink="/people/nuno-job"
+          sourceLink="/events/digital-product-london"
           sourceText="Digital Product London"
           title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
         >
@@ -27,7 +27,7 @@ const UpcomingEvents = () => (
         <Post
           date="2018-05-18T14:38:23.996+01:00"
           image="https://placekitten.com/128/128"
-          sourceLink="/people/nuno-job"
+          sourceLink="/events/digital-product-london"
           sourceText="Digital Product London"
           title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
         >
@@ -39,7 +39,7 @@ const UpcomingEvents = () => (
         <Post
           date="2018-05-18T14:38:23.996+01:00"
           image="https://placekitten.com/128/128"
-          sourceLink="/people/nuno-job"
+          sourceLink="/events/digital-product-london"
           sourceText="Digital Product London"
           title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
         >
