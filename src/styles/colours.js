@@ -1,3 +1,5 @@
+export const footerText = '#F3F5FA';
+
 export const text = '#1C203C';
 export const textLight = '#3A4960';
 export const textLighter = '#637392';
