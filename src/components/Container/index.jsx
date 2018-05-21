@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { gridWidth, gridWidthWide, gridColWidth } from '../../styles/spacing';
+import { gridWidth, gridWidthWide, gridColWidth } from 'styles/spacing';
 
 const maxWidth = {
   normal: `${gridWidth + gridColWidth}px`,

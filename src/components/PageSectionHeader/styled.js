@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { gridColWidth, gridWidth, spacing } from '../../styles/spacing';
-import { textLight, textLighter } from '../../styles/colours';
+import { gridColWidth, gridWidth, spacing } from 'styles/spacing';
+import { textLight, textLighter } from 'styles/colours';
 
 export const Container = styled.header`
   display: flex;

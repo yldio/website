@@ -1,9 +1,9 @@
 import React from 'react';
 
-import CheckList, { Item } from '../../../../components/CheckList';
-import PageSection from '../../../../components/PageSection';
-import PageSectionHeader from '../../../../components/PageSectionHeader';
-import PageRule from '../../../../components/PageRule';
+import CheckList, { Item } from 'components/CheckList';
+import PageSection from 'components/PageSection';
+import PageSectionHeader from 'components/PageSectionHeader';
+import PageRule from 'components/PageRule';
 
 const WeEnable = () => (
   <PageSection>

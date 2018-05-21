@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 
-import HomePage from '../compositions/pages/Home';
+import HomePage from 'compositions/pages/Home';
 
 const IndexPage = () => (
   <Fragment>

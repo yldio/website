@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { highlight, text, textLight } from '../../../../styles/colours';
-import { gridWidth } from '../../../../styles/spacing';
+import { highlight, text, textLight } from 'styles/colours';
+import { gridWidth } from 'styles/spacing';
 
 export const Title = styled.h2`
   color: ${text};

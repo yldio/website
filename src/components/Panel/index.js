@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { spacing } from '../../styles/spacing';
+import { spacing } from 'styles/spacing';
 
 const Panel = styled.div`
   background-color: white;

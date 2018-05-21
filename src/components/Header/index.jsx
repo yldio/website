@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Logo from '../Logo';
-import Navigation from '../Navigation';
+import Logo from 'components/Logo';
+import Navigation from 'components/Navigation';
 import { Wrapper } from './styled';
 
 export default function Header() {

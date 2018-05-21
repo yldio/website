@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Button from '../../../../components/Button';
-import Link from '../../../../components/Link';
-import PageSection from '../../../../components/PageSection';
-import TileGrid, { Tile } from '../../../../components/TileGrid';
+import Button from 'components/Button';
+import Link from 'components/Link';
+import PageSection from 'components/PageSection';
+import TileGrid, { Tile } from 'components/TileGrid';
 import { CallToAction } from './styled';
 
 const CaseStudies = () => (

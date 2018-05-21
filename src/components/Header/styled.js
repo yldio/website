@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { gridColWidth } from '../../styles/spacing';
+import { gridColWidth } from 'styles/spacing';
 
 export const Wrapper = styled.header`
   background-color: white;
