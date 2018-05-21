@@ -41,6 +41,7 @@ export const Authored = styled.p`
 
 export const Body = styled.main`
   color: ${textLighter};
+  flex-grow: 1;
   font-size: 1.125rem;
   padding-bottom: ${spacing(1.5)};
 `;
@@ -50,5 +51,10 @@ export const Header = styled.header`
 `;
 
 export const Article = Panel.withComponent('article').extend`
+  display: flex;
+  flex-direction: column;
   padding: ${spacing(1.5)} ${spacing(3)};
+
+  height: ${props => (props.stretch ? '100%' : 'auto')};
+  width: ${props => (props.stretch ? '100%' : 'auto')};
 `;

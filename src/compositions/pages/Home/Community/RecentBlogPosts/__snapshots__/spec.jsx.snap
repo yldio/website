@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
-<React.Fragment>
+<section>
   <header>
     <styled.h3>
       Recent Blog Posts
@@ -14,6 +14,7 @@ exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
         image="https://placekitten.com/128/128"
         sourceLink="/people/nuno-job"
         sourceText="Nuno Job"
+        stretch={true}
         title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
       >
         I think its one of the simplest yet most powerful extensions inVision hasn't launched. As animation and transition in inVision evolve it should grow even more powerful
@@ -25,6 +26,7 @@ exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
         image="https://placekitten.com/128/128"
         sourceLink="/people/nuno-job"
         sourceText="Nuno Job"
+        stretch={true}
         title="We’re Hiring! YLD on the look out for Front-End Devs and DevOps."
       >
         I think its one of the simplest yet most powerful extensions inVision hasn't launched. As animation and transition in inVision evolve it should grow even more powerful
@@ -37,5 +39,5 @@ exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
   >
     View Blog
   </Button>
-</React.Fragment>
+</section>
 `;

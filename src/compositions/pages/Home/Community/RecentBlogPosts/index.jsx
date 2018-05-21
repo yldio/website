@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Post from '../../../../../components/Post';
 import { BlogPost, BlogPosts, Title } from './styled';
 
@@ -6,7 +6,7 @@ import Button from '../../../../../components/Button';
 import Link from '../../../../../components/Link';
 
 const RecentBlogPosts = () => (
-  <Fragment>
+  <section>
     <header>
       <Title>Recent Blog Posts</Title>
     </header>
@@ -41,7 +41,7 @@ const RecentBlogPosts = () => (
     <Button component={Link} href="/blog">
       View Blog
     </Button>
-  </Fragment>
+  </section>
 );
 
 export default RecentBlogPosts;
