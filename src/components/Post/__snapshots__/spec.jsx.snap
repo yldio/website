@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Post snapshot 1`] = `
-<styled.article>
+<styled.article
+  stretch={true}
+>
   <styled.header>
     <styled.h4>
       We’re Hiring! YLD on the look out for Front-End Devs and DevOps.

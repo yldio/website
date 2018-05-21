@@ -7,5 +7,7 @@ exports[`compositions/Home/Community snapshot 1`] = `
     title="Community"
   />
   <RecentBlogPosts />
+  <Styled(styled.hr) />
+  <UpcomingEvents />
 </styled.section>
 `;
