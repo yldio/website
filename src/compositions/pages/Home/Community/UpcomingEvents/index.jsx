@@ -48,8 +48,8 @@ const UpcomingEvents = () => (
         </Post>
       </Event>
     </Events>
-    <Button component={Link} href="/blog">
-      View Blog
+    <Button component={Link} href="/events">
+      View Events
     </Button>
   </section>
 );

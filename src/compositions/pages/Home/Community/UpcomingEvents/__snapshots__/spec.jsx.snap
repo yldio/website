@@ -47,9 +47,9 @@ exports[`compositions/Home/Community/UpcomingEvents snapshot 1`] = `
   </styled.ul>
   <Button
     component={[Function]}
-    href="/blog"
+    href="/events"
   >
-    View Blog
+    View Events
   </Button>
 </section>
 `;
