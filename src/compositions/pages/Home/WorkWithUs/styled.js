@@ -7,8 +7,8 @@ import { highlight, textLight } from 'styles/colours';
 import { spacing } from 'styles/spacing';
 
 export const Section = Container.withComponent('section').extend`
-  margin-bottom: ${spacing(5)};
-  margin-top: ${spacing(5)};
+  margin-bottom: ${spacing(7)};
+  margin-top: ${spacing(7)};
   text-align: center;
 `;
 

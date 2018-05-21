@@ -3,15 +3,23 @@ import styled from 'styled-components';
 import DefaultLink from 'components/Link';
 import { footerText } from 'styles/colours';
 import { spacing } from 'styles/spacing';
+import breakpoints from 'styles/breakpoints';
 
 export const Contact = styled.li`
-  width: ${100 / 3}%;
+  padding: ${spacing(2)};
+  width: 50%;
+
+  ${breakpoints.tablet`
+    margin-bottom: 0;
+    width: ${100 / 3}%;
+  `};
 `;
 
 export const List = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  margin: 0;
+  margin: -${spacing(2)};
   padding: 0;
 `;
 

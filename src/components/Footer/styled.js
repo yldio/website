@@ -6,7 +6,7 @@ import { spacing } from 'styles/spacing';
 
 export const Container = DefaultContainer.withComponent('section').extend`
   padding-bottom: ${spacing(5)};
-  padding-top: ${spacing(5)};
+  padding-top: ${spacing(7)};
 `;
 
 export const StyledFooter = styled.footer`
