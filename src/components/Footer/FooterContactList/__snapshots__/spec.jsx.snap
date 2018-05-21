@@ -51,10 +51,10 @@ exports[`components/FooterContactList snapshot 1`] = `
         Porto
       </styled.h6>
       <styled.p>
-        124 Aldersgate Street
+        Rua Ramalho Ortigão 8
       </styled.p>
       <styled.p>
-        EC1A 4JQ
+        3rd floor left
       </styled.p>
       <styled.p>
         1070-230
