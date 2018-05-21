@@ -28,8 +28,8 @@ const FooterContactList = () => (
     <Contact>
       <address>
         <Office>Porto</Office>
-        <Line>124 Aldersgate Street</Line>
-        <Line>EC1A 4JQ</Line>
+        <Line>Rua Ramalho Ortigão 8</Line>
+        <Line>3rd floor left</Line>
         <Line>1070-230</Line>
       </address>
     </Contact>
