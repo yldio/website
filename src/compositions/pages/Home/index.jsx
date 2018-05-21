@@ -7,6 +7,7 @@ import WeEnable from './WeEnable';
 import HowWeDoIt from './HowWeDoIt';
 import Community from './Community';
 import ServicesAboutUs from './ServicesAboutUs';
+import WorkWithUs from './WorkWithUs';
 
 const HomePage = () => (
   <Fragment>
@@ -17,6 +18,7 @@ const HomePage = () => (
     <HowWeDoIt />
     <Community />
     <ServicesAboutUs />
+    <WorkWithUs />
   </Fragment>
 );
 
