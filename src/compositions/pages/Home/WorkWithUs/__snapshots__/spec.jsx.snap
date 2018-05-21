@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/homepage/WorkWithUs snapshot 1`] = `
+<styled.section
+  wide={true}
+>
+  <styled.h4>
+    Work with us
+  </styled.h4>
+  <styled.p>
+    <Styled(Link)
+      href="mailto:hello@yld.io"
+    >
+      hello@yld.io
+    </Styled(Link)>
+     / 
+    <Styled(Link)
+      href="tel:+44-203-514-4678"
+    >
+      +44 (0) 203 514 4678
+    </Styled(Link)>
+  </styled.p>
+</styled.section>
+`;
