@@ -1,11 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/TileGrid snapshot 1`] = `
-<ul
-  className="sc-ifAKCX cNJjXZ"
-/>
-`;
-
 exports[`components/TileGrid snapshot with tiles 1`] = `
 <ul
   className="sc-bwzfXH eOrwOX"
