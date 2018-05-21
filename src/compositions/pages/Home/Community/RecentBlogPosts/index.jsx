@@ -1,9 +1,10 @@
 import React from 'react';
-import Post from 'components/Post';
-import { BlogPost, BlogPosts, Title } from './styled';
 
 import Button from 'components/Button';
 import Link from 'components/Link';
+import Post from 'components/Post';
+
+import { BlogPost, BlogPosts, Title } from './styled';
 
 const RecentBlogPosts = () => (
   <section>

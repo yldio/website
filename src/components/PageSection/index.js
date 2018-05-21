@@ -1,4 +1,4 @@
-import Container from '../Container';
+import Container from 'components/Container';
 import { spacing } from 'styles/spacing';
 
 const PageSection = Container.withComponent('section').extend`
