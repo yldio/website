@@ -1,8 +1,8 @@
 import React from 'react';
 
 import IndustryGrid from './IndustryGrid';
-import PageSection from '../../../../components/PageSection';
-import PageSectionHeader from '../../../../components/PageSectionHeader';
+import PageSection from 'components/PageSection';
+import PageSectionHeader from 'components/PageSectionHeader';
 
 const Industries = () => (
   <PageSection>

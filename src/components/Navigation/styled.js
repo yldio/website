@@ -1,8 +1,8 @@
 import GatsbyLink from 'gatsby-link';
 import styled from 'styled-components';
 
-import { highlight, textLight, textOnDark } from '../../styles/colours';
-import { spacing } from '../../styles/spacing';
+import { highlight, textLight, textOnDark } from 'styles/colours';
+import { spacing } from 'styles/spacing';
 
 export const List = styled.ul`
   list-style-type: none;

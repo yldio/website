@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { spacing } from '../../../../styles/spacing';
+import { spacing } from 'styles/spacing';
 
 export const CallToAction = styled.p`
   margin-bottom: 0;

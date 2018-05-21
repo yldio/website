@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { format } from 'date-fns';
 
-import Link from '../../components/Link';
+import Link from 'components/Link';
 
 import {
   Article,

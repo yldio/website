@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import breakpoints from '../../styles/breakpoints';
-import { spacing } from '../../styles/spacing';
-import { textLighter } from '../../styles/colours';
+import breakpoints from 'styles/breakpoints';
+import { spacing } from 'styles/spacing';
+import { textLighter } from 'styles/colours';
 
 export const List = styled.ul`
   display: flex;

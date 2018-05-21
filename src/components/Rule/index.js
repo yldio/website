@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { borderLight } from '../../styles/colours';
+import { borderLight } from 'styles/colours';
 
 const Rule = styled.hr`
   background-color: ${borderLight};

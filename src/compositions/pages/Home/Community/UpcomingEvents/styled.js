@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { textLight } from '../../../../../styles/colours';
-import { spacing } from '../../../../../styles/spacing';
-import breakpoints from '../../../../../styles/breakpoints';
+import { textLight } from 'styles/colours';
+import { spacing } from 'styles/spacing';
+import breakpoints from 'styles/breakpoints';
 
 export const Events = styled.ul`
   display: flex;

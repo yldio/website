@@ -6,11 +6,11 @@ import {
   text,
   textLighter,
   textOnDark,
-} from '../../../../../styles/colours';
+} from 'styles/colours';
 
-import { spacing } from '../../../../../styles/spacing';
-import breakpoints from '../../../../../styles/breakpoints';
-import Panel from '../../../../../components/Panel';
+import { spacing } from 'styles/spacing';
+import breakpoints from 'styles/breakpoints';
+import Panel from 'components/Panel';
 
 export const Item = styled.li`
   padding: ${spacing(1.5)};

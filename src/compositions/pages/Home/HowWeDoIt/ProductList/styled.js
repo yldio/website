@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { spacing } from '../../../../../styles/spacing';
-import breakpoints from '../../../../../styles/breakpoints';
-import Panel from '../../../../../components/Panel';
+import { spacing } from 'styles/spacing';
+import breakpoints from 'styles/breakpoints';
+import Panel from 'components/Panel';
 
-import { textLight, textLighter } from '../../../../../styles/colours';
+import { textLight, textLighter } from 'styles/colours';
 
 export const Container = Panel.withComponent('ul').extend`
   display: flex;

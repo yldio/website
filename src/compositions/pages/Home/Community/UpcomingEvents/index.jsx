@@ -1,9 +1,9 @@
 import React from 'react';
-import Post from '../../../../../components/Post';
+import Post from 'components/Post';
 import { Event, Events, Title } from './styled';
 
-import Button from '../../../../../components/Button';
-import Link from '../../../../../components/Link';
+import Button from 'components/Button';
+import Link from 'components/Link';
 
 const UpcomingEvents = () => (
   <section>

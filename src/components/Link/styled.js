@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { highlight } from '../../styles/colours';
+import { highlight } from 'styles/colours';
 
 export const StyledLink = styled.a`
   color: ${highlight};

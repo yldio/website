@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import breakpoints from '../../../styles/breakpoints';
+import breakpoints from 'styles/breakpoints';
 
 import {
   highlight,
   highlightDark,
   highlightDarker,
   textOnDark,
-} from '../../../styles/colours';
+} from 'styles/colours';
 
-import { spacing } from '../../../styles/spacing';
+import { spacing } from 'styles/spacing';
 
 const colours = {
   normal: highlight,
