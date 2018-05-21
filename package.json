@@ -40,6 +40,7 @@
     "cypress": "cypress open"
   },
   "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.1",
     "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -47,6 +48,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-cypress": "^2.0.1",
     "eslint-plugin-import": "^2.11.0",
