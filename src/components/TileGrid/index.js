@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Tile from './Tile';
 
 const TileGrid = styled.ul`
   display: flex;
@@ -10,4 +9,4 @@ const TileGrid = styled.ul`
 
 export default TileGrid;
 
-export { Tile };
+export { Tile } from './styled';

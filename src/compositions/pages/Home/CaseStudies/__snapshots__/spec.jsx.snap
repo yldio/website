@@ -5,30 +5,50 @@ exports[`compositions/homepage/CaseStudies snapshot 1`] = `
   wide={true}
 >
   <styled.ul>
-    <Tile
-      colour="normal"
-      title="Trainline"
-    >
-      A legacy platform that faced a huge pressure to have an updated interface.
-    </Tile>
-    <Tile
+    <styled.li>
+      <styled.div>
+        <styled.h5>
+          Trainline
+        </styled.h5>
+        <styled.p>
+          A legacy platform that faced a huge pressure to have an updated interface.
+        </styled.p>
+      </styled.div>
+    </styled.li>
+    <styled.li
       colour="darker"
-      title="The Economist"
     >
-      A legacy platform that faced a huge pressure to have an updated interface.
-    </Tile>
-    <Tile
+      <styled.div>
+        <styled.h5>
+          The Economist
+        </styled.h5>
+        <styled.p>
+          A legacy platform that faced a huge pressure to have an updated interface.
+        </styled.p>
+      </styled.div>
+    </styled.li>
+    <styled.li
       colour="dark"
-      title="Joyent"
     >
-      A legacy platform that faced a huge pressure to have an updated interface.
-    </Tile>
-    <Tile
-      colour="normal"
-      title="DoctorLink"
-    >
-      A legacy platform that faced a huge pressure to have an updated interface.
-    </Tile>
+      <styled.div>
+        <styled.h5>
+          Joyent
+        </styled.h5>
+        <styled.p>
+          A legacy platform that faced a huge pressure to have an updated interface.
+        </styled.p>
+      </styled.div>
+    </styled.li>
+    <styled.li>
+      <styled.div>
+        <styled.h5>
+          Doctor Link
+        </styled.h5>
+        <styled.p>
+          A legacy platform that faced a huge pressure to have an updated interface.
+        </styled.p>
+      </styled.div>
+    </styled.li>
   </styled.ul>
   <styled.p>
     <Button

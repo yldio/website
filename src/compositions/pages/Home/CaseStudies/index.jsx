@@ -4,26 +4,52 @@ import Button from 'components/Button';
 import Link from 'components/Link';
 import PageSection from 'components/PageSection';
 import TileGrid, { Tile } from 'components/TileGrid';
-import { CallToAction } from './styled';
+
+import {
+  CallToAction,
+  TileContent,
+  TileContentTitle,
+  TileContentBody,
+} from './styled';
 
 const CaseStudies = () => (
   <PageSection wide>
     <TileGrid>
-      <Tile title="Trainline">
-        A legacy platform that faced a huge pressure to have an updated
-        interface.
+      <Tile>
+        <TileContent>
+          <TileContentTitle>Trainline</TileContentTitle>
+          <TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated
+            interface.
+          </TileContentBody>
+        </TileContent>
       </Tile>
-      <Tile colour="darker" title="The Economist">
-        A legacy platform that faced a huge pressure to have an updated
-        interface.
+      <Tile colour="darker">
+        <TileContent>
+          <TileContentTitle>The Economist</TileContentTitle>
+          <TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated
+            interface.
+          </TileContentBody>
+        </TileContent>
       </Tile>
-      <Tile colour="dark" title="Joyent">
-        A legacy platform that faced a huge pressure to have an updated
-        interface.
+      <Tile colour="dark">
+        <TileContent>
+          <TileContentTitle>Joyent</TileContentTitle>
+          <TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated
+            interface.
+          </TileContentBody>
+        </TileContent>
       </Tile>
-      <Tile title="DoctorLink">
-        A legacy platform that faced a huge pressure to have an updated
-        interface.
+      <Tile>
+        <TileContent>
+          <TileContentTitle>Doctor Link</TileContentTitle>
+          <TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated
+            interface.
+          </TileContentBody>
+        </TileContent>
       </Tile>
     </TileGrid>
     <CallToAction>

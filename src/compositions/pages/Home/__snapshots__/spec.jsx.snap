@@ -8,5 +8,6 @@ exports[`compositions/homepage/Home snapshot 1`] = `
   <WeEnable />
   <HowWeDoIt />
   <Community />
+  <ServicesAboutUs />
 </React.Fragment>
 `;

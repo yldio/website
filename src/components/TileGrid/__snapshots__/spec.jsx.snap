@@ -1,7 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/TileGrid snapshot 1`] = `
+exports[`components/TileGrid snapshot with tiles 1`] = `
 <ul
-  className="sc-ifAKCX cNJjXZ"
-/>
+  className="sc-bwzfXH eOrwOX"
+>
+  <styled.li
+    colour="normal"
+  >
+    Hello
+  </styled.li>
+  <styled.li
+    colour="dark"
+  >
+    World
+  </styled.li>
+  <styled.li
+    colour="darker"
+  >
+    !
+  </styled.li>
+</ul>
 `;
