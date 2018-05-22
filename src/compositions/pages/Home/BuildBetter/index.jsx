@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from 'components/Button';
 import PageSection from 'components/PageSection';
-import { Body, Title } from './styled';
+import { Body, Illustration1, Illustration2, Title } from './styled';
 
 const BuildBetter = () => (
   <PageSection>
@@ -17,6 +17,8 @@ const BuildBetter = () => (
       experiences.
     </Body>
     <Button href="#case-studies">Case Studies ↓</Button>
+    <Illustration1 />
+    <Illustration2 />
   </PageSection>
 );
 

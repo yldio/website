@@ -21,6 +21,7 @@ export default function applyGlobalStyles() {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: 1.5;
+      overflow-x: hidden;
     }
   `;
 }
