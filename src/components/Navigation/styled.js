@@ -32,11 +32,12 @@ export const Link = styled(BaseLink)`
     bottom: 0;
     background-color: ${highlight};
     content: '';
-    display: none;
+    opacity: 0;
     height: 2px;
     left: ${spacing(1.5)};
     position: absolute;
-    width: calc(100% - ${paddedRight(spacing(4.5), spacing(3))};);
+    transition: opacity 200ms;
+    width: calc(100% - ${paddedRight(spacing(4.5), spacing(3))});
   }
 
   &:hover {
@@ -45,7 +46,7 @@ export const Link = styled(BaseLink)`
 
   &:hover:after,
   &.${activeClassName}:after {
-    display: block;
+    opacity: 1;
   }
 `;
 
