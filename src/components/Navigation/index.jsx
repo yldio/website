@@ -1,24 +1,26 @@
 import React from 'react';
-import { Link, LastLink, SecondLastLink, List, Item } from './styled';
+import { Link, ButtonLink, List, Item } from './styled';
 
 export default function Navigation() {
   return (
     <nav>
       <List>
         <Item>
-          <Link to="/case-studies">Case Studies</Link>
+          <Link href="/case-studies">Case Studies</Link>
         </Item>
         <Item>
-          <Link to="/services">Services</Link>
+          <Link href="/services">Services</Link>
         </Item>
         <Item>
-          <Link to="/community">Community</Link>
+          <Link href="/community">Community</Link>
         </Item>
         <Item>
-          <SecondLastLink to="/about-us">About Us</SecondLastLink>
+          <Link padRight href="/about-us">
+            About Us
+          </Link>
         </Item>
         <Item>
-          <LastLink to="/join-us">Join Us</LastLink>
+          <ButtonLink href="/join-us">Join Us</ButtonLink>
         </Item>
       </List>
     </nav>

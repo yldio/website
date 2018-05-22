@@ -10,6 +10,7 @@ exports[`components/Link external link snapshot 1`] = `
 
 exports[`components/Link internal link snapshot 1`] = `
 <Styled(GatsbyLink)
+  activeClassName="___active"
   to="/test"
 >
   Test
