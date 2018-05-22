@@ -17,5 +17,7 @@ exports[`compositions/homepage/BuildBetter snapshot 1`] = `
   >
     Case Studies ↓
   </Button>
+  <styled.div />
+  <styled.div />
 </styled.section>
 `;

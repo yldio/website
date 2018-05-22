@@ -54,6 +54,6 @@ export const Grid = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: ${spacing(8)} ${spacing(-1.5)};
+  margin: ${spacing(8)} ${spacing(-1.5)} 0 ${spacing(-1.5)};
   padding: 0;
 `;
