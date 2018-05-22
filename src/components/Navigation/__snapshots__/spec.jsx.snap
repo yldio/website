@@ -4,39 +4,40 @@ exports[`components/Navigation snapshot 1`] = `
 <nav>
   <styled.ul>
     <styled.li>
-      <Styled(GatsbyLink)
-        to="/case-studies"
+      <Styled(Link)
+        href="/case-studies"
       >
         Case Studies
-      </Styled(GatsbyLink)>
+      </Styled(Link)>
     </styled.li>
     <styled.li>
-      <Styled(GatsbyLink)
-        to="/services"
+      <Styled(Link)
+        href="/services"
       >
         Services
-      </Styled(GatsbyLink)>
+      </Styled(Link)>
     </styled.li>
     <styled.li>
-      <Styled(GatsbyLink)
-        to="/community"
+      <Styled(Link)
+        href="/community"
       >
         Community
-      </Styled(GatsbyLink)>
+      </Styled(Link)>
     </styled.li>
     <styled.li>
-      <Styled(GatsbyLink)
-        to="/about-us"
+      <Styled(Link)
+        href="/about-us"
+        padRight={true}
       >
         About Us
-      </Styled(GatsbyLink)>
+      </Styled(Link)>
     </styled.li>
     <styled.li>
-      <Styled(GatsbyLink)
-        to="/join-us"
+      <Styled(Link)
+        href="/join-us"
       >
         Join Us
-      </Styled(GatsbyLink)>
+      </Styled(Link)>
     </styled.li>
   </styled.ul>
 </nav>

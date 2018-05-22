@@ -21,6 +21,7 @@ exports[`components/Post snapshot 1`] = `
     />
     <styled.p>
       <Link
+        activeClassName="___active"
         href="/people/nuno-job"
       >
         Nuno Job
@@ -56,6 +57,7 @@ exports[`components/Post snapshot with stretch=false 1`] = `
     />
     <styled.p>
       <Link
+        activeClassName="___active"
         href="/people/nuno-job"
       >
         Nuno Job

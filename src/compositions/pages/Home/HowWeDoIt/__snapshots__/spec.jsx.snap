@@ -9,6 +9,7 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
           We thrive by working, thinking, and growing like a technology driven organisation. This is our mission, and our promise. Here’s how we do it:
         </styled.span>
         <Link
+          activeClassName="___active"
           href="/case-studies"
         >
           Learn how we transform organisations →

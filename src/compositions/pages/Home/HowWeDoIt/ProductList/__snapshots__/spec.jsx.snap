@@ -23,6 +23,7 @@ exports[`components/ProductList snapshot 1`] = `
     </styled.ul>
     <styled.footer>
       <Link
+        activeClassName="___active"
         href="/services#approach"
       >
         More on Approach →
@@ -53,6 +54,7 @@ exports[`components/ProductList snapshot 1`] = `
     </styled.ul>
     <styled.footer>
       <Link
+        activeClassName="___active"
         href="/services#design"
       >
         More on Design →
@@ -86,6 +88,7 @@ exports[`components/ProductList snapshot 1`] = `
     </styled.ul>
     <styled.footer>
       <Link
+        activeClassName="___active"
         href="/services#engineering"
       >
         More on Engineering →
@@ -119,6 +122,7 @@ exports[`components/ProductList snapshot 1`] = `
     </styled.ul>
     <styled.footer>
       <Link
+        activeClassName="___active"
         href="/services#training"
       >
         More on Training →
