@@ -27,3 +27,9 @@
 Cypress.Commands.add('getComponent', selector => {
   cy.get(`[data-selector="${selector}"]`);
 });
+
+Cypress.Commands.add('pathEq', path => {
+  cy.location().should(loc => {
+    expect(loc.pathname).to.eq(path);
+  });
+});

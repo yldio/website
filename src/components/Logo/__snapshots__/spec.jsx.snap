@@ -2,6 +2,7 @@
 
 exports[`components/Logo snapshot 1`] = `
 <GatsbyLink
+  data-selector="component:logo"
   to="/"
 >
   <styled__LogoImage
