@@ -3,12 +3,12 @@
 exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
 <section>
   <header>
-    <styled.h3>
+    <styled__Title>
       Recent Blog Posts
-    </styled.h3>
+    </styled__Title>
   </header>
-  <styled.ul>
-    <styled.li>
+  <styled__BlogPosts>
+    <styled__BlogPost>
       <Post
         date="2018-05-18T14:38:23.996+01:00"
         image="https://placekitten.com/128/128"
@@ -19,8 +19,8 @@ exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
       >
         I think its one of the simplest yet most powerful extensions inVision hasn't launched. As animation and transition in inVision evolve it should grow even more powerful
       </Post>
-    </styled.li>
-    <styled.li>
+    </styled__BlogPost>
+    <styled__BlogPost>
       <Post
         date="2018-05-18T14:38:23.996+01:00"
         image="https://placekitten.com/128/128"
@@ -31,8 +31,8 @@ exports[`compositions/Home/Community/RecentBlogPosts snapshot 1`] = `
       >
         I think its one of the simplest yet most powerful extensions inVision hasn't launched. As animation and transition in inVision evolve it should grow even more powerful
       </Post>
-    </styled.li>
-  </styled.ul>
+    </styled__BlogPost>
+  </styled__BlogPosts>
   <Button
     component={[Function]}
     href="/blog"

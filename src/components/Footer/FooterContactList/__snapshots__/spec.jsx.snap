@@ -1,65 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/FooterContactList snapshot 1`] = `
-<styled.ul>
-  <styled.li>
+<styled__List>
+  <styled__Contact>
     <address>
-      <styled.h6>
+      <styled__Line>
         London
-      </styled.h6>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         124 Aldersgate Street
-      </styled.p>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         EC1A 4JQ
-      </styled.p>
-      <styled.p>
-        <Styled(Link)
+      </styled__Line>
+      <styled__Line>
+        <styled__Link
           href="tel:+44-203-514-4678"
         >
           +44 (0) 203 514 4678
-        </Styled(Link)>
-      </styled.p>
-      <styled.p>
-        <Styled(Link)
+        </styled__Link>
+      </styled__Line>
+      <styled__Line>
+        <styled__Link
           href="mailto:hello@yld.io"
         >
           hello@yld.io
-        </Styled(Link)>
-      </styled.p>
+        </styled__Link>
+      </styled__Line>
     </address>
-  </styled.li>
-  <styled.li>
+  </styled__Contact>
+  <styled__Contact>
     <address>
-      <styled.h6>
+      <styled__Line>
         Lisbon
-      </styled.h6>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         Rua Ramalho Ortigão 8
-      </styled.p>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         3rd floor left
-      </styled.p>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         1070-230
-      </styled.p>
+      </styled__Line>
     </address>
-  </styled.li>
-  <styled.li>
+  </styled__Contact>
+  <styled__Contact>
     <address>
-      <styled.h6>
+      <styled__Line>
         Porto
-      </styled.h6>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         Rua Ramalho Ortigão 8
-      </styled.p>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         3rd floor left
-      </styled.p>
-      <styled.p>
+      </styled__Line>
+      <styled__Line>
         1070-230
-      </styled.p>
+      </styled__Line>
     </address>
-  </styled.li>
-</styled.ul>
+  </styled__Contact>
+</styled__List>
 `;

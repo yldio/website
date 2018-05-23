@@ -5,7 +5,7 @@ exports[`components/PageRule snapshot 1`] = `
   margin: 100px 0;
 }
 
-<styled.hr
+<Rule
   className="c0"
 />
 `;

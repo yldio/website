@@ -1,62 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/CaseStudies snapshot 1`] = `
-<styled.section
+<Container
   wide={true}
 >
-  <styled.ul>
-    <styled.li>
-      <styled.div>
-        <styled.h5>
+  <TileGrid>
+    <styled__Tile>
+      <styled__TileContent>
+        <styled__TileContentTitle>
           Trainline
-        </styled.h5>
-        <styled.p>
+        </styled__TileContentTitle>
+        <styled__TileContentBody>
           A legacy platform that faced a huge pressure to have an updated interface.
-        </styled.p>
-      </styled.div>
-    </styled.li>
-    <styled.li
+        </styled__TileContentBody>
+      </styled__TileContent>
+    </styled__Tile>
+    <styled__Tile
       colour="darker"
     >
-      <styled.div>
-        <styled.h5>
+      <styled__TileContent>
+        <styled__TileContentTitle>
           The Economist
-        </styled.h5>
-        <styled.p>
+        </styled__TileContentTitle>
+        <styled__TileContentBody>
           A legacy platform that faced a huge pressure to have an updated interface.
-        </styled.p>
-      </styled.div>
-    </styled.li>
-    <styled.li
+        </styled__TileContentBody>
+      </styled__TileContent>
+    </styled__Tile>
+    <styled__Tile
       colour="dark"
     >
-      <styled.div>
-        <styled.h5>
+      <styled__TileContent>
+        <styled__TileContentTitle>
           Joyent
-        </styled.h5>
-        <styled.p>
+        </styled__TileContentTitle>
+        <styled__TileContentBody>
           A legacy platform that faced a huge pressure to have an updated interface.
-        </styled.p>
-      </styled.div>
-    </styled.li>
-    <styled.li>
-      <styled.div>
-        <styled.h5>
+        </styled__TileContentBody>
+      </styled__TileContent>
+    </styled__Tile>
+    <styled__Tile>
+      <styled__TileContent>
+        <styled__TileContentTitle>
           Doctor Link
-        </styled.h5>
-        <styled.p>
+        </styled__TileContentTitle>
+        <styled__TileContentBody>
           A legacy platform that faced a huge pressure to have an updated interface.
-        </styled.p>
-      </styled.div>
-    </styled.li>
-  </styled.ul>
-  <styled.p>
+        </styled__TileContentBody>
+      </styled__TileContent>
+    </styled__Tile>
+  </TileGrid>
+  <styled__CallToAction>
     <Button
       component={[Function]}
       href="/case-studies"
     >
       View More
     </Button>
-  </styled.p>
-</styled.section>
+  </styled__CallToAction>
+</Container>
 `;

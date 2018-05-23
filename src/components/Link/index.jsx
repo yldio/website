@@ -1,12 +1,9 @@
-import GatsbyLink from 'gatsby-link';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledLink } from './styled';
+import { InternalLink, StyledLink } from './styled';
 
 const internalRegExp = /^\/(?!\/)/;
 export const isInternal = href => internalRegExp.test(href);
-
-const InternalLink = StyledLink.withComponent(GatsbyLink);
 
 export const activeClassName = '___active';
 

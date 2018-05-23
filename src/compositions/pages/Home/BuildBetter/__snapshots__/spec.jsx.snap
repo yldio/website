@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/BuildBetter snapshot 1`] = `
-<styled.section>
-  <styled.h2>
+<Container>
+  <styled__Title>
     Build better
-  </styled.h2>
-  <styled.p>
+  </styled__Title>
+  <styled__Body>
     Great companies go beyond their customers expectations, over and over again. Building this capability in your company is our mission, and our promise.
-  </styled.p>
-  <styled.p>
+  </styled__Body>
+  <styled__Body>
     We enable your organisation to deliver world-class technology and customer experiences.
-  </styled.p>
+  </styled__Body>
   <Button
     component="a"
     href="#case-studies"
   >
     Case Studies ↓
   </Button>
-</styled.section>
+</Container>
 `;
