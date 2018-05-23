@@ -5,7 +5,7 @@ exports[`components/ProductList snapshot 1`] = `
   <styled__ProductColumn>
     <styled__Image
       alt="our approach"
-      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+      src="/src/compositions/ProductList/placeholder.svg"
     />
     <styled__Title>
       Our Approach
@@ -33,7 +33,7 @@ exports[`components/ProductList snapshot 1`] = `
   <styled__ProductColumn>
     <styled__Image
       alt="design & product"
-      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+      src="/src/compositions/ProductList/placeholder.svg"
     />
     <styled__Title>
       Design & Product
@@ -64,7 +64,7 @@ exports[`components/ProductList snapshot 1`] = `
   <styled__ProductColumn>
     <styled__Image
       alt="engineering"
-      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+      src="/src/compositions/ProductList/placeholder.svg"
     />
     <styled__Title>
       Engineering
@@ -98,7 +98,7 @@ exports[`components/ProductList snapshot 1`] = `
   <styled__ProductColumn>
     <styled__Image
       alt="training"
-      src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
+      src="/src/compositions/ProductList/placeholder.svg"
     />
     <styled__Title>
       Training
