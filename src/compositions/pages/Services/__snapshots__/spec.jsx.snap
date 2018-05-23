@@ -17,5 +17,7 @@ exports[`compositions/pages/Services snapshot 1`] = `
   <Container>
     <ServiceList />
   </Container>
+  <ServicesTiles />
+  <WorkWithUs />
 </React.Fragment>
 `;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`compositions/homepage/WorkWithUs snapshot 1`] = `
+exports[`compositions/WorkWithUs snapshot 1`] = `
 <Container
   wide={true}
 >

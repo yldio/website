@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`compositions/homepage/ServicesAboutUs snapshot 1`] = `
+exports[`compositions/pages/Services/Tiles snapshot 1`] = `
 <Container
   wide={true}
 >
@@ -8,10 +8,10 @@ exports[`compositions/homepage/ServicesAboutUs snapshot 1`] = `
     <styled__Tile>
       <styled__TileContent>
         <styled__TileContentTitle>
-          Services
+          About Us
         </styled__TileContentTitle>
         <styled__TileContentBody>
-          We enable your organisation to deliver world-class technology and user experiences, long after we leave.
+          We have team members from a broad spectrum of backgrounds and incredible technology companies.
         </styled__TileContentBody>
       </styled__TileContent>
     </styled__Tile>
@@ -20,10 +20,10 @@ exports[`compositions/homepage/ServicesAboutUs snapshot 1`] = `
     >
       <styled__TileContent>
         <styled__TileContentTitle>
-          About Us
+          Case Studies
         </styled__TileContentTitle>
         <styled__TileContentBody>
-          We have team members from a broad spectrum of backgrounds and incredible technology companies.
+          XXX
         </styled__TileContentBody>
       </styled__TileContent>
     </styled__Tile>
