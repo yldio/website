@@ -1,18 +1,11 @@
-import React, { Fragment } from 'react';
-import {
-  Illustration,
-  SubserviceContainer,
-  SubserviceTitle,
-  SubserviceBody,
-  Support,
-  Title,
-} from './styled';
+import React from 'react';
 
-const Subservice = ({ children, name }) => <StyledSubservice />;
+import { Illustration, List, Service, Support, Title } from './styled';
+import Subservice from './Subservice';
 
 const ServiceList = () => (
-  <Fragment>
-    <section id="approach">
+  <List>
+    <Service id="approach">
       <Title>Our Approach</Title>
       <Support>
         We help you future proof your business though a new style of consulting,
@@ -38,6 +31,7 @@ const ServiceList = () => (
         place to stay. Investing to be a product-driven organisation will help
         you to future-proof and tackle areas of growth and innovation head-on.
         <br />
+        <br />
         We can help you build the roadmap and ensure clear ways of working
         between the business and the delivery team. We can help you develop
         digital products in an Agile way of working.
@@ -51,8 +45,8 @@ const ServiceList = () => (
         framework to develop a long lasting engineering culture. We bring
         excellence, fast.
       </Subservice>
-    </section>
-  </Fragment>
+    </Service>
+  </List>
 );
 
 export default ServiceList;
