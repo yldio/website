@@ -10,5 +10,9 @@ exports[`compositions/pages/Services snapshot 1`] = `
       We enable your organisation to deliver world-class technology and user experiences, long after we leave.
     </PageHero>
   </Container>
+  <Container>
+    <ProductList />
+    <PageRule />
+  </Container>
 </React.Fragment>
 `;
