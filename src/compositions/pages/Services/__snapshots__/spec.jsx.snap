@@ -14,5 +14,8 @@ exports[`compositions/pages/Services snapshot 1`] = `
     <ProductList />
     <PageRule />
   </Container>
+  <Container>
+    <ServiceList />
+  </Container>
 </React.Fragment>
 `;

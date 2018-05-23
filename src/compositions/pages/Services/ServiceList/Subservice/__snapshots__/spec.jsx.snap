@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/Services/Subservice snapshot 1`] = `
+<styled__Container>
+  <styled__Title>
+    Digital Transformation
+  </styled__Title>
+  <styled__Body>
+    Content
+  </styled__Body>
+</styled__Container>
+`;
