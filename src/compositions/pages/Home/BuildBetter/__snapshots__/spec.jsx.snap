@@ -2,20 +2,25 @@
 
 exports[`compositions/homepage/BuildBetter snapshot 1`] = `
 <Container>
-  <styled__Title>
-    Build better
-  </styled__Title>
-  <styled__Body>
-    Great companies go beyond their customers expectations, over and over again. Building this capability in your company is our mission, and our promise.
-  </styled__Body>
-  <styled__Body>
-    We enable your organisation to deliver world-class technology and customer experiences.
-  </styled__Body>
-  <Button
-    component="a"
-    href="#case-studies"
+  <PageHero
+    title={
+      <styled__DefaultTitle>
+        Build better
+      </styled__DefaultTitle>
+    }
   >
-    Case Studies ↓
-  </Button>
+    <styled__Paragraph>
+      Great companies go beyond their customers expectations, over and over again. Building this capability in your company is our mission, and our promise.
+    </styled__Paragraph>
+    <styled__Paragraph>
+      We enable your organisation to deliver world-class technology and customer experiences.
+    </styled__Paragraph>
+    <Button
+      component="a"
+      href="#case-studies"
+    >
+      Case Studies ↓
+    </Button>
+  </PageHero>
 </Container>
 `;

@@ -3,28 +3,12 @@
 exports[`components/PageHero basic snapshot 1`] = `
 <React.Fragment>
   <header>
-    <styled.h1>
+    <styled__DefaultTitle>
       Hello, world!
-    </styled.h1>
+    </styled__DefaultTitle>
   </header>
-  <styled.main>
+  <styled__Main>
     I am the page hero body
-  </styled.main>
-</React.Fragment>
-`;
-
-exports[`compositions/homepage/PageHero basic snapshot 1`] = `
-<React.Fragment>
-  <header>
-    <styled.h1 />
-  </header>
-  <styled.main />
-</React.Fragment>
-`;
-
-exports[`compositions/homepage/PageHero snapshot 1`] = `
-<React.Fragment>
-  <header />
-  <styled.main />
+  </styled__Main>
 </React.Fragment>
 `;

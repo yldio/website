@@ -22,8 +22,8 @@ describe('components/PageHero', () => {
     expect(
       wrapper
         .children()
-        .find('styled(main)')
-        .dive()
+        .find('styled__Main')
+        .children()
         .text(),
     ).toEqual(children);
   });
