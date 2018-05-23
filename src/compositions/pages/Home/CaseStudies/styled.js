@@ -10,9 +10,8 @@ export const CallToAction = styled.p`
 export const TileContent = styled.div`
   bottom: 0;
   left: 0;
-  padding: ${spacing(4)}
+  padding: ${spacing(4)};
   position: absolute;
-  text-align: bottom;
 `;
 
 export const TileContentTitle = styled.h5`

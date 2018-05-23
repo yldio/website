@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Rule snapshot 1`] = `
+.c0 {
+  background-color: #E4E8EF;
+  border: none;
+  height: 1px;
+  margin: 0;
+}
+
 <hr
-  className="sc-bdVaJa dBAiGj"
+  className="c0"
 />
 `;
