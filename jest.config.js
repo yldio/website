@@ -1,5 +1,6 @@
 module.exports = {
-  setupFiles: ['./spec/enzyme-helper.js'],
+  setupFiles: ['./spec/jest-enzyme-helper.js'],
+  setupTestFrameworkScriptFile: './spec/jest-setup-tests.js',
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testMatch: [
     '<rootDir>/__tests__/**/*.{js,jsx}',
