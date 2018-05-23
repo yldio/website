@@ -2,6 +2,16 @@
   "env": {
     "test": {
       "presets": [["env"], "react"]
+    },
+    "production": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "displayName": false
+          }
+        ]
+      ]
     }
   },
   "plugins": [
