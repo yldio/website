@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/Services/Tiles snapshot 1`] = `
+<Container
+  wide={true}
+>
+  <TileGrid>
+    <styled__Tile>
+      <styled__TileContent>
+        <styled__TileContentTitle>
+          About Us
+        </styled__TileContentTitle>
+        <styled__TileContentBody>
+          We have team members from a broad spectrum of backgrounds and incredible technology companies.
+        </styled__TileContentBody>
+      </styled__TileContent>
+    </styled__Tile>
+    <styled__Tile
+      colour="darker"
+    >
+      <styled__TileContent>
+        <styled__TileContentTitle>
+          Case Studies
+        </styled__TileContentTitle>
+        <styled__TileContentBody>
+          XXX
+        </styled__TileContentBody>
+      </styled__TileContent>
+    </styled__Tile>
+  </TileGrid>
+</Container>
+`;
