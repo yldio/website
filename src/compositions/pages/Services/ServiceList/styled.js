@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { spacing } from 'styles/spacing';
 import { textLight, textLighter } from 'styles/colours';
+import DefaultLink from 'components/Link';
 
 export const Illustration = styled.img`
   display: block;
   margin: ${spacing(5)} auto;
-  max-width: 900px;
+  width: 80%;
 `;
 
 export const Title = styled.h2`
@@ -30,4 +31,10 @@ export const List = styled.ul`
   margin: 0;
   padding: 0;
   list-style-type: none;
+`;
+
+export const Link = styled(DefaultLink)`
+  font-size: 1.25rem;
+  display: block;
+  margin-top: ${spacing(3)};
 `;
