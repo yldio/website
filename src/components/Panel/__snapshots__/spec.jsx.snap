@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Panel snapshot 1`] = `
+.c0 {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 3px 20px rgba(161,160,197,0.2);
+  padding: 30px;
+}
+
 <div
-  className="sc-bdVaJa eTNNel"
+  className="c0"
 />
 `;

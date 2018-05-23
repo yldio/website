@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/PageRule snapshot 1`] = `
+.c0 {
+  margin: 100px 0;
+}
+
 <styled.hr
-  className="sc-bwzfXH hXEIkT"
+  className="c0"
 />
 `;
