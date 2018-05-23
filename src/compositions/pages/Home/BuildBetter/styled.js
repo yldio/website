@@ -1,11 +1,14 @@
 import styled from 'styled-components';
-import { highlight, text, textLight } from 'styles/colours';
-import { gridWidth } from 'styles/spacing';
+import { highlight, text } from 'styles/colours';
+import { spacing } from 'styles/spacing';
+import { DefaultTitle } from 'components/PageHero/styled';
 
-export const Title = styled.h2`
+export const Title = DefaultTitle.extend`
   color: ${text};
   font-weight: 500;
   font-size: 4.5rem;
+  margin-bottom: ${spacing(4)};
+  margin-top: ${spacing(4)};
 
   &:after {
     content: '.';
@@ -13,10 +16,6 @@ export const Title = styled.h2`
   }
 `;
 
-export const Body = styled.p`
-  color: ${textLight};
-  font-size: 1.25rem;
-  line-height: 2em;
-  max-width: ${gridWidth * 2 / 3}px;
-  margin: 40px 0;
+export const Paragraph = styled.p`
+  margin: ${spacing(4)} 0;
 `;
