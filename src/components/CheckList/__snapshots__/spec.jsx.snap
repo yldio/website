@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/CheckList snapshot 1`] = `
-<styled.ul>
+<styled__List>
   <Item>
     Hello, world
   </Item>
@@ -11,5 +11,5 @@ exports[`components/CheckList snapshot 1`] = `
   <Item>
     And a third
   </Item>
-</styled.ul>
+</styled__List>
 `;

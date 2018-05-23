@@ -4,7 +4,7 @@ exports[`components/Logo snapshot 1`] = `
 <GatsbyLink
   to="/"
 >
-  <styled.img
+  <styled__LogoImage
     alt="YLD Logo"
     src="/src/components/Logo/logo.svg"
   />

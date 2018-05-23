@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { highlight } from 'styles/colours';
+import GatsbyLink from 'gatsby-link';
 
 export const StyledLink = styled.a`
   color: ${highlight};
@@ -10,3 +11,5 @@ export const StyledLink = styled.a`
     text-decoration: underline;
   }
 `;
+
+export const InternalLink = StyledLink.withComponent(GatsbyLink);
