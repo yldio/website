@@ -2,13 +2,15 @@
 
 exports[`components/PageHero basic snapshot 1`] = `
 <React.Fragment>
-  <header>
-    <styled__DefaultTitle>
-      Hello, world!
-    </styled__DefaultTitle>
-  </header>
-  <styled__Main>
-    I am the page hero body
-  </styled__Main>
+  <styled__Wrapper>
+    <styled__Header>
+      <styled__DefaultTitle>
+        Hello, world!
+      </styled__DefaultTitle>
+    </styled__Header>
+    <styled__Main>
+      I am the page hero body
+    </styled__Main>
+  </styled__Wrapper>
 </React.Fragment>
 `;

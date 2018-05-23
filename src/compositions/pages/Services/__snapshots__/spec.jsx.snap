@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`compositions/pages/Services snapshot 1`] = `""`;
+exports[`compositions/pages/Services snapshot 1`] = `
+<React.Fragment>
+  <Container>
+    <PageHero
+      before="services"
+      title="Great companies go beyond their customers expectations, over and over again."
+    >
+      We enable your organisation to deliver world-class technology and user experiences, long after we leave.
+    </PageHero>
+  </Container>
+</React.Fragment>
+`;

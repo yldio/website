@@ -30,13 +30,13 @@ describe('components/PageHero', () => {
   test('renders DefaultTitle if only a string is provided as title', () => {
     const wrapper = shallow(<PageHero title="Hello, world!" />);
 
-    expect(wrapper.find('header').contains('Hello, world!')).toBe(true);
+    expect(wrapper.find('styled__Header').contains('Hello, world!')).toBe(true);
   });
 
   test('renders title as a component if it is not a string', () => {
     const title = <div>Hello, world</div>;
     const wrapper = shallow(<PageHero title={title} />);
 
-    expect(wrapper.find('header').contains(title)).toBe(true);
+    expect(wrapper.find('styled__Header').contains(title)).toBe(true);
   });
 });

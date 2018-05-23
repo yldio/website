@@ -1,25 +1,32 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { DefaultTitle, Main } from './styled';
+import { Before, Header, DefaultTitle, Main, Wrapper } from './styled';
 
-const PageHero = ({ title, children }) => {
+const PageHero = ({ before, children, title }) => {
   const renderedTitle =
     typeof title === 'string' ? <DefaultTitle>{title}</DefaultTitle> : title;
 
   return (
     <Fragment>
-      <header>{renderedTitle}</header>
-      <Main>{children}</Main>
+      <Wrapper>
+        <Header>
+          {before && <Before>{before}</Before>}
+          {renderedTitle}
+        </Header>
+        <Main>{children}</Main>
+      </Wrapper>
     </Fragment>
   );
 };
 
 PageHero.propTypes = {
+  before: PropTypes.string,
   children: PropTypes.node,
   title: PropTypes.node.isRequired,
 };
 
 PageHero.defaultProps = {
+  before: null,
   children: [],
 };
 
