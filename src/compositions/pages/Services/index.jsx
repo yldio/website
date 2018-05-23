@@ -4,6 +4,7 @@ import PageSection from 'components/PageSection';
 import PageHero from 'components/PageHero';
 import PageRule from 'components/PageRule';
 import ProductList from 'compositions/ProductList';
+import WorkWithUs from 'compositions/WorkWithUs';
 
 import ServiceList from './ServiceList';
 import Tiles from './Tiles';
@@ -27,6 +28,7 @@ const ServicesPage = () => (
       <ServiceList />
     </PageSection>
     <Tiles />
+    <WorkWithUs />
   </Fragment>
 );
 
