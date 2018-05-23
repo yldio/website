@@ -20,13 +20,10 @@ const ServicesPage = () => (
         experiences, long after we leave.
       </PageHero>
     </PageSection>
-    <PageSection>
+    <PageSection gradient>
       <ProductList />
-      <PageRule />
     </PageSection>
-    <PageSection>
-      <ServiceList />
-    </PageSection>
+    <ServiceList />
     <Tiles />
     <WorkWithUs />
   </Fragment>

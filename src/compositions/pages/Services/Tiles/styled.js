@@ -4,7 +4,7 @@ import Container from 'components/Container';
 
 export const Section = Container.withComponent('section').extend`
   margin-bottom: ${spacing(5)};
-  margin-top: ${spacing(15)};
+  margin-top: ${spacing(-6)};
 `;
 
 export const TileContent = styled.div`

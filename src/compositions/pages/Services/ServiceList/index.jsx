@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-import { Illustration, Link, List, Service, Support, Title } from './styled';
+import PageSection from 'components/PageSection';
+
+import { Illustration, Link, Support, Title } from './styled';
 import Subservice from './Subservice';
 
 const ServiceList = () => (
-  <List>
-    <Service id="approach">
+  <Fragment>
+    <PageSection id="approach">
       <Title>Our Approach</Title>
       <Support>
         We help you future proof your business though a new style of consulting,
@@ -45,8 +47,8 @@ const ServiceList = () => (
         framework to develop a long lasting engineering culture. We bring
         excellence, fast.
       </Subservice>
-    </Service>
-    <Service id="design">
+    </PageSection>
+    <PageSection gradient gradientHeight="100%" id="design">
       <Title>Design &amp; Product</Title>
       <Support>
         A great company continuously finds better solutions to its customers
@@ -115,8 +117,8 @@ const ServiceList = () => (
           Learn how Research and UX Design helps us build the right product →
         </Link>
       </Subservice>
-    </Service>
-    <Service id="engineering">
+    </PageSection>
+    <PageSection id="engineering">
       <Title>Engineering</Title>
       <Support>
         We help you future proof your business though a new style of consulting,
@@ -156,8 +158,8 @@ const ServiceList = () => (
         framework to develop a long lasting engineering culture. We bring
         excellence, fast.
       </Subservice>
-    </Service>
-    <Service id="training">
+    </PageSection>
+    <PageSection gradient gradientHeight="100%" id="training">
       <Title>Training</Title>
       <Support>
         A great company continuously finds better solutions to its customers
@@ -213,8 +215,8 @@ const ServiceList = () => (
         by formulating brand principles that inform the design and strategy of
         the product.
       </Subservice>
-    </Service>
-  </List>
+    </PageSection>
+  </Fragment>
 );
 
 export default ServiceList;

@@ -4,6 +4,10 @@ import { textLight, textLighter } from 'styles/colours';
 
 export const Container = styled.section`
   margin-bottom: ${spacing(6)};
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 export const Title = styled.h4`
