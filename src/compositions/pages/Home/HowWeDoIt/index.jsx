@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import Link from 'components/Link';
 import PageSection from 'components/PageSection';
 import PageSectionHeader from 'components/PageSectionHeader';
-import PageRule from 'components/PageRule';
 import ProductList from 'compositions/ProductList';
 
 import { Description } from './styled';

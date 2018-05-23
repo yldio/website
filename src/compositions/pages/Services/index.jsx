@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 
 import PageSection from 'components/PageSection';
 import PageHero from 'components/PageHero';
-import PageRule from 'components/PageRule';
 import ProductList from 'compositions/ProductList';
 import WorkWithUs from 'compositions/WorkWithUs';
 

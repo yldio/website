@@ -14,18 +14,12 @@ exports[`compositions/pages/Services snapshot 1`] = `
     </PageHero>
   </PageSection>
   <PageSection
-    gradient={false}
+    gradient={true}
     gradientHeight="50%"
   >
     <ProductList />
-    <PageRule />
   </PageSection>
-  <PageSection
-    gradient={false}
-    gradientHeight="50%"
-  >
-    <ServiceList />
-  </PageSection>
+  <ServiceList />
   <ServicesTiles />
   <WorkWithUs />
 </React.Fragment>

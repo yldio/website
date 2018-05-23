@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PageSection from './index';
 import Gradient from 'components/Gradient';
+import PageSection from './index';
 
 test('snapshot', () => {
   const wrapper = shallow(<PageSection />);

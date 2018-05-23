@@ -1,8 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
-<styled__List>
-  <styled__Service
+<React.Fragment>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
     id="approach"
   >
     <styled__Title>
@@ -32,8 +34,10 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     >
       We use our capability model to help you gauge your organisation’s current maturity. We help you identify any gaps and opportunities for improvement in line with your vision. We use our best practice models of discovery and delivery to drive success and ensure you have the right skills, processes and tools. What’s more we help you build the right framework to develop a long lasting engineering culture. We bring excellence, fast.
     </Subservice>
-  </styled__Service>
-  <styled__Service
+  </PageSection>
+  <PageSection
+    gradient={true}
+    gradientHeight="100%"
     id="design"
   >
     <styled__Title>
@@ -100,8 +104,10 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
         Learn how Research and UX Design helps us build the right product →
       </styled__Link>
     </Subservice>
-  </styled__Service>
-  <styled__Service
+  </PageSection>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
     id="engineering"
   >
     <styled__Title>
@@ -131,8 +137,10 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     >
       We use our capability model to help you gauge your organisation’s current maturity. We help you identify any gaps and opportunities for improvement in line with your vision. We use our best practice models of discovery and delivery to drive success and ensure you have the right skills, processes and tools. What’s more we help you build the right framework to develop a long lasting engineering culture. We bring excellence, fast.
     </Subservice>
-  </styled__Service>
-  <styled__Service
+  </PageSection>
+  <PageSection
+    gradient={true}
+    gradientHeight="100%"
     id="training"
   >
     <styled__Title>
@@ -177,6 +185,6 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     >
       Great UI design connects your users with your product. It’s the most tactile, direct interaction people will have with your brand, your services, and your customer experience. We help brands evolve and grow, by formulating brand principles that inform the design and strategy of the product.
     </Subservice>
-  </styled__Service>
-</styled__List>
+  </PageSection>
+</React.Fragment>
 `;
