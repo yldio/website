@@ -19,10 +19,9 @@ const HeaderDescription = (
 );
 
 const HowWeDoIt = () => (
-  <PageSection>
+  <PageSection gradient>
     <PageSectionHeader description={HeaderDescription} title="How we do it" />
     <ProductList />
-    <PageRule />
   </PageSection>
 );
 

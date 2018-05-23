@@ -2,7 +2,7 @@
 
 exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
 <PageSection
-  gradient={false}
+  gradient={true}
   gradientHeight="50%"
 >
   <PageSectionHeader
@@ -22,6 +22,5 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
     title="How we do it"
   />
   <ProductList />
-  <PageRule />
 </PageSection>
 `;
