@@ -7,7 +7,7 @@ import Subservice from './Subservice';
 
 const ServiceList = () => (
   <Fragment>
-    <PageSection id="approach">
+    <PageSection id="approach" data-selector="services:our-approach">
       <Title>Our Approach</Title>
       <Support>
         We help you future proof your business though a new style of consulting,
@@ -48,7 +48,12 @@ const ServiceList = () => (
         excellence, fast.
       </Subservice>
     </PageSection>
-    <PageSection gradient gradientHeight="100%" id="design">
+    <PageSection
+      gradient
+      gradientHeight="100%"
+      id="design"
+      data-selector="services:design-product"
+    >
       <Title>Design &amp; Product</Title>
       <Support>
         A great company continuously finds better solutions to its customers
@@ -118,7 +123,7 @@ const ServiceList = () => (
         </Link>
       </Subservice>
     </PageSection>
-    <PageSection id="engineering">
+    <PageSection id="engineering" data-selector="services:engineering">
       <Title>Engineering</Title>
       <Support>
         We help you future proof your business though a new style of consulting,
@@ -159,7 +164,12 @@ const ServiceList = () => (
         excellence, fast.
       </Subservice>
     </PageSection>
-    <PageSection gradient gradientHeight="100%" id="training">
+    <PageSection
+      gradient
+      gradientHeight="100%"
+      id="training"
+      data-selector="services:training"
+    >
       <Title>Training</Title>
       <Support>
         A great company continuously finds better solutions to its customers

@@ -3,6 +3,7 @@
 exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
 <React.Fragment>
   <PageSection
+    data-selector="services:our-approach"
     gradient={false}
     gradientHeight="50%"
     id="approach"
@@ -36,6 +37,7 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     </Subservice>
   </PageSection>
   <PageSection
+    data-selector="services:design-product"
     gradient={true}
     gradientHeight="100%"
     id="design"
@@ -106,6 +108,7 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     </Subservice>
   </PageSection>
   <PageSection
+    data-selector="services:engineering"
     gradient={false}
     gradientHeight="50%"
     id="engineering"
@@ -139,6 +142,7 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     </Subservice>
   </PageSection>
   <PageSection
+    data-selector="services:training"
     gradient={true}
     gradientHeight="100%"
     id="training"

@@ -3,6 +3,7 @@
 exports[`compositions/pages/Services snapshot 1`] = `
 <React.Fragment>
   <PageSection
+    data-selector="services:hero"
     gradient={false}
     gradientHeight="50%"
   >
@@ -14,6 +15,7 @@ exports[`compositions/pages/Services snapshot 1`] = `
     </PageHero>
   </PageSection>
   <PageSection
+    data-selector="services:table"
     gradient={true}
     gradientHeight="50%"
   >

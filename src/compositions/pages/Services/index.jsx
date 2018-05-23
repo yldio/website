@@ -10,7 +10,7 @@ import Tiles from './Tiles';
 
 const ServicesPage = () => (
   <Fragment>
-    <PageSection>
+    <PageSection data-selector="services:hero">
       <PageHero
         before="services"
         title="Great companies go beyond their customers expectations, over and over again."
@@ -19,7 +19,7 @@ const ServicesPage = () => (
         experiences, long after we leave.
       </PageHero>
     </PageSection>
-    <PageSection gradient>
+    <PageSection gradient data-selector="services:table">
       <ProductList />
     </PageSection>
     <ServiceList />
