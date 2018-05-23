@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import styled from 'styled-components';
 import PageHero from './index';
 
 describe('components/PageHero', () => {
@@ -28,7 +27,16 @@ describe('components/PageHero', () => {
     ).toEqual(children);
   });
 
-  test('renders DefaultTitle if only a string is provided as title', () => {});
+  test('renders DefaultTitle if only a string is provided as title', () => {
+    const wrapper = shallow(<PageHero title="Hello, world!" />);
 
-  test('renders title as a component if it is not a string', () => {});
+    expect(wrapper.find('header').contains('Hello, world!')).toBe(true);
+  });
+
+  test('renders title as a component if it is not a string', () => {
+    const title = <div>Hello, world</div>;
+    const wrapper = shallow(<PageHero title={title} />);
+
+    expect(wrapper.find('header').contains(title)).toBe(true);
+  });
 });
