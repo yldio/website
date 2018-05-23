@@ -3,6 +3,7 @@
 exports[`compositions/homepage/BuildBetter snapshot 1`] = `
 <Container>
   <PageHero
+    before={null}
     title={
       <styled__DefaultTitle>
         Build better
