@@ -1,133 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/ProductList snapshot 1`] = `
-<styled.ul>
-  <styled.li>
-    <styled.img
+<Panel>
+  <styled__ProductColumn>
+    <styled__Image
       alt="our approach"
       src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
     />
-    <styled.header>
+    <styled__Title>
       Our Approach
-    </styled.header>
-    <styled.ul>
-      <styled.li>
+    </styled__Title>
+    <styled__ProductSublist>
+      <styled__Product>
         Digital Transformation
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Engineering Consultancy
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Product Consultancy
-      </styled.li>
-    </styled.ul>
-    <styled.footer>
+      </styled__Product>
+    </styled__ProductSublist>
+    <styled__Footer>
       <Link
         activeClassName="___active"
         href="/services#approach"
       >
         More on Approach →
       </Link>
-    </styled.footer>
-  </styled.li>
-  <styled.li>
-    <styled.img
+    </styled__Footer>
+  </styled__ProductColumn>
+  <styled__ProductColumn>
+    <styled__Image
       alt="design & product"
       src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
     />
-    <styled.header>
+    <styled__Title>
       Design & Product
-    </styled.header>
-    <styled.ul>
-      <styled.li>
+    </styled__Title>
+    <styled__ProductSublist>
+      <styled__Product>
         Design Systems & Design Operations
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Design Sprints
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         User Interface Design & Branding
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Research, Usability and User Experience
-      </styled.li>
-    </styled.ul>
-    <styled.footer>
+      </styled__Product>
+    </styled__ProductSublist>
+    <styled__Footer>
       <Link
         activeClassName="___active"
         href="/services#design"
       >
         More on Design →
       </Link>
-    </styled.footer>
-  </styled.li>
-  <styled.li>
-    <styled.img
+    </styled__Footer>
+  </styled__ProductColumn>
+  <styled__ProductColumn>
+    <styled__Image
       alt="engineering"
       src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
     />
-    <styled.header>
+    <styled__Title>
       Engineering
-    </styled.header>
-    <styled.ul>
-      <styled.li>
+    </styled__Title>
+    <styled__ProductSublist>
+      <styled__Product>
         Engineering Leadership
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Back End & Node.js
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Front End & React.js
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         DevOps & Kubernetes
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Mobile & React Native
-      </styled.li>
-    </styled.ul>
-    <styled.footer>
+      </styled__Product>
+    </styled__ProductSublist>
+    <styled__Footer>
       <Link
         activeClassName="___active"
         href="/services#engineering"
       >
         More on Engineering →
       </Link>
-    </styled.footer>
-  </styled.li>
-  <styled.li>
-    <styled.img
+    </styled__Footer>
+  </styled__ProductColumn>
+  <styled__ProductColumn>
+    <styled__Image
       alt="training"
       src="/src/compositions/pages/Home/HowWeDoIt/ProductList/placeholder.svg"
     />
-    <styled.header>
+    <styled__Title>
       Training
-    </styled.header>
-    <styled.ul>
-      <styled.li>
+    </styled__Title>
+    <styled__ProductSublist>
+      <styled__Product>
         Node Training
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         React Training
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         Design Systems Training
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         UX Research Training
-      </styled.li>
-      <styled.li>
+      </styled__Product>
+      <styled__Product>
         UX Design Training
-      </styled.li>
-    </styled.ul>
-    <styled.footer>
+      </styled__Product>
+    </styled__ProductSublist>
+    <styled__Footer>
       <Link
         activeClassName="___active"
         href="/services#training"
       >
         More on Training →
       </Link>
-    </styled.footer>
-  </styled.li>
-</styled.ul>
+    </styled__Footer>
+  </styled__ProductColumn>
+</Panel>
 `;

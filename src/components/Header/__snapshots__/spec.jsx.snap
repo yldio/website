@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Header snapshot 1`] = `
-<styled.header>
+<styled__Wrapper>
   <Logo />
   <Navigation />
-</styled.header>
+</styled__Wrapper>
 `;

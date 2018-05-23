@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
-<styled.section>
+<Container>
   <PageSectionHeader
     description={
       <UNDEFINED>
-        <styled.span>
+        <styled__Description>
           We thrive by working, thinking, and growing like a technology driven organisation. This is our mission, and our promise. Here’s how we do it:
-        </styled.span>
+        </styled__Description>
         <Link
           activeClassName="___active"
           href="/case-studies"
@@ -19,6 +19,6 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
     title="How we do it"
   />
   <ProductList />
-  <Styled(styled.hr) />
-</styled.section>
+  <PageRule />
+</Container>
 `;

@@ -1,36 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/FooterClosing snapshot 1`] = `
-<styled.section>
-  <styled.p>
+<styled__Container>
+  <styled__Copyright>
     © 2018 Made with love by YLD. All rights reserved
-  </styled.p>
-  <styled.ul>
-    <styled.li>
-      <Styled(Link)
+  </styled__Copyright>
+  <styled__Copyright>
+    <styled__SiteLink>
+      <styled__Link
         href="/privacy-policy"
       >
         Privacy
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__SiteLink>
+    <styled__SiteLink>
+      <styled__Link
         href="/terms"
       >
         Terms
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__SiteLink>
+    <styled__SiteLink>
+      <styled__Link
         href="/sitemap"
       >
         Sitemap
-      </Styled(Link)>
-    </styled.li>
-  </styled.ul>
-  <styled.ul>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__SiteLink>
+  </styled__Copyright>
+  <styled__SocialLinks>
+    <styled__SiteLink>
+      <styled__Link
         href="https://twitter.com/yldio"
       >
         <FontAwesomeIcon
@@ -62,10 +62,10 @@ exports[`components/FooterClosing snapshot 1`] = `
           symbol={false}
           transform={null}
         />
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__SiteLink>
+    <styled__SiteLink>
+      <styled__Link
         href="https://github.com/yldio"
       >
         <FontAwesomeIcon
@@ -97,10 +97,10 @@ exports[`components/FooterClosing snapshot 1`] = `
           symbol={false}
           transform={null}
         />
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__SiteLink>
+    <styled__SiteLink>
+      <styled__Link
         href="https://youtube.com"
       >
         <FontAwesomeIcon
@@ -132,8 +132,8 @@ exports[`components/FooterClosing snapshot 1`] = `
           symbol={false}
           transform={null}
         />
-      </Styled(Link)>
-    </styled.li>
-  </styled.ul>
-</styled.section>
+      </styled__Link>
+    </styled__SiteLink>
+  </styled__SocialLinks>
+</styled__Container>
 `;

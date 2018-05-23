@@ -1,104 +1,104 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/FooterNavigation snapshot 1`] = `
-<styled.nav>
-  <styled.ul>
-    <styled.li
+<styled__Nav>
+  <styled__Category>
+    <styled__Item
       header={true}
     >
       What we do
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/services"
       >
         Services
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/our-approach"
       >
         Our Approach
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="#how-we-do-it"
       >
         How we do it
-      </Styled(Link)>
-    </styled.li>
-  </styled.ul>
-  <styled.ul>
-    <styled.li
+      </styled__Link>
+    </styled__Item>
+  </styled__Category>
+  <styled__Category>
+    <styled__Item
       header={true}
     >
       Our work
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/case-studies"
       >
         Case Studies
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/industries"
       >
         Industries
-      </Styled(Link)>
-    </styled.li>
-  </styled.ul>
-  <styled.ul>
-    <styled.li
+      </styled__Link>
+    </styled__Item>
+  </styled__Category>
+  <styled__Category>
+    <styled__Item
       header={true}
     >
       Who we are
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/about-us"
       >
         About Us
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/join-us"
       >
         Join Us
-      </Styled(Link)>
-    </styled.li>
-  </styled.ul>
-  <styled.ul>
-    <styled.li
+      </styled__Link>
+    </styled__Item>
+  </styled__Category>
+  <styled__Category>
+    <styled__Item
       header={true}
     >
       Our Community
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/talks"
       >
         Talks
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/events"
       >
         Events
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/blog"
       >
         Blog
-      </Styled(Link)>
-    </styled.li>
-  </styled.ul>
-</styled.nav>
+      </styled__Link>
+    </styled__Item>
+  </styled__Category>
+</styled__Nav>
 `;

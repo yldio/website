@@ -2,43 +2,43 @@
 
 exports[`components/Navigation snapshot 1`] = `
 <nav>
-  <styled.ul>
-    <styled.li>
-      <Styled(Link)
+  <styled__List>
+    <styled__Item>
+      <styled__Link
         href="/case-studies"
       >
         Case Studies
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/services"
       >
         Services
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/community"
       >
         Community
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/about-us"
         padRight={true}
       >
         About Us
-      </Styled(Link)>
-    </styled.li>
-    <styled.li>
-      <Styled(Link)
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
         href="/join-us"
       >
         Join Us
-      </Styled(Link)>
-    </styled.li>
-  </styled.ul>
+      </styled__Link>
+    </styled__Item>
+  </styled__List>
 </nav>
 `;

@@ -1,73 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Post snapshot 1`] = `
-<styled.article
+<Panel
   stretch={true}
 >
-  <styled.header>
-    <styled.h4>
+  <styled__Header>
+    <styled__Title>
       We’re Hiring! YLD on the look out for Front-End Devs and DevOps.
-    </styled.h4>
-  </styled.header>
-  <styled.main>
+    </styled__Title>
+  </styled__Header>
+  <styled__Body>
     I think its one of the simplest yet most powerful extensions inVision
     hasn't launched. As animation and transition in inVision evolve it
     should grow even more powerful
-  </styled.main>
-  <Styled(styled.hr) />
-  <styled.footer>
-    <styled.img
+  </styled__Body>
+  <styled__PostRule />
+  <styled__Footer>
+    <styled__Thumbnail
       src="https://placekitten.com/128/128"
     />
-    <styled.p>
+    <styled__Authored>
       <Link
         activeClassName="___active"
         href="/people/nuno-job"
       >
         Nuno Job
       </Link>
-      <styled.time
+      <styled__Time
         datetime="2018-05-18T14:38:23.996+01:00"
       >
         May 18
-      </styled.time>
-    </styled.p>
-  </styled.footer>
-</styled.article>
+      </styled__Time>
+    </styled__Authored>
+  </styled__Footer>
+</Panel>
 `;
 
 exports[`components/Post snapshot with stretch=false 1`] = `
-<styled.article
+<Panel
   stretch={false}
 >
-  <styled.header>
-    <styled.h4>
+  <styled__Header>
+    <styled__Title>
       We’re Hiring! YLD on the look out for Front-End Devs and DevOps.
-    </styled.h4>
-  </styled.header>
-  <styled.main>
+    </styled__Title>
+  </styled__Header>
+  <styled__Body>
     I think its one of the simplest yet most powerful extensions inVision
     hasn't launched. As animation and transition in inVision evolve it
     should grow even more powerful
-  </styled.main>
-  <Styled(styled.hr) />
-  <styled.footer>
-    <styled.img
+  </styled__Body>
+  <styled__PostRule />
+  <styled__Footer>
+    <styled__Thumbnail
       src="https://placekitten.com/128/128"
     />
-    <styled.p>
+    <styled__Authored>
       <Link
         activeClassName="___active"
         href="/people/nuno-job"
       >
         Nuno Job
       </Link>
-      <styled.time
+      <styled__Time
         datetime="2018-05-18T14:38:23.996+01:00"
       >
         May 18
-      </styled.time>
-    </styled.p>
-  </styled.footer>
-</styled.article>
+      </styled__Time>
+    </styled__Authored>
+  </styled__Footer>
+</Panel>
 `;

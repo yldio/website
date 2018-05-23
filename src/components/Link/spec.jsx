@@ -18,13 +18,13 @@ describe('components/Link', () => {
   test('uses GatsbyLink for internal links', () => {
     const wrapper = shallow(<Link href="/internal">Internal</Link>);
 
-    expect(wrapper.is('Styled(GatsbyLink)')).toBe(true);
+    expect(wrapper.prop('to')).toEqual('/internal');
   });
 
   test('uses anchor for external links', () => {
     const wrapper = shallow(<Link href="https://external.com/">External</Link>);
 
-    expect(wrapper.text()).toContain('styled.a');
+    expect(wrapper.is('styled__StyledLink')).toBe(true);
   });
 
   test('isInternal', () => {

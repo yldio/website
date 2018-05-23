@@ -3,12 +3,12 @@
 exports[`compositions/Home/Community/UpcomingEvents snapshot 1`] = `
 <section>
   <header>
-    <styled.h3>
+    <styled__Title>
       Upcoming Events
-    </styled.h3>
+    </styled__Title>
   </header>
-  <styled.ul>
-    <styled.li>
+  <styled__Events>
+    <styled__Event>
       <Post
         date="2018-05-18T14:38:23.996+01:00"
         image="https://placekitten.com/128/128"
@@ -19,8 +19,8 @@ exports[`compositions/Home/Community/UpcomingEvents snapshot 1`] = `
       >
         I think its one of the simplest yet most powerful extensions inVision hasn't launched.
       </Post>
-    </styled.li>
-    <styled.li>
+    </styled__Event>
+    <styled__Event>
       <Post
         date="2018-05-18T14:38:23.996+01:00"
         image="https://placekitten.com/128/128"
@@ -31,8 +31,8 @@ exports[`compositions/Home/Community/UpcomingEvents snapshot 1`] = `
       >
         I think its one of the simplest yet most powerful extensions inVision hasn't launched.
       </Post>
-    </styled.li>
-    <styled.li>
+    </styled__Event>
+    <styled__Event>
       <Post
         date="2018-05-18T14:38:23.996+01:00"
         image="https://placekitten.com/128/128"
@@ -43,8 +43,8 @@ exports[`compositions/Home/Community/UpcomingEvents snapshot 1`] = `
       >
         I think its one of the simplest yet most powerful extensions inVision hasn't launched.
       </Post>
-    </styled.li>
-  </styled.ul>
+    </styled__Event>
+  </styled__Events>
   <Button
     component={[Function]}
     href="/events"

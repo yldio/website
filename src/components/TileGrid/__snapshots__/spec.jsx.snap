@@ -16,20 +16,20 @@ exports[`components/TileGrid snapshot with tiles 1`] = `
 <ul
   className="c0"
 >
-  <styled.li
+  <styled__Tile
     colour="normal"
   >
     Hello
-  </styled.li>
-  <styled.li
+  </styled__Tile>
+  <styled__Tile
     colour="dark"
   >
     World
-  </styled.li>
-  <styled.li
+  </styled__Tile>
+  <styled__Tile
     colour="darker"
   >
     !
-  </styled.li>
+  </styled__Tile>
 </ul>
 `;
