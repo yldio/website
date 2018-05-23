@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/PageHero basic snapshot 1`] = `
+<React.Fragment>
+  <header>
+    <styled.h1>
+      Hello, world!
+    </styled.h1>
+  </header>
+  <styled.main>
+    I am the page hero body
+  </styled.main>
+</React.Fragment>
+`;
+
+exports[`compositions/homepage/PageHero basic snapshot 1`] = `
+<React.Fragment>
+  <header>
+    <styled.h1 />
+  </header>
+  <styled.main />
+</React.Fragment>
+`;
+
+exports[`compositions/homepage/PageHero snapshot 1`] = `
+<React.Fragment>
+  <header />
+  <styled.main />
+</React.Fragment>
+`;
