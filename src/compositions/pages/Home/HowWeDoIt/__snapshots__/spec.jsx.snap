@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
-<Container>
+<PageSection
+  gradient={true}
+  gradientHeight="50%"
+>
   <PageSectionHeader
     description={
       <UNDEFINED>
@@ -19,6 +22,5 @@ exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
     title="How we do it"
   />
   <ProductList />
-  <PageRule />
-</Container>
+</PageSection>
 `;

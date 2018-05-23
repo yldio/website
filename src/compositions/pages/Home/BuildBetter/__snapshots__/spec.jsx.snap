@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/BuildBetter snapshot 1`] = `
-<Container>
+<PageSection
+  gradient={false}
+  gradientHeight="50%"
+>
   <PageHero
     before={null}
     title={
@@ -23,5 +26,5 @@ exports[`compositions/homepage/BuildBetter snapshot 1`] = `
       Case Studies ↓
     </Button>
   </PageHero>
-</Container>
+</PageSection>
 `;

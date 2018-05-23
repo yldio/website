@@ -23,16 +23,6 @@ export const Support = styled.p`
   margin: ${spacing(3)} 0;
 `;
 
-export const Service = styled.li`
-  margin-bottom: ${spacing(10)};
-`;
-
-export const List = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-`;
-
 export const Link = styled(DefaultLink)`
   font-size: 1.25rem;
   display: block;

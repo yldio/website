@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/Home/Community snapshot 1`] = `
-<Container>
+<PageSection
+  gradient={false}
+  gradientHeight="50%"
+>
   <PageSectionHeader
     description="We define ourselves by the people who represent us. Our emphasis on community and culture creates an environment where we prioritise supporting and nurturing people’s development."
     title="Community"
@@ -9,5 +12,5 @@ exports[`compositions/Home/Community snapshot 1`] = `
   <RecentBlogPosts />
   <styled__Rule />
   <UpcomingEvents />
-</Container>
+</PageSection>
 `;

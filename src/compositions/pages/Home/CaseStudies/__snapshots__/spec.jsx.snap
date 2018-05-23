@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/CaseStudies snapshot 1`] = `
-<Container
+<PageSection
+  gradient={false}
+  gradientHeight="50%"
   wide={true}
 >
   <TileGrid>
@@ -58,5 +60,5 @@ exports[`compositions/homepage/CaseStudies snapshot 1`] = `
       View More
     </Button>
   </styled__CallToAction>
-</Container>
+</PageSection>
 `;

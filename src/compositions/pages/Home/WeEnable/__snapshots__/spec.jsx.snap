@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`compositions/homepage/WeEnable snapshot 1`] = `
-<Container>
+<PageSection
+  gradient={false}
+  gradientHeight="50%"
+>
   <PageSectionHeader
     description={null}
     title="We enable you to..."
@@ -27,5 +30,5 @@ exports[`compositions/homepage/WeEnable snapshot 1`] = `
     </Item>
   </CheckList>
   <PageRule />
-</Container>
+</PageSection>
 `;
