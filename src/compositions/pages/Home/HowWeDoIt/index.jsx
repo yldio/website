@@ -4,7 +4,7 @@ import Link from 'components/Link';
 import PageSection from 'components/PageSection';
 import PageSectionHeader from 'components/PageSectionHeader';
 import PageRule from 'components/PageRule';
-import ProductList from './ProductList';
+import ProductList from 'components/ProductList';
 
 import { Description } from './styled';
 
