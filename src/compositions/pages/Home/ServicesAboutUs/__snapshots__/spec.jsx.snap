@@ -2,6 +2,7 @@
 
 exports[`compositions/homepage/ServicesAboutUs snapshot 1`] = `
 <Container
+  data-selector="home:services-about-us"
   wide={true}
 >
   <TileGrid>

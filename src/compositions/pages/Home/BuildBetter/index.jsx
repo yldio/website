@@ -6,7 +6,7 @@ import PageHero from 'components/PageHero';
 import { Paragraph, Title } from './styled';
 
 const BuildBetter = () => (
-  <PageSection>
+  <PageSection data-selector="home:build-better">
     <PageHero title={<Title>Build better</Title>}>
       <Paragraph>
         Great companies go beyond their customers expectations, over and over

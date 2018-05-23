@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Navigation snapshot 1`] = `
-<nav>
+<nav
+  data-selector="component:navigation"
+>
   <styled__List>
     <styled__Item>
       <styled__Link

@@ -2,6 +2,7 @@
 
 exports[`compositions/homepage/BuildBetter snapshot 1`] = `
 <PageSection
+  data-selector="home:build-better"
   gradient={false}
   gradientHeight="50%"
 >

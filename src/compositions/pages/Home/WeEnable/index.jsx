@@ -6,7 +6,7 @@ import PageSectionHeader from 'components/PageSectionHeader';
 import PageRule from 'components/PageRule';
 
 const WeEnable = () => (
-  <PageSection>
+  <PageSection data-selector="home:we-enable">
     <PageSectionHeader title="We enable you to..." />
     <CheckList>
       <Item>Build custom software solutions that become an asset</Item>

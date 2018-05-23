@@ -5,7 +5,15 @@
       "plugins": [["babel-plugin-styled-components", { "displayName": true }]]
     },
     "production": {
-      "plugins": [["babel-plugin-styled-components", { "displayName": false }]]
+      "plugins": [
+        ["babel-plugin-styled-components", { "displayName": false }],
+        [
+          "babel-plugin-remove-attribute",
+          {
+            "attribute": "data-selector"
+          }
+        ]
+      ]
     }
   },
   "plugins": [
