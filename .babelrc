@@ -1,26 +1,15 @@
 {
   "env": {
     "test": {
-      "presets": [["env"], "react"]
+      "presets": [["env"], "react"],
+      "plugins": [["babel-plugin-styled-components", { "displayName": true }]]
     },
     "production": {
-      "plugins": [
-        [
-          "babel-plugin-styled-components",
-          {
-            "displayName": false
-          }
-        ]
-      ]
+      "plugins": [["babel-plugin-styled-components", { "displayName": false }]]
     }
   },
   "plugins": [
-    [
-      "module-resolver",
-      {
-        "root": ["./src"]
-      }
-    ],
-    "babel-plugin-styled-components"
+    ["module-resolver", { "root": ["./src"] }],
+    ["babel-plugin-styled-components", { "displayName": true }]
   ]
 }
