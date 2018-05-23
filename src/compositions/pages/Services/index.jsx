@@ -6,6 +6,7 @@ import PageRule from 'components/PageRule';
 import ProductList from 'compositions/ProductList';
 
 import ServiceList from './ServiceList';
+import Tiles from './Tiles';
 
 const ServicesPage = () => (
   <Fragment>
@@ -25,6 +26,7 @@ const ServicesPage = () => (
     <PageSection>
       <ServiceList />
     </PageSection>
+    <Tiles />
   </Fragment>
 );
 
