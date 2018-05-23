@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Before, Header, DefaultTitle, Main, Wrapper } from './styled';
 
@@ -7,15 +7,13 @@ const PageHero = ({ before, children, title }) => {
     typeof title === 'string' ? <DefaultTitle>{title}</DefaultTitle> : title;
 
   return (
-    <Fragment>
-      <Wrapper>
-        <Header>
-          {before && <Before>{before}</Before>}
-          {renderedTitle}
-        </Header>
-        <Main>{children}</Main>
-      </Wrapper>
-    </Fragment>
+    <Wrapper>
+      <Header>
+        {before && <Before>{before}</Before>}
+        {renderedTitle}
+      </Header>
+      <Main>{children}</Main>
+    </Wrapper>
   );
 };
 
