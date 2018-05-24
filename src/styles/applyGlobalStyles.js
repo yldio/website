@@ -15,7 +15,9 @@ export default function applyGlobalStyles() {
       box-sizing: inherit;
     }
 
-    body {
+    /* Target the application container */
+
+    #___gatsby {
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
