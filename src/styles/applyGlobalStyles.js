@@ -15,12 +15,15 @@ export default function applyGlobalStyles() {
       box-sizing: inherit;
     }
 
-    body {
+    /* Target the application container */
+
+    #___gatsby {
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: 1.5;
+      overflow-x: hidden;
     }
   `;
 }
