@@ -3,10 +3,12 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { mapProps } from 'recompose';
 
+import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
-import PageSectionHeader from 'components/PageSectionHeader';
 
-const CaseStudyTemplate = ({ slug, title, pageTitle }) => (
+import TagList from 'compositions/templates/case-study/TagList';
+
+const CaseStudyTemplate = ({ shortDescription, tags, title, pageTitle }) => (
   <Fragment>
     <Helmet
       title={`YLD | ${pageTitle}`}
@@ -16,18 +18,16 @@ const CaseStudyTemplate = ({ slug, title, pageTitle }) => (
       ]}
     />
     <PageSection>
-      <PageSectionHeader title={title} />
-      <ul>
-        <li>slug: {slug}</li>
-        <li>title: {title}</li>
-        <li>pageTitle: {pageTitle}</li>
-      </ul>
+      <PageHero title={title}>
+        {shortDescription}
+        <br />
+        <TagList tags={tags} />
+      </PageHero>
     </PageSection>
   </Fragment>
 );
 
 CaseStudyTemplate.propTypes = {
-  slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   pageTitle: PropTypes.string.isRequired,
 };
@@ -37,9 +37,10 @@ export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
 export const pageQuery = graphql`
   query CaseStudyBySlug($slug: String!) {
     caseStudiesYaml(slug: { eq: $slug }) {
-      slug
       title
       pageTitle
+      tags
+      shortDescription
     }
   }
 `;
