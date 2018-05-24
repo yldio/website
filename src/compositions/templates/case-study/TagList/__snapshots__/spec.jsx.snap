@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<styled__List>
+  <styled__Tag
+    key="engineering"
+  >
+    engineering
+  </styled__Tag>
+  <styled__Tag
+    key="devops"
+  >
+    devops
+  </styled__Tag>
+  <styled__Tag
+    key="backend"
+  >
+    backend
+  </styled__Tag>
+</styled__List>
+`;

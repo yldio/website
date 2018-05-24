@@ -1,3 +1,9 @@
-slug: 'trainline'
-pageTitle: 'Case Study: The Trainline'
-title: 'The Trainline'
+slug: trainline
+pageTitle: 'Case Study: Trainline'
+title: Trainline
+shortDescription: >
+  A legacy platform that faced a huge pressure to have an updated interface.
+tags:
+  - Engineering
+  - DevOps
+  - Backend
