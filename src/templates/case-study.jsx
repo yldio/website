@@ -34,7 +34,7 @@ CaseStudyTemplate.propTypes = {
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
 
-export const caseStudyFragment = graphql`
+export const pageQuery = graphql`
   query CaseStudyBySlug($slug: String!) {
     caseStudiesYaml(slug: { eq: $slug }) {
       slug
