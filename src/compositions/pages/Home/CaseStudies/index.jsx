@@ -13,7 +13,7 @@ import {
 } from './styled';
 
 const CaseStudies = () => (
-  <PageSection wide>
+  <PageSection wide data-selector="home:case-studies">
     <TileGrid>
       <Tile>
         <TileContent>

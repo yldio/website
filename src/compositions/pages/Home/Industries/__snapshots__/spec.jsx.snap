@@ -2,6 +2,7 @@
 
 exports[`compositions/homepage/Industries snapshot 1`] = `
 <PageSection
+  data-selector="home:industries"
   gradient={true}
   gradientHeight="50%"
 >

@@ -3,7 +3,7 @@ import { Link, ButtonLink, List, Item } from './styled';
 
 export default function Navigation() {
   return (
-    <nav>
+    <nav data-selector="component:navigation">
       <List>
         <Item>
           <Link href="/case-studies">Case Studies</Link>

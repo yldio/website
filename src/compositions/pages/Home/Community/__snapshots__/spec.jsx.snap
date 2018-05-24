@@ -2,6 +2,7 @@
 
 exports[`compositions/Home/Community snapshot 1`] = `
 <PageSection
+  data-selector="home:community"
   gradient={false}
   gradientHeight="50%"
 >

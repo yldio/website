@@ -9,7 +9,7 @@ import {
 } from './styled';
 
 const ServicesAboutUs = () => (
-  <Section wide>
+  <Section wide data-selector="home:services-about-us">
     <TileGrid>
       <Tile>
         <TileContent>

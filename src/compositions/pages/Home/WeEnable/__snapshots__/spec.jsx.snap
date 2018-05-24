@@ -2,6 +2,7 @@
 
 exports[`compositions/homepage/WeEnable snapshot 1`] = `
 <PageSection
+  data-selector="home:we-enable"
   gradient={false}
   gradientHeight="50%"
 >

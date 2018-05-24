@@ -2,6 +2,7 @@
 
 exports[`compositions/homepage/HowWeDoIt snapshot 1`] = `
 <PageSection
+  data-selector="home:how-we-do-it"
   gradient={true}
   gradientHeight="50%"
 >

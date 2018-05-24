@@ -6,7 +6,7 @@ import { LogoImage } from './styled';
 
 export default function Logo() {
   return (
-    <Link to="/">
+    <Link data-selector="component:logo" to="/">
       <LogoImage src={logo} alt="YLD Logo" />
     </Link>
   );

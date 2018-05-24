@@ -7,7 +7,7 @@ import UpcomingEvents from './UpcomingEvents';
 import { Rule } from './styled';
 
 const Community = () => (
-  <PageSection>
+  <PageSection data-selector="home:community">
     <PageSectionHeader
       title="Community"
       description="We define ourselves by the people who represent us. Our emphasis on community and culture creates an environment where we prioritise supporting and nurturing people’s development."

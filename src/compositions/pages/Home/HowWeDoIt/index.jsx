@@ -18,7 +18,7 @@ const HeaderDescription = (
 );
 
 const HowWeDoIt = () => (
-  <PageSection gradient>
+  <PageSection data-selector="home:how-we-do-it" gradient>
     <PageSectionHeader description={HeaderDescription} title="How we do it" />
     <ProductList />
   </PageSection>

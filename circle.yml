@@ -38,6 +38,8 @@ jobs:
           command: yarn ci:lint
   build:
     <<: *defaults
+    environment:
+      - BABEL_ENV: test
     steps:
       - checkout
       - restore_cache:
