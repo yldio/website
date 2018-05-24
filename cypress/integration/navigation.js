@@ -8,6 +8,7 @@ describe('features/navigation', () => {
 
   it('can navigate to /services', () => {
     cy.visit('/');
+    cy.awaitRender();
 
     cy
       .getComponent('component:navigation')
