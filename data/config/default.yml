@@ -1,0 +1,5 @@
+name: 'default'
+templates:
+  caseStudy:
+    path: '/case-studies/#slug'
+    component: 'templates/case-study.jsx'
