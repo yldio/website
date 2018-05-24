@@ -6,18 +6,22 @@ import { mapProps } from 'recompose';
 import PageSection from 'components/PageSection';
 import PageSectionHeader from 'components/PageSectionHeader';
 
-const CaseStudyTemplate = ({ slug, title }) => (
+const CaseStudyTemplate = ({ slug, title, pageTitle }) => (
   <Fragment>
     <Helmet
-      title={`YLD | ${title}`}
+      title={`YLD | ${pageTitle}`}
       meta={[
-        { name: 'description', content: `${title}` },
+        { name: 'description', content: `${title} case study` },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ]}
     />
     <PageSection>
       <PageSectionHeader title={title} />
-      <span>slug: {slug}</span>
+      <ul>
+        <li>slug: {slug}</li>
+        <li>title: {title}</li>
+        <li>pageTitle: {pageTitle}</li>
+      </ul>
     </PageSection>
   </Fragment>
 );
@@ -25,6 +29,7 @@ const CaseStudyTemplate = ({ slug, title }) => (
 CaseStudyTemplate.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  pageTitle: PropTypes.string.isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -34,6 +39,7 @@ export const caseStudyFragment = graphql`
     caseStudiesYaml(slug: { eq: $slug }) {
       slug
       title
+      pageTitle
     }
   }
 `;
