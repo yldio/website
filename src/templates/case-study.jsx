@@ -30,6 +30,8 @@ const CaseStudyTemplate = ({ shortDescription, tags, title, pageTitle }) => (
 CaseStudyTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   pageTitle: PropTypes.string.isRequired,
+  shortDescription: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
