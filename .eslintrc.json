@@ -16,6 +16,13 @@
         "aspects": ["noHref", "invalidHref", "preferButton"]
       }
     ],
+    "jsx-a11y/alt-text": [
+      "error",
+      {
+        "elements": ["img", "object", "area", "input[type=\"image\"]"],
+        "img": ["GatsbyImage"]
+      }
+    ],
     "no-unused-expressions": [
       "error",
       {
