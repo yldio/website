@@ -2,13 +2,20 @@ import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { mapProps } from 'recompose';
+import GatsbyImage from 'gatsby-image';
 
 import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
-
 import TagList from 'compositions/templates/case-study/TagList';
 
-const CaseStudyTemplate = ({ shortDescription, tags, title, pageTitle }) => (
+const CaseStudyTemplate = ({
+  heroImage,
+  heroImageAlt,
+  shortDescription,
+  tags,
+  title,
+  pageTitle,
+}) => (
   <Fragment>
     <Helmet
       title={`YLD | ${pageTitle}`}
@@ -24,10 +31,15 @@ const CaseStudyTemplate = ({ shortDescription, tags, title, pageTitle }) => (
         <TagList tags={tags} />
       </PageHero>
     </PageSection>
+    <PageSection wide>
+      <GatsbyImage alt={heroImageAlt} {...heroImage.childImageSharp} />
+    </PageSection>
   </Fragment>
 );
 
 CaseStudyTemplate.propTypes = {
+  heroImage: PropTypes.string.isRequired,
+  heroImageAlt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   pageTitle: PropTypes.string.isRequired,
   shortDescription: PropTypes.string.isRequired,
@@ -43,6 +55,14 @@ export const pageQuery = graphql`
       pageTitle
       tags
       shortDescription
+      heroImage {
+        childImageSharp {
+          sizes(quality: 75, maxWidth: 1280) {
+            ...GatsbyImageSharpSizes
+          }
+        }
+      }
+      heroImageAlt
     }
   }
 `;
