@@ -9,6 +9,7 @@ export default function applyGlobalStyles() {
 
     html {
       box-sizing: border-box;
+      font-size: 16px;
     }
 
     *, *:before, *:after {
@@ -19,7 +20,6 @@ export default function applyGlobalStyles() {
 
     #___gatsby {
       font-family: 'Roboto', sans-serif;
-      font-size: 16px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: 1.5;
