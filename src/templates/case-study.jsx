@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { mapProps } from 'recompose';
 import styled from 'styled-components';
 
+import fixedImage from 'fragments/fixed-image';
 import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
-
 import TagList from 'compositions/templates/case-study/TagList';
 
 const HeroImage = styled.img`
@@ -62,11 +62,7 @@ export const pageQuery = graphql`
       tags
       shortDescription
       heroImage {
-        childImageSharp {
-          original {
-            src
-          }
-        }
+        ${fixedImage({ imageWidth: 1230 })}
       }
     }
   }
