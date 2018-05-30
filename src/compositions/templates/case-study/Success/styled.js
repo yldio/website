@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { spacing } from 'styles/spacing';
 import { textLighter, textLight } from 'styles/colours';
 
 export const Title = styled.h2`
