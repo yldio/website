@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 // import { spacing } from 'styles/spacing';
-import { textLighter } from 'styles/colours';
+import { textLighter, textLight } from 'styles/colours';
+
+export const Title = styled.h2`
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.61;
+  letter-spacing: normal;
+  color: ${textLight};
+`;
 
 export const Main = styled.p`
   p-style-type: none;

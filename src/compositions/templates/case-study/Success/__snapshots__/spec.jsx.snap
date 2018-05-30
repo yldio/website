@@ -2,9 +2,9 @@
 
 exports[`success section 1`] = `
 <div>
-  <h2>
+  <styled__Title>
     The Success
-  </h2>
+  </styled__Title>
   <styled__Main>
     this is the main description
   </styled__Main>
