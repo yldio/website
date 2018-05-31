@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`success section 1`] = `
-<div>
+<React.Fragment>
   <styled__Title>
     The Success
   </styled__Title>
@@ -11,5 +11,5 @@ exports[`success section 1`] = `
   <styled__Sub>
     this is the sub description
   </styled__Sub>
-</div>
+</React.Fragment>
 `;
