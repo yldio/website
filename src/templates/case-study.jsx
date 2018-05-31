@@ -37,7 +37,7 @@ const CaseStudyTemplate = ({
       <GatsbyImage alt={heroImageAlt} {...heroImage.childImageSharp} />
     </PageSection>
     <PageSection>
-      <Success success={success} />
+      <Success {...success} />
     </PageSection>
   </Fragment>
 );
