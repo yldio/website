@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import { Main, Sub, Title } from './styled';
 
-// TODO success.sub should be flexible for new lines - edit the fake data in data/case-studies/trainline.yml
 const Success = ({ success }) => (
-  <div>
+  <Fragment>
     <Title>The Success</Title>
     <Main>{success.main}</Main>
     <Sub>{success.sub}</Sub>
-  </div>
+  </Fragment>
 );
 
 Success.propTypes = {
