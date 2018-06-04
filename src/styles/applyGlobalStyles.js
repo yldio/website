@@ -1,9 +1,9 @@
 import { injectGlobal } from 'styled-components';
-import normalize from 'styled-normalize';
+import reset from 'styled-reset';
 
 export default function applyGlobalStyles() {
   injectGlobal`
-    ${normalize}
+    ${reset}
 
     @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
