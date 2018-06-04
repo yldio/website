@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`success section 1`] = `
+<React.Fragment>
+  <styled__Title>
+    The Success
+  </styled__Title>
+  <styled__Main>
+    this is the main description
+  </styled__Main>
+  <styled__Sub>
+    this is the sub description
+  </styled__Sub>
+</React.Fragment>
+`;

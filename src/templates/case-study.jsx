@@ -8,6 +8,7 @@ import { Copy, H2 } from 'components/Typography';
 import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
 import TagList from 'compositions/templates/case-study/TagList';
+import Success from 'compositions/templates/case-study/Success';
 
 const CaseStudyTemplate = ({
   heroImage,
@@ -16,6 +17,7 @@ const CaseStudyTemplate = ({
   tags,
   title,
   pageTitle,
+  success,
 }) => (
   <Fragment>
     <Helmet
@@ -62,6 +64,7 @@ const CaseStudyTemplate = ({
         too. Some amazing support copy with go here to reenforce whatever
         section it is relevant too.
       </Copy>
+      <Success {...success} />
     </PageSection>
   </Fragment>
 );
@@ -73,6 +76,7 @@ CaseStudyTemplate.propTypes = {
   pageTitle: PropTypes.string.isRequired,
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  success: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -92,6 +96,10 @@ export const pageQuery = graphql`
         }
       }
       heroImageAlt
+      success {
+        main
+        sub
+      }
     }
   }
 `;
