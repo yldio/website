@@ -1,22 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`success section 1`] = `
-<PageSection
-  gradient={false}
-  gradientHeight="50%"
->
-  <Typography__H2>
-    The Process
-  </Typography__H2>
-  <Typography__base
-    large={true}
+<React.Fragment>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
   >
-    Process section top text
-  </Typography__base>
-  <Typography__base
-    newLines={true}
+    <Typography__H2>
+      The Process
+    </Typography__H2>
+    <Typography__base
+      large={true}
+    >
+      Process section top text
+    </Typography__base>
+    <Typography__base
+      newLines={true}
+    >
+      Process section main text
+    </Typography__base>
+  </PageSection>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
+    wide={true}
   >
-    Process section main text
-  </Typography__base>
-</PageSection>
+    <Image
+      Tag="div"
+      alt="A demo of the process"
+      fadeIn={true}
+      src="process-image.jpg"
+    />
+  </PageSection>
+</React.Fragment>
 `;

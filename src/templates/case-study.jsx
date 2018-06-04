@@ -80,6 +80,14 @@ export const pageQuery = graphql`
       process {
         main
         top
+        image {
+          childImageSharp {
+            sizes(quality: 75, maxWidth: 1280) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+        imageAlt
       }
     }
   }
