@@ -11,6 +11,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   color: ${textLight};
+  font-weight: 500;
   font-size: 2.25rem;
   margin-top: ${spacing(3)};
   margin-bottom: ${spacing(3)};

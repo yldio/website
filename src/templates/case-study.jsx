@@ -64,6 +64,8 @@ const CaseStudyTemplate = ({
         too. Some amazing support copy with go here to reenforce whatever
         section it is relevant too.
       </Copy>
+    </PageSection>
+    <PageSection>
       <Success {...success} />
     </PageSection>
   </Fragment>
