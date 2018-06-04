@@ -8,7 +8,6 @@ import { textLight, textLighter } from 'styles/colours';
 export const Container = Panel.withComponent('ul').extend`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   padding: ${spacing(4)} ${spacing(2)};
   margin-left: ${spacing(-4)};
   margin-right: ${spacing(-4)};
@@ -34,12 +33,6 @@ export const Image = styled.img`
   height: auto;
   margin-bottom: ${spacing(3)};
   width: 100%;
-`;
-
-export const ProductSublist = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 `;
 
 export const Product = styled.li`
