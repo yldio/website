@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { textLight, textLighter } from 'styles/colours';
 import { spacing } from 'styles/spacing';
 
+const base = styled.span`
+  white-space: ${props => (props.newLines ? 'pre-line' : 'normal')};
+`;
+
 export const H1 = styled.h1`
   color: ${textLight};
   font-size: 3rem;
@@ -17,7 +21,7 @@ export const H2 = styled.h2`
   margin-bottom: ${spacing(3)};
 `;
 
-export const Copy = styled.p`
+export const Copy = base.withComponent('p').extend`
   color: ${textLighter};
   font-size: ${props => (props.large ? '1.5rem' : '1.25rem')};
   font-weight: ${props => (props.large ? 300 : 400)};
