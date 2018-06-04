@@ -12,7 +12,7 @@ exports[`CustomerQuote 1`] = `
     fadeIn={true}
     src="image.jpg"
   />
-  <styled__Container>
+  <Container>
     <styled__QuoteWrapper>
       <styled__Quote>
         YLD offered amazing service,
@@ -24,7 +24,7 @@ exports[`CustomerQuote 1`] = `
         Senior Director of Product Management - Joyent
       </styled__Position>
     </styled__QuoteWrapper>
-  </styled__Container>
+  </Container>
   <PageSection
     gradient={false}
     gradientHeight="50%"
