@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`success section 1`] = `
+<PageSection
+  gradient={false}
+  gradientHeight="50%"
+>
+  <Typography__H2>
+    The Process
+  </Typography__H2>
+  <Typography__Copy
+    large={true}
+  >
+    We help you future proof your business though a new style of consulting, ground up. We connect and educate engineering, product and leadership to help you navigate digital transformation, grow your business and tackle core customer problems. We’re one of the most renowned technology companies in Europe.
+  </Typography__Copy>
+  <Typography__Copy>
+    Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
+  </Typography__Copy>
+  <Typography__Copy>
+    Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
+  </Typography__Copy>
+</PageSection>
+`;

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { mapProps } from 'recompose';
 import GatsbyImage from 'gatsby-image';
 
-import { Copy, H2 } from 'components/Typography';
 import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
+import Process from 'compositions/templates/case-study/Process';
 import TagList from 'compositions/templates/case-study/TagList';
 import Success from 'compositions/templates/case-study/Success';
 
@@ -37,34 +37,7 @@ const CaseStudyTemplate = ({
     <PageSection wide>
       <GatsbyImage alt={heroImageAlt} {...heroImage.childImageSharp} />
     </PageSection>
-    <PageSection>
-      <H2>The Process</H2>
-      <Copy large>
-        We help you future proof your business though a new style of consulting,
-        ground up. We connect and educate engineering, product and leadership to
-        help you navigate digital transformation, grow your business and tackle
-        core customer problems. We’re one of the most renowned technology
-        companies in Europe.
-      </Copy>
-      <Copy>
-        Some amazing support copy with go here to reenforce whatever section it
-        is relevant too. Some amazing support copy with go here to reenforce
-        whatever section it is relevant too. Some amazing support copy with go
-        here to reenforce whatever section it is relevant too. Some amazing
-        support copy with go here to reenforce whatever section it is relevant
-        too. Some amazing support copy with go here to reenforce whatever
-        section it is relevant too.
-      </Copy>
-      <Copy>
-        Some amazing support copy with go here to reenforce whatever section it
-        is relevant too. Some amazing support copy with go here to reenforce
-        whatever section it is relevant too. Some amazing support copy with go
-        here to reenforce whatever section it is relevant too. Some amazing
-        support copy with go here to reenforce whatever section it is relevant
-        too. Some amazing support copy with go here to reenforce whatever
-        section it is relevant too.
-      </Copy>
-    </PageSection>
+    <Process />
     <PageSection>
       <Success {...success} />
     </PageSection>
