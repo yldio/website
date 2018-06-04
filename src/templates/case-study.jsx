@@ -8,6 +8,7 @@ import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
 import TagList from 'compositions/templates/case-study/TagList';
 import Success from 'compositions/templates/case-study/Success';
+import MetricGrid from 'compositions/templates/case-study/MetricGrid';
 
 const CaseStudyTemplate = ({
   heroImage,
@@ -17,6 +18,7 @@ const CaseStudyTemplate = ({
   title,
   pageTitle,
   success,
+  metrics,
 }) => (
   <Fragment>
     <Helmet
@@ -39,9 +41,11 @@ const CaseStudyTemplate = ({
     <PageSection>
       <Success {...success} />
     </PageSection>
+    <PageSection>
+      <MetricGrid metrics={metrics} />
+    </PageSection>
   </Fragment>
 );
-
 CaseStudyTemplate.propTypes = {
   heroImage: PropTypes.string.isRequired,
   heroImageAlt: PropTypes.string.isRequired,
@@ -50,6 +54,7 @@ CaseStudyTemplate.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
+  metrics: PropTypes.shape(MetricGrid.propTypes).isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -72,6 +77,11 @@ export const pageQuery = graphql`
       success {
         main
         sub
+      }
+      metrics {
+        parameter
+        value
+        change
       }
     }
   }
