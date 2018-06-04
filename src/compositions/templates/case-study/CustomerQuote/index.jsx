@@ -1,4 +1,5 @@
 import React from 'react';
+import PageSection from 'components/PageSection';
 import PropTypes from 'prop-types';
 import GatsbyImage from 'gatsby-image';
 import {
@@ -7,6 +8,7 @@ import {
   Quote,
   Author,
   Position,
+  Container,
 } from './styled';
 
 const CustomerQuote = ({
@@ -19,18 +21,20 @@ const CustomerQuote = ({
   clientAppImage,
   clientAppImageAlt,
 }) => (
-  <div>
-    <div>
-      <GatsbyImage alt={quotesImageAlt} {...quotesImage.childImageSharp} />
+  <PageSection wide>
+    <GatsbyImage alt={quotesImageAlt} {...quotesImage.childImageSharp} />
+    <Container>
       <QuoteWrapper>
         <Quote>{quotes}</Quote>
         <Author>{quoteAuthor}</Author>
         <Position>{quotePosition}</Position>
       </QuoteWrapper>
-    </div>
-    <SubDescription>{subDescription}</SubDescription>
+    </Container>
+    <PageSection>
+      <SubDescription>{subDescription}</SubDescription>
+    </PageSection>
     <GatsbyImage alt={clientAppImageAlt} {...clientAppImage.childImageSharp} />
-  </div>
+  </PageSection>
 );
 
 CustomerQuote.propTypes = {

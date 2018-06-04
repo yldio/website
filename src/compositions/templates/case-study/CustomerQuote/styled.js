@@ -10,13 +10,18 @@ export const QuoteWrapper = styled.div`
   line-height: 1.24;
 `;
 
+export const Container = styled.div`
+  background-color: transparent;
+`;
+
 export const Quote = styled.p`
-  font-size: 2.1rem;
+  font-size: 2.375rem;
   padding: 77px 111px 20px 107px;
+  line-height: 1.24;
 `;
 
 export const Author = styled.p`
-  font-size: 1.1875rem;
+  font-size: 1.25rem;
   padding-left: 107px;
   margin-bottom: 0px;
   font-weight: 500;
@@ -24,7 +29,7 @@ export const Author = styled.p`
 
 export const Position = styled.p`
   margin-top: 0px;
-  font-size: 1.1875rem;
+  font-size: 1.25rem;
   padding-left: 107px;
   padding-bottom: 88px;
 `;
