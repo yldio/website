@@ -18,16 +18,12 @@ export const Contact = styled.li`
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: -${spacing(2)};
-  padding: 0;
 `;
 
 export const Line = styled.p`
   margin-bottom: ${spacing()};
-  margin-top: 0;
   font-size: 1.125rem;
-  font-style: normal;
 `;
 
 export const Link = styled(DefaultLink)`
