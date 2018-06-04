@@ -10,7 +10,6 @@ export const Contact = styled.li`
   width: 50%;
 
   ${breakpoints.tablet`
-    margin-bottom: 0;
     width: ${100 / 3}%;
   `};
 `;
