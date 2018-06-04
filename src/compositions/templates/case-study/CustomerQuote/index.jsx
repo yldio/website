@@ -12,22 +12,22 @@ import {
 } from './styled';
 
 const CustomerQuote = ({
-  quotesImage,
-  quotesImageAlt,
-  quotes,
-  quoteAuthor,
-  quotePosition,
+  image,
+  imageAlt,
+  quote,
+  author,
+  position,
   subDescription,
   clientAppImage,
   clientAppImageAlt,
 }) => (
   <PageSection wide>
-    <GatsbyImage alt={quotesImageAlt} {...quotesImage.childImageSharp} />
+    <GatsbyImage alt={imageAlt} {...image.childImageSharp} />
     <Container>
       <QuoteWrapper>
-        <Quote>{quotes}</Quote>
-        <Author>{quoteAuthor}</Author>
-        <Position>{quotePosition}</Position>
+        <Quote>{quote}</Quote>
+        <Author>{author}</Author>
+        <Position>{position}</Position>
       </QuoteWrapper>
     </Container>
     <PageSection>
@@ -38,13 +38,13 @@ const CustomerQuote = ({
 );
 
 CustomerQuote.propTypes = {
-  quotesImage: PropTypes.shape({
+  image: PropTypes.shape({
     childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
   }).isRequired,
-  quotesImageAlt: PropTypes.string.isRequired,
-  quotes: PropTypes.string.isRequired,
-  quoteAuthor: PropTypes.string.isRequired,
-  quotePosition: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string.isRequired,
+  quote: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
   subDescription: PropTypes.string.isRequired,
   clientAppImage: PropTypes.shape({
     childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,

@@ -17,12 +17,7 @@ const CaseStudyTemplate = ({
   tags,
   title,
   pageTitle,
-  quotesImage,
-  quotes,
-  quoteAuthor,
-  quotePosition,
-  subDescription,
-  clientAppImage,
+  quote,
   success,
 }) => (
   <Fragment>
@@ -43,14 +38,7 @@ const CaseStudyTemplate = ({
     <PageSection wide>
       <GatsbyImage alt={heroImageAlt} {...heroImage.childImageSharp} />
     </PageSection>
-    <CustomerQuote
-      quotesImage={quotesImage}
-      quotes={quotes}
-      quoteAuthor={quoteAuthor}
-      quotePosition={quotePosition}
-      subDescription={subDescription}
-      clientAppImage={clientAppImage}
-    />
+    <CustomerQuote {...quote} />
     <PageSection>
       <Success {...success} />
     </PageSection>
@@ -65,18 +53,7 @@ CaseStudyTemplate.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
-  quotesImage: PropTypes.shape({
-    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
-  }).isRequired,
-  quotesImageAlt: PropTypes.string.isRequired,
-  quotes: PropTypes.string.isRequired,
-  quoteAuthor: PropTypes.string.isRequired,
-  quotePosition: PropTypes.string.isRequired,
-  subDescription: PropTypes.string.isRequired,
-  clientAppImage: PropTypes.shape({
-    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
-  }).isRequired,
-  clientAppImageAlt: PropTypes.string.isRequired,
+  quote: PropTypes.shape(CustomerQuote.propTypes).isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -96,26 +73,28 @@ export const pageQuery = graphql`
         }
       }
       heroImageAlt
-      quotesImage {
-        childImageSharp {
-          sizes(quality: 75, maxWidth: 1280) {
-            ...GatsbyImageSharpSizes
+      quote {
+        image {
+          childImageSharp {
+            sizes(quality: 75, maxWidth: 1280) {
+              ...GatsbyImageSharpSizes
+            }
           }
         }
-      }
-      quotesImageAlt
-      quotes
-      quotePosition
-      quoteAuthor
-      subDescription
-      clientAppImage {
-        childImageSharp {
-          sizes(quality: 75, maxWidth: 1280) {
-            ...GatsbyImageSharpSizes
+        imageAlt
+        quote
+        position
+        author
+        subDescription
+        clientAppImage {
+          childImageSharp {
+            sizes(quality: 75, maxWidth: 1280) {
+              ...GatsbyImageSharpSizes
+            }
           }
         }
+        clientAppImageAlt
       }
-      clientAppImageAlt
       success {
         main
         sub
