@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomerQuote 1`] = `
+<div>
+  <div>
+    <Image
+      Tag="div"
+      alt="Quote image"
+      fadeIn={true}
+      src="image.jpg"
+    />
+    <styled__QuoteWrapper>
+      <styled__Quote>
+        YLD offered amazing service,
+      </styled__Quote>
+      <styled__Author>
+        Casey Bisson
+      </styled__Author>
+      <styled__Position>
+        Senior Director of Product Management - Joyent
+      </styled__Position>
+    </styled__QuoteWrapper>
+  </div>
+  <styled__SubDescription>
+    Some amazing support copy with go here to reenforce whatever section it is relevant too.
+  </styled__SubDescription>
+  <Image
+    Tag="div"
+    alt="Client App Image"
+    fadeIn={true}
+    src="image.jpg"
+  />
+</div>
+`;
