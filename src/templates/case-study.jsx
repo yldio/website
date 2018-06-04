@@ -65,13 +65,17 @@ CaseStudyTemplate.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
-  quotesImage: PropTypes.string.isRequired,
+  quotesImage: PropTypes.shape({
+    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+  }).isRequired,
   quotesImageAlt: PropTypes.string.isRequired,
   quotes: PropTypes.string.isRequired,
   quoteAuthor: PropTypes.string.isRequired,
   quotePosition: PropTypes.string.isRequired,
   subDescription: PropTypes.string.isRequired,
-  clientAppImage: PropTypes.string.isRequired,
+  clientAppImage: PropTypes.shape({
+    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+  }).isRequired,
   clientAppImageAlt: PropTypes.string.isRequired,
 };
 
