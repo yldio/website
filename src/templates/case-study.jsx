@@ -17,6 +17,7 @@ const CaseStudyTemplate = ({
   tags,
   title,
   pageTitle,
+  process,
   success,
 }) => (
   <Fragment>
@@ -37,7 +38,7 @@ const CaseStudyTemplate = ({
     <PageSection wide>
       <GatsbyImage alt={heroImageAlt} {...heroImage.childImageSharp} />
     </PageSection>
-    <Process />
+    <Process {...process} />
     <PageSection>
       <Success {...success} />
     </PageSection>
@@ -52,6 +53,7 @@ CaseStudyTemplate.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
+  process: PropTypes.shape(Process.propTypes).isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -74,6 +76,10 @@ export const pageQuery = graphql`
       success {
         main
         sub
+      }
+      process {
+        main
+        top
       }
     }
   }
