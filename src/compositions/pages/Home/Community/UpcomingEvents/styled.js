@@ -6,10 +6,8 @@ import breakpoints from 'styles/breakpoints';
 export const Events = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: ${spacing(-1.25)};
   margin-bottom: ${spacing(6.25)};
-  padding: 0;
 `;
 
 export const Event = styled.li`
@@ -30,6 +28,5 @@ export const Title = styled.h3`
   color: ${textLight};
   font-weight: 500;
   font-size: 2.25rem;
-  margin-top: 0;
   margin-bottom: ${spacing(5)};
 `;
