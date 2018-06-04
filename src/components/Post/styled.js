@@ -21,7 +21,6 @@ export const Title = styled.h4`
   font-size: 1.375rem;
   font-weight: 400;
   margin-bottom: ${spacing()};
-  margin-top: 0;
 `;
 
 export const Footer = styled.footer`
@@ -33,10 +32,6 @@ export const Footer = styled.footer`
 export const Time = styled.time`
   color: ${textLighter};
   display: block;
-`;
-
-export const Authored = styled.p`
-  margin: 0;
 `;
 
 export const Body = styled.main`

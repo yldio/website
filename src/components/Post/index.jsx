@@ -6,7 +6,6 @@ import Link from 'components/Link';
 
 import {
   Article,
-  Authored,
   Body,
   Footer,
   Header,
@@ -33,10 +32,10 @@ const Post = ({
     <PostRule />
     <Footer>
       <Thumbnail src={image} />
-      <Authored>
+      <p>
         <Link href={sourceLink}>{sourceText}</Link>
         <Time datetime={date}>{format(date, 'MMM DD')}</Time>
-      </Authored>
+      </p>
     </Footer>
   </Article>
 );
