@@ -15,10 +15,10 @@ export const TileContent = styled.div`
 
 export const TileContentTitle = styled.h5`
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
 `;
 
 export const TileContentBody = styled.p`
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
 `;
