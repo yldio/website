@@ -38,7 +38,20 @@ metrics:
     - parameter: Unique visitors
       value: 20,345
       change: -10.85%
+quote:
+    image: quoteImage.jpg
+    imageAlt: Quote image
+    quote: |
+          "YLD offered amazing service, support and care and delivered ontime and under budget. I don't know what else to say. 
+          I am completely blown away."
+    author: Casey Bisson
+    position: Senior Director of Product Management - Joyent
+    subDescription: |
+          Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
 
+          Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
+    clientAppImage: clientAppImage.jpg
+    clientAppImageAlt: Client App Image
 process:
   top: |
     We help you future proof your business though a new style of consulting, ground up. We connect and educate engineering, product and leadership to help you navigate digital transformation, grow your business and tackle core customer problems. We’re one of the most renowned technology companies in Europe.
