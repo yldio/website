@@ -9,6 +9,6 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules/', '<rootDir>/public/'],
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.(svg)$': '<rootDir>/spec/jest-transform-asset',
+    '^.+\\.(svg|png|jpe?g)$': '<rootDir>/spec/jest-transform-asset',
   },
 };
