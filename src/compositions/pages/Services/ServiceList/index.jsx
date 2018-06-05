@@ -2,20 +2,21 @@ import React, { Fragment } from 'react';
 
 import PageSection from 'components/PageSection';
 
-import { Illustration, Link, Support, Title } from './styled';
+import { Copy, H2 } from 'components/Typography';
+import { Illustration, Link } from './styled';
 import Subservice from './Subservice';
 
 const ServiceList = () => (
   <Fragment>
     <PageSection id="approach" data-selector="services:our-approach">
-      <Title>Our Approach</Title>
-      <Support>
+      <H2>Our Approach</H2>
+      <Copy large>
         We help you future proof your business though a new style of consulting,
         ground up. We connect and educate engineering, product and leadership to
         help you navigate digital transformation, grow your business and tackle
         core customer problems. We’re one of the most renowned technology
         companies in Europe.
-      </Support>
+      </Copy>
       <Illustration src="http://placekitten.com/900/400" />
       <Subservice name="Engineering Consultancy">
         We use our capability model to help you gauge your organisation’s
@@ -54,8 +55,8 @@ const ServiceList = () => (
       id="design"
       data-selector="services:design-product"
     >
-      <Title>Design &amp; Product</Title>
-      <Support>
+      <H2>Design &amp; Product</H2>
+      <Copy large>
         A great company continuously finds better solutions to its customers
         biggest problems. Design is the bridge between the two. Great design
         goes deeper than just how something looks, it’s why and how it works,
@@ -63,7 +64,7 @@ const ServiceList = () => (
         <Link href="#design">
           Learn more about Design as a key differentiator →
         </Link>
-      </Support>
+      </Copy>
       <Illustration src="http://placekitten.com/900/400" />
       <Subservice name="Design Leadership">
         To continuously go beyond your customers expectations, design must be an
@@ -124,14 +125,14 @@ const ServiceList = () => (
       </Subservice>
     </PageSection>
     <PageSection id="engineering" data-selector="services:engineering">
-      <Title>Engineering</Title>
-      <Support>
+      <H2>Engineering</H2>
+      <Copy large>
         We help you future proof your business though a new style of consulting,
         ground up. We connect and educate engineering, product and leadership to
         help you navigate digital transformation, grow your business and tackle
         core customer problems. We’re one of the most renowned technology
         companies in Europe.
-      </Support>
+      </Copy>
       <Illustration src="http://placekitten.com/900/400" />
       <Subservice name="Engineering Consultancy">
         We use our capability model to help you gauge your organisation’s
@@ -170,8 +171,8 @@ const ServiceList = () => (
       id="training"
       data-selector="services:training"
     >
-      <Title>Training</Title>
-      <Support>
+      <H2>Training</H2>
+      <Copy large>
         A great company continuously finds better solutions to its customers
         biggest problems. Design is the bridge between the two. Great design
         goes deeper than just how something looks, it’s why and how it works,
@@ -179,7 +180,7 @@ const ServiceList = () => (
         <Link href="#design">
           Learn more about Design as a key differentiator →
         </Link>
-      </Support>
+      </Copy>
       <Illustration src="http://placekitten.com/900/400" />
       <Subservice name="Node Training">
         We use our capability model to help you gauge your organisation’s

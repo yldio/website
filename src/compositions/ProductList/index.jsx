@@ -6,7 +6,6 @@ import {
   Container,
   Image,
   Product,
-  ProductSublist,
   ProductColumn,
   Title,
   Footer,
@@ -19,11 +18,11 @@ const ProductList = () => (
     <ProductColumn>
       <Image src={placeholder} alt="our approach" />
       <Title>Our Approach</Title>
-      <ProductSublist>
+      <ul>
         <Product>Digital Transformation</Product>
         <Product>Engineering Consultancy</Product>
         <Product>Product Consultancy</Product>
-      </ProductSublist>
+      </ul>
       <Footer>
         <Link href="/services#approach">More on Approach →</Link>
       </Footer>
@@ -31,12 +30,12 @@ const ProductList = () => (
     <ProductColumn>
       <Image src={placeholder} alt="design & product" />
       <Title>Design &amp; Product</Title>
-      <ProductSublist>
+      <ul>
         <Product>Design Systems &amp; Design Operations</Product>
         <Product>Design Sprints</Product>
         <Product>User Interface Design &amp; Branding</Product>
         <Product>Research, Usability and User Experience</Product>
-      </ProductSublist>
+      </ul>
       <Footer>
         <Link href="/services#design">More on Design →</Link>
       </Footer>
@@ -44,13 +43,13 @@ const ProductList = () => (
     <ProductColumn>
       <Image src={placeholder} alt="engineering" />
       <Title>Engineering</Title>
-      <ProductSublist>
+      <ul>
         <Product>Engineering Leadership</Product>
         <Product>Back End &amp; Node.js</Product>
         <Product>Front End &amp; React.js</Product>
         <Product>DevOps &amp; Kubernetes</Product>
         <Product>Mobile &amp; React Native</Product>
-      </ProductSublist>
+      </ul>
       <Footer>
         <Link href="/services#engineering">More on Engineering →</Link>
       </Footer>
@@ -58,13 +57,13 @@ const ProductList = () => (
     <ProductColumn>
       <Image src={placeholder} alt="training" />
       <Title>Training</Title>
-      <ProductSublist>
+      <ul>
         <Product>Node Training</Product>
         <Product>React Training</Product>
         <Product>Design Systems Training</Product>
         <Product>UX Research Training</Product>
         <Product>UX Design Training</Product>
-      </ProductSublist>
+      </ul>
       <Footer>
         <Link href="/services#training">More on Training →</Link>
       </Footer>

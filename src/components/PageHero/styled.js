@@ -7,8 +7,6 @@ export const DefaultTitle = styled.h1`
   font-weight: 500;
   color: ${textLight};
   line-height: 1.2em;
-  margin-bottom: 0;
-  margin-top: 0;
 `;
 
 export const Before = styled.h1`
@@ -16,7 +14,6 @@ export const Before = styled.h1`
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: ${spacing()};
-  margin-top: 0;
   text-transform: uppercase;
 `;
 

@@ -8,12 +8,14 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     gradientHeight="50%"
     id="approach"
   >
-    <styled__Title>
+    <Typography__H2>
       Our Approach
-    </styled__Title>
-    <styled__Support>
+    </Typography__H2>
+    <Typography__base
+      large={true}
+    >
       We help you future proof your business though a new style of consulting, ground up. We connect and educate engineering, product and leadership to help you navigate digital transformation, grow your business and tackle core customer problems. We’re one of the most renowned technology companies in Europe.
-    </styled__Support>
+    </Typography__base>
     <styled__Illustration
       src="http://placekitten.com/900/400"
     />
@@ -42,17 +44,19 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     gradientHeight="100%"
     id="design"
   >
-    <styled__Title>
+    <Typography__H2>
       Design & Product
-    </styled__Title>
-    <styled__Support>
+    </Typography__H2>
+    <Typography__base
+      large={true}
+    >
       A great company continuously finds better solutions to its customers biggest problems. Design is the bridge between the two. Great design goes deeper than just how something looks, it’s why and how it works, for your customers and for your business.
       <styled__Link
         href="#design"
       >
         Learn more about Design as a key differentiator →
       </styled__Link>
-    </styled__Support>
+    </Typography__base>
     <styled__Illustration
       src="http://placekitten.com/900/400"
     />
@@ -113,12 +117,14 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     gradientHeight="50%"
     id="engineering"
   >
-    <styled__Title>
+    <Typography__H2>
       Engineering
-    </styled__Title>
-    <styled__Support>
+    </Typography__H2>
+    <Typography__base
+      large={true}
+    >
       We help you future proof your business though a new style of consulting, ground up. We connect and educate engineering, product and leadership to help you navigate digital transformation, grow your business and tackle core customer problems. We’re one of the most renowned technology companies in Europe.
-    </styled__Support>
+    </Typography__base>
     <styled__Illustration
       src="http://placekitten.com/900/400"
     />
@@ -147,17 +153,19 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
     gradientHeight="100%"
     id="training"
   >
-    <styled__Title>
+    <Typography__H2>
       Training
-    </styled__Title>
-    <styled__Support>
+    </Typography__H2>
+    <Typography__base
+      large={true}
+    >
       A great company continuously finds better solutions to its customers biggest problems. Design is the bridge between the two. Great design goes deeper than just how something looks, it’s why and how it works, for your customers and for your business.
       <styled__Link
         href="#design"
       >
         Learn more about Design as a key differentiator →
       </styled__Link>
-    </styled__Support>
+    </Typography__base>
     <styled__Illustration
       src="http://placekitten.com/900/400"
     />

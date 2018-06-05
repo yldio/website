@@ -18,12 +18,10 @@ export const TileContentTitle = styled.h5`
   letter-spacing: 1px;
   font-size: 1.125rem;
   font-weight: 700;
-  margin: 0;
   text-transform: uppercase;
 `;
 
 export const TileContentBody = styled.p`
   font-weight: 300;
   font-size: 1.5rem;
-  margin: 0;
 `;

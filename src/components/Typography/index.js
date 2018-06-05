@@ -21,6 +21,14 @@ export const H2 = styled.h2`
   margin-bottom: ${spacing(3)};
 `;
 
+export const H4 = styled.h4`
+  color: ${textLight};
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-top: ${spacing(2)};
+  margin-bottom: ${spacing(2)};
+`;
+
 export const Copy = base.withComponent('p').extend`
   color: ${textLighter};
   font-size: ${props => (props.large ? '1.5rem' : '1.25rem')};

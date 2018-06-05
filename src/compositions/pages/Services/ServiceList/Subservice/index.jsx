@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Title, Body } from './styled';
+import { H4, Copy } from 'components/Typography';
+import { Container } from './styled';
 
 const Subservice = ({ children, name }) => (
   <Container>
-    <Title>{name}</Title>
-    <Body>{children}</Body>
+    <H4>{name}</H4>
+    <Copy>{children}</Copy>
   </Container>
 );
 

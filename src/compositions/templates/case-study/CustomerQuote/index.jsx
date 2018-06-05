@@ -1,15 +1,11 @@
-import React from 'react';
-import PageSection from 'components/PageSection';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import GatsbyImage from 'gatsby-image';
-import {
-  SubDescription,
-  QuoteWrapper,
-  Quote,
-  Author,
-  Position,
-  Container,
-} from './styled';
+
+import { Copy } from 'components/Typography';
+import PageSection from 'components/PageSection';
+
+import { QuoteWrapper, Quote, Author, Position, Container } from './styled';
 
 const CustomerQuote = ({
   image,
@@ -21,20 +17,27 @@ const CustomerQuote = ({
   clientAppImage,
   clientAppImageAlt,
 }) => (
-  <PageSection wide>
-    <GatsbyImage alt={imageAlt} {...image.childImageSharp} />
-    <Container>
-      <QuoteWrapper>
-        <Quote>{quote}</Quote>
-        <Author>{author}</Author>
-        <Position>{position}</Position>
-      </QuoteWrapper>
-    </Container>
-    <PageSection>
-      <SubDescription>{subDescription}</SubDescription>
+  <Fragment>
+    <PageSection wide>
+      <GatsbyImage alt={imageAlt} {...image.childImageSharp} />
+      <Container>
+        <QuoteWrapper>
+          <Quote>{quote}</Quote>
+          <Author>{author}</Author>
+          <Position>{position}</Position>
+        </QuoteWrapper>
+      </Container>
     </PageSection>
-    <GatsbyImage alt={clientAppImageAlt} {...clientAppImage.childImageSharp} />
-  </PageSection>
+    <PageSection>
+      <Copy newLines>{subDescription}</Copy>
+    </PageSection>
+    <PageSection wide>
+      <GatsbyImage
+        alt={clientAppImageAlt}
+        {...clientAppImage.childImageSharp}
+      />
+    </PageSection>
+  </Fragment>
 );
 
 CustomerQuote.propTypes = {

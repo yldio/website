@@ -41,19 +41,16 @@ export const CTABody = Body.extend`
 export const Title = styled.h6`
   font-size: 1.25rem;
   font-weight: 500;
-  margin: 0 0 ${spacing()} 0;
+  margin-right: ${spacing()};
 `;
 
 export const Content = styled.p`
   color: ${textLighter};
   font-size: 1.125rem;
-  margin: 0;
 `;
 
 export const Grid = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: ${spacing(8)} ${spacing(-1.5)} 0 ${spacing(-1.5)};
-  padding: 0;
 `;
