@@ -7,7 +7,7 @@ import { Grid } from './styled';
 const MetricGrid = ({ content }) => (
   <Grid>
     {content &&
-      content.map(metric => <Metric {...metric} max={content.length} />)}
+      content.map(metric => <Metric key={metric.parameter} {...metric} />)}
   </Grid>
 );
 

@@ -21,13 +21,7 @@ const Metrics = ({ sub, main, content }) => (
 Metrics.propTypes = {
   sub: PropTypes.string.isRequired,
   main: PropTypes.string.isRequired,
-  content: PropTypes.arrayOf(
-    PropTypes.shape({
-      parameter: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
-      change: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  ...MetricGrid.propTypes,
 };
 
 export default Metrics;

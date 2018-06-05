@@ -3,9 +3,12 @@ import { shallow } from 'enzyme';
 import Metrics from './index';
 
 test('components/Logo snapshot', () => {
-  const wrapper = shallow(
-    <Metrics parameter="reviews" value="2.8" change="20%" />,
-  );
+  const metrics = {
+    sub: 'some text',
+    main: 'some text here as well',
+    content: [{ parameter: 'test', value: '20.00', change: '20%' }],
+  };
+  const wrapper = shallow(<Metrics {...metrics} />);
 
   expect(wrapper).toMatchSnapshot();
 });
