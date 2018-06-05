@@ -6,9 +6,15 @@ import {
   TileContent,
   TileContentTitle,
   TileContentBody,
+  Image,
   Right,
   Left,
 } from './styled';
+
+import phoneImage from './phone-placeholder.svg';
+import placeholder from './app-placeholder.svg';
+import clientLogo from './trainline-logo.png';
+import secondClientLogo from './joyent-logo.png';
 
 const RelatedCaseStudies = () => (
   <Section wide>
@@ -16,28 +22,34 @@ const RelatedCaseStudies = () => (
       <Tile>
         <TileContent>
           <Left>
-            <TileContentTitle>Related Case Studies</TileContentTitle>
+            <header>
+              <TileContentTitle>Related Case Studies</TileContentTitle>
+              <img alt="client logo" src={clientLogo} />
+            </header>
             <TileContentBody>
               A legacy platform that faced a huge pressure to have an updated
               interface.
             </TileContentBody>
           </Left>
           <Right>
-            <p>test</p>
+            <Image src={phoneImage} />
           </Right>
         </TileContent>
       </Tile>
       <Tile colour="lightGreen">
         <TileContent>
           <Left>
-            <TileContentTitle>Related Case Studies</TileContentTitle>
+            <header>
+              <TileContentTitle>Related Case Studies</TileContentTitle>
+              <img alt="client logo" src={secondClientLogo} />
+            </header>
             <TileContentBody>
               A legacy platform that faced a huge pressure to have an updated
               interface.
             </TileContentBody>
           </Left>
           <Right>
-            <p>test</p>
+            <Image src={placeholder} />
           </Right>
         </TileContent>
       </Tile>

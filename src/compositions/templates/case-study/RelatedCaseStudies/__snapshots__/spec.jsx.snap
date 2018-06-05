@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RelatedCaseStudies 1`] = `
+<Container
+  wide={true}
+>
+  <TileGrid>
+    <styled__Tile>
+      <styled__TileContent>
+        <styled__Left>
+          <header>
+            <styled__TileContentTitle>
+              Related Case Studies
+            </styled__TileContentTitle>
+            <img
+              alt="client logo"
+              src="/src/compositions/templates/case-study/RelatedCaseStudies/trainline-logo.png"
+            />
+          </header>
+          <styled__TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated interface.
+          </styled__TileContentBody>
+        </styled__Left>
+        <styled__Right>
+          <styled__Image
+            src="/src/compositions/templates/case-study/RelatedCaseStudies/phone-placeholder.svg"
+          />
+        </styled__Right>
+      </styled__TileContent>
+    </styled__Tile>
+    <styled__Tile
+      colour="lightGreen"
+    >
+      <styled__TileContent>
+        <styled__Left>
+          <header>
+            <styled__TileContentTitle>
+              Related Case Studies
+            </styled__TileContentTitle>
+            <img
+              alt="client logo"
+              src="/src/compositions/templates/case-study/RelatedCaseStudies/joyent-logo.png"
+            />
+          </header>
+          <styled__TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated interface.
+          </styled__TileContentBody>
+        </styled__Left>
+        <styled__Right>
+          <styled__Image
+            src="/src/compositions/templates/case-study/RelatedCaseStudies/app-placeholder.svg"
+          />
+        </styled__Right>
+      </styled__TileContent>
+    </styled__Tile>
+  </TileGrid>
+</Container>
+`;

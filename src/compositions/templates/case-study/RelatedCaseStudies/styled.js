@@ -8,14 +8,15 @@ export const Section = Container.withComponent('section').extend`
 `;
 
 export const TileContent = styled.div`
-  padding: ${spacing(4)};
+  display: flex;
 `;
 
 export const TileContentTitle = styled.h5`
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   font-size: 1.125rem;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 10px;
   text-transform: uppercase;
 `;
 
@@ -26,16 +27,22 @@ export const TileContentBody = styled.p`
 `;
 
 export const Left = styled.div`
-  float: left;
   width: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
+  padding: ${spacing(4)};
 `;
 
 export const Right = styled.div`
-  background-color: red;
-  float: right;
+  position: relative;
   width: 50%;
+`;
+
+export const Image = styled.img`
+  display: block;
+  margin-left: auto;
+  width: auto;
+  height: 100%;
 `;
