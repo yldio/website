@@ -4,19 +4,17 @@ import PropTypes from 'prop-types';
 
 import { Grid } from './styled';
 
-const MetricGrid = ({ metrics }) => (
+const MetricGrid = ({ content }) => (
   <Grid>
-    {metrics.map((metric, i) => (
-      <Metric {...metric} max={metrics.length} i={i} />
-    ))}
+    {content &&
+      content.map((metric, i) => (
+        <Metric key={i} {...metric} max={content.length} />
+      ))}
   </Grid>
 );
 
 MetricGrid.propTypes = {
-  metrics: PropTypes.arrayOf(PropTypes.shape(Metric.propTypes)),
-};
-MetricGrid.defaultProps = {
-  metrics: [],
+  content: PropTypes.arrayOf(PropTypes.shape(Metric.propTypes)).isRequired,
 };
 
 export default MetricGrid;

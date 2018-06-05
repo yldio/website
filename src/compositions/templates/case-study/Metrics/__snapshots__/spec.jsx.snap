@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Logo snapshot 1`] = `
+<React.Fragment>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
+  >
+    <Typography__H2>
+      Metrics
+    </Typography__H2>
+    <Typography__base
+      large={true}
+    />
+    <Typography__base
+      newLines={true}
+    />
+  </PageSection>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
+  >
+    <MetricGrid />
+  </PageSection>
+</React.Fragment>
+`;

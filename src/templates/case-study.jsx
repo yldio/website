@@ -9,8 +9,8 @@ import PageSection from 'components/PageSection';
 import Process from 'compositions/templates/case-study/Process';
 import TagList from 'compositions/templates/case-study/TagList';
 import Success from 'compositions/templates/case-study/Success';
-import MetricGrid from 'compositions/templates/case-study/MetricGrid';
 import CustomerQuote from 'compositions/templates/case-study/CustomerQuote';
+import Metrics from 'compositions/templates/case-study/Metrics';
 
 const CaseStudyTemplate = ({
   heroImage,
@@ -47,9 +47,7 @@ const CaseStudyTemplate = ({
     <PageSection>
       <Success {...success} />
     </PageSection>
-    <PageSection>
-      <MetricGrid metrics={metrics} />
-    </PageSection>
+    <Metrics {...metrics} />
   </Fragment>
 );
 CaseStudyTemplate.propTypes = {
@@ -60,9 +58,9 @@ CaseStudyTemplate.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
-  metrics: PropTypes.shape(MetricGrid.propTypes).isRequired,
   quote: PropTypes.shape(CustomerQuote.propTypes).isRequired,
   process: PropTypes.shape(Process.propTypes).isRequired,
+  metrics: PropTypes.shape(Metrics.propTypes).isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -109,9 +107,13 @@ export const pageQuery = graphql`
         sub
       }
       metrics {
-        parameter
-        value
-        change
+        main
+        sub
+        content {
+          parameter
+          value
+          change
+        }
       }
       process {
         main
