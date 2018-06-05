@@ -9,7 +9,7 @@ exports[`components/Logo snapshot 1`] = `
     2.8
   </styled__Value>
   <styled__Change
-    changeLogo="inc"
+    positive={true}
   >
     <styled__Image
       alt="change of the value"

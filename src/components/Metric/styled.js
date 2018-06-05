@@ -61,7 +61,7 @@ export const Value = styled.h4`
 export const Change = styled.div`
   display: flex;
   align-items: center;
-  color: ${props => (props.changeLogo === 'inc' ? textGreen : textRed)};
+  color: ${props => (props.positive ? textGreen : textRed)};
   font-size: 1.2rem;
 `;
 

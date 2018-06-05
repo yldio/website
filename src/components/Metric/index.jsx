@@ -5,16 +5,15 @@ import increment from './increment.svg';
 import decrement from './decrement.svg';
 
 const Metric = ({ parameter, value, change }) => {
-  const changeLogo = +change.slice(0, change.length - 1) > 0 ? 'inc' : 'dec';
+  const positive = change.charAt(0) !== '-';
   return (
     <Item>
       <Parameter>{parameter}</Parameter>
       <Value>{value}</Value>
-      <Change changeLogo={changeLogo}>
-        {changeLogo === 'inc' && (
+      <Change positive={positive}>
+        {positive ? (
           <Image src={increment} alt="change of the value" />
-        )}
-        {changeLogo === 'dec' && (
+        ) : (
           <Image src={decrement} red alt="change of the value" />
         )}
         {change}
