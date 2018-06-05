@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Logo snapshot 1`] = `
+<styled__Item>
+  <styled__Parameter>
+    reviews
+  </styled__Parameter>
+  <styled__Value>
+    2.8
+  </styled__Value>
+  <styled__Change
+    changeLogo="inc"
+  >
+    <styled__Image
+      alt="change of the value"
+      src="/src/components/Metric/increment.svg"
+    />
+    20%
+  </styled__Change>
+</styled__Item>
+`;

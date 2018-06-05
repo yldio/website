@@ -5,7 +5,11 @@ import PropTypes from 'prop-types';
 import { Grid } from './styled';
 
 const MetricGrid = ({ metrics }) => (
-  <Grid>{metrics.map(metric => <Metric {...metric} />)}</Grid>
+  <Grid>
+    {metrics.map((metric, i) => (
+      <Metric {...metric} max={metrics.length} i={i} />
+    ))}
+  </Grid>
 );
 
 MetricGrid.propTypes = {

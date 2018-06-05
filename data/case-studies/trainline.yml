@@ -31,13 +31,13 @@ metrics:
       change: 10.85%
     - parameter: Increase in traffic
       value: 57%
-      change: 0.04%
+      change: -0.04%
     - parameter: Impressions per visitor
       value: '2.8'
       change: 1.48%
     - parameter: Unique visitors
       value: 20,345
-      change: 10.85%
+      change: -10.85%
 
 
 
