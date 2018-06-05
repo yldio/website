@@ -14,6 +14,7 @@ export const Main = styled.p`
   font-size: 1.5rem;
   font-weight: 300;
   white-space: pre-line;
+  font-weight: 300;
 `;
 
 export const Sub = styled.p`
@@ -21,4 +22,5 @@ export const Sub = styled.p`
   color: ${textLighter};
   font-size: 1.25rem;
   white-space: pre-line;
+  font-weight: 300;
 `;
