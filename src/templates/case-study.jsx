@@ -112,6 +112,7 @@ export const pageQuery = graphql`
         parameter
         value
         change
+      }
       process {
         main
         top
