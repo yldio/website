@@ -9,6 +9,7 @@ import PageSection from 'components/PageSection';
 import Process from 'compositions/templates/case-study/Process';
 import TagList from 'compositions/templates/case-study/TagList';
 import Success from 'compositions/templates/case-study/Success';
+import MetricGrid from 'compositions/templates/case-study/MetricGrid';
 import CustomerQuote from 'compositions/templates/case-study/CustomerQuote';
 
 const CaseStudyTemplate = ({
@@ -21,6 +22,7 @@ const CaseStudyTemplate = ({
   quote,
   process,
   success,
+  metrics,
 }) => (
   <Fragment>
     <Helmet
@@ -45,9 +47,11 @@ const CaseStudyTemplate = ({
     <PageSection>
       <Success {...success} />
     </PageSection>
+    <PageSection>
+      <MetricGrid metrics={metrics} />
+    </PageSection>
   </Fragment>
 );
-
 CaseStudyTemplate.propTypes = {
   heroImage: PropTypes.string.isRequired,
   heroImageAlt: PropTypes.string.isRequired,
@@ -56,6 +60,7 @@ CaseStudyTemplate.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
+  metrics: PropTypes.shape(MetricGrid.propTypes).isRequired,
   quote: PropTypes.shape(CustomerQuote.propTypes).isRequired,
   process: PropTypes.shape(Process.propTypes).isRequired,
 };
@@ -102,6 +107,11 @@ export const pageQuery = graphql`
       success {
         main
         sub
+      }
+      metrics {
+        parameter
+        value
+        change
       }
       process {
         main
