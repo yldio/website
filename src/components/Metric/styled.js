@@ -10,6 +10,9 @@ import breakpoints from 'styles/breakpoints';
 
 export const Item = styled.li`
   border-bottom: 1px solid ${borderLight};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
 
   &:hover {
@@ -20,6 +23,10 @@ export const Item = styled.li`
   &:last-child {
     border-bottom: none;
   }
+
+  ${breakpoints.tablet`
+    min-height: 315px;
+  `};
 
   ${breakpoints.breakpoint('tablet', 'desktop')`
     &:nth-child(odd) {
@@ -44,8 +51,8 @@ export const Item = styled.li`
 
   `};
 `;
+
 export const Parameter = styled.p`
-  margin: 0;
   color: ${textLighter};
   font-size: 1.25rem;
   white-space: pre-line;
@@ -55,10 +62,9 @@ export const Value = styled.h4`
   color: ${textLight};
   font-size: 4.5rem;
   font-weight: 500;
-  margin-top: 0;
 `;
 
-export const Change = styled.div`
+export const Change = styled.footer`
   display: flex;
   align-items: center;
   color: ${props => (props.positive ? textGreen : textRed)};
