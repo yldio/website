@@ -2,7 +2,7 @@
 
 <!-- Add a description of your changes here -->
 
-## Motiviation & Context
+## Motivation & Context
 
 <!-- Link to Trello tile, Github issue etc -->
 
