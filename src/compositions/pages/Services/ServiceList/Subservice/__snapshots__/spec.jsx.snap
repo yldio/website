@@ -2,11 +2,11 @@
 
 exports[`compositions/pages/Services/Subservice snapshot 1`] = `
 <styled__Container>
-  <styled__Title>
+  <Typography__H4>
     Digital Transformation
-  </styled__Title>
-  <styled__Body>
+  </Typography__H4>
+  <Typography__base>
     Content
-  </styled__Body>
+  </Typography__base>
 </styled__Container>
 `;
