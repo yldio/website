@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import { Main, Sub, Title } from './styled';
+import { H2, Copy } from 'components/Typography';
 
 const Success = ({ main, sub }) => (
   <Fragment>
-    <Title>The Success</Title>
-    <Main>{main}</Main>
-    <Sub>{sub}</Sub>
+    <H2>The Success</H2>
+    <Copy large newLines>
+      {main}
+    </Copy>
+    <Copy newLines>{sub}</Copy>
   </Fragment>
 );
 
