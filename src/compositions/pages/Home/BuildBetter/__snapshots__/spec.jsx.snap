@@ -22,9 +22,9 @@ exports[`compositions/homepage/BuildBetter snapshot 1`] = `
     </styled__Paragraph>
     <Button
       component="a"
-      href="#case-studies"
+      href="/case-studies"
     >
-      Case Studies ↓
+      Case Studies
     </Button>
   </PageHero>
 </PageSection>
