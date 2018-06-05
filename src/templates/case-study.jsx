@@ -11,6 +11,7 @@ import TagList from 'compositions/templates/case-study/TagList';
 import Success from 'compositions/templates/case-study/Success';
 import MetricGrid from 'compositions/templates/case-study/MetricGrid';
 import CustomerQuote from 'compositions/templates/case-study/CustomerQuote';
+import RelatedCaseStudies from 'compositions/templates/case-study/RelatedCaseStudies';
 
 const CaseStudyTemplate = ({
   heroImage,
@@ -49,6 +50,9 @@ const CaseStudyTemplate = ({
     </PageSection>
     <PageSection>
       <MetricGrid metrics={metrics} />
+    </PageSection>
+    <PageSection wide>
+      <RelatedCaseStudies />
     </PageSection>
   </Fragment>
 );
