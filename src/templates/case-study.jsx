@@ -6,6 +6,7 @@ import GatsbyImage from 'gatsby-image';
 
 import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
+import Process from 'compositions/templates/case-study/Process';
 import TagList from 'compositions/templates/case-study/TagList';
 import Success from 'compositions/templates/case-study/Success';
 import MetricGrid from 'compositions/templates/case-study/MetricGrid';
@@ -17,6 +18,7 @@ const CaseStudyTemplate = ({
   tags,
   title,
   pageTitle,
+  process,
   success,
   metrics,
 }) => (
@@ -38,6 +40,7 @@ const CaseStudyTemplate = ({
     <PageSection wide>
       <GatsbyImage alt={heroImageAlt} {...heroImage.childImageSharp} />
     </PageSection>
+    <Process {...process} />
     <PageSection>
       <Success {...success} />
     </PageSection>
@@ -55,6 +58,7 @@ CaseStudyTemplate.propTypes = {
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
   metrics: PropTypes.shape(MetricGrid.propTypes).isRequired,
+  process: PropTypes.shape(Process.propTypes).isRequired,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -82,6 +86,17 @@ export const pageQuery = graphql`
         parameter
         value
         change
+      process {
+        main
+        top
+        image {
+          childImageSharp {
+            sizes(quality: 75, maxWidth: 1280) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+        imageAlt
       }
     }
   }

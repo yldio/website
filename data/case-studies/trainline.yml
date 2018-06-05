@@ -9,16 +9,16 @@ tags:
   - Backend
 heroImage: case-study-placeholder.jpg
 heroImageAlt: Case study placeholder
-success: 
-    main: |
-      We help you future proof your business though a new style of consulting, ground up. 
-      We connect and educate engineering, product and leadership to help you navigate digital transformation, grow your business and tackle core customer problems. We’re one of the most renowned technology companies in Europe.
-    sub: |
-      Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
-      
-      Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
+success:
+  main: |
+    We help you future proof your business though a new style of consulting, ground up.
+    We connect and educate engineering, product and leadership to help you navigate digital transformation, grow your business and tackle core customer problems. We’re one of the most renowned technology companies in Europe.
+  sub: |
+    Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
+    
+    Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
 
-      Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
+    Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
 metrics: 
     - parameter: Increase in traffic
       value: 57%
@@ -39,8 +39,12 @@ metrics:
       value: 20,345
       change: -10.85%
 
+process:
+  top: |
+    We help you future proof your business though a new style of consulting, ground up. We connect and educate engineering, product and leadership to help you navigate digital transformation, grow your business and tackle core customer problems. We’re one of the most renowned technology companies in Europe.
+  main: |
+    Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
 
-
-
-
-
+    Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
+  image: ./case-study-process-placeholder.jpg
+  imageAlt: Process placeholder
