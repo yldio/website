@@ -65,7 +65,6 @@ function createCaseStudyPages(graphql, createPage, config) {
 function createBlogPostPages(graphql, createPage, config) {
   return graphql(queryBlogPosts).then(result => {
     if (result.errors) return Promise.reject(new Error(result.errors));
-    console.log(config);
     const getPath = replaceSlug(config.templates.blogPost.path);
 
     const blogPosts = result.data.allContentfulPost.edges;
