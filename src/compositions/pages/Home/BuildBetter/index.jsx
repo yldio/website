@@ -17,7 +17,7 @@ const BuildBetter = () => (
         We enable your organisation to deliver world-class technology and
         customer experiences.
       </Paragraph>
-      <Button href="#case-studies">Case Studies ↓</Button>
+      <Button href="/case-studies">Case Studies</Button>
     </PageHero>
   </PageSection>
 );

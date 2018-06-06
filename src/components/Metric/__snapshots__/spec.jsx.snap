@@ -2,12 +2,14 @@
 
 exports[`components/Logo snapshot 1`] = `
 <styled__Item>
-  <styled__Parameter>
-    reviews
-  </styled__Parameter>
-  <styled__Value>
-    2.8
-  </styled__Value>
+  <header>
+    <styled__Parameter>
+      reviews
+    </styled__Parameter>
+    <styled__Value>
+      2.8
+    </styled__Value>
+  </header>
   <styled__Change
     positive={true}
   >

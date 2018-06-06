@@ -9,8 +9,6 @@ exports[`components/TileGrid snapshot with tiles 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 <ul

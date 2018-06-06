@@ -3,9 +3,7 @@ import { spacing } from 'styles/spacing';
 import { highlight } from 'styles/colours';
 
 export const List = styled.ul`
-  list-style-type: none;
-  margin: ${spacing(3)} 0 0 0;
-  padding: 0;
+  margin-top: ${spacing(3)};
 `;
 
 export const Tag = styled.li`
@@ -22,6 +20,6 @@ export const Tag = styled.li`
   }
 
   &:last-child {
-    margin-right: 0;
+    padding-right: 0;
   }
 `;

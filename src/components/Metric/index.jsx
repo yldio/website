@@ -8,8 +8,10 @@ const Metric = ({ parameter, value, change }) => {
   const positive = change.charAt(0) !== '-';
   return (
     <Item>
-      <Parameter>{parameter}</Parameter>
-      <Value>{value}</Value>
+      <header>
+        <Parameter>{parameter}</Parameter>
+        <Value>{value}</Value>
+      </header>
       <Change positive={positive}>
         {positive ? (
           <Image src={increment} alt="change of the value" />

@@ -6,8 +6,6 @@ import { spacing } from 'styles/spacing';
 import breakpoints from 'styles/breakpoints';
 
 export const Category = styled.ul`
-  list-style-type: none;
-  margin: 0;
   padding: ${spacing(2)};
   width: 50%;
 
@@ -19,9 +17,7 @@ export const Category = styled.ul`
 export const Item = styled.li`
   color: ${props => (props.header ? 'FFFFFF' : footerText)};
   margin-bottom: ${props => (props.header ? spacing(2) : spacing())};
-  margin-top: 0;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: ${props => (props.header ? 500 : 400)};
 `;
 

@@ -19,7 +19,7 @@ exports[`components/Post snapshot 1`] = `
     <styled__Thumbnail
       src="https://placekitten.com/128/128"
     />
-    <styled__Authored>
+    <p>
       <Link
         activeClassName="___active"
         href="/people/nuno-job"
@@ -31,7 +31,7 @@ exports[`components/Post snapshot 1`] = `
       >
         May 18
       </styled__Time>
-    </styled__Authored>
+    </p>
   </styled__Footer>
 </Panel>
 `;
@@ -55,7 +55,7 @@ exports[`components/Post snapshot with stretch=false 1`] = `
     <styled__Thumbnail
       src="https://placekitten.com/128/128"
     />
-    <styled__Authored>
+    <p>
       <Link
         activeClassName="___active"
         href="/people/nuno-job"
@@ -67,7 +67,7 @@ exports[`components/Post snapshot with stretch=false 1`] = `
       >
         May 18
       </styled__Time>
-    </styled__Authored>
+    </p>
   </styled__Footer>
 </Panel>
 `;

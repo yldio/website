@@ -6,12 +6,6 @@ import { spacing } from 'styles/spacing';
 
 const paddedRight = (a, b) => props => (props.padRight ? a : b);
 
-export const List = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-`;
-
 export const Item = styled.li`
   display: inline-block;
 `;

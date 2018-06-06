@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link, ButtonLink, List, Item } from './styled';
+import { Link, ButtonLink, Item } from './styled';
 
 export default function Navigation() {
   return (
     <nav data-selector="component:navigation">
-      <List>
+      <ul>
         <Item>
           <Link href="/case-studies">Case Studies</Link>
         </Item>
@@ -22,7 +22,7 @@ export default function Navigation() {
         <Item>
           <ButtonLink href="/join-us">Join Us</ButtonLink>
         </Item>
-      </List>
+      </ul>
     </nav>
   );
 }

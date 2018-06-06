@@ -15,7 +15,6 @@ export const Title = styled.h2`
   color: ${textLight};
   font-size: 3.75rem;
   font-weight: 500;
-  margin: 0;
   margin-right: ${gridColWidth / 2}px;
 `;
 
@@ -23,6 +22,5 @@ export const Description = styled.p`
   color: ${textLighter};
   font-size: 1.25rem;
   line-height: 1.55;
-  margin: 0;
   max-width: ${gridWidth * 1 / 2}px;
 `;
