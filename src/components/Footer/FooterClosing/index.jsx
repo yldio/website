@@ -14,7 +14,6 @@ import {
   SiteLinks,
   SiteLink,
   Link,
-  SocialLinks,
   SocialLink,
 } from './styled';
 
@@ -32,7 +31,7 @@ const FooterClosing = () => (
         <Link href="/sitemap">Sitemap</Link>
       </SiteLink>
     </SiteLinks>
-    <SocialLinks>
+    <ul>
       <SocialLink>
         <Link href="https://twitter.com/yldio">
           <Icon icon={faTwitter} />
@@ -48,7 +47,7 @@ const FooterClosing = () => (
           <Icon icon={faYoutube} />
         </Link>
       </SocialLink>
-    </SocialLinks>
+    </ul>
   </Container>
 );
 

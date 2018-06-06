@@ -7,9 +7,6 @@ import { textLighter } from 'styles/colours';
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 `;
 
 export const ListItem = styled.li`

@@ -42,8 +42,8 @@ const CaseStudyTemplate = ({
     <PageSection wide>
       <GatsbyImage alt={heroImageAlt} {...heroImage.childImageSharp} />
     </PageSection>
-    <CustomerQuote {...quote} />
     <Process {...process} />
+    <CustomerQuote {...quote} />
     <PageSection>
       <Success {...success} />
     </PageSection>

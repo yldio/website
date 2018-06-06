@@ -27,10 +27,7 @@ export const Link = styled(DefaultLink)`
   font-weight: 400;
 `;
 
-export const SiteLinks = Copyright.withComponent('ul').extend`
-  list-style-type: none;
-  padding: 0;
-`;
+export const SiteLinks = Copyright.withComponent('ul');
 
 export const SiteLink = styled.li`
   display: inline-block;
@@ -46,12 +43,6 @@ export const SiteLink = styled.li`
       padding-right: 0;
     }
   `};
-`;
-
-export const SocialLinks = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 `;
 
 export const SocialLink = SiteLink.extend`

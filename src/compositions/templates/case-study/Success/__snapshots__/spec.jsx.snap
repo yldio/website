@@ -2,14 +2,19 @@
 
 exports[`success section 1`] = `
 <React.Fragment>
-  <styled__Title>
+  <Typography__H2>
     The Success
-  </styled__Title>
-  <styled__Main>
+  </Typography__H2>
+  <Typography__base
+    large={true}
+    newLines={true}
+  >
     this is the main description
-  </styled__Main>
-  <styled__Sub>
+  </Typography__base>
+  <Typography__base
+    newLines={true}
+  >
     this is the sub description
-  </styled__Sub>
+  </Typography__base>
 </React.Fragment>
 `;

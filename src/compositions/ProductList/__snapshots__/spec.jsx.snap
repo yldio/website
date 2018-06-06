@@ -10,7 +10,7 @@ exports[`components/ProductList snapshot 1`] = `
     <styled__Title>
       Our Approach
     </styled__Title>
-    <styled__ProductSublist>
+    <ul>
       <styled__Product>
         Digital Transformation
       </styled__Product>
@@ -20,7 +20,7 @@ exports[`components/ProductList snapshot 1`] = `
       <styled__Product>
         Product Consultancy
       </styled__Product>
-    </styled__ProductSublist>
+    </ul>
     <styled__Footer>
       <Link
         activeClassName="___active"
@@ -38,7 +38,7 @@ exports[`components/ProductList snapshot 1`] = `
     <styled__Title>
       Design & Product
     </styled__Title>
-    <styled__ProductSublist>
+    <ul>
       <styled__Product>
         Design Systems & Design Operations
       </styled__Product>
@@ -51,7 +51,7 @@ exports[`components/ProductList snapshot 1`] = `
       <styled__Product>
         Research, Usability and User Experience
       </styled__Product>
-    </styled__ProductSublist>
+    </ul>
     <styled__Footer>
       <Link
         activeClassName="___active"
@@ -69,7 +69,7 @@ exports[`components/ProductList snapshot 1`] = `
     <styled__Title>
       Engineering
     </styled__Title>
-    <styled__ProductSublist>
+    <ul>
       <styled__Product>
         Engineering Leadership
       </styled__Product>
@@ -85,7 +85,7 @@ exports[`components/ProductList snapshot 1`] = `
       <styled__Product>
         Mobile & React Native
       </styled__Product>
-    </styled__ProductSublist>
+    </ul>
     <styled__Footer>
       <Link
         activeClassName="___active"
@@ -103,7 +103,7 @@ exports[`components/ProductList snapshot 1`] = `
     <styled__Title>
       Training
     </styled__Title>
-    <styled__ProductSublist>
+    <ul>
       <styled__Product>
         Node Training
       </styled__Product>
@@ -119,7 +119,7 @@ exports[`components/ProductList snapshot 1`] = `
       <styled__Product>
         UX Design Training
       </styled__Product>
-    </styled__ProductSublist>
+    </ul>
     <styled__Footer>
       <Link
         activeClassName="___active"
