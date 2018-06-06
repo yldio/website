@@ -9,9 +9,9 @@ const Container = styled.main`
   max-width: 1080px;
 `;
 
-const BlogPostTemplate = ({ data: { post } }) => (
+const BlogPostTemplate = ({ data }) => (
   <Container>
-    <BlogPost {...post} />
+    <BlogPost {...data.post} />
   </Container>
 );
 
