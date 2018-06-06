@@ -1,5 +1,8 @@
 name: 'default'
 templates:
+  blogPost:
+    path: '/blog/#slug'
+    component: 'templates/blog-post.jsx'
   caseStudy:
     path: '/case-studies/#slug'
     component: 'templates/case-study.jsx'

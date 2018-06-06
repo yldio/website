@@ -1,4 +1,5 @@
 const path = require('path');
+const queryBlogPosts = require('./queryBlogPosts');
 
 const CONFIG_NAME = process.env.GATSBY_CONFIG || 'default';
 
@@ -10,6 +11,10 @@ function getConfiguration(graphql) {
       configYaml(name: { eq: "${CONFIG_NAME}" }) {
         templates {
           caseStudy {
+            path
+            component
+          }
+          blogPost {
             path
             component
           }
@@ -57,10 +62,41 @@ function createCaseStudyPages(graphql, createPage, config) {
   });
 }
 
+function createBlogPostPages(graphql, createPage, config) {
+  return graphql(queryBlogPosts).then(result => {
+    if (result.errors) return Promise.reject(new Error(result.errors));
+    console.log(config);
+    const getPath = replaceSlug(config.templates.blogPost.path);
+
+    const blogPosts = result.data.allContentfulPost.edges;
+
+    blogPosts.forEach(({ node: post }) => {
+      const pageConfig = {
+        path: getPath(post.slug),
+        component: path.resolve(
+          __dirname,
+          '../src/',
+          config.templates.blogPost.component,
+        ),
+        context: {
+          slug: post.slug,
+        },
+      };
+
+      createPage(pageConfig);
+    });
+
+    return Promise.resolve();
+  });
+}
+
 module.exports = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   return getConfiguration(graphql).then(config =>
-    createCaseStudyPages(graphql, createPage, config),
+    Promise.all([
+      createCaseStudyPages(graphql, createPage, config),
+      createBlogPostPages(graphql, createPage, config),
+    ]),
   );
 };
