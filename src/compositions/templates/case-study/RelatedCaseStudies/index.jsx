@@ -1,60 +1,65 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TileGrid, { Tile } from 'components/TileGrid';
+import GatsbyImage from 'gatsby-image';
 
 import {
   Section,
   TileContent,
   TileContentTitle,
   TileContentBody,
-  Image,
   Right,
   Left,
 } from './styled';
 
-import phoneImage from './phone-placeholder.svg';
-import placeholder from './app-placeholder.svg';
-import clientLogo from './trainline-logo.png';
-import secondClientLogo from './joyent-logo.png';
+const RelatedCaseStudies = ({ caseStudies }) => {
+  const tiles = caseStudies.map((caseStudy, index) => {
+    const colour = index === 1 ? 'lightGreen' : 'normal';
 
-const RelatedCaseStudies = () => (
-  <Section wide>
-    <TileGrid>
-      <Tile>
+    return (
+      <Tile key={caseStudy.client} colour={colour}>
         <TileContent>
           <Left>
             <header>
               <TileContentTitle>Related Case Studies</TileContentTitle>
-              <img alt="client logo" src={clientLogo} />
+              <GatsbyImage
+                alt="client logo"
+                {...caseStudy.clientLogo.childImageSharp}
+              />
             </header>
-            <TileContentBody>
-              A legacy platform that faced a huge pressure to have an updated
-              interface.
-            </TileContentBody>
+            <TileContentBody>{caseStudy.description}</TileContentBody>
           </Left>
           <Right>
-            <Image src={phoneImage} />
+            <GatsbyImage
+              alt="application image"
+              {...caseStudy.clientAppImage.childImageSharp}
+            />
           </Right>
         </TileContent>
       </Tile>
-      <Tile colour="lightGreen">
-        <TileContent>
-          <Left>
-            <header>
-              <TileContentTitle>Related Case Studies</TileContentTitle>
-              <img alt="client logo" src={secondClientLogo} />
-            </header>
-            <TileContentBody>
-              A legacy platform that faced a huge pressure to have an updated
-              interface.
-            </TileContentBody>
-          </Left>
-          <Right>
-            <Image src={placeholder} />
-          </Right>
-        </TileContent>
-      </Tile>
-    </TileGrid>
-  </Section>
-);
+    );
+  });
+
+  return (
+    <Section wide>
+      <TileGrid>{tiles}</TileGrid>
+    </Section>
+  );
+};
+
+RelatedCaseStudies.propTypes = {
+  caseStudies: PropTypes.arrayOf(
+    PropTypes.shape({
+      client: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      clientLogo: PropTypes.shape({
+        childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+      }).isRequired,
+      clientAppImage: PropTypes.shape({
+        childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+      }).isRequired,
+    }),
+  ).isRequired,
+};
 
 export default RelatedCaseStudies;

@@ -24,6 +24,7 @@ const CaseStudyTemplate = ({
   process,
   success,
   metrics,
+  relatedCaseStudies,
 }) => (
   <Fragment>
     <Helmet
@@ -52,7 +53,7 @@ const CaseStudyTemplate = ({
       <MetricGrid metrics={metrics} />
     </PageSection>
     <PageSection wide>
-      <RelatedCaseStudies />
+      <RelatedCaseStudies caseStudies={relatedCaseStudies} />
     </PageSection>
   </Fragment>
 );
@@ -67,6 +68,8 @@ CaseStudyTemplate.propTypes = {
   metrics: PropTypes.shape(MetricGrid.propTypes).isRequired,
   quote: PropTypes.shape(CustomerQuote.propTypes).isRequired,
   process: PropTypes.shape(Process.propTypes).isRequired,
+  // eslint-disable-next-line react/no-typos,react/require-default-props
+  relatedCaseStudies: RelatedCaseStudies.propTypes.caseStudies,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -128,6 +131,24 @@ export const pageQuery = graphql`
           }
         }
         imageAlt
+      }
+      relatedCaseStudies {
+        client
+        clientLogo {
+          childImageSharp {
+            resolutions(quality: 100, width: 150) {
+              ...GatsbyImageSharpResolutions
+            }
+          }
+        }
+        description
+        clientAppImage {
+          childImageSharp {
+            sizes(quality: 75, maxWidth: 320) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
