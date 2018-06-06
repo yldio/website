@@ -61,3 +61,12 @@ process:
     Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
   image: ./case-study-process-placeholder.jpg
   imageAlt: Process placeholder
+relatedCaseStudies:
+  - client: Joyent
+    clientLogo: joyent-logo.png
+    description: A legacy platform that faced a huge pressure to have an updated interface.
+    clientAppImage: joyent-app.png
+  - client: Trainline
+    clientLogo: trainline-logo.png
+    description: A legacy platform that faced a huge pressure to have an updated interface.
+    clientAppImage: trainline-app.png

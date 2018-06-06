@@ -12,12 +12,14 @@ const colours = {
   normal: highlight,
   dark: highlightDark,
   darker: highlightDarker,
+  lightGreen: '#67d5bf',
 };
 
 const textColours = {
   normal: textOnDark,
   dark: textOnDark,
   darker: textOnDark,
+  lightGreen: textOnDark,
 };
 
 export const Tile = styled.li`
