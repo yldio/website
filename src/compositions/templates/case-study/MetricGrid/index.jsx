@@ -11,7 +11,11 @@ const MetricGrid = ({ content }) => (
 );
 
 MetricGrid.propTypes = {
-  content: PropTypes.arrayOf(PropTypes.shape(Metric.propTypes)).isRequired,
+  content: PropTypes.arrayOf(PropTypes.shape(Metric.propTypes)),
+};
+
+MetricGrid.defaultProps = {
+  content: [],
 };
 
 export default MetricGrid;
