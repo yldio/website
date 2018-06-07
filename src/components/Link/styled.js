@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { highlight } from 'styles/colours';
+import { link } from 'styles/colours';
 import GatsbyLink from 'gatsby-link';
 
 export const StyledLink = styled.a`
-  color: ${highlight};
+  color: ${link};
   font-weight: 500;
   text-decoration: none;
 
