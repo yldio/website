@@ -13,3 +13,4 @@ cypress/screenshots
 
 # Environment configuration we shouldn't commit
 /cypress.env.json
+.env
