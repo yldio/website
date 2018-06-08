@@ -10,7 +10,7 @@ const Title = styled.h1`
 const BlogPost = ({ title, body, author }) => (
   <Fragment>
     <Title>{title.title}</Title>
-    {body && <Markdown source={body.body} />}
+    <Markdown source={body.body} />
     {author.map(name => <p key={name.id}>{name.name}</p>)}
   </Fragment>
 );
