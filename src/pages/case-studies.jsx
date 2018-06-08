@@ -7,9 +7,9 @@ import Link from 'components/Link';
 import PageSection from 'components/PageSection';
 import PageSectionHeader from 'components/PageSectionHeader';
 
-const CaseStudiesPage = ({ caseStudies, metadata }) => (
+const CaseStudiesPage = ({ caseStudies, page }) => (
   <Fragment>
-    <Helmet title={metadata.title} meta={metadata.metadata} />
+    <Helmet title={page.title} meta={page.metadata} />
     <PageSection>
       <PageSectionHeader title="Case Studies" />
       <ul>
@@ -26,7 +26,7 @@ const CaseStudiesPage = ({ caseStudies, metadata }) => (
 );
 
 CaseStudiesPage.propTypes = {
-  metadata: PropTypes.shape({
+  page: PropTypes.shape({
     title: PropTypes.string.isRequired,
     metadata: PropTypes.arrayOf(
       PropTypes.shape({
@@ -44,13 +44,13 @@ CaseStudiesPage.propTypes = {
 };
 
 export default mapProps(props => ({
-  metadata: props.data.metadata,
+  page: props.data.contentfulPage,
   caseStudies: props.data.allCaseStudiesYaml.edges.map(edge => edge.node),
 }))(CaseStudiesPage);
 
 export const caseStudiesFragment = graphql`
-  query CaseStudiesPageData {
-    metadata: metadataYaml(identifier: { eq: "case-studies" }) {
+  query CaseStudiespage {
+    contentfulPage(identifier: { eq: "case-studies" }) {
       title
       metadata {
         name

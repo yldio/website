@@ -5,15 +5,15 @@ import { mapProps } from 'recompose';
 
 import ServicesPage from 'compositions/pages/Services';
 
-const Services = ({ metadata }) => (
+const Services = ({ page }) => (
   <Fragment>
-    <Helmet title={metadata.title} meta={metadata.metadata} />
+    <Helmet title={page.title} meta={page.metadata} />
     <ServicesPage />
   </Fragment>
 );
 
 Services.propTypes = {
-  metadata: PropTypes.shape({
+  page: PropTypes.shape({
     title: PropTypes.string.isRequired,
     metadata: PropTypes.arrayOf(
       PropTypes.shape({
@@ -25,12 +25,12 @@ Services.propTypes = {
 };
 
 export default mapProps(props => ({
-  metadata: props.data.metadata,
+  page: props.data.contentfulPage,
 }))(Services);
 
 export const pageQuery = graphql`
   query ServicesPageQuery {
-    metadata: metadataYaml(identifier: { eq: "services" }) {
+    contentfulPage(identifier: { eq: "services" }) {
       title
       metadata {
         name

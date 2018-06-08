@@ -5,15 +5,15 @@ import { mapProps } from 'recompose';
 
 import HomePage from 'compositions/pages/Home';
 
-const IndexPage = ({ metadata }) => (
+const IndexPage = ({ page }) => (
   <Fragment>
-    <Helmet title={metadata.title} meta={metadata.metadata} />
+    <Helmet title={page.title} meta={page.metadata} />
     <HomePage />
   </Fragment>
 );
 
 IndexPage.propTypes = {
-  metadata: PropTypes.shape({
+  page: PropTypes.shape({
     title: PropTypes.string.isRequired,
     metadata: PropTypes.arrayOf(
       PropTypes.shape({
@@ -25,12 +25,12 @@ IndexPage.propTypes = {
 };
 
 export default mapProps(props => ({
-  metadata: props.data.metadata,
+  page: props.data.contentfulPage,
 }))(IndexPage);
 
 export const pageQuery = graphql`
   query IndexPageQuery {
-    metadata: metadataYaml(identifier: { eq: "index" }) {
+    contentfulPage(identifier: { eq: "index" }) {
       title
       metadata {
         name
