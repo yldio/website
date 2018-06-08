@@ -21,13 +21,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'metadata',
-        path: `${__dirname}/data/metadata/`,
-      },
-    },
-    {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: process.env.CONTENTFUL_SPACE,
