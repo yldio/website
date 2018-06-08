@@ -7,16 +7,9 @@ import Link from 'components/Link';
 import PageSection from 'components/PageSection';
 import PageSectionHeader from 'components/PageSectionHeader';
 
-const CaseStudiesPage = ({ caseStudies }) => (
+const CaseStudiesPage = ({ caseStudies, metadata }) => (
   <Fragment>
-    <Helmet
-      title="YLD | Case Studies"
-      meta={[
-        { name: 'description', content: 'YLD Case Studies' },
-        { name: 'keywords', content: 'sample, something' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      ]}
-    />
+    <Helmet title={metadata.title} meta={metadata.metadata} />
     <PageSection>
       <PageSectionHeader title="Case Studies" />
       <ul>
@@ -33,6 +26,15 @@ const CaseStudiesPage = ({ caseStudies }) => (
 );
 
 CaseStudiesPage.propTypes = {
+  metadata: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    metadata: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        content: PropTypes.string,
+      }),
+    ).isRequired,
+  }).isRequired,
   caseStudies: PropTypes.arrayOf(
     PropTypes.shape({
       slug: PropTypes.string.isRequired,
@@ -42,11 +44,19 @@ CaseStudiesPage.propTypes = {
 };
 
 export default mapProps(props => ({
+  metadata: props.data.metadata,
   caseStudies: props.data.allCaseStudiesYaml.edges.map(edge => edge.node),
 }))(CaseStudiesPage);
 
 export const caseStudiesFragment = graphql`
   query CaseStudiesPageData {
+    metadata: metadataYaml(identifier: { eq: "case-studies" }) {
+      title
+      metadata {
+        name
+        content
+      }
+    }
     allCaseStudiesYaml {
       edges {
         node {

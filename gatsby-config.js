@@ -18,5 +18,12 @@ module.exports = {
         path: `${__dirname}/data/config/`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'metadata',
+        path: `${__dirname}/data/metadata/`,
+      },
+    },
   ],
 };

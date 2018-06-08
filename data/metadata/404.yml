@@ -1,0 +1,5 @@
+identifier: '404'
+title: YLD | Not found
+metadata:
+  - name: description
+    content: Oops! You've landed on a missing page.
