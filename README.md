@@ -19,10 +19,12 @@ Shiny new website, built with [Gatsby].
 3.  Install dependencies  
     `yarn`
 
-4.  Kick off the development server  
+4.  Grab an API key for Contentful and copy `.env.example` to `.env` and fill in with real data (speak to teammate if you can't get this working!)
+
+5.  Kick off the development server  
     `yarn develop`
 
-5.  [You're ready to contribute!](http://localhost:8000)
+6.  [You're ready to contribute!](http://localhost:8000)
 
 ## Useful Commands
 
@@ -46,6 +48,16 @@ Once you make a pull request, you should see a link to the current deployment fo
 Pull requests should only be merged to master if our CI pipeline is green, and we are happy with the code.
 
 Once merged into master, the build pipeline will once again run and deploy to production.
+
+## Data-driven parts of the website
+
+The website is driven by data from a mixture of local data and Contentful.
+
+`gatsby-source-contentful` pulls down all data which is stored on the CMS, and `gatsby-source-filesystem` reads all data that is available in locally defined places. Check `gatsby-config.js` to see how these plugins are configured.
+
+Gatsby then creates a GraphQL schema and endpoint around this data, which can be queried from certain top-level components - check `src/pages/index.jsx` for an example.
+
+To inspect all the data you can query for, boot up the development server and then check http://localhost:8000/___graphql where you have a GraphiQL interface for inspecting the schema and data.
 
 ## Useful Links
 

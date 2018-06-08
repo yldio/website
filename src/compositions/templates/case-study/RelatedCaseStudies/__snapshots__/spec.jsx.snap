@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RelatedCaseStudies 1`] = `
+<Container
+  wide={true}
+>
+  <TileGrid>
+    <styled__Tile
+      colour="normal"
+      key="Joyent"
+    >
+      <styled__TileContent>
+        <styled__Left>
+          <header>
+            <styled__TileContentTitle>
+              Related Case Studies
+            </styled__TileContentTitle>
+            <Image
+              Tag="div"
+              alt="client logo"
+              fadeIn={true}
+              src="joyent-logo.png"
+            />
+          </header>
+          <styled__TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated interface.
+          </styled__TileContentBody>
+        </styled__Left>
+        <styled__Right>
+          <Image
+            Tag="div"
+            alt="application image"
+            fadeIn={true}
+            src="joyent-app.png"
+          />
+        </styled__Right>
+      </styled__TileContent>
+    </styled__Tile>
+    <styled__Tile
+      colour="lightGreen"
+      key="Trainline"
+    >
+      <styled__TileContent>
+        <styled__Left>
+          <header>
+            <styled__TileContentTitle>
+              Related Case Studies
+            </styled__TileContentTitle>
+            <Image
+              Tag="div"
+              alt="client logo"
+              fadeIn={true}
+              src="trainline-logo.png"
+            />
+          </header>
+          <styled__TileContentBody>
+            A legacy platform that faced a huge pressure to have an updated interface.
+          </styled__TileContentBody>
+        </styled__Left>
+        <styled__Right>
+          <Image
+            Tag="div"
+            alt="application image"
+            fadeIn={true}
+            src="trainline-app.png"
+          />
+        </styled__Right>
+      </styled__TileContent>
+    </styled__Tile>
+  </TileGrid>
+</Container>
+`;

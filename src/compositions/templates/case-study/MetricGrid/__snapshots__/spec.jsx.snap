@@ -1,3 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/Logo snapshot 1`] = `<styled__Grid />`;
+exports[`components/Logo snapshot 1`] = `
+<styled__Grid>
+  <Metric
+    change="20%"
+    key="reviews"
+    parameter="reviews"
+    value="2.8"
+  />
+  <Metric
+    change="20%"
+    key="reviews"
+    parameter="reviews"
+    value="2.8"
+  />
+</styled__Grid>
+`;

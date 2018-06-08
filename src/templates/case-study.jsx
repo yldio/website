@@ -9,8 +9,9 @@ import PageSection from 'components/PageSection';
 import Process from 'compositions/templates/case-study/Process';
 import TagList from 'compositions/templates/case-study/TagList';
 import Success from 'compositions/templates/case-study/Success';
-import MetricGrid from 'compositions/templates/case-study/MetricGrid';
 import CustomerQuote from 'compositions/templates/case-study/CustomerQuote';
+import Metrics from 'compositions/templates/case-study/Metrics';
+import RelatedCaseStudies from 'compositions/templates/case-study/RelatedCaseStudies';
 
 const CaseStudyTemplate = ({
   heroImage,
@@ -23,6 +24,7 @@ const CaseStudyTemplate = ({
   process,
   success,
   metrics,
+  relatedCaseStudies,
 }) => (
   <Fragment>
     <Helmet
@@ -47,8 +49,9 @@ const CaseStudyTemplate = ({
     <PageSection>
       <Success {...success} />
     </PageSection>
-    <PageSection>
-      <MetricGrid metrics={metrics} />
+    <Metrics {...metrics} />
+    <PageSection wide>
+      <RelatedCaseStudies caseStudies={relatedCaseStudies} />
     </PageSection>
   </Fragment>
 );
@@ -60,9 +63,11 @@ CaseStudyTemplate.propTypes = {
   shortDescription: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   success: PropTypes.objectOf(PropTypes.string).isRequired,
-  metrics: PropTypes.shape(MetricGrid.propTypes).isRequired,
   quote: PropTypes.shape(CustomerQuote.propTypes).isRequired,
   process: PropTypes.shape(Process.propTypes).isRequired,
+  metrics: PropTypes.shape(Metrics.propTypes).isRequired,
+  // eslint-disable-next-line react/no-typos,react/require-default-props
+  relatedCaseStudies: RelatedCaseStudies.propTypes.caseStudies,
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);
@@ -109,9 +114,13 @@ export const pageQuery = graphql`
         sub
       }
       metrics {
-        parameter
-        value
-        change
+        main
+        sub
+        content {
+          parameter
+          value
+          change
+        }
       }
       process {
         main
@@ -124,6 +133,24 @@ export const pageQuery = graphql`
           }
         }
         imageAlt
+      }
+      relatedCaseStudies {
+        client
+        clientLogo {
+          childImageSharp {
+            resolutions(quality: 100, width: 150) {
+              ...GatsbyImageSharpResolutions
+            }
+          }
+        }
+        description
+        clientAppImage {
+          childImageSharp {
+            sizes(quality: 75, maxWidth: 320) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }

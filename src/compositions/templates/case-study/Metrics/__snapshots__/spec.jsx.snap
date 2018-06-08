@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Logo snapshot 1`] = `
+<React.Fragment>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
+  >
+    <Typography__H2>
+      Metrics
+    </Typography__H2>
+    <Typography__base
+      large={true}
+    >
+      some text here as well
+    </Typography__base>
+    <Typography__base
+      newLines={true}
+    >
+      some text
+    </Typography__base>
+  </PageSection>
+  <PageSection
+    gradient={false}
+    gradientHeight="50%"
+  >
+    <MetricGrid
+      content={
+        Array [
+          Object {
+            "change": "20%",
+            "parameter": "test",
+            "value": "20.00",
+          },
+        ]
+      }
+    />
+  </PageSection>
+</React.Fragment>
+`;
