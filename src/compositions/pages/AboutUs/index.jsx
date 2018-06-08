@@ -4,6 +4,7 @@ import PageSection from 'components/PageSection';
 import { Copy, H2 } from 'components/Typography';
 import Person from './Person';
 import { People } from './styled';
+import Values from './Values';
 
 import nuno from './Person/nuno.png';
 
@@ -68,24 +69,6 @@ export default () => (
         </Person>
       </People>
     </PageSection>
-    <PageSection data-selector="about-us:our-values">
-      <H2>Our Values</H2>
-
-      <Copy light>
-        We help you future proof your business though a new style of consulting,
-        ground up. We connect and educate engineering, product and leadership to
-        help you navigate digital transformation, grow your business and tackle
-        core customer problems. We’re one of the most renowned technology
-        companies in Europe.
-      </Copy>
-      <Copy>
-        Some amazing support copy with go here to reenforce whatever section it
-        is relevant too. Some amazing support copy with go here to reenforce
-        whatever section it is relevant too. Some amazing support copy with go
-        here to reenforce whatever section it is relevant too. Some amazing
-        support copy with go here to reenforce whatever section it is relevant
-        too.
-      </Copy>
-    </PageSection>
+    <Values />
   </Fragment>
 );
