@@ -1,3 +1,5 @@
+require('dotenv').config({ path: '.env' });
+
 module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
@@ -23,6 +25,13 @@ module.exports = {
       options: {
         name: 'metadata',
         path: `${__dirname}/data/metadata/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE,
+        accessToken: process.env.CONTENTFUL_TOKEN,
       },
     },
   ],
