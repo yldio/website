@@ -20,6 +20,12 @@ success:
 
     Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
 metrics: 
+  main: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris rhoncus aenean vel elit. Odio facilisis mauris sit amet massa. 
+    Ipsum suspendisse ultrices gravida dictum. 
+  sub: |
+    Turpis in eu mi bibendum neque egestas congue. Congue mauris rhoncus aenean vel elit scelerisque mauris. Vivamus arcu felis bibendum ut tristique et egestas. Diam maecenas ultricies mi eget mauris pharetra. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Justo eget magna fermentum iaculis eu non. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Eleifend donec pretium vulputate sapien nec. At consectetur lorem donec massa sapien faucibus et. Consequat mauris nunc congue nisi vitae.
+  content: 
     - parameter: Increase in traffic
       value: 57%
       change: 0.04%
@@ -29,13 +35,13 @@ metrics:
     - parameter: Unique visitors
       value: 20,345
       change: 10.85%
-    - parameter: Increase in traffic
+    - parameter: The Increase in traffic
       value: 57%
       change: -0.04%
-    - parameter: Impressions per visitor
+    - parameter: The Impressions per visitor
       value: '2.8'
       change: 1.48%
-    - parameter: Unique visitors
+    - parameter: The Unique visitors
       value: 20,345
       change: -10.85%
 quote:
