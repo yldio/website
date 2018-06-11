@@ -2,10 +2,7 @@
 
 exports[`success section 1`] = `
 <React.Fragment>
-  <PageSection
-    gradient={false}
-    gradientHeight="50%"
-  >
+  <PageSection>
     <Typography__H2>
       The Process
     </Typography__H2>
@@ -21,8 +18,6 @@ exports[`success section 1`] = `
     </Typography__base>
   </PageSection>
   <PageSection
-    gradient={false}
-    gradientHeight="50%"
     wide={true}
   >
     <Image

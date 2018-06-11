@@ -15,8 +15,6 @@ exports[`components/Values snapshot 1`] = `
 <React.Fragment>
   <PageSection
     data-selector="about-us:our-values"
-    gradient={false}
-    gradientHeight="50%"
   >
     <Typography__H2>
       Our Values
@@ -30,10 +28,7 @@ exports[`components/Values snapshot 1`] = `
       Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too. Some amazing support copy with go here to reenforce whatever section it is relevant too.
     </Typography__base>
   </PageSection>
-  <PageSection
-    gradient={false}
-    gradientHeight="50%"
-  >
+  <PageSection>
     <TileGrid>
       <styled__OurValues>
         <Value
@@ -65,8 +60,6 @@ exports[`components/Values snapshot 1`] = `
     </TileGrid>
   </PageSection>
   <PageSection
-    gradient={false}
-    gradientHeight="50%"
     wide={true}
   >
     <TileGrid>

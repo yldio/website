@@ -4,8 +4,6 @@ exports[`components/AboutUs snapshot 1`] = `
 <React.Fragment>
   <PageSection
     data-selector="about-us:hero"
-    gradient={false}
-    gradientHeight="50%"
   >
     <PageHero
       before="about us"
@@ -18,8 +16,6 @@ exports[`components/AboutUs snapshot 1`] = `
   </PageSection>
   <PageSection
     data-selector="about-us:our-team"
-    gradient={false}
-    gradientHeight="50%"
   >
     <Typography__H2>
       Our Team
@@ -30,8 +26,6 @@ exports[`components/AboutUs snapshot 1`] = `
   </PageSection>
   <PageSection
     data-selector="about-us:team"
-    gradient={false}
-    gradientHeight="50%"
   >
     <styled__People>
       <Picture

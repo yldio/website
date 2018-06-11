@@ -4,11 +4,13 @@ exports[`components/ProductList snapshot 1`] = `
 <Panel>
   <styled__ProductColumn>
     <styled__Image
-      alt="our approach"
-      src="/src/compositions/ProductList/placeholder.svg"
+      alt="Strategy"
+      height="40px"
+      src="/src/assets/resource.svg"
+      width="34px"
     />
     <styled__Title>
-      Our Approach
+      Strategy
     </styled__Title>
     <ul>
       <styled__Product>
@@ -21,19 +23,13 @@ exports[`components/ProductList snapshot 1`] = `
         Product Consultancy
       </styled__Product>
     </ul>
-    <styled__Footer>
-      <Link
-        activeClassName="___active"
-        href="/services#approach"
-      >
-        More on Approach →
-      </Link>
-    </styled__Footer>
   </styled__ProductColumn>
   <styled__ProductColumn>
     <styled__Image
-      alt="design & product"
-      src="/src/compositions/ProductList/placeholder.svg"
+      alt="Design and Product"
+      height="31px"
+      src="/src/assets/design.svg"
+      width="50px"
     />
     <styled__Title>
       Design & Product
@@ -52,19 +48,13 @@ exports[`components/ProductList snapshot 1`] = `
         Research, Usability and User Experience
       </styled__Product>
     </ul>
-    <styled__Footer>
-      <Link
-        activeClassName="___active"
-        href="/services#design"
-      >
-        More on Design →
-      </Link>
-    </styled__Footer>
   </styled__ProductColumn>
   <styled__ProductColumn>
     <styled__Image
-      alt="engineering"
-      src="/src/compositions/ProductList/placeholder.svg"
+      alt="Engineering"
+      height="32px"
+      src="/src/assets/eng.svg"
+      width="39px"
     />
     <styled__Title>
       Engineering
@@ -85,20 +75,35 @@ exports[`components/ProductList snapshot 1`] = `
       <styled__Product>
         Mobile & React Native
       </styled__Product>
+      <styled__Product>
+        Microservices & evolutionary architecture
+      </styled__Product>
+      <styled__Product>
+        Cloud infrastructure
+      </styled__Product>
+      <styled__Product>
+        Cloud & Containers
+      </styled__Product>
+      <styled__Product>
+        Emerging technologies 
+      </styled__Product>
+      <styled__Product>
+        Machine Learning
+      </styled__Product>
+      <styled__Product>
+        .Net Core
+      </styled__Product>
+      <styled__Product>
+        Vue
+      </styled__Product>
     </ul>
-    <styled__Footer>
-      <Link
-        activeClassName="___active"
-        href="/services#engineering"
-      >
-        More on Engineering →
-      </Link>
-    </styled__Footer>
   </styled__ProductColumn>
   <styled__ProductColumn>
     <styled__Image
-      alt="training"
-      src="/src/compositions/ProductList/placeholder.svg"
+      alt="Engineering"
+      height="32px"
+      src="/src/assets/training.svg"
+      width="37px"
     />
     <styled__Title>
       Training
@@ -120,14 +125,37 @@ exports[`components/ProductList snapshot 1`] = `
         UX Design Training
       </styled__Product>
     </ul>
-    <styled__Footer>
-      <Link
-        activeClassName="___active"
-        href="/services#training"
-      >
-        More on Training →
-      </Link>
-    </styled__Footer>
+  </styled__ProductColumn>
+  <styled__ProductColumn>
+    <styled__Image
+      alt="Addcode"
+      height="39px"
+      src="/src/assets/rocket.svg"
+      width="39px"
+    />
+    <styled__Title>
+      Addcode
+    </styled__Title>
+    <ul>
+      <styled__Product>
+        Remote Teams
+      </styled__Product>
+      <styled__Product>
+        Geography - same time zone
+      </styled__Product>
+      <styled__Product>
+        Scalability
+      </styled__Product>
+      <styled__Product>
+        Talent
+      </styled__Product>
+      <styled__Product>
+        Choice of location
+      </styled__Product>
+      <styled__Product>
+        Lisbon, Porto, Manchester
+      </styled__Product>
+    </ul>
   </styled__ProductColumn>
 </Panel>
 `;
