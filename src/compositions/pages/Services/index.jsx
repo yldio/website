@@ -1,27 +1,24 @@
 import React, { Fragment } from 'react';
 
-import PageSection from 'components/PageSection';
 import PageHero from 'components/PageHero';
 import ProductList from 'compositions/ProductList';
 import WorkWithUs from 'compositions/WorkWithUs';
 
 import ServiceList from './ServiceList';
 import Tiles from './Tiles';
+import { Section, ServicesList } from './styled';
 
 const ServicesPage = () => (
   <Fragment>
-    <PageSection data-selector="services:hero">
-      <PageHero
-        before="services"
-        title="Great companies go beyond their customers expectations, over and over again."
-      >
+    <Section data-selector="services:hero">
+      <PageHero before="Services" white big>
         We enable your organisation to deliver world-class technology and user
         experiences, long after we leave.
       </PageHero>
-    </PageSection>
-    <PageSection gradient data-selector="services:table">
+    </Section>
+    <ServicesList gradient data-selector="services:table">
       <ProductList />
-    </PageSection>
+    </ServicesList>
     <ServiceList />
     <Tiles />
     <WorkWithUs />

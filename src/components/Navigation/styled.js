@@ -1,5 +1,6 @@
 import BaseLink, { activeClassName } from 'components/Link';
 import styled from 'styled-components';
+import is from 'styled-is';
 
 import { highlight, textLight, textOnDark } from 'styles/colours';
 import { spacing } from 'styles/spacing';
@@ -22,6 +23,10 @@ export const Link = styled(BaseLink)`
   position: relative;
   text-decoration: none;
 
+  ${is('dark')`
+    color: white;
+  `};
+
   &:after {
     bottom: 0;
     background-color: ${highlight};
@@ -32,6 +37,10 @@ export const Link = styled(BaseLink)`
     position: absolute;
     transition: opacity 200ms;
     width: calc(100% - ${paddedRight(spacing(4.5), spacing(3))});
+
+    ${is('dark')`
+    background-color: white;
+  `};
   }
 
   &:hover {

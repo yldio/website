@@ -7,9 +7,9 @@ import Footer from 'components/Footer';
 
 applyGlobalStyles();
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <Fragment>
-    <Header />
+    <Header dark={location.pathname === '/services'} />
     {children()}
     <Footer />
   </Fragment>
@@ -17,6 +17,7 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.func.isRequired,
+  location: PropTypes.func.isRequired,
 };
 
 export default Layout;
