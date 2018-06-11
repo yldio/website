@@ -3,7 +3,7 @@ import PageHero from 'components/PageHero';
 import PageSection from 'components/PageSection';
 import { Copy, H2 } from 'components/Typography';
 import Person from './Person';
-import { People } from './styled';
+import { People, WorkWithUs, Anchor, LinkWrapper } from './styled';
 import Values from './Values';
 
 import nuno from './Person/nuno.png';
@@ -70,5 +70,12 @@ export default () => (
       </People>
     </PageSection>
     <Values />
+    <WorkWithUs>
+      <H2>Work with us</H2>
+      <LinkWrapper>
+        <Anchor href="mailto:hello@yld.io">hello@yld.io</Anchor> /{' '}
+        <Anchor href="tel:4402035144678">+44 (0) 203 514 4678</Anchor>
+      </LinkWrapper>
+    </WorkWithUs>
   </Fragment>
 );

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/AboutUs snapshot 1`] = `
+<React.Fragment>
+  <PageSection
+    data-selector="about-us:hero"
+    gradient={false}
+    gradientHeight="50%"
+  >
+    <PageHero
+      before="about us"
+      title="Being a great technology focused company is hard. We get it."
+    >
+      Adopting a rapid, quality focused approach to building and maintaining your core technology, scaling a world-class user-experience and brand, and releasing value to your customers and your employees at a fast pace is a challenge, and this is only getting faster.
+    </PageHero>
+  </PageSection>
+  <PageSection
+    data-selector="about-us:our-team"
+    gradient={false}
+    gradientHeight="50%"
+  >
+    <Typography__H2>
+      Our Team
+    </Typography__H2>
+    <Typography__base>
+      We have team members from a broad spectrum of backgrounds and incredible technology companies.
+    </Typography__base>
+  </PageSection>
+  <PageSection
+    data-selector="about-us:team"
+    gradient={false}
+    gradientHeight="50%"
+  >
+    <styled__People>
+      <Picture
+        linkedin="https://twitter.com/dscape"
+        name="Nuno Job"
+        picture="/src/compositions/pages/AboutUs/Person/nuno.png"
+        title="Founder + Director"
+        twitter="https://twitter.com/dscape"
+      >
+        Nuno is the founder and director at YLD. The previous CCO at Nodejitsu, Nuno was responsible for business development and sales in the world’s largest Node.js cloud. Now, he leads the YLD team and inspires all the creative minds that make up the company.
+      </Picture>
+      <Picture
+        linkedin="https://twitter.com/dscape"
+        name="Nuno Job"
+        picture="/src/compositions/pages/AboutUs/Person/nuno.png"
+        title="Founder + Director"
+        twitter="https://twitter.com/dscape"
+      >
+        Nuno is the founder and director at YLD. The previous CCO at Nodejitsu, Nuno was responsible for business development and sales in the world’s largest Node.js cloud. Now, he leads the YLD team and inspires all the creative minds that make up the company.
+      </Picture>
+      <Picture
+        linkedin="https://twitter.com/dscape"
+        name="Nuno Job"
+        picture="/src/compositions/pages/AboutUs/Person/nuno.png"
+        title="Founder + Director"
+        twitter="https://twitter.com/dscape"
+      >
+        Nuno is the founder and director at YLD. The previous CCO at Nodejitsu, Nuno was responsible for business development and sales in the world’s largest Node.js cloud. Now, he leads the YLD team and inspires all the creative minds that make up the company.
+      </Picture>
+    </styled__People>
+  </PageSection>
+  <Values />
+  <styled__WorkWithUs>
+    <Typography__H2>
+      Work with us
+    </Typography__H2>
+    <styled__LinkWrapper>
+      <styled__Anchor
+        href="mailto:hello@yld.io"
+      >
+        hello@yld.io
+      </styled__Anchor>
+       /
+       
+      <styled__Anchor
+        href="tel:4402035144678"
+      >
+        +44 (0) 203 514 4678
+      </styled__Anchor>
+    </styled__LinkWrapper>
+  </styled__WorkWithUs>
+</React.Fragment>
+`;

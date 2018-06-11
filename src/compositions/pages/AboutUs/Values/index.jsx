@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import TileGrid, { Tile } from 'components/TileGrid';
 import PageSection from 'components/PageSection';
 import { Copy, H2 } from 'components/Typography';
@@ -11,6 +12,13 @@ import {
   OurValues,
   ValuesSection,
 } from './styled';
+
+export const Value = ({ header, children }) => (
+  <ValuesSection>
+    <Header>{header}</Header>
+    <Description>{children}</Description>
+  </ValuesSection>
+);
 
 const Values = () => (
   <Fragment>
@@ -36,43 +44,28 @@ const Values = () => (
     <PageSection>
       <TileGrid>
         <OurValues>
-          <ValuesSection>
-            <Header>Your opportunity is limitless</Header>
-            <Description>
-              You are the driver of change. We never give up, we begin again. Be
-              adventuruous. Push the boundaries. Go the extra mile.
-            </Description>
-          </ValuesSection>
-          <ValuesSection>
-            <Header>Have integrity, be honest</Header>
-            <Description>
-              Lead by example. No “bullshit”. Be real, have respect.
-            </Description>
-          </ValuesSection>
-          <ValuesSection>
-            <Header>Get better as a team</Header>
-            <Description>
-              Collaborate, collaborate, collaborate. Never stop learning annd
-              learn together - innovation can be the innovation you inspire in
-              others. Be inquisitive. Ask why, and be preparered to be asked why
-              of yourself.
-            </Description>
-          </ValuesSection>
-          <ValuesSection>
-            <Header>Recognise success</Header>
-            <Description>
-              Understand the purpose. When you succeed, help others do the same.
-              Celebrate, even when we fail.
-            </Description>
-          </ValuesSection>
-          <ValuesSection>
-            <Header>Have courage, stay humble</Header>
-            <Description>
-              Put our partners success ahead of our own and treat them as we
-              would our own team. Have strong opinions, weakly held. Good enough
-              isn’t good enough.
-            </Description>
-          </ValuesSection>
+          <Value header="Your opportunity is limitless">
+            You are the driver of change. We never give up, we begin again. Be
+            adventuruous. Push the boundaries. Go the extra mile.
+          </Value>
+          <Value header="Have integrity, be honest">
+            Lead by example. No “bullshit”. Be real, have respect.
+          </Value>
+          <Value header="Get better as a team">
+            Collaborate, collaborate, collaborate. Never stop learning annd
+            learn together - innovation can be the innovation you inspire in
+            others. Be inquisitive. Ask why, and be preparered to be asked why
+            of yourself.
+          </Value>
+          <Value header="Recognise success">
+            Understand the purpose. When you succeed, help others do the same.
+            Celebrate, even when we fail.
+          </Value>
+          <Value header="Have courage, stay humble">
+            Put our partners success ahead of our own and treat them as we would
+            our own team. Have strong opinions, weakly held. Good enough isn’t
+            good enough.
+          </Value>
         </OurValues>
       </TileGrid>
     </PageSection>
@@ -101,3 +94,8 @@ const Values = () => (
 );
 
 export default Values;
+
+Value.propTypes = {
+  header: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
+};
