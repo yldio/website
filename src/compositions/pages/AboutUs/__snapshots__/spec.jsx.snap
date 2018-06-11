@@ -62,7 +62,9 @@ exports[`components/AboutUs snapshot 1`] = `
     </styled__People>
   </PageSection>
   <Values />
-  <styled__WorkWithUs>
+  <styled__WorkWithUs
+    data-selector="about-us:work-width-us"
+  >
     <Typography__H2>
       Work with us
     </Typography__H2>
