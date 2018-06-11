@@ -25,14 +25,13 @@ export const ProductColumn = styled.li`
   `};
 
   ${breakpoints.desktop`
-    width: 25%;
+    width: 20%;
   `};
 `;
 
 export const Image = styled.img`
   height: auto;
-  margin-bottom: ${spacing(3)};
-  width: 100%;
+  margin-bottom: ${spacing(2)};
 `;
 
 export const Product = styled.li`
@@ -43,12 +42,5 @@ export const Product = styled.li`
 export const Title = styled.header`
   color: ${textLight};
   font-weight: 500;
-  margin-bottom: ${spacing(2)};
-`;
-
-export const Footer = styled.footer`
-  bottom: 0;
-  font-weight: 500;
-  left: ${spacing(2)};
-  position: absolute;
+  margin-bottom: ${spacing(3)};
 `;

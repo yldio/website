@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 
-import WorkWithUs from 'compositions/WorkWithUs';
-
 import BuildBetter from './BuildBetter';
 import CaseStudies from './CaseStudies';
 import Industries from './Industries';
@@ -19,7 +17,6 @@ const HomePage = () => (
     <HowWeDoIt />
     <Community />
     <ServicesAboutUs />
-    <WorkWithUs />
   </Fragment>
 );
 

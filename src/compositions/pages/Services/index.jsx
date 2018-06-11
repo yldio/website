@@ -2,10 +2,8 @@ import React, { Fragment } from 'react';
 
 import PageHero from 'components/PageHero';
 import ProductList from 'compositions/ProductList';
-import WorkWithUs from 'compositions/WorkWithUs';
 
 import ServiceList from './ServiceList';
-import Tiles from './Tiles';
 import { Section, ServicesList } from './styled';
 
 const ServicesPage = () => (
@@ -20,8 +18,6 @@ const ServicesPage = () => (
       <ProductList />
     </ServicesList>
     <ServiceList />
-    <Tiles />
-    <WorkWithUs />
   </Fragment>
 );
 

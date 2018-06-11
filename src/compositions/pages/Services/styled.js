@@ -19,4 +19,7 @@ export const Section = styled(PageSection)`
 
 export const ServicesList = styled(PageSection)`
   margin-top: ${remcalc(-90)};
+  box-shadow: ${remcalc(10)} ${remcalc(12)} ${remcalc(40)} ${remcalc(5)}
+    rgba(25, 5, 52, 0.15);
+  padding-bottom: 0;
 `;

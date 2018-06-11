@@ -6,5 +6,5 @@ export const Section = Container.withComponent('section').extend`
   margin-top: ${spacing(10)};
   position: relative;
 
-  padding-bottom: ${props => (props.gradient ? spacing(10) : 0)};
+  padding-bottom: 0;
 `;
