@@ -2,7 +2,7 @@ import BaseLink, { activeClassName } from 'components/Link';
 import styled from 'styled-components';
 import is from 'styled-is';
 
-import { highlight, textLight, textOnDark } from 'styles/colours';
+import { highlight, textLight } from 'styles/colours';
 import { spacing } from 'styles/spacing';
 
 const paddedRight = (a, b) => props => (props.padRight ? a : b);
@@ -53,13 +53,13 @@ export const Link = styled(BaseLink)`
   }
 `;
 
-export const ButtonLink = Link.extend`
-  background-color: ${highlight};
-  border-radius: 1px;
-  color: ${textOnDark};
-  padding: ${spacing(1.3)} ${spacing(3)};
+// export const ButtonLink = Link.extend`
+//   background-color: ${highlight};
+//   border-radius: 1px;
+//   color: ${textOnDark};
+//   padding: ${spacing(1.3)} ${spacing(3)};
 
-  &:hover:after {
-    display: none;
-  }
-`;
+//   &:hover:after {
+//     display: none;
+//   }
+// `;

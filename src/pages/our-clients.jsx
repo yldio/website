@@ -11,7 +11,7 @@ const CaseStudiesPage = ({ caseStudies, page }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
     <PageSection>
-      <PageSectionHeader title="Case Studies" />
+      <PageSectionHeader title="Our Clients" />
       <ul>
         {caseStudies.map(caseStudy => (
           <li key={caseStudy.slug}>
