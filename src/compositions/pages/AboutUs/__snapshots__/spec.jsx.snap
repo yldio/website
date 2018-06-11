@@ -9,7 +9,9 @@ exports[`components/AboutUs snapshot 1`] = `
   >
     <PageHero
       before="about us"
+      big={false}
       title="Being a great technology focused company is hard. We get it."
+      white={false}
     >
       Adopting a rapid, quality focused approach to building and maintaining your core technology, scaling a world-class user-experience and brand, and releasing value to your customers and your employees at a fast pace is a challenge, and this is only getting faster.
     </PageHero>

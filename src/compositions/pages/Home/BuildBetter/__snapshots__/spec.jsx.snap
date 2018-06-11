@@ -8,11 +8,13 @@ exports[`compositions/homepage/BuildBetter snapshot 1`] = `
 >
   <PageHero
     before={null}
+    big={false}
     title={
       <styled__DefaultTitle>
         Build better
       </styled__DefaultTitle>
     }
+    white={false}
   >
     <styled__Paragraph>
       Great companies go beyond their customers expectations, over and over again. Building this capability in your company is our mission, and our promise.
