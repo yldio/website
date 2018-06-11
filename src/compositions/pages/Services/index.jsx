@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 import PageHero from 'components/PageHero';
 import ProductList from 'compositions/ProductList';
 
-import ServiceList from './ServiceList';
 import { Section, ServicesList } from './styled';
+import Challenges from './Challenges/index';
 
 const ServicesPage = () => (
   <Fragment>
@@ -14,10 +14,10 @@ const ServicesPage = () => (
         experiences, long after we leave.
       </PageHero>
     </Section>
-    <ServicesList gradient data-selector="services:table">
+    <ServicesList data-selector="services:table">
       <ProductList />
     </ServicesList>
-    <ServiceList />
+    <Challenges />
   </Fragment>
 );
 

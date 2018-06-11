@@ -15,10 +15,9 @@ exports[`compositions/pages/Services snapshot 1`] = `
   </styled__Section>
   <styled__ServicesList
     data-selector="services:table"
-    gradient={true}
   >
     <ProductList />
   </styled__ServicesList>
-  <ServiceList />
+  <Challenges />
 </React.Fragment>
 `;

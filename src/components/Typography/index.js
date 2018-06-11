@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { textLight, textLighter } from 'styles/colours';
 import { spacing } from 'styles/spacing';
+import is from 'styled-is';
 
 const base = styled.span`
   white-space: ${props => (props.newLines ? 'pre-line' : 'normal')};
@@ -11,6 +12,10 @@ export const H1 = styled.h1`
   font-size: 3rem;
   margin-top: ${spacing(3)};
   margin-bottom: ${spacing(3)};
+
+  ${is('white')`
+    color: white;
+  `};
 `;
 
 export const H2 = styled.h2`
@@ -19,6 +24,10 @@ export const H2 = styled.h2`
   font-size: 2.25rem;
   margin-top: ${spacing(3)};
   margin-bottom: ${spacing(3)};
+
+  ${is('white')`
+    color: white;
+  `};
 `;
 
 export const H4 = styled.h4`
@@ -27,6 +36,10 @@ export const H4 = styled.h4`
   font-weight: 500;
   margin-top: ${spacing(2)};
   margin-bottom: ${spacing(2)};
+
+  ${is('white')`
+    color: white;
+  `};
 `;
 
 export const Copy = base.withComponent('p').extend`
@@ -40,4 +53,16 @@ export const Copy = base.withComponent('p').extend`
   line-height: 1.6em;
   margin-top: ${props => (props.large ? spacing(4) : spacing(2))};
   margin-bottom: ${props => (props.large ? spacing(4) : spacing(2))};
+
+  ${is('light')`
+    color: #B4AFC8;
+  `};
+
+  ${is('white')`
+    color: white;
+  `};
+
+  ${is('uppercase')`
+    text-transform: uppercase;
+  `};
 `;
