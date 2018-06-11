@@ -1,5 +1,6 @@
 const path = require('path');
 const queryBlogPosts = require('./queryBlogPosts');
+const appConfig = require('../src/config');
 
 const CONFIG_NAME = process.env.GATSBY_CONFIG || 'default';
 
@@ -92,10 +93,12 @@ function createBlogPostPages(graphql, createPage, config) {
 module.exports = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
-  return getConfiguration(graphql).then(config =>
-    Promise.all([
-      createCaseStudyPages(graphql, createPage, config),
-      createBlogPostPages(graphql, createPage, config),
-    ]),
-  );
+  return getConfiguration(graphql).then(config => {
+    const promises = [createCaseStudyPages(graphql, createPage, config)];
+
+    if (appConfig.get('development'))
+      promises.push(createBlogPostPages(graphql, createPage, config));
+
+    return Promise.all(promises);
+  });
 };

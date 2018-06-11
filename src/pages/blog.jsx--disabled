@@ -1,3 +1,7 @@
+
+// Rename this file to see blogs
+
+
 import React from 'react';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
