@@ -32,7 +32,11 @@ export const H4 = styled.h4`
 export const Copy = base.withComponent('p').extend`
   color: ${textLighter};
   font-size: ${props => (props.large ? '1.5rem' : '1.25rem')};
-  font-weight: ${props => (props.large ? 300 : 400)};
+  font-weight: ${props => {
+    if (props.large || props.light) return 300;
+
+    return props.bold ? 600 : 400;
+  }}
   line-height: 1.6em;
   margin-top: ${props => (props.large ? spacing(4) : spacing(2))};
   margin-bottom: ${props => (props.large ? spacing(4) : spacing(2))};
