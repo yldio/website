@@ -70,7 +70,7 @@ export default () => (
       </People>
     </PageSection>
     <Values />
-    <WorkWithUs>
+    <WorkWithUs data-selector="about-us:work-width-us">
       <H2>Work with us</H2>
       <LinkWrapper>
         <Anchor href="mailto:hello@yld.io">hello@yld.io</Anchor> /{' '}
