@@ -12,6 +12,6 @@ const config = new Map();
 
 config.set('development', process.env.GATSBY_CONTEXT !== 'production');
 
-export default {
+module.exports = {
   get: k => config.get(k),
 };
