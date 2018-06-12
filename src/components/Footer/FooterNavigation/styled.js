@@ -14,6 +14,10 @@ export const Category = styled.ul`
   `};
 `;
 
+export const Contact = styled(Category)`
+  width: 50%;
+`;
+
 export const Item = styled.li`
   color: ${props => (props.header ? 'FFFFFF' : footerText)};
   margin-bottom: ${props => (props.header ? spacing(2) : spacing())};
