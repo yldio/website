@@ -11,6 +11,7 @@ export const Container = Panel.withComponent('ul').extend`
   padding: ${spacing(4)} ${spacing(2)};
   margin-left: ${spacing(-4)};
   margin-right: ${spacing(-4)};
+  box-shadow: none;
 `;
 
 export const ProductColumn = styled.li`

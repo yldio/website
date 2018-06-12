@@ -9,7 +9,7 @@ applyGlobalStyles();
 
 const Layout = ({ children, location }) => (
   <Fragment>
-    <Header dark={location.pathname === '/services'} />
+    <Header dark={location.pathname.includes('services')} />
     {children()}
     <Footer />
   </Fragment>
