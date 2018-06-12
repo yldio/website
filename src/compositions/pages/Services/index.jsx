@@ -7,6 +7,7 @@ import Container from 'components/Container';
 import { Section, ServicesList } from './styled';
 import Challenges from './Challenges/index';
 import Approach from './Approach/index';
+import Design from './Design/index';
 
 const ServicesPage = () => (
   <Fragment>
@@ -23,6 +24,7 @@ const ServicesPage = () => (
     </ServicesList>
     <Challenges />
     <Approach />
+    <Design />
   </Fragment>
 );
 

@@ -22,5 +22,6 @@ exports[`compositions/pages/Services snapshot 1`] = `
   </styled__ServicesList>
   <Challenges />
   <Approach />
+  <Design />
 </React.Fragment>
 `;

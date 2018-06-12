@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`compositions/pages/Services/Challenges snapshot 1`] = `
+exports[`compositions/pages/Services/Approaches snapshot 1`] = `
 <section
   data-selector="services:approach"
 >

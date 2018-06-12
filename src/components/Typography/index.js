@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { textLight, textLighter, textBlue, blue } from 'styles/colours';
 import { spacing } from 'styles/spacing';
-import is from 'styled-is';
+import is, { isNot } from 'styled-is';
 import remcalc from 'remcalc';
 
 const base = styled.span`
@@ -55,6 +55,8 @@ export const H5 = styled.h5`
   font-size: ${remcalc(27)};
   color: ${textBlue};
 
+  ${isNot('noBorder')`
+
   &:after {
     content: '';
     display: block;
@@ -63,6 +65,7 @@ export const H5 = styled.h5`
     height: ${remcalc(4)};
     margin-top: ${remcalc(10)};
   }
+  `};
 
   ${is('white')`
     color: white;
@@ -80,6 +83,10 @@ export const Copy = base.withComponent('p').extend`
   line-height: 1.6em;
   margin-top: ${props => (props.large ? spacing(4) : spacing(2))};
   margin-bottom: ${props => (props.large ? spacing(4) : spacing(2))};
+
+  ${is('blue')`
+    color: ${blue}
+  `};
 
   ${is('light')`
     color: #B4AFC8;

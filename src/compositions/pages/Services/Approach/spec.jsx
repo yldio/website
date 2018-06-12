@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Challenges from './index';
+import Approaches from './index';
 
-test('compositions/pages/Services/Challenges snapshot', () => {
-  const wrapper = shallow(<Challenges />);
+test('compositions/pages/Services/Approaches snapshot', () => {
+  const wrapper = shallow(<Approaches />);
 
   expect(wrapper).toMatchSnapshot();
 });
