@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="40px" viewBox="0 0 39 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>icon: blog</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SERVICES" transform="translate(-821.000000, -1667.000000)">
+            <g id="icon:-blog" transform="translate(821.000000, 1667.000000)">
+                <polygon id="Fill-1" fill="#5E5CB2" points="0 40 32 40 32 8 0 8"></polygon>
+                <polygon id="Fill-2" fill="#FFFFFF" points="28 38 23 36 18 38 18 24 28 24"></polygon>
+                <polygon id="Fill-3" fill="#FFFFFF" points="30 25 37 25 37 23 30 23"></polygon>
+                <polygon id="Fill-4" fill="#FFFFFF" points="30 28 37 28 37 26 30 26"></polygon>
+                <polygon id="Fill-5" fill="#FFFFFF" points="30 31 37 31 37 29 30 29"></polygon>
+                <path d="M37,33 L33,33 L10,33 C7.243,33 5,30.757 5,28 L5,7 C5,4.243 7.243,2 10,2 L37,2 L37,21 L39,21 L39,0 L10,0 C6.134,0 3,3.134 3,7 L3,28 C3,31.866 6.134,35 10,35 L39,35 L39,33 L37,33 Z" id="Fill-6" fill="#FFFFFF"></path>
+                <path d="M37,33 L33,33 L10,33 C7.243,33 5,30.757 5,28 L5,26 C5,23.243 7.243,21 10,21 L33,21 L37,21 L39,21 L39,19 L10,19 C6.134,19 3,22.134 3,26 L3,28 C3,31.866 6.134,35 10,35 L39,35 L39,33 L37,33 Z" id="Fill-8" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
