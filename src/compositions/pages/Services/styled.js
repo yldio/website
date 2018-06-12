@@ -3,7 +3,6 @@ import remcalc from 'remcalc';
 
 import PageSection from 'components/PageSection';
 import BG from '../../../assets/page-hero.png';
-import approach from './assets/approach.png';
 
 export const Section = styled(PageSection)`
     background: url('${BG}');
@@ -23,21 +22,4 @@ export const ServicesList = styled(PageSection)`
   box-shadow: ${remcalc(10)} ${remcalc(12)} ${remcalc(40)} ${remcalc(5)}
     rgba(25, 5, 52, 0.15);
   padding-bottom: 0;
-`;
-
-export const ApproachHeader = styled.section`
-    background: url('${approach}');
-    background-position: left top;
-    background-size: cover;
-    height: ${remcalc(460)};
-    padding-top: ${remcalc(300)}
-`;
-
-export const Row = styled.div`
-  display: flex;
-  margin: ${remcalc(80)} 0;
-
-  & > * {
-    width: 50%;
-  }
 `;

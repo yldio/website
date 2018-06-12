@@ -5,13 +5,15 @@ exports[`compositions/pages/Services snapshot 1`] = `
   <styled__Section
     data-selector="services:hero"
   >
-    <PageHero
-      before="Services"
-      big={true}
-      white={true}
-    >
-      We enable your organisation to deliver world-class technology and user experiences, long after we leave.
-    </PageHero>
+    <Container>
+      <PageHero
+        before="Services"
+        big={true}
+        white={true}
+      >
+        We enable your organisation to deliver world-class technology and user experiences, long after we leave.
+      </PageHero>
+    </Container>
   </styled__Section>
   <styled__ServicesList
     data-selector="services:table"
@@ -19,5 +21,6 @@ exports[`compositions/pages/Services snapshot 1`] = `
     <ProductList />
   </styled__ServicesList>
   <Challenges />
+  <Approach />
 </React.Fragment>
 `;
