@@ -3,12 +3,14 @@
 exports[`components/ProductList snapshot 1`] = `
 <Panel>
   <styled__ProductColumn>
-    <styled__Image
-      alt="Strategy"
-      height="40px"
-      src="/src/assets/resource.svg"
-      width="34px"
-    />
+    <styled__ImageWrapper>
+      <styled__Image
+        alt="Strategy"
+        height="40px"
+        src="/src/assets/resource.svg"
+        width="34px"
+      />
+    </styled__ImageWrapper>
     <styled__Title>
       Strategy
     </styled__Title>
@@ -25,12 +27,14 @@ exports[`components/ProductList snapshot 1`] = `
     </ul>
   </styled__ProductColumn>
   <styled__ProductColumn>
-    <styled__Image
-      alt="Design and Product"
-      height="31px"
-      src="/src/assets/design.svg"
-      width="50px"
-    />
+    <styled__ImageWrapper>
+      <styled__Image
+        alt="Design and Product"
+        height="31px"
+        src="/src/assets/design.svg"
+        width="50px"
+      />
+    </styled__ImageWrapper>
     <styled__Title>
       Design & Product
     </styled__Title>
@@ -50,12 +54,14 @@ exports[`components/ProductList snapshot 1`] = `
     </ul>
   </styled__ProductColumn>
   <styled__ProductColumn>
-    <styled__Image
-      alt="Engineering"
-      height="32px"
-      src="/src/assets/eng.svg"
-      width="39px"
-    />
+    <styled__ImageWrapper>
+      <styled__Image
+        alt="Engineering"
+        height="32px"
+        src="/src/assets/eng.svg"
+        width="39px"
+      />
+    </styled__ImageWrapper>
     <styled__Title>
       Engineering
     </styled__Title>
@@ -99,12 +105,14 @@ exports[`components/ProductList snapshot 1`] = `
     </ul>
   </styled__ProductColumn>
   <styled__ProductColumn>
-    <styled__Image
-      alt="Engineering"
-      height="32px"
-      src="/src/assets/training.svg"
-      width="37px"
-    />
+    <styled__ImageWrapper>
+      <styled__Image
+        alt="Engineering"
+        height="32px"
+        src="/src/assets/training.svg"
+        width="37px"
+      />
+    </styled__ImageWrapper>
     <styled__Title>
       Training
     </styled__Title>
@@ -127,12 +135,14 @@ exports[`components/ProductList snapshot 1`] = `
     </ul>
   </styled__ProductColumn>
   <styled__ProductColumn>
-    <styled__Image
-      alt="Addcode"
-      height="39px"
-      src="/src/assets/rocket.svg"
-      width="39px"
-    />
+    <styled__ImageWrapper>
+      <styled__Image
+        alt="Addcode"
+        height="39px"
+        src="/src/assets/rocket.svg"
+        width="39px"
+      />
+    </styled__ImageWrapper>
     <styled__Title>
       Addcode
     </styled__Title>

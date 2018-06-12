@@ -2,17 +2,26 @@
 
 import React from 'react';
 
-import { Container, Image, Product, ProductColumn, Title } from './styled';
+import {
+  Container,
+  Image,
+  Product,
+  ProductColumn,
+  Title,
+  ImageWrapper,
+} from './styled';
 
 const ProductList = () => (
   <Container>
     <ProductColumn>
-      <Image
-        src={require('../../assets/resource.svg')}
-        alt="Strategy"
-        width="34px"
-        height="40px"
-      />
+      <ImageWrapper>
+        <Image
+          src={require('../../../../assets/resource.svg')}
+          alt="Strategy"
+          width="34px"
+          height="40px"
+        />
+      </ImageWrapper>
       <Title>Strategy</Title>
       <ul>
         <Product>Digital Transformation</Product>
@@ -21,12 +30,14 @@ const ProductList = () => (
       </ul>
     </ProductColumn>
     <ProductColumn>
-      <Image
-        src={require('../../assets/design.svg')}
-        alt="Design and Product"
-        width="50px"
-        height="31px"
-      />
+      <ImageWrapper>
+        <Image
+          src={require('../../../../assets/design.svg')}
+          alt="Design and Product"
+          width="50px"
+          height="31px"
+        />
+      </ImageWrapper>
       <Title>Design &amp; Product</Title>
       <ul>
         <Product>Design Systems &amp; Design Operations</Product>
@@ -36,12 +47,14 @@ const ProductList = () => (
       </ul>
     </ProductColumn>
     <ProductColumn>
-      <Image
-        src={require('../../assets/eng.svg')}
-        alt="Engineering"
-        width="39px"
-        height="32px"
-      />
+      <ImageWrapper>
+        <Image
+          src={require('../../../../assets/eng.svg')}
+          alt="Engineering"
+          width="39px"
+          height="32px"
+        />
+      </ImageWrapper>
       <Title>Engineering</Title>
       <ul>
         <Product>Engineering Leadership</Product>
@@ -59,12 +72,14 @@ const ProductList = () => (
       </ul>
     </ProductColumn>
     <ProductColumn>
-      <Image
-        src={require('../../assets/training.svg')}
-        alt="Engineering"
-        width="37px"
-        height="32px"
-      />
+      <ImageWrapper>
+        <Image
+          src={require('../../../../assets/training.svg')}
+          alt="Engineering"
+          width="37px"
+          height="32px"
+        />
+      </ImageWrapper>
       <Title>Training</Title>
       <ul>
         <Product>Node Training</Product>
@@ -75,12 +90,14 @@ const ProductList = () => (
       </ul>
     </ProductColumn>
     <ProductColumn>
-      <Image
-        src={require('../../assets/rocket.svg')}
-        alt="Addcode"
-        width="39px"
-        height="39px"
-      />
+      <ImageWrapper>
+        <Image
+          src={require('../../../../assets/rocket.svg')}
+          alt="Addcode"
+          width="39px"
+          height="39px"
+        />
+      </ImageWrapper>
       <Title>Addcode</Title>
       <ul>
         <Product>Remote Teams</Product>

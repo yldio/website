@@ -72,7 +72,7 @@ exports[`components/FooterNavigation snapshot 1`] = `
       noBorder={true}
       white={true}
     >
-      Folow Us
+      Follow Us
     </Typography__H5>
     <ul>
       <styled__Item>

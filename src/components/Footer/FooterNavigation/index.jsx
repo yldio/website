@@ -38,7 +38,7 @@ const FooterNavigation = () => (
     </Category>
     <Category>
       <H5 white noBorder>
-        Folow Us
+        Follow Us
       </H5>
       <ul>
         <Item>
