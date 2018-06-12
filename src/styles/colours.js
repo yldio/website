@@ -13,5 +13,6 @@ export const highlight = '#4D62D8';
 export const highlightDark = '#1C203C';
 export const highlightDarker = '#22282E';
 export const blue = '#5e5cb2';
+export const pink = '#F7007D';
 
 export const borderLight = '#E4E8EF';

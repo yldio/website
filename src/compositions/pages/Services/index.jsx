@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-
 import PageHero from 'components/PageHero';
 import Container from 'components/Container';
 
@@ -7,6 +6,7 @@ import { Section, ServicesList } from './styled';
 import Challenges from './Challenges/index';
 import Approach from './Approach/index';
 import Design from './Design/index';
+import Help from './Help/index';
 import Engineering from './Engineering/index';
 import ProductList from './ProductList';
 
@@ -25,6 +25,7 @@ const ServicesPage = () => (
     </ServicesList>
     <Challenges />
     <Approach />
+    <Help />
     <Design />
     <Engineering />
   </Fragment>
