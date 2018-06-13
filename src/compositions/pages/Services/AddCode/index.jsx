@@ -34,8 +34,12 @@ export const Row = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
-  margin-top: ${remcalc(-155)};
+  justify-content: center;
+
+  ${breakpoints.tablet`
+    justify-content: flex-end;
+    margin-top: ${remcalc(-155)};
+  `};
 `;
 
 const AddCode = () => (

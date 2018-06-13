@@ -3,6 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
+import breakpoints from 'styles/breakpoints';
 
 import { H2, Copy } from 'components/Typography';
 import Container from 'components/Container';
@@ -18,8 +19,15 @@ const List = styled.ul`
   flex-wrap: wrap;
 
   li {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    ${breakpoints.tablet`
     width: 33%;
     box-sizing: border-box;
+  `};
 
     &:not(:last-child) {
       padding-right: 40px;
