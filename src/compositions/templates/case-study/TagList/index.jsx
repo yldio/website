@@ -8,7 +8,7 @@ const TagList = ({ tags }) => (
 );
 
 TagList.propTypes = {
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default TagList;

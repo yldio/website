@@ -46,9 +46,9 @@ const Navigation = ({ dark }) => (
 export default Navigation;
 
 Navigation.propTypes = {
-  dark: PropTypes.bool,
+  dark: PropTypes.bool
 };
 
 Navigation.defaultProps = {
-  dark: false,
+  dark: false
 };

@@ -10,7 +10,7 @@ import {
   Header,
   Description,
   OurValues,
-  ValuesSection,
+  ValuesSection
 } from './styled';
 
 export const Value = ({ header, children }) => (
@@ -97,5 +97,5 @@ export default Values;
 
 Value.propTypes = {
   header: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired
 };

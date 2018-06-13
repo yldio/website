@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid, Row } from 'react-styled-flexboxgrid';
 
 import { Container, StyledFooter } from './styled';
 

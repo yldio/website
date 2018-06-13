@@ -1,115 +1,110 @@
-/* eslint-disable global-require */
-
 import React from 'react';
+import { Grid, Row, Col } from 'react-styled-flexboxgrid';
+import Flex, { FlexItem } from 'styled-flex-component';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
-import is, { isNot } from 'styled-is';
 
-import Container from 'components/Container';
+import PageSection from 'components/PageSection';
 import { pink } from 'styles/colours';
 import Card from 'components/Card';
-import { H2 } from 'components/Typography';
+import { H4, H2, Copy } from 'components/Typography';
 
-import { Section } from '../styled';
+import Divider from '../Divider';
 
-const Bar = styled.div`
-  background: #5e5cb2;
-  width: ${remcalc(100)};
-  height: ${remcalc(4)};
-  margin-top: ${remcalc(15)};
-  margin-bottom: ${remcalc(70)};
+const Section = styled(PageSection)`
+  padding-top: 0;
 `;
 
-const Wrapper = styled(Container)`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  ${isNot('noMargin')`
-    margin-top: ${remcalc(-150)};
-  `}
-  margin-bottom: ${remcalc(70)};
-
-  ${is('noMargin')`
-    padding: 0;
-  `}
+const Cards = Flex.extend`
+  margin-top: -77px;
+  margin-bottom: 77px;
+  z-index: 2;
+  position: relative;
 `;
 
-const CardsWrapper = styled.div`
-  background: #190533;
-  padding-top: ${remcalc(70)};
-  padding-bottom: ${remcalc(70)};
-  margin-top: ${remcalc(140)};
-`;
-
-const HelpSection = styled(Section)`
-  padding: 0;
-  padding-top: ${remcalc(140)};
-  margin-top: 0px;
-`;
-
-const Item = styled.li`
+const Item = Copy.withComponent('li').extend`
   &::before {
     content: '•';
     margin-right: ${remcalc(20)};
     color: ${pink};
   }
+
   &:not(:last-child) {
     margin-bottom: ${remcalc(20)};
   }
-
-  color: white;
 `;
 
-const Help = () => (
-  <HelpSection data-selector="services:tech">
-    <Container>
-      <H2 white slim>
-        We bring you the latest techniques<br /> to help you meet your
-        challenges
-        <Bar />
-      </H2>
-    </Container>
-    <CardsWrapper>
-      <Wrapper>
-        <Card
-          title="YLD DELIVERS"
-          points={['Lean Culture', 'Micro-services']}
-        />
-        <Card
-          title="Leveraging"
-          points={['Vertical teams', 'Open source software']}
-        />
-        <Card
-          title="Enabling"
-          points={['Experimentation', '	Continuous delivery with zero downtime']}
-        />
-      </Wrapper>
-      <Container>
-        <H2 white slim>
-          To bring you business value
-          <Bar />
-        </H2>
-        <Wrapper noMargin>
+export default () => (
+  <Section dark data-selector="services:help">
+    <Divider>
+      <PageSection>
+        <Grid>
+          <Row>
+            <Col xs={12} sm={6}>
+              <H4 lighter decorated>
+                We bring you the latest techniques to help you meet your
+                challenges:
+              </H4>
+            </Col>
+          </Row>
+        </Grid>
+      </PageSection>
+    </Divider>
+    <Grid>
+      <Cards justifyBetween>
+        <FlexItem>
+          <Card
+            title="YLD DELIVERS"
+            points={['Lean Culture', 'Micro-services']}
+          />
+        </FlexItem>
+        <FlexItem>
+          <Card
+            title="Leveraging"
+            points={['Vertical teams', 'Open source software']}
+          />
+        </FlexItem>
+        <FlexItem>
+          <Card
+            title="Enabling"
+            points={[
+              'Experimentation',
+              '	Continuous delivery with zero downtime'
+            ]}
+          />
+        </FlexItem>
+      </Cards>
+      <Row>
+        <Col xs={12}>
+          <H2 lighter decorated>
+            To bring you business value
+          </H2>
+        </Col>
+        <Col xs={3}>
           <ul>
-            <Item>Utilise disruptive technology</Item>
-            <Item>Stay lean and compete</Item>
+            <Item light>Utilise disruptive technology</Item>
+            <Item light>Stay lean and compete</Item>
           </ul>
+        </Col>
+        <Col xs={3}>
           <ul>
-            <Item>Transform</Item>
-            <Item>Innovate</Item>
+            <Item light>Transform</Item>
+            <Item light>Innovate</Item>
           </ul>
+        </Col>
+        <Col xs={3}>
           <ul>
-            <Item>Speed of delivery and efficiency</Item>
-            <Item>Bridge the skills gap</Item>
+            <Item light>Speed of delivery and efficiency</Item>
+            <Item light>Bridge the skills gap</Item>
           </ul>
+        </Col>
+        <Col xs={3}>
           <ul>
-            <Item>Mitigate risk</Item>
-            <Item>Lower cost</Item>
+            <Item light>Mitigate risk</Item>
+            <Item light>Lower cost</Item>
           </ul>
-        </Wrapper>
-      </Container>
-    </CardsWrapper>
-  </HelpSection>
+        </Col>
+      </Row>
+    </Grid>
+  </Section>
 );
-
-export default Help;

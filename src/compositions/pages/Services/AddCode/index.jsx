@@ -1,70 +1,66 @@
 import React from 'react';
-import { H2, Copy } from 'components/Typography';
-import Container from 'components/Container';
+import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
-import breakpoints from 'styles/breakpoints';
-import remcalc from 'remcalc';
-import Card from 'components/Card';
-import add from '../assets/remote-header.png';
 
-export const EngHeader = styled.section`
-    background: url('${add}');
-    background-position: left top;
-    background-size: cover;
-    height: ${remcalc(460)};
-    padding-top: ${remcalc(300)};
-    margin-bottom: ${remcalc(80)};
-`;
+import PageSection from 'components/PageSection';
+import { H2, H4, Copy } from 'components/Typography';
+import BaseCard from 'components/Card';
 
-export const Row = styled.div`
+import BaseDivider from '../Divider';
+import eng from '../assets/leadership-header.png';
+
+const Divider = styled(BaseDivider)`
+  padding: 0 0 60px 0;
   display: flex;
-  margin: ${remcalc(80)} 0;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  & > * {
-    width: 100%;
-    flex-shrink: 0;
-
-    ${breakpoints.tablet`
-        width: 45%;
-  `};
-  }
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: stretch;
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-
-  ${breakpoints.tablet`
-    justify-content: flex-end;
-    margin-top: ${remcalc(-155)};
-  `};
+const Section = styled(PageSection)`
+  padding-top: 0;
 `;
 
-const AddCode = () => (
-  <section data-selector="services:add-code">
-    <EngHeader>
-      <Container>
-        <H2 white slim>
-          Remote Dedicated Services - Addcode
-        </H2>
-      </Container>
-    </EngHeader>
-    <Container>
+const Subtitle = Copy.extend`
+  margin-top: 86px;
+  margin-bottom: 86px;
+`;
+
+const Card = styled(BaseCard)`
+  margin-top: -108px;
+  position: relative;
+  float: right;
+`;
+
+export default () => (
+  <Section data-selector="services:addcode">
+    <Divider bg={eng}>
+      <Grid>
+        <Row>
+          <Col xs={12} sm={7}>
+            <H2 lighter>Remote Dedicated Services - Addcode </H2>
+          </Col>
+        </Row>
+      </Grid>
+    </Divider>
+    <Grid>
       <Row>
-        <Copy>
-          If you are looking for iterative and Agile development strategies;
-          cooperative development procedures; fast and easy communication; rapid
-          prototyping; and user-centric design, remote teams nearshore are is
-          the option for you.
-          <br />
-          <br />
-          Utilizing our Addcode, our remote option brings benefits. Meaning this
-          method provides advantages in both the initial cost standpoint, and in
-          its risk-averseness.
-        </Copy>
-        <Wrapper>
+        <Col xs={12} sm={6}>
+          <Subtitle>
+            If you are looking for iterative and Agile development strategies;
+            cooperative development procedures; fast and easy communication;
+            rapid prototyping; and user-centric design, remote teams nearshore
+            are is the option for you.
+            <br />
+            <br />
+            Utilizing our Addcode, our remote option brings benefits. Meaning
+            this method provides advantages in both the initial cost standpoint,
+            and in its risk-averseness.
+          </Subtitle>
+        </Col>
+        <Col xs={12} sm={6}>
           <Card
             title="ADDCODE BRINGS YOU"
             points={[
@@ -75,13 +71,11 @@ const AddCode = () => (
               'Complexity of work',
               'Geography - same time zone',
               'Talent offering',
-              'Choice of location - Porto & Lisbon, Manchester ',
+              'Choice of location - Porto & Lisbon, Manchester '
             ]}
           />
-        </Wrapper>
+        </Col>
       </Row>
-    </Container>
-  </section>
+    </Grid>
+  </Section>
 );
-
-export default AddCode;

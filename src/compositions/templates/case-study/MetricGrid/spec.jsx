@@ -7,13 +7,13 @@ test('components/Logo snapshot', () => {
     {
       parameter: 'reviews',
       value: '2.8',
-      change: '20%',
+      change: '20%'
     },
     {
       parameter: 'reviews',
       value: '2.8',
-      change: '20%',
-    },
+      change: '20%'
+    }
   ];
   const wrapper = shallow(<MetricGrid content={content} />);
 

@@ -8,7 +8,7 @@ test('components/TileGrid snapshot with tiles', () => {
       <Tile colour="normal">Hello</Tile>
       <Tile colour="dark">World</Tile>
       <Tile colour="darker">!</Tile>
-    </TileGrid>,
+    </TileGrid>
   );
 
   expect(wrapper).toMatchSnapshot();

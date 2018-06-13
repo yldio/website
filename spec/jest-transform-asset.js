@@ -8,5 +8,5 @@ module.exports = {
   process: (src, path) => {
     const assetPath = path.slice(path.lastIndexOf('/src'));
     return `module.exports = "${assetPath}"`;
-  },
+  }
 };

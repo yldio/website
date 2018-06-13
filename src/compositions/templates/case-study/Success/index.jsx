@@ -15,7 +15,7 @@ const Success = ({ main, sub }) => (
 
 Success.propTypes = {
   main: PropTypes.string.isRequired,
-  sub: PropTypes.string.isRequired,
+  sub: PropTypes.string.isRequired
 };
 
 export default Success;

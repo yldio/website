@@ -1,22 +1,24 @@
 import React, { Fragment } from 'react';
 
 import BuildBetter from './BuildBetter';
+import WhatDoWeDo from './WhatDoWeDo';
 import CaseStudies from './CaseStudies';
-import Industries from './Industries';
 import WeEnable from './WeEnable';
-import HowWeDoIt from './HowWeDoIt';
-import Community from './Community';
-import ServicesAboutUs from './ServicesAboutUs';
+import Divider from './Divider';
+import KnownFor from './KnownFor';
+import CallOut from './CallOut';
+import JoinUs from './JoinUs';
 
 const HomePage = () => (
   <Fragment>
     <BuildBetter />
+    <WhatDoWeDo />
     <CaseStudies />
-    <Industries />
     <WeEnable />
-    <HowWeDoIt />
-    <Community />
-    <ServicesAboutUs />
+    <Divider />
+    <KnownFor />
+    <CallOut />
+    <JoinUs />
   </Fragment>
 );
 

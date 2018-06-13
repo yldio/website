@@ -8,7 +8,6 @@
 
 2.  Leave a new line between the commit title and any further description e.g.
 
-
 ```
 	Add Blog Banner Component
 

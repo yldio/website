@@ -16,11 +16,11 @@ const Link = ({ activeClassName: ac, href, ...props }) => {
 
 Link.propTypes = {
   activeClassName: PropTypes.string,
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired
 };
 
 Link.defaultProps = {
-  activeClassName,
+  activeClassName
 };
 
 export default Link;

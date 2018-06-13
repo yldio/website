@@ -8,11 +8,11 @@ const PageSection = ({ children, ...props }) => (
 );
 
 PageSection.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 PageSection.defaultProps = {
-  children: [],
+  children: []
 };
 
 export default PageSection;

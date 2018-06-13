@@ -7,8 +7,8 @@ test('CustomerQuote', () => {
   const props = {
     image: {
       childImageSharp: {
-        src: 'image.jpg',
-      },
+        src: 'image.jpg'
+      }
     },
     imageAlt: 'Quote image',
     quote: 'YLD offered amazing service,',
@@ -18,10 +18,10 @@ test('CustomerQuote', () => {
       'Some amazing support copy with go here to reenforce whatever section it is relevant too.',
     clientAppImage: {
       childImageSharp: {
-        src: 'image.jpg',
-      },
+        src: 'image.jpg'
+      }
     },
-    clientAppImageAlt: 'Client App Image',
+    clientAppImageAlt: 'Client App Image'
   };
   const wrapper = shallow(<CustomerQuote {...props} />);
 

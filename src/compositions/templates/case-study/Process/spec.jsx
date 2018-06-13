@@ -9,10 +9,10 @@ test('success section', () => {
     main: 'Process section main text',
     image: {
       childImageSharp: {
-        src: 'process-image.jpg',
-      },
+        src: 'process-image.jpg'
+      }
     },
-    imageAlt: 'A demo of the process',
+    imageAlt: 'A demo of the process'
   };
 
   const wrapper = shallow(<Process {...props} />);

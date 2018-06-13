@@ -12,7 +12,7 @@ import {
   PostRule,
   Time,
   Title,
-  Thumbnail,
+  Thumbnail
 } from './styled';
 
 const Post = ({
@@ -22,7 +22,7 @@ const Post = ({
   image,
   sourceText,
   sourceLink,
-  date,
+  date
 }) => (
   <Article stretch={stretch}>
     <Header>
@@ -47,12 +47,12 @@ Post.propTypes = {
   title: PropTypes.string.isRequired,
   sourceLink: PropTypes.string.isRequired,
   sourceText: PropTypes.string.isRequired,
-  stretch: PropTypes.bool,
+  stretch: PropTypes.bool
 };
 
 Post.defaultProps = {
   children: [],
-  stretch: true,
+  stretch: true
 };
 
 export default Post;
