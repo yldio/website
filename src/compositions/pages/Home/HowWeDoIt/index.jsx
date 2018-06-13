@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import Link from 'components/Link';
 import PageSection from 'components/PageSection';
 import PageSectionHeader from 'components/PageSectionHeader';
-import ProductList from 'compositions/ProductList';
+import ProductList from 'compositions/pages/Services/ProductList';
 
 import { Description } from './styled';
 

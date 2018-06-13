@@ -2,27 +2,28 @@
 
 exports[`compositions/pages/Services snapshot 1`] = `
 <React.Fragment>
-  <PageSection
+  <styled__Section
     data-selector="services:hero"
-    gradient={false}
-    gradientHeight="50%"
   >
-    <PageHero
-      before="services"
-      title="Great companies go beyond their customers expectations, over and over again."
-    >
-      We enable your organisation to deliver world-class technology and user experiences, long after we leave.
-    </PageHero>
-  </PageSection>
-  <PageSection
+    <Container>
+      <PageHero
+        before="Services"
+        big={true}
+        white={true}
+      >
+        We enable your organisation to deliver world-class technology and user experiences, long after we leave.
+      </PageHero>
+    </Container>
+  </styled__Section>
+  <styled__ServicesList
     data-selector="services:table"
-    gradient={true}
-    gradientHeight="50%"
   >
     <ProductList />
-  </PageSection>
-  <ServiceList />
-  <ServicesTiles />
-  <WorkWithUs />
+  </styled__ServicesList>
+  <Challenges />
+  <Approach />
+  <Help />
+  <Design />
+  <Engineering />
 </React.Fragment>
 `;

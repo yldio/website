@@ -3,8 +3,6 @@
 exports[`CustomerQuote 1`] = `
 <React.Fragment>
   <PageSection
-    gradient={false}
-    gradientHeight="50%"
     wide={true}
   >
     <Image
@@ -27,10 +25,7 @@ exports[`CustomerQuote 1`] = `
       </styled__QuoteWrapper>
     </Container>
   </PageSection>
-  <PageSection
-    gradient={false}
-    gradientHeight="50%"
-  >
+  <PageSection>
     <Typography__base
       newLines={true}
     >
@@ -38,8 +33,6 @@ exports[`CustomerQuote 1`] = `
     </Typography__base>
   </PageSection>
   <PageSection
-    gradient={false}
-    gradientHeight="50%"
     wide={true}
   >
     <Image

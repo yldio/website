@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Card basic snapshot 1`] = `
+<Card__CardWrapper>
+  <Card__Title
+    blue={true}
+    uppercase={true}
+  />
+  <ul />
+</Card__CardWrapper>
+`;

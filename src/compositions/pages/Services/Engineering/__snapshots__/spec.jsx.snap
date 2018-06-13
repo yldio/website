@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/Services/Engineering snapshot 1`] = `
+<section
+  data-selector="services:engineering"
+>
+  <Engineering__EngHeader>
+    <Container>
+      <Typography__H2
+        slim={true}
+        white={true}
+      >
+        Engineering Leadership
+      </Typography__H2>
+    </Container>
+  </Engineering__EngHeader>
+  <Container>
+    <Typography__H5
+      noBorder={true}
+    >
+      We want to empower organisations to become technology companies, that leverage engineering to accelerate their growth and to give them flexibility and speed to react to market changes.
+      <br />
+      <br />
+      By putting engineering at the heart of the business, we enable organisations to be effective, impactful, flexible and to build lasting products with great teams.
+    </Typography__H5>
+    <Engineering__Row>
+      <article>
+        <Typography__base
+          blue={true}
+          uppercase={true}
+        >
+          Back-End and Node.js
+        </Typography__base>
+        <Typography__base>
+          We focus on incremental improvements that delivery business value. That’s why we work with Node.js in a microservices architecture. It allows us to both build new systems and migrate legacy systems into a collection of business-critical services that can be built, deployed and maintained separately, and at the same time composed to build complex products.
+        </Typography__base>
+      </article>
+      <article>
+        <Typography__base
+          blue={true}
+          uppercase={true}
+        >
+          Front-End and React.js
+        </Typography__base>
+        <Typography__base>
+          Customers interact with our products through our front-end applications on multiple devices. We leverage that complexity with React and other front-end frameworks, where we create reusable and reliable components to solve business needs. This allows us to work incrementally, build well tested frontend components and at the same time implement Engineering systems in a much more consistent and repeatable way.
+        </Typography__base>
+      </article>
+      <article>
+        <Typography__base
+          blue={true}
+          uppercase={true}
+        >
+          Mobile and React Native
+        </Typography__base>
+        <Typography__base>
+          By using React Native, we build cross-platform mobile applications once and deploy them to both the App Store and the Play Store. This means we don’t need dedicated teams writing the same application in different languages, we are able to dramatically increase the speed at which we release features, and we improve maintainability and reusability by taking advantage of componentisation.
+        </Typography__base>
+      </article>
+      <article>
+        <Typography__base
+          blue={true}
+          uppercase={true}
+        >
+          DevOps and Kubernetes
+        </Typography__base>
+        <Typography__base>
+          In a demanding world where quality, speed and reliability matters, we need to be able to react quickly and effectively to change. That’s why we focus on having a DevOps mentality, which gives the business the flexibility of deploying, scaling and delivering secure software to live environments at high velocity and continuously. This enables organisations to improve their products at a faster pace, which in turn allows them to satisfy their customers quickly and effectively.
+        </Typography__base>
+      </article>
+    </Engineering__Row>
+  </Container>
+</section>
+`;

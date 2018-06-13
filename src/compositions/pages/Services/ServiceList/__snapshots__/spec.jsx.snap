@@ -4,8 +4,6 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
 <React.Fragment>
   <PageSection
     data-selector="services:our-approach"
-    gradient={false}
-    gradientHeight="50%"
     id="approach"
   >
     <Typography__H2>
@@ -113,8 +111,6 @@ exports[`compositions/pages/Services/ServiceList snapshot 1`] = `
   </PageSection>
   <PageSection
     data-selector="services:engineering"
-    gradient={false}
-    gradientHeight="50%"
     id="engineering"
   >
     <Typography__H2>

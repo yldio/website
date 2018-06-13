@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import DefaultContainer from 'components/Container';
-import { footerText, textLight } from 'styles/colours';
+import { footerText, textBlue } from 'styles/colours';
 import { spacing } from 'styles/spacing';
 
 export const Container = DefaultContainer.withComponent('section').extend`
@@ -10,6 +10,6 @@ export const Container = DefaultContainer.withComponent('section').extend`
 `;
 
 export const StyledFooter = styled.footer`
-  background-color: ${textLight};
+  background-color: ${textBlue};
   color: ${footerText};
 `;
