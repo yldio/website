@@ -32,7 +32,7 @@ export const Row = styled.div`
 `;
 
 const Engineering = () => (
-  <section data-selector="services:engeeniring">
+  <section data-selector="services:engineering">
     <EngHeader>
       <Container>
         <H2 white slim>

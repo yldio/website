@@ -9,13 +9,15 @@ describe('features/services', () => {
     cy.getComponent('component:navigation');
   });
 
-  it('shows relevant homepage sections', () => {
+  it('shows relevant services sections', () => {
     cy.visit('/services');
+    cy.awaitRender();
     cy.getComponent('services:hero');
     cy.getComponent('services:table');
-    cy.getComponent('services:our-approach');
-    cy.getComponent('services:design-product');
+    cy.getComponent('services:challenges');
+    cy.getComponent('services:approach');
+    cy.getComponent('services:tech');
+    cy.getComponent('services:design');
     cy.getComponent('services:engineering');
-    cy.getComponent('services:training');
   });
 });

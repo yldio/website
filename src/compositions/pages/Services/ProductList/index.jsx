@@ -62,13 +62,12 @@ const ProductList = () => (
         <Product>Front End &amp; React.js</Product>
         <Product>DevOps &amp; Kubernetes</Product>
         <Product>Mobile &amp; React Native</Product>
-        <Product>Microservices &amp; evolutionary architecture</Product>
+        {/* <Product>Microservices &amp; evolutionary architecture</Product>
         <Product>Cloud infrastructure</Product>
         <Product>Cloud &amp; Containers</Product>
         <Product>Emerging technologies </Product>
         <Product>Machine Learning</Product>
-        <Product>.Net Core</Product>
-        <Product>Vue</Product>
+        <Product>.Net Core</Product> */}
       </ul>
     </ProductColumn>
     <ProductColumn>
