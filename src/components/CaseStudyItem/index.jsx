@@ -2,12 +2,31 @@ import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
+import { pink } from 'styles/colours';
+import PageSection from '../PageSection';
 
 const Headline = styled.div`
   width: ${remcalc(1280)};
   height: ${remcalc(470)};
   background-color: ${props => props.headlineBgColour};
   color: ${props => props.headlineTextColour};
+  display: flex;
+`;
+
+const ChallengesAndResults = styled.div`
+  display: flex;
+`;
+
+const Item = styled.li`
+  &::before {
+    content: '•';
+    margin-right: ${remcalc(20)};
+    color: ${pink};
+  }
+`;
+
+const UnorderedList = styled.ul`
+  list-style: none;
 `;
 
 const CaseStudyItem = ({
@@ -29,19 +48,23 @@ const CaseStudyItem = ({
       headlineTextColour={headlineTextColour}
     >
       <div>
-        {name}
+        <h1>{name}</h1>
         {objective}
       </div>
       <div>
         <img src={imagePath} alt={imageAlt} />
       </div>
     </Headline>
-    <div>
+    <PageSection>
       {tagline}
-      <div>{challenges}</div>
-      <div>{results}</div>
-    </div>
-    {video ? <video src={videoPath} /> : null}
+      <ChallengesAndResults>
+        <UnorderedList>
+          {challenges.map(challenge => <Item>{challenge}</Item>)}
+        </UnorderedList>
+        <div>{results && results.map(result => <ul>{result}</ul>)}</div>
+      </ChallengesAndResults>
+      {video ? <video src={videoPath} /> : null}
+    </PageSection>
   </Fragment>
 );
 
