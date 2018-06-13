@@ -10,6 +10,14 @@ const paddedRight = (a, b) => props => (props.padRight ? a : b);
 
 export const Item = styled.li`
   display: inline-block;
+
+  &:first-child a {
+    padding-left: 0;
+  }
+
+  &:last-child a {
+    padding-right: 0;
+  }
 `;
 
 export const List = styled.ul`
