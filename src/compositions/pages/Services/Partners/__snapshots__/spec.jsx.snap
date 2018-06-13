@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/Services/Partners snapshot 1`] = `
+<Container>
+  <Typography__H2
+    slim={true}
+  >
+    Our technology partners
+    <Partners__Bar />
+    <Partners__List>
+      <li>
+        <img
+          alt="docker"
+          height="140"
+          src="/src/assets/docker.png"
+          width="176"
+        />
+      </li>
+      <li>
+        <img
+          alt="aws"
+          height="75"
+          src="/src/assets/aws.png"
+          width="126"
+        />
+      </li>
+      <li>
+        <img
+          alt="node"
+          height="79"
+          src="/src/assets/node.png"
+          width="223"
+        />
+      </li>
+    </Partners__List>
+  </Typography__H2>
+</Container>
+`;

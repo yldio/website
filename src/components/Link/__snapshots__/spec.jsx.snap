@@ -11,6 +11,7 @@ exports[`components/Link external link snapshot 1`] = `
 exports[`components/Link internal link snapshot 1`] = `
 <styled__StyledLink
   activeClassName="___active"
+  exact={true}
   to="/test"
 >
   Test

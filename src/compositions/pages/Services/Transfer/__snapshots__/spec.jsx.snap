@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/Services/Transfer snapshot 1`] = `
+<Transfer__TransferSection
+  data-selector="services:tech"
+>
+  <Container>
+    <Typography__H2
+      slim={true}
+      white={true}
+    >
+      How we educate for knowledge transfer
+      <Transfer__Bar />
+    </Typography__H2>
+  </Container>
+  <Transfer__CardsWrapper>
+    <Transfer__Wrapper>
+      <Card
+        points={
+          Array [
+            "Hands-on learning experience, in-person classes",
+            "Tailoried training program delivered on-site to suit your needs",
+            "Ensures your software engineers share a baseline",
+          ]
+        }
+        title="Private Training"
+      />
+      <Card
+        points={
+          Array [
+            "	Ongoing tutoring that covers all aspect of tech and product delivery ",
+            "Seasoned YLD engineers and designers available to answer questions at all times",
+            "Experienced supervisio for code review",
+          ]
+        }
+        title="Pairing"
+      />
+      <Card
+        points={
+          Array [
+            "	Gain recognition for expertise and ability to employ best practices ",
+            "Assess engineering candidates expertise and compare the results with your team’s performance",
+          ]
+        }
+        title="Certification"
+      />
+    </Transfer__Wrapper>
+    <Container>
+      <AddCode__Row>
+        <Typography__H2
+          slim={true}
+        >
+          Our goal is never to just deliver but always to also upskill your whole team.
+          <Transfer__Bar />
+        </Typography__H2>
+        <Typography__base>
+          We are an agile, flexible and passionate team consisting of strategy, design and engineering.
+          <br />
+          <br />
+          We aspire to bring you the most up-to-date technology, with the minimal hassle possible.
+          <br />
+          <br />
+          We take a hands on approach in our work, engaging directly with you in every stage of the development process.
+          <br />
+          <br />
+          We take ownership of the delivery of the project or we can integrate at critical points with your team according to your needs.
+          <br />
+          <br />
+          We enable your organisation to deliver world-class technology and user experiences, long after we leave.
+        </Typography__base>
+      </AddCode__Row>
+    </Container>
+  </Transfer__CardsWrapper>
+</Transfer__TransferSection>
+`;

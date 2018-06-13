@@ -9,7 +9,7 @@ export const activeClassName = '___active';
 
 const Link = ({ activeClassName: ac, href, ...props }) => {
   if (isInternal(href))
-    return <InternalLink to={href} activeClassName={ac} {...props} />;
+    return <InternalLink exact to={href} activeClassName={ac} {...props} />;
 
   return <StyledLink href={href} {...props} />;
 };
