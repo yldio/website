@@ -17,8 +17,7 @@ export const Container = Panel.withComponent('ul').extend`
 
 export const ProductColumn = styled.li`
   font-size: 1.125rem;
-  padding: 0 ${spacing(2)} ${spacing(5)} ${spacing(2)};
-  margin: ${spacing(2)} 0;
+  padding: 0 ${spacing(2)} ${spacing(2)} ${spacing(2)};
   position: relative;
   width: 100%;
 
