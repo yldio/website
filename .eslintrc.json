@@ -28,7 +28,8 @@
       {
         "allowTaggedTemplates": true
       }
-    ]
+    ],
+    "jsx-a11y/media-has-caption": 0
   },
   "plugins": ["eslint-plugin-import", "prettier"],
   "overrides": [

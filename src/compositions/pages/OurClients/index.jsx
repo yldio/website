@@ -25,6 +25,8 @@ const OurClients = () => (
         objective={item.objective}
         imagePath={item.imagePath}
         imageAlt={item.imageAlt}
+        headlineBgColour={item.headlineBgColour}
+        headlineTextColour={item.headlineTextColour}
         tagline={item.tagline}
         challenges={item.challenges}
         results={item.results}
