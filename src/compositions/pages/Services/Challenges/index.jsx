@@ -20,7 +20,6 @@ const List = styled.ul`
 
   li {
     width: 100%;
-    align-items: center;
     display: flex;
     flex-direction: column;
 

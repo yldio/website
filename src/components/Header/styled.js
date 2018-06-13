@@ -5,15 +5,16 @@ import breakpoints from 'styles/breakpoints';
 export const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  margin: 0 ${gridColWidth / 2}px;
-  align-items: center;
+  margin: 0 20px;
+  align-items: flex-start;
   position: relative;
   z-index: 2;
   flex-direction: column;
-  padding-top: 10px;
+  padding-top: 30px;
 
   ${breakpoints.tablet`
     flex-direction: row;
-    padding-top: 30px;
+    align-items: center;
+    margin: 0 ${gridColWidth / 2}px;
   `};
 `;
