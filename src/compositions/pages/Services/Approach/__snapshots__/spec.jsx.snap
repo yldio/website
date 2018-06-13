@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/Services/Approaches snapshot 1`] = `
+<section
+  data-selector="services:approach"
+>
+  <Approach__ApproachHeader>
+    <Container>
+      <Typography__H2
+        slim={true}
+        white={true}
+      >
+        Our Approach
+      </Typography__H2>
+    </Container>
+  </Approach__ApproachHeader>
+  <Container>
+    <Approach__Row>
+      <Typography__H5>
+        Consultancy
+      </Typography__H5>
+      <Typography__base>
+        We help you realise the full potential of your engineering and delivery capability.
+        <br />
+        <br />
+        We use our capability model to help you gauge your organisation’s current maturity and help you identify any gaps and opportunities for improvement in line with your vision.
+        <br />
+        <br />
+        We use our best practice models of discovery and delivery to drive success and ensure you have the right skills, processes and tools. What’s more we help you build the right framework to develop a long lasting engineering culture. We bring excellence, fast, and we ultimately save our clients millions of pounds in licensing fees.
+      </Typography__base>
+    </Approach__Row>
+  </Container>
+</section>
+`;

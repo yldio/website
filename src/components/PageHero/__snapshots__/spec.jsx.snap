@@ -7,7 +7,9 @@ exports[`components/PageHero basic snapshot 1`] = `
       Hello, world!
     </styled__DefaultTitle>
   </styled__Header>
-  <styled__Main>
+  <styled__Main
+    white={false}
+  >
     I am the page hero body
   </styled__Main>
 </styled__Wrapper>

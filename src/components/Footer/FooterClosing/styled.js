@@ -13,13 +13,12 @@ export const Container = styled.section`
 
   ${breakpoints.desktop`
     flex-direction: row;
-    justify-content: space-between;
   `};
 `;
 
 export const Copyright = styled.p`
   margin-bottom: ${spacing()};
-  margin-top: ${spacing()};
+  margin-right: ${spacing(2)};
 `;
 
 export const Link = styled(DefaultLink)`

@@ -7,13 +7,15 @@ exports[`components/Navigation snapshot 1`] = `
   <ul>
     <styled__Item>
       <styled__Link
-        href="/case-studies"
+        dark={false}
+        href="/"
       >
-        Case Studies
+        Home
       </styled__Link>
     </styled__Item>
     <styled__Item>
       <styled__Link
+        dark={false}
         href="/services"
       >
         Services
@@ -21,24 +23,19 @@ exports[`components/Navigation snapshot 1`] = `
     </styled__Item>
     <styled__Item>
       <styled__Link
-        href="/community"
+        dark={false}
+        href="/our-clients"
       >
-        Community
+        Our Clients
       </styled__Link>
     </styled__Item>
     <styled__Item>
       <styled__Link
+        dark={false}
         href="/about-us"
         padRight={true}
       >
         About Us
-      </styled__Link>
-    </styled__Item>
-    <styled__Item>
-      <styled__Link
-        href="/join-us"
-      >
-        Join Us
       </styled__Link>
     </styled__Item>
   </ul>

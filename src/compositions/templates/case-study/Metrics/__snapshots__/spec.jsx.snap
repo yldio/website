@@ -2,10 +2,7 @@
 
 exports[`components/Logo snapshot 1`] = `
 <React.Fragment>
-  <PageSection
-    gradient={false}
-    gradientHeight="50%"
-  >
+  <PageSection>
     <Typography__H2>
       Metrics
     </Typography__H2>
@@ -20,10 +17,7 @@ exports[`components/Logo snapshot 1`] = `
       some text
     </Typography__base>
   </PageSection>
-  <PageSection
-    gradient={false}
-    gradientHeight="50%"
-  >
+  <PageSection>
     <MetricGrid
       content={
         Array [

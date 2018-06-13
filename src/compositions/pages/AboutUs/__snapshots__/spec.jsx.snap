@@ -4,20 +4,18 @@ exports[`components/AboutUs snapshot 1`] = `
 <React.Fragment>
   <PageSection
     data-selector="about-us:hero"
-    gradient={false}
-    gradientHeight="50%"
   >
     <PageHero
       before="about us"
+      big={false}
       title="Being a great technology focused company is hard. We get it."
+      white={false}
     >
       Adopting a rapid, quality focused approach to building and maintaining your core technology, scaling a world-class user-experience and brand, and releasing value to your customers and your employees at a fast pace is a challenge, and this is only getting faster.
     </PageHero>
   </PageSection>
   <PageSection
     data-selector="about-us:our-team"
-    gradient={false}
-    gradientHeight="50%"
   >
     <Typography__H2>
       Our Team
@@ -28,8 +26,6 @@ exports[`components/AboutUs snapshot 1`] = `
   </PageSection>
   <PageSection
     data-selector="about-us:team"
-    gradient={false}
-    gradientHeight="50%"
   >
     <styled__People>
       <Picture

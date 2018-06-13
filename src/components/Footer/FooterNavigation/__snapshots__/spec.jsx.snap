@@ -2,11 +2,41 @@
 
 exports[`components/FooterNavigation snapshot 1`] = `
 <styled__Nav>
-  <styled__Category>
-    <styled__Item
-      header={true}
+  <styled__Contact>
+    <Typography__H5
+      noBorder={true}
+      white={true}
     >
-      What we do
+      Contact
+    </Typography__H5>
+    <styled__Item>
+      <styled__Link
+        href="mailto:hello@yld.io"
+      >
+        hello@yld.io
+      </styled__Link>
+    </styled__Item>
+    <styled__Item>
+      <styled__Link
+        href="tel:+4402035144678"
+      >
+        +44 (0) 203 514 4678
+      </styled__Link>
+    </styled__Item>
+  </styled__Contact>
+  <styled__Category>
+    <Typography__H5
+      noBorder={true}
+      white={true}
+    >
+      Get Around
+    </Typography__H5>
+    <styled__Item>
+      <styled__Link
+        href="/"
+      >
+        Home
+      </styled__Link>
     </styled__Item>
     <styled__Item>
       <styled__Link
@@ -17,45 +47,10 @@ exports[`components/FooterNavigation snapshot 1`] = `
     </styled__Item>
     <styled__Item>
       <styled__Link
-        href="/our-approach"
+        href="/our-clients"
       >
-        Our Approach
+        Our Clients
       </styled__Link>
-    </styled__Item>
-    <styled__Item>
-      <styled__Link
-        href="#how-we-do-it"
-      >
-        How we do it
-      </styled__Link>
-    </styled__Item>
-  </styled__Category>
-  <styled__Category>
-    <styled__Item
-      header={true}
-    >
-      Our work
-    </styled__Item>
-    <styled__Item>
-      <styled__Link
-        href="/case-studies"
-      >
-        Case Studies
-      </styled__Link>
-    </styled__Item>
-    <styled__Item>
-      <styled__Link
-        href="/industries"
-      >
-        Industries
-      </styled__Link>
-    </styled__Item>
-  </styled__Category>
-  <styled__Category>
-    <styled__Item
-      header={true}
-    >
-      Who we are
     </styled__Item>
     <styled__Item>
       <styled__Link
@@ -73,32 +68,35 @@ exports[`components/FooterNavigation snapshot 1`] = `
     </styled__Item>
   </styled__Category>
   <styled__Category>
-    <styled__Item
-      header={true}
+    <Typography__H5
+      noBorder={true}
+      white={true}
     >
-      Our Community
-    </styled__Item>
-    <styled__Item>
-      <styled__Link
-        href="/talks"
-      >
-        Talks
-      </styled__Link>
-    </styled__Item>
-    <styled__Item>
-      <styled__Link
-        href="/events"
-      >
-        Events
-      </styled__Link>
-    </styled__Item>
-    <styled__Item>
-      <styled__Link
-        href="/blog"
-      >
-        Blog
-      </styled__Link>
-    </styled__Item>
+      Follow Us
+    </Typography__H5>
+    <ul>
+      <styled__Item>
+        <styled__Link
+          href="https://twitter.com/yldio"
+        >
+          Twitter
+        </styled__Link>
+      </styled__Item>
+      <styled__Item>
+        <styled__Link
+          href="https://github.com/yldio"
+        >
+          Github
+        </styled__Link>
+      </styled__Item>
+      <styled__Item>
+        <styled__Link
+          href="https://youtube.com"
+        >
+          Youtube
+        </styled__Link>
+      </styled__Item>
+    </ul>
   </styled__Category>
 </styled__Nav>
 `;

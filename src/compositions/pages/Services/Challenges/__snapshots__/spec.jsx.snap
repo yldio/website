@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/Services/Challenges snapshot 1`] = `
+<Challenges__Wrapper
+  data-selector="services:challenges"
+>
+  <Container>
+    <Typography__H2
+      white={true}
+    >
+      Common client challenges
+    </Typography__H2>
+    <Challenges__Bar />
+    <Typography__base
+      light={true}
+    >
+      We help you future proof your business through a new style of consulting, ground up.
+    </Typography__base>
+    <Challenges__List>
+      <li>
+        <img
+          alt="Customer experience"
+          height="41px"
+          src="/src/assets/pair.svg"
+          width="49px"
+        />
+        <Typography__base
+          uppercase={true}
+          white={true}
+        >
+          Customer experience
+        </Typography__base>
+        <Typography__base
+          light={true}
+        >
+          Optimise people, processes, user experience, design and technology
+          <br />
+          <br />
+          Provide a seamless customer experience across different channels
+        </Typography__base>
+      </li>
+      <li>
+        <img
+          alt="Disruptive technology"
+          height="49px"
+          src="/src/assets/teams.svg"
+          width="55px"
+        />
+        <Typography__base
+          uppercase={true}
+          white={true}
+        >
+          Disruptive technology
+        </Typography__base>
+        <Typography__base
+          light={true}
+        >
+          Align to your business goals but stay lean and innovate
+          <br />
+          <br />
+          Stay ahead of the market
+          <br />
+          <br />
+          Compete with start ups
+        </Typography__base>
+      </li>
+      <li>
+        <img
+          alt="Skills Gap"
+          height="41px"
+          src="/src/assets/blog.svg"
+          width="49px"
+        />
+        <Typography__base
+          uppercase={true}
+          white={true}
+        >
+          Skills Gap
+        </Typography__base>
+        <Typography__base
+          light={true}
+        >
+          Bridge the skills gap and attract the right technology professionals
+          <br />
+          <br />
+          Achieve your business goals
+          <br />
+          <br />
+          Make digital, technological or cultural change happen.
+        </Typography__base>
+      </li>
+    </Challenges__List>
+  </Container>
+</Challenges__Wrapper>
+`;

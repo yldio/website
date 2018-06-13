@@ -2,7 +2,11 @@
 
 exports[`components/Header snapshot 1`] = `
 <styled__Wrapper>
-  <Logo />
-  <Navigation />
+  <Logo
+    dark={false}
+  />
+  <Navigation
+    dark={false}
+  />
 </styled__Wrapper>
 `;
