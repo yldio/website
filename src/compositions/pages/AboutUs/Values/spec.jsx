@@ -15,11 +15,11 @@ test('components/Value snapshot', () => {
     <Value header="Your opportunity is limitless">
       You are the driver of change. We never give up, we begin again. Be
       adventuruous. Push the boundaries. Go the extra mile.
-    </Value>,
+    </Value>
   );
 
   expect(wrapper.find('styled__Header').html()).toBe(
-    '<div class="styled__Header-ctRlcN fOoAaV">Your opportunity is limitless</div>',
+    '<div class="styled__Header-ctRlcN fOoAaV">Your opportunity is limitless</div>'
   );
 
   expect(wrapper).toMatchSnapshot();

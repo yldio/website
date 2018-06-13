@@ -17,8 +17,8 @@ const BlogPostTemplate = ({ data }) => (
 
 BlogPostTemplate.propTypes = {
   data: PropTypes.shape({
-    post: PropTypes.shape(BlogPost.propTypes),
-  }).isRequired,
+    post: PropTypes.shape(BlogPost.propTypes)
+  }).isRequired
 };
 
 export default BlogPostTemplate;

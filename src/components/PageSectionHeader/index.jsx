@@ -11,11 +11,11 @@ const PageSectionHeader = ({ description, title }) => (
 
 PageSectionHeader.propTypes = {
   description: PropTypes.node,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 PageSectionHeader.defaultProps = {
-  description: null,
+  description: null
 };
 
 export default PageSectionHeader;

@@ -14,7 +14,7 @@ export const ListItem = styled.li`
   display: flex;
   flex-direction: row;
   font-size: 1.25rem;
-  margin: ${spacing(2)} 0;
+  margin: ${spacing(2.8)} 0 0 0;
   width: 100%;
 
   ${breakpoints.tablet`

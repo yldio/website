@@ -1,6 +1,4 @@
-
 // Rename this file to see blogs
-
 
 import React from 'react';
 import Link from 'gatsby-link';
@@ -28,19 +26,19 @@ BlogPage.propTypes = {
     allPosts: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
-          node: PropTypes.shape(blogPostPropTypes).isRequired,
-        }),
-      ),
-    }),
-  }),
+          node: PropTypes.shape(blogPostPropTypes).isRequired
+        })
+      )
+    })
+  })
 };
 
 BlogPage.defaultProps = {
   data: {
     allPosts: {
-      edges: [],
-    },
-  },
+      edges: []
+    }
+  }
 };
 
 export const query = graphql`

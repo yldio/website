@@ -17,7 +17,7 @@ test('components/Person snapshot', () => {
       Nuno was responsible for business development and sales in the world’s
       largest Node.js cloud. Now, he leads the YLD team and inspires all the
       creative minds that make up the company.
-    </Person>,
+    </Person>
   );
   expect(wrapper.find('styled__Img').prop('src')).toBe('/image.hs');
   expect(wrapper.find('styled__Title p').text()).toBe(' Founder + Director');

@@ -27,7 +27,7 @@ const Metric = ({ parameter, value, change }) => {
 Metric.propTypes = {
   parameter: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
-  change: PropTypes.string.isRequired,
+  change: PropTypes.string.isRequired
 };
 
 export default Metric;

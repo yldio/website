@@ -37,8 +37,8 @@ const Item = styled.li`
   }
 `;
 
-const Card = ({ title, points }) => (
-  <CardWrapper>
+const Card = ({ title, points, ...props }) => (
+  <CardWrapper {...props}>
     <Title blue uppercase>
       {title}
     </Title>
@@ -48,7 +48,7 @@ const Card = ({ title, points }) => (
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  points: PropTypes.arrayOf(PropTypes.string).isRequired,
+  points: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Card;

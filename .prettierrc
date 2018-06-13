@@ -1,4 +1,26 @@
 {
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "printWidth": 80,
+  "semi": true,
   "singleQuote": true,
-  "trailingComma": "all"
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": [
+        ".commitlintrc",
+        ".eslintrc",
+        ".licensetofailrc",
+        ".prettierrc",
+        ".babelrc",
+        ".tern-project",
+        "*.webmanifest"
+      ],
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
 }

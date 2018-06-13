@@ -4,7 +4,7 @@ import {
   textLight,
   textGreen,
   textRed,
-  borderLight,
+  borderLight
 } from 'styles/colours';
 import breakpoints from 'styles/breakpoints';
 

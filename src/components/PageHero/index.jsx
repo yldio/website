@@ -26,14 +26,16 @@ PageHero.propTypes = {
   children: PropTypes.node,
   white: PropTypes.bool,
   big: PropTypes.bool,
-  title: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired
 };
 
 PageHero.defaultProps = {
   before: null,
   children: [],
   white: false,
-  big: false,
+  big: false
 };
+
+export { Section } from './styled';
 
 export default PageHero;

@@ -1,59 +1,37 @@
-/* eslint-disable global-require */
-
 import React from 'react';
-import styled from 'styled-components';
-import remcalc from 'remcalc';
+import { Grid, Row, Col } from 'react-styled-flexboxgrid';
+import Flex, { FlexItem } from 'styled-flex-component';
 
-import Container from 'components/Container';
+import PageSection from 'components/PageSection';
 import { H2 } from 'components/Typography';
-import breakpoints from 'styles/breakpoints';
 
 import docker from '../../../../assets/docker.png';
 import aws from '../../../../assets/aws.png';
 import node from '../../../../assets/node.png';
 
-const Bar = styled.div`
-  background: #5e5cb2;
-  width: ${remcalc(100)};
-  height: ${remcalc(4)};
-  margin-top: ${remcalc(15)};
-  margin-bottom: ${remcalc(70)};
-`;
-
-const List = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
-
-  li {
-    margin-bottom: ${remcalc(20)};
-  }
-
-  ${breakpoints.tablet`
-   flex-direction: row;
-  `};
-`;
-
-const Partners = () => (
-  <Container>
-    <H2 slim>
-      Our technology partners
-      <Bar />
-      <List>
-        <li>
-          <img src={docker} alt="docker" width="176" height="140" />
-        </li>
-        <li>
-          <img src={aws} alt="aws" width="126" height="75" />
-        </li>
-        <li>
-          <img src={node} alt="node" width="223" height="79" />
-        </li>
-      </List>
-    </H2>
-  </Container>
+export default () => (
+  <PageSection>
+    <Grid>
+      <Row>
+        <Col xs={12}>
+          <H2 decorated>Our technology partners</H2>
+        </Col>
+      </Row>
+      <Row around="xs">
+        <Col xs={11}>
+          <Flex justifyBetween alignCenter>
+            <FlexItem>
+              <img src={docker} alt="docker" width="176" height="140" />
+            </FlexItem>
+            <FlexItem>
+              <img src={aws} alt="aws" width="126" height="75" />
+            </FlexItem>
+            <FlexItem>
+              <img src={node} alt="node" width="223" height="79" />
+            </FlexItem>
+          </Flex>
+        </Col>
+      </Row>
+    </Grid>
+  </PageSection>
 );
-
-export default Partners;

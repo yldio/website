@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/homepage/WeEnable snapshot 1`] = `
+<PageSection
+  data-selector="home:we-enable"
+  gradient={false}
+  gradientHeight="50%"
+>
+  <PageSectionHeader
+    description={null}
+    title="We enable you to..."
+  />
+  <CheckList>
+    <Item>
+      Build custom software solutions that become an asset
+    </Item>
+    <Item>
+      Deliver the right user experience at the right time, on the right channel
+    </Item>
+    <Item>
+      Transform, innovate and differentiate at speed
+    </Item>
+    <Item>
+      Grow capability inside your organisation - consulting, training, pairing and education
+    </Item>
+    <Item>
+      Adopt cutting edge technologies - We're pioneers in Node.js, React and Design Systems
+    </Item>
+    <Item>
+      Grow a technology culture
+    </Item>
+  </CheckList>
+  <PageRule />
+</PageSection>
+`;

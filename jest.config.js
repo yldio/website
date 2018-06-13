@@ -4,11 +4,11 @@ module.exports = {
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testMatch: [
     '<rootDir>/__tests__/**/*.{js,jsx}',
-    '<rootDir>/src/**/*spec.{js,jsx}',
+    '<rootDir>/src/**/*spec.{js,jsx}'
   ],
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/public/'],
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.(svg|png|jpe?g)$': '<rootDir>/spec/jest-transform-asset',
-  },
+    '^.+\\.(svg|png|jpe?g)$': '<rootDir>/spec/jest-transform-asset'
+  }
 };

@@ -8,7 +8,7 @@ test('components/CheckList snapshot', () => {
       <Item>Hello, world</Item>
       <Item>I am another item</Item>
       <Item>And a third</Item>
-    </CheckList>,
+    </CheckList>
   );
 
   expect(wrapper).toMatchSnapshot();

@@ -24,14 +24,14 @@ const CaseStudyTemplate = ({
   process,
   success,
   metrics,
-  relatedCaseStudies,
+  relatedCaseStudies
 }) => (
   <Fragment>
     <Helmet
       title={`YLD | ${pageTitle}`}
       meta={[
         { name: 'description', content: `${title} case study` },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ]}
     />
     <PageSection>
@@ -67,7 +67,7 @@ CaseStudyTemplate.propTypes = {
   process: PropTypes.shape(Process.propTypes).isRequired,
   metrics: PropTypes.shape(Metrics.propTypes).isRequired,
   // eslint-disable-next-line react/no-typos,react/require-default-props
-  relatedCaseStudies: RelatedCaseStudies.propTypes.caseStudies,
+  relatedCaseStudies: RelatedCaseStudies.propTypes.caseStudies
 };
 
 export default mapProps(props => props.data.caseStudiesYaml)(CaseStudyTemplate);

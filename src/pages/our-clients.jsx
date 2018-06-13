@@ -31,21 +31,21 @@ CaseStudiesPage.propTypes = {
     metadata: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string,
-        content: PropTypes.string,
-      }),
-    ).isRequired,
+        content: PropTypes.string
+      })
+    ).isRequired
   }).isRequired,
   caseStudies: PropTypes.arrayOf(
     PropTypes.shape({
       slug: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+      title: PropTypes.string.isRequired
+    })
+  ).isRequired
 };
 
 export default mapProps(props => ({
   page: props.data.contentfulPage,
-  caseStudies: props.data.allCaseStudiesYaml.edges.map(edge => edge.node),
+  caseStudies: props.data.allCaseStudiesYaml.edges.map(edge => edge.node)
 }))(CaseStudiesPage);
 
 export const caseStudiesFragment = graphql`

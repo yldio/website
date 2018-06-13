@@ -10,17 +10,19 @@ export const Item = ({ children }) => (
 );
 
 Item.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
-const CheckList = ({ children }) => <List>{children}</List>;
+const CheckList = ({ children, ...props }) => (
+  <List {...props}>{children}</List>
+);
 
 CheckList.propTypes = {
-  children: PropTypes.arrayOf(Item),
+  children: PropTypes.arrayOf(Item)
 };
 
 CheckList.defaultProps = {
-  children: [],
+  children: []
 };
 
 export default CheckList;

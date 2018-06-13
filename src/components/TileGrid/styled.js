@@ -5,21 +5,21 @@ import {
   highlight,
   highlightDark,
   highlightDarker,
-  textOnDark,
+  textOnDark
 } from 'styles/colours';
 
 const colours = {
   normal: highlight,
   dark: highlightDark,
   darker: highlightDarker,
-  lightGreen: '#67d5bf',
+  lightGreen: '#67d5bf'
 };
 
 const textColours = {
   normal: textOnDark,
   dark: textOnDark,
   darker: textOnDark,
-  lightGreen: textOnDark,
+  lightGreen: textOnDark
 };
 
 export const Tile = styled.li`

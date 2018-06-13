@@ -15,7 +15,7 @@ const CustomerQuote = ({
   position,
   subDescription,
   clientAppImage,
-  clientAppImageAlt,
+  clientAppImageAlt
 }) => (
   <Fragment>
     <PageSection wide>
@@ -42,7 +42,7 @@ const CustomerQuote = ({
 
 CustomerQuote.propTypes = {
   image: PropTypes.shape({
-    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired
   }).isRequired,
   imageAlt: PropTypes.string.isRequired,
   quote: PropTypes.string.isRequired,
@@ -50,9 +50,9 @@ CustomerQuote.propTypes = {
   position: PropTypes.string.isRequired,
   subDescription: PropTypes.string.isRequired,
   clientAppImage: PropTypes.shape({
-    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired
   }).isRequired,
-  clientAppImageAlt: PropTypes.string.isRequired,
+  clientAppImageAlt: PropTypes.string.isRequired
 };
 
 export default CustomerQuote;
