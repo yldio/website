@@ -8,6 +8,7 @@ import Approach from './Approach/index';
 import Design from './Design/index';
 import Help from './Help/index';
 import Engineering from './Engineering/index';
+import AddCode from './AddCode/index';
 import ProductList from './ProductList';
 
 const ServicesPage = () => (
@@ -28,7 +29,7 @@ const ServicesPage = () => (
     <Help />
     <Design />
     <Engineering />
-    new pr
+    <AddCode />
   </Fragment>
 );
 
