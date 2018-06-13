@@ -18,12 +18,14 @@ exports[`compositions/pages/Services/Challenges snapshot 1`] = `
     </Typography__base>
     <Challenges__List>
       <li>
-        <img
-          alt="Customer experience"
-          height="41px"
-          src="/src/assets/pair.svg"
-          width="49px"
-        />
+        <Challenges__ImageWrapper>
+          <img
+            alt="Customer experience"
+            height="41px"
+            src="/src/assets/pair.svg"
+            width="49px"
+          />
+        </Challenges__ImageWrapper>
         <Typography__base
           uppercase={true}
           white={true}
@@ -40,12 +42,14 @@ exports[`compositions/pages/Services/Challenges snapshot 1`] = `
         </Typography__base>
       </li>
       <li>
-        <img
-          alt="Disruptive technology"
-          height="49px"
-          src="/src/assets/teams.svg"
-          width="55px"
-        />
+        <Challenges__ImageWrapper>
+          <img
+            alt="Disruptive technology"
+            height="49px"
+            src="/src/assets/teams.svg"
+            width="55px"
+          />
+        </Challenges__ImageWrapper>
         <Typography__base
           uppercase={true}
           white={true}
@@ -65,12 +69,14 @@ exports[`compositions/pages/Services/Challenges snapshot 1`] = `
         </Typography__base>
       </li>
       <li>
-        <img
-          alt="Skills Gap"
-          height="41px"
-          src="/src/assets/blog.svg"
-          width="49px"
-        />
+        <Challenges__ImageWrapper>
+          <img
+            alt="Skills Gap"
+            height="41px"
+            src="/src/assets/blog.svg"
+            width="49px"
+          />
+        </Challenges__ImageWrapper>
         <Typography__base
           uppercase={true}
           white={true}

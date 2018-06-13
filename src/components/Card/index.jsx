@@ -26,9 +26,12 @@ const Title = styled(Copy)`
 const Item = styled.li`
   &::before {
     content: '•';
-    margin-right: ${remcalc(20)};
     color: ${pink};
+    margin-left: ${remcalc(-20)};
+    position: absolute;
   }
+  margin-left: ${remcalc(20)};
+  position: relative;
   &:not(:last-child) {
     margin-bottom: ${remcalc(20)};
   }
