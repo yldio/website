@@ -9,6 +9,9 @@ import Design from './Design/index';
 import Help from './Help/index';
 import Engineering from './Engineering/index';
 import AddCode from './AddCode/index';
+import Transfer from './Transfer/index';
+import Partners from './Partners/index';
+
 import ProductList from './ProductList';
 
 const ServicesPage = () => (
@@ -30,6 +33,8 @@ const ServicesPage = () => (
     <Design />
     <Engineering />
     <AddCode />
+    <Transfer />
+    <Partners />
   </Fragment>
 );
 

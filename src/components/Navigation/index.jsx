@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, Item } from './styled';
+import { Link, Item, List } from './styled';
 
 const Navigation = ({ dark }) => (
   <nav data-selector="component:navigation">
-    <ul>
+    <List>
       <Item>
         <Link dark={dark} href="/">
           Home
@@ -26,7 +26,7 @@ const Navigation = ({ dark }) => (
         </Link>
       </Item> */}
       <Item>
-        <Link dark={dark} padRight href="/about-us">
+        <Link dark={dark} href="/about-us">
           About Us
         </Link>
       </Item>
@@ -39,7 +39,7 @@ const Navigation = ({ dark }) => (
           Join Us
         </ButtonLink>
       </Item> */}
-    </ul>
+    </List>
   </nav>
 );
 

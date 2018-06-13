@@ -1,6 +1,7 @@
 import BaseLink, { activeClassName } from 'components/Link';
 import styled from 'styled-components';
 import is from 'styled-is';
+import breakpoints from 'styles/breakpoints';
 
 import { highlight, textLight } from 'styles/colours';
 import { spacing } from 'styles/spacing';
@@ -9,6 +10,15 @@ const paddedRight = (a, b) => props => (props.padRight ? a : b);
 
 export const Item = styled.li`
   display: inline-block;
+`;
+
+export const List = styled.ul`
+  display: flex;
+  justify-content: center;
+
+  ${breakpoints.tablet`
+    display: block;
+  `};
 `;
 
 export const Link = styled(BaseLink)`
