@@ -2,7 +2,7 @@ module.exports = [
   {
     name: 'Trainline',
     objective: 'A Platform update & Improved User Experience',
-    imagePath: 'src/assets/trainline-website.png',
+    imagePath: 'src/assets/trainline-screen.png',
     imageAlt: 'Trainline screenshots',
     tagline:
       'Europe’s independent leader in the sale of train and coach tickets and the number one ticket reseller in the UK',
