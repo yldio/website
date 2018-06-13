@@ -63,7 +63,7 @@ module.exports = [
   {
     name: 'Kingfisher',
     objective: 'Integrating new services & in-store mobile app',
-    imagePath: 'xxx',
+    imagePath: 'src/assets/kinfisher-screens.png',
     imageAlt: 'Kingfisher screenshots',
     tagline:
       'Kingfisher plc is an international home improvement company offering DIY and home improvement products and services.',
