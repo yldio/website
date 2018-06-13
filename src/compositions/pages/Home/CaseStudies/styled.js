@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 import { spacing } from 'styles/spacing';
 
-export const CallToAction = styled.p`
-  margin-top: ${spacing(8)};
-  text-align: center;
-`;
-
 export const TileContent = styled.div`
   bottom: 0;
   left: 0;

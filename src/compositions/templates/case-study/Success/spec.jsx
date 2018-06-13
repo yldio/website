@@ -8,7 +8,7 @@ test('success section', () => {
     <Success
       main="this is the main description"
       sub="this is the sub description"
-    />,
+    />
   );
   expect(wrapper).toMatchSnapshot();
 });

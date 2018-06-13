@@ -10,7 +10,7 @@ const Services = () => (
       meta={[
         { name: 'description', content: 'YLD Services' },
         { name: 'keywords', content: 'sample, something' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ]}
     />
     <AboutUs />

@@ -10,22 +10,22 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'case-studies',
-        path: `${__dirname}/data/case-studies/`,
-      },
+        path: `${__dirname}/data/case-studies/`
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'config',
-        path: `${__dirname}/data/config/`,
-      },
+        path: `${__dirname}/data/config/`
+      }
     },
     {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: process.env.CONTENTFUL_SPACE,
-        accessToken: process.env.CONTENTFUL_TOKEN,
-      },
-    },
-  ],
+        accessToken: process.env.CONTENTFUL_TOKEN
+      }
+    }
+  ]
 };

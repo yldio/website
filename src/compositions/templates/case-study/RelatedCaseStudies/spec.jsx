@@ -10,33 +10,33 @@ const props = {
       client: 'Joyent',
       clientLogo: {
         childImageSharp: {
-          src: 'joyent-logo.png',
-        },
+          src: 'joyent-logo.png'
+        }
       },
       description:
         'A legacy platform that faced a huge pressure to have an updated interface.',
       clientAppImage: {
         childImageSharp: {
-          src: 'joyent-app.png',
-        },
-      },
+          src: 'joyent-app.png'
+        }
+      }
     },
     {
       client: 'Trainline',
       clientLogo: {
         childImageSharp: {
-          src: 'trainline-logo.png',
-        },
+          src: 'trainline-logo.png'
+        }
       },
       description:
         'A legacy platform that faced a huge pressure to have an updated interface.',
       clientAppImage: {
         childImageSharp: {
-          src: 'trainline-app.png',
-        },
-      },
-    },
-  ],
+          src: 'trainline-app.png'
+        }
+      }
+    }
+  ]
 };
 
 test('RelatedCaseStudies', () => {

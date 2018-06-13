@@ -13,5 +13,5 @@ const config = new Map();
 config.set('development', process.env.GATSBY_CONTEXT !== 'production');
 
 module.exports = {
-  get: k => config.get(k),
+  get: k => config.get(k)
 };

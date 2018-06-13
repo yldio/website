@@ -1,25 +1,30 @@
 import React from 'react';
+import { Grid, Row } from 'react-styled-flexboxgrid';
 
 import Button from 'components/Button';
-import PageSection from 'components/PageSection';
+import { H1 } from 'components/Typography';
 import PageHero from 'components/PageHero';
-import { Paragraph, Title } from './styled';
+import { Section } from 'components/PageHero';
+
+import { Paragraph } from './styled';
 
 const BuildBetter = () => (
-  <PageSection data-selector="home:build-better">
-    <PageHero title={<Title>Build better</Title>}>
-      <Paragraph>
-        Great companies go beyond their customers expectations, over and over
-        again. Building this capability in your company is our mission, and our
-        promise.
-      </Paragraph>
-      <Paragraph>
-        We enable your organisation to deliver world-class technology and
-        customer experiences.
-      </Paragraph>
-      <Button href="/case-studies">Case Studies</Button>
-    </PageHero>
-  </PageSection>
+  <Section data-selector="home:build-better">
+    <Grid>
+      <Row>
+        <PageHero title={<H1 lighter>Innovation at the core, together</H1>}>
+          <Paragraph lighter>
+            We enable the worlds leading enterprises to drive digital
+            transformation and define their technology future through strategy,
+            design and custom software engineering.
+          </Paragraph>
+          <Paragraph>
+            <Button href="/services">Our Services</Button>
+          </Paragraph>
+        </PageHero>
+      </Row>
+    </Grid>
+  </Section>
 );
 
 export default BuildBetter;

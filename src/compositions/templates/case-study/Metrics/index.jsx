@@ -21,7 +21,7 @@ const Metrics = ({ sub, main, content }) => (
 Metrics.propTypes = {
   sub: PropTypes.string.isRequired,
   main: PropTypes.string.isRequired,
-  ...MetricGrid.propTypes,
+  ...MetricGrid.propTypes
 };
 
 export default Metrics;

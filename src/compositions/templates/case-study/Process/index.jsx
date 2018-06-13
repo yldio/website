@@ -22,9 +22,9 @@ Process.propTypes = {
   main: PropTypes.string.isRequired,
   top: PropTypes.string.isRequired,
   image: PropTypes.shape({
-    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+    childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired
   }).isRequired,
-  imageAlt: PropTypes.string.isRequired,
+  imageAlt: PropTypes.string.isRequired
 };
 
 export default Process;
