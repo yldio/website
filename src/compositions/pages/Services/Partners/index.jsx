@@ -28,7 +28,7 @@ const List = styled.ul`
   flex-direction: column;
 
   ${breakpoints.tablet`
-   flex-directiom: row;
+   flex-direction: row;
   `};
 `;
 
