@@ -81,27 +81,6 @@ exports[`components/ProductList snapshot 1`] = `
       <styled__Product>
         Mobile & React Native
       </styled__Product>
-      <styled__Product>
-        Microservices & evolutionary architecture
-      </styled__Product>
-      <styled__Product>
-        Cloud infrastructure
-      </styled__Product>
-      <styled__Product>
-        Cloud & Containers
-      </styled__Product>
-      <styled__Product>
-        Emerging technologies 
-      </styled__Product>
-      <styled__Product>
-        Machine Learning
-      </styled__Product>
-      <styled__Product>
-        .Net Core
-      </styled__Product>
-      <styled__Product>
-        Vue
-      </styled__Product>
     </ul>
   </styled__ProductColumn>
   <styled__ProductColumn>
