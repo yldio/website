@@ -30,14 +30,14 @@ Shiny new website, built with [Gatsby].
 
 ## Useful Commands
 
-* `yarn build` - create a static build
-* `yarn develop` - spin up a local development server
-* `yarn format` - format code with [Prettier]
-* `yarn lint` - lint code with [ESLint]
-* `yarn test` - run unit tests
-* `yarn test:watch` - run unit tests in watch mode
-* `yarn test:features` - run end to end tests
-* `yarn cypress` - open [Cypress] UI for easy development
+- `yarn build` - create a static build
+- `yarn develop` - spin up a local development server
+- `yarn format` - format code with [Prettier]
+- `yarn lint` - lint code with [ESLint]
+- `yarn test` - run unit tests
+- `yarn test:watch` - run unit tests in watch mode
+- `yarn test:features` - run end to end tests
+- `yarn cypress` - open [Cypress] UI for easy development
 
 _You can also run the commands with `npm run` instead of `yarn`_
 
@@ -65,10 +65,10 @@ To inspect all the data you can query for, boot up the development server and th
 
 #### Documentation
 
-* [Gatsby] - Static site generator for React
-* [Jest] - Unit testing framework
-* [Enzyme] - Easier assertions for React component output
-* [Cypress] - E2E / Integration testing framework
+- [Gatsby] - Static site generator for React
+- [Jest] - Unit testing framework
+- [Enzyme] - Easier assertions for React component output
+- [Cypress] - E2E / Integration testing framework
 
 #### Editor Integrations
 

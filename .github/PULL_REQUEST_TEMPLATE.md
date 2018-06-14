@@ -14,16 +14,16 @@
 
 <!-- Check all that apply -->
 
-* [ ] New feature
-* [ ] Bug fix
-* [ ] Tech debt
+- [ ] New feature
+- [ ] Bug fix
+- [ ] Tech debt
 
 ## Check List
 
 <!-- check all that apply (where appropriate) -->
 
-* [ ] Unit tests added
-* [ ] E2E tests added
-* [ ] All tests pass
-* [ ] Documentation updated
-* [ ] Code has been formatted and linted
+- [ ] Unit tests added
+- [ ] E2E tests added
+- [ ] All tests pass
+- [ ] Documentation updated
+- [ ] Code has been formatted and linted
