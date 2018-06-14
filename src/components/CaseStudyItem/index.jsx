@@ -1,3 +1,4 @@
+import { spacing } from 'styles/spacing';
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
@@ -6,27 +7,46 @@ import { pink } from 'styles/colours';
 import PageSection from '../PageSection';
 
 const Headline = styled.div`
-  width: ${remcalc(1280)};
   height: ${remcalc(470)};
   background-color: ${props => props.headlineBgColour};
   color: ${props => props.headlineTextColour};
-  display: flex;
 `;
 
-const ChallengesAndResults = styled.div`
+export const Row = styled.div`
   display: flex;
-`;
+  margin: ${remcalc(80)} 0;
 
-const Item = styled.li`
-  &::before {
-    content: '•';
-    margin-right: ${remcalc(20)};
-    color: ${pink};
+  & > * {
+    width: 50%;
   }
 `;
 
-const UnorderedList = styled.ul`
-  list-style: none;
+const Item = styled.li`
+  display: list-item;
+  list-style: disc outside none;
+`;
+
+const Span = styled.span`
+  color: #433a4f;
+`;
+
+const UL = styled.ul`
+  color: ${pink};
+`;
+
+const Column = styled.div`
+  flex-grow: 1;
+`;
+
+const H1 = styled.h1`
+  font-size: ${remcalc(72)};
+  margin-top: ${spacing(3)};
+  margin-bottom: ${spacing(3)};
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
 `;
 
 const CaseStudyItem = ({
@@ -47,22 +67,37 @@ const CaseStudyItem = ({
       headlineBgColour={headlineBgColour}
       headlineTextColour={headlineTextColour}
     >
-      <div>
-        <h1>{name}</h1>
-        {objective}
-      </div>
-      <div>
-        <img src={imagePath} alt={imageAlt} />
-      </div>
+      <Row>
+        <Column>
+          <PageSection>
+            <H1>{name}</H1>
+            {objective}
+          </PageSection>
+        </Column>
+        <Column>
+          <img src={imagePath} alt={imageAlt} />
+        </Column>
+      </Row>
     </Headline>
     <PageSection>
       {tagline}
-      <ChallengesAndResults>
-        <UnorderedList>
-          {challenges.map(challenge => <Item>{challenge}</Item>)}
-        </UnorderedList>
-        <div>{results && results.map(result => <ul>{result}</ul>)}</div>
-      </ChallengesAndResults>
+      <Row>
+        <UL>
+          {challenges &&
+            challenges.map(challenge => (
+              <Item>
+                <Span>{challenge}</Span>
+              </Item>
+            ))}
+        </UL>
+        <UL>
+          {results.map(result => (
+            <Item>
+              <Span>{result}</Span>
+            </Item>
+          ))}
+        </UL>
+      </Row>
       {video ? <video src={videoPath} /> : null}
     </PageSection>
   </Fragment>
