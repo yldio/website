@@ -3,6 +3,7 @@ import PageHero from 'components/PageHero';
 import Container from 'components/Container';
 
 import { Section } from './styled';
+import ClientsLogos from './ClientsLogos';
 
 const OurClients = () => (
   <Fragment>
@@ -15,6 +16,7 @@ const OurClients = () => (
         </PageHero>
       </Container>
     </Section>
+    <ClientsLogos />
   </Fragment>
 );
 
