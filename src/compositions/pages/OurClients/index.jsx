@@ -18,22 +18,24 @@ const OurClients = () => (
         </PageHero>
       </Container>
     </Section>
-    {caseStudiesArray.map(item => (
-      <CaseStudyItem
-        key={item.name}
-        name={item.name}
-        objective={item.objective}
-        imagePath={item.imagePath}
-        imageAlt={item.imageAlt}
-        headlineBgColour={item.headlineBgColour}
-        headlineTextColour={item.headlineTextColour}
-        tagline={item.tagline}
-        challenges={item.challenges}
-        results={item.results}
-        video={item.video}
-        videoPath={item.videoPath}
-      />
-    ))}
+    <Container>
+      {caseStudiesArray.map(item => (
+        <CaseStudyItem
+          key={item.name}
+          name={item.name}
+          objective={item.objective}
+          imagePath={item.imagePath}
+          imageAlt={item.imageAlt}
+          headlineBgColour={item.headlineBgColour}
+          headlineTextColour={item.headlineTextColour}
+          tagline={item.tagline}
+          challenges={item.challenges}
+          results={item.results}
+          video={item.video}
+          videoPath={item.videoPath}
+        />
+      ))}
+    </Container>
   </Fragment>
 );
 

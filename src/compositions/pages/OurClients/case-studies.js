@@ -1,8 +1,14 @@
+import TrainlineScreenshots from '../../../assets/trainline-screen.png';
+import TheEconomistScreenshots from '../../../assets/economist-screens.png';
+import ThomasCookScreenshots from '../../../assets/thomas-cook-screens.png';
+import JoyentScreenshots from '../../../assets/joyent-screens.png';
+import KingfisherScreenshots from '../../../assets/kinfisher-screens.png';
+
 module.exports = [
   {
     name: 'Trainline',
     objective: 'A Platform update & Improved User Experience',
-    imagePath: 'src/assets/trainline-screen.png',
+    imagePath: TrainlineScreenshots,
     imageAlt: 'Trainline screenshots',
     headlineBgColour: '#56c0a8',
     headlineTextColour: '#ffffff',
@@ -22,7 +28,7 @@ module.exports = [
   {
     name: 'The Economist',
     objective: 'Website Redesign & Improved User Experience',
-    imagePath: 'src/assets/economist-screens.png',
+    imagePath: TheEconomistScreenshots,
     imageAlt: 'The Economist screenshots',
     headlineBgColour: '#383e42',
     headlineTextColour: '#ffffff',
@@ -41,7 +47,7 @@ module.exports = [
   {
     name: 'Thomas Cook',
     objective: 'Faster Release Cycles & Improved User Experience',
-    imagePath: 'src/assets/thomas-cook-screens.png',
+    imagePath: ThomasCookScreenshots,
     imageAlt: 'Thomas Cook screenshots',
     headlineBgColour: '#ffb92d',
     headlineTextColour: '#013a5c',
@@ -59,7 +65,7 @@ module.exports = [
   {
     name: 'Joyent',
     objective: 'xxx',
-    imagePath: 'src/assets/joyent-screens.png',
+    imagePath: JoyentScreenshots,
     imageAlt: 'Joyent screenshots',
     headlineBgColour: '#3b4aaf',
     headlineTextColour: '#ffffff',
@@ -71,7 +77,7 @@ module.exports = [
   {
     name: 'Kingfisher',
     objective: 'Integrating new services & in-store mobile app',
-    imagePath: 'src/assets/kinfisher-screens.png',
+    imagePath: KingfisherScreenshots,
     imageAlt: 'Kingfisher screenshots',
     headlineBgColour: '#3c3c3c',
     headlineTextColour: '#ffffff',
