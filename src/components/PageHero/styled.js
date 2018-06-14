@@ -38,7 +38,7 @@ export const Header = styled.header`
 `;
 
 export const Wrapper = styled.div`
-  max-width: ${gridWidth * 2 / 3}px;
+  max-width: ${(gridWidth * 2) / 3}px;
 `;
 
 export const Main = styled.main`

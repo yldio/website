@@ -10,8 +10,7 @@ describe('features/navigation', () => {
     cy.visit('/');
     cy.awaitRender();
 
-    cy
-      .getComponent('component:navigation')
+    cy.getComponent('component:navigation')
       .contains('Services')
       .click();
 

@@ -6,10 +6,10 @@ import { H2, Copy } from 'components/Typography';
 
 const Community = () => (
   <PageSection dark data-selector="home:community">
-    <Grid data-selector="home:community">
+    <Grid>
       <Row>
         <Col xs={12} sm={6}>
-          <H2 decorated light>
+          <H2 decorated lighter>
             What are we known for?
           </H2>
         </Col>

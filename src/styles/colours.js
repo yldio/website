@@ -16,3 +16,13 @@ export const blue = '#5e5cb2';
 export const pink = '#F7007D';
 
 export const borderLight = '#E4E8EF';
+
+/*
+midnightblue: #190533
+darkslategrey: #433a4f
+slateblue: #5E5CB2
+deeppink: #E60073
+thistle: #B4AFC8
+lavender: #DCD9EA
+white: #ffffff
+*/
