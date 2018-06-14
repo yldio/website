@@ -130,14 +130,14 @@ exports[`compositions/pages/OurClients/ClientsLogos snapshot 1`] = `
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/perform.png"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/lamassu.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/lamassu.png"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/perform.png"
       />
     </styled__LogoWrapper>
   </styled__Grid>
