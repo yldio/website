@@ -95,7 +95,7 @@ exports[`compositions/pages/OurClients/ClientsLogos snapshot 1`] = `
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/thomascook.png"
+        src="/src/assets/thomascookLogo.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
