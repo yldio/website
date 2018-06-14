@@ -14,7 +14,7 @@ export const withButtonStyles = Component => styled(Component)`
   min-width: 10em;
   min-height: 50px;
   padding: 15px;
-  border-radius: 50px;
+  border-radius: 33px;
 
   ${is('transparent')`
     background: transparent;

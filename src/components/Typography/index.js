@@ -1,128 +1,117 @@
 import styled from 'styled-components';
-import { highlight, text, textBlue } from 'styles/colours';
-import { spacing } from 'styles/spacing';
+
 import is from 'styled-is';
 import remcalc from 'remcalc';
 
-const base = styled.span`
-  white-space: ${props => (props.newLines ? 'pre-line' : 'normal')};
-`;
-
 export const H1 = styled.h1`
-  color: ${text};
-  line-height: 85px;
-  font-size: 72pt;
+  color: ${props => props.theme.midnightblue};
+  line-height: ${remcalc(80)};
+  font-size: ${remcalc(72)};
   font-weight: 900;
+  position: relative;
 
   ${is('light')`
-    color: #b4afc8;
+    color: ${props => props.theme.thistle};
   `};
 
   ${is('lighter')`
-    color: #ffffff;
+    color: ${props => props.theme.white};
   `};
 `;
 
 export const H2 = styled.h2`
-  color: ${text};
-  line-height: 52px;
-  font-size: 38pt;
-  font-weight: 400;
+  color: ${props => props.theme.midnightblue};
+  line-height: ${remcalc(72)};
+  font-size: ${remcalc(60)};
+  font-weight: 900;
   position: relative;
 
-  ${is('decorated')`
-    &:after {
-      bottom: 0;
-      background-color: ${highlight};
-      content: '';
-      opacity: 1;
-      height: 4px;
-      left: 0;
-      bottom: -25px;
-      position: absolute;
-      transition: opacity 200ms;
-      width: 100px;
-    }
-
-    margin-bottom: 65px;
-  `};
-
   ${is('light')`
-    color: #b4afc8;
+    color: ${props => props.theme.thistle};
   `};
 
   ${is('lighter')`
-    color: #ffffff;
+    color: ${props => props.theme.white};
+  `};
+`;
+
+export const H3 = styled.h3`
+  color: ${props => props.theme.midnightblue};
+  line-height: ${remcalc(50)};
+  font-size: ${remcalc(36)};
+  font-weight: 400;
+  position: relative;
+  margin-bottom: ${remcalc(25)};
+
+  ${is('light')`
+    color: ${props => props.theme.thistle};
+  `};
+
+  ${is('lighter')`
+    color: ${props => props.theme.white};
+  `};
+
+  ${is('decorated')`
+    &:after {
+      background-color: ${props => props.theme.slateblue};
+      content: '';
+      height: ${remcalc(4)};
+      width: ${remcalc(100)};
+      display: block;
+      margin-top: ${remcalc(25)};
+    }
   `};
 `;
 
 export const H4 = styled.h4`
-  color: ${text};
-  line-height: 43px;
-  font-size: 28pt;
+  color: ${props => props.theme.midnightblue};
+  line-height: ${remcalc(43)};
+  font-size: ${remcalc(28)};
   font-weight: 400;
   position: relative;
 
   ${is('light')`
-    color: #b4afc8;
+    color: ${props => props.theme.thistle};
   `};
 
   ${is('lighter')`
-    color: #ffffff;
-  `};
-
-  ${is('decorated')`
-    &:after {
-      bottom: 0;
-      background-color: ${highlight};
-      content: '';
-      opacity: 1;
-      height: 4px;
-      left: 0;
-      bottom: -25px;
-      position: absolute;
-      transition: opacity 200ms;
-      width: 100px;
-
-      ${is('center')`
-        left: calc(50% - 50px);
-      `};
-    }
+    color: ${props => props.theme.white};
   `};
 `;
 
 export const H5 = styled.h5`
-  font-size: 1.375rem;
+  color: ${props => props.theme.slateblue};
+  line-height: ${remcalc(31)};
+  font-size: ${remcalc(18)};
   font-weight: 400;
-  margin-top: ${spacing(2)};
-  margin-bottom: ${spacing(2)};
-  font-size: ${remcalc(27)};
-  color: ${textBlue};
+  position: relative;
+  text-transform: uppercase;
 
   ${is('light')`
-    color: #b4afc8;
+    color: ${props => props.theme.thistle};
   `};
 
   ${is('lighter')`
-    color: #ffffff;
+    color: ${props => props.theme.white};
   `};
 `;
 
-export const Copy = base.withComponent('p').extend`
-  color: ${text};
+export const Copy = styled.p`
+  color: ${props => props.theme.darkslategrey};
+  line-height: ${remcalc(31)};
+  font-size: ${remcalc(18)};
   font-weight: 400;
-  line-height: 31px;
-  font-size: 18pt;
+  position: relative;
 
   ${is('light')`
-    color: #b4afc8;
+    color: ${props => props.theme.thistle};
   `};
 
   ${is('lighter')`
-    color: #ffffff;
+    color: ${props => props.theme.white};
   `};
 
-  ${is('uppercase')`
-    text-transform: uppercase;
+  ${is('bold')`
+    font-weight: 900;
   `};
 `;
