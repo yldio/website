@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 
 import React from 'react';
+import { Grid, Row } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 import breakpoints from 'styles/breakpoints';
@@ -14,7 +15,7 @@ const Wrapper = styled.section`
 `;
 
 const List = styled.ul`
-  margin-top: ${remcalc(40)};
+  margin-top: ${remcalc(75)};
   display: flex;
   flex-wrap: wrap;
 
@@ -37,92 +38,93 @@ const List = styled.ul`
 
 const ImageWrapper = styled.div`
   height: ${remcalc(56)};
+  margin-bottom: ${remcalc(30)};
   display: flex;
   align-items: flex-end;
 `;
 
-const Bar = styled.div`
-  background: #5e5cb2;
-  width: ${remcalc(100)};
-  height: ${remcalc(4)};
-  margin-top: ${remcalc(-15)};
-  margin-bottom: ${remcalc(40)};
+const Title = styled(Copy)`
+  margin-bottom: ${remcalc(30)};
 `;
 
 const Challenges = () => (
   <Wrapper data-selector="services:challenges">
     <Container>
-      <H2 white>Common client challenges</H2>
-      <Bar />
-      <Copy light>
-        We help you future proof your business through a new style of
-        consulting, ground up.
-      </Copy>
-      <List>
-        <li>
-          <ImageWrapper>
-            <img
-              src={require('../../../../assets/pair.svg')}
-              alt="Customer experience"
-              width="49px"
-              height="41px"
-            />
-          </ImageWrapper>
-          <Copy white uppercase>
-            Customer experience
-          </Copy>
-          <Copy light>
-            Optimise people, processes, user experience, design and technology
-            <br />
-            <br />
-            Provide a seamless customer experience across different channels
-          </Copy>
-        </li>
-        <li>
-          <ImageWrapper>
-            <img
-              src={require('../../../../assets/teams.svg')}
-              alt="Disruptive technology"
-              width="55px"
-              height="49px"
-            />
-          </ImageWrapper>
-          <Copy white uppercase>
-            Disruptive technology
-          </Copy>
-          <Copy light>
-            Align to your business goals but stay lean and innovate
-            <br />
-            <br />
-            Stay ahead of the market
-            <br />
-            <br />
-            Compete with start ups
-          </Copy>
-        </li>
-        <li>
-          <ImageWrapper>
-            <img
-              src={require('../../../../assets/blog.svg')}
-              alt="Skills Gap"
-              width="49px"
-              height="41px"
-            />
-          </ImageWrapper>
-          <Copy white uppercase>
-            Skills Gap
-          </Copy>
-          <Copy light>
-            Bridge the skills gap and attract the right technology professionals
-            <br />
-            <br />
-            Achieve your business goals
-            <br />
-            <br />
-            Make digital, technological or cultural change happen.
-          </Copy>
-        </li>
-      </List>
+      <Grid>
+        <H2 lighter decorated>
+          Common client challenges
+        </H2>
+        <Copy light>
+          We help you future proof your business through a new style of
+          consulting, ground up.
+        </Copy>
+        <List>
+          <li>
+            <ImageWrapper>
+              <img
+                src={require('../../../../assets/pair.svg')}
+                alt="Customer experience"
+                width="49px"
+                height="41px"
+              />
+            </ImageWrapper>
+            <Title lighter uppercase>
+              Customer experience
+            </Title>
+            <Copy light>
+              Optimise people, processes, user experience, design and technology
+              <br />
+              <br />
+              Provide a seamless customer experience across different channels
+            </Copy>
+          </li>
+          <li>
+            <ImageWrapper>
+              <img
+                src={require('../../../../assets/teams.svg')}
+                alt="Disruptive technology"
+                width="55px"
+                height="49px"
+              />
+            </ImageWrapper>
+            <Title lighter uppercase>
+              Disruptive technology
+            </Title>
+            <Copy light>
+              Align to your business goals but stay lean and innovate
+              <br />
+              <br />
+              Stay ahead of the market
+              <br />
+              <br />
+              Compete with start ups
+            </Copy>
+          </li>
+          <li>
+            <ImageWrapper>
+              <img
+                src={require('../../../../assets/blog.svg')}
+                alt="Skills Gap"
+                width="49px"
+                height="41px"
+              />
+            </ImageWrapper>
+            <Title lighter uppercase>
+              Skills Gap
+            </Title>
+            <Copy light>
+              Bridge the skills gap and attract the right technology
+              professionals
+              <br />
+              <br />
+              Achieve your business goals
+              <br />
+              <br />
+              Make digital, technological or cultural change happen.
+            </Copy>
+          </li>
+        </List>
+      </Grid>
     </Container>
   </Wrapper>
 );

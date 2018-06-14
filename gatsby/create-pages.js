@@ -37,7 +37,7 @@ function getCaseStudies(graphql) {
       }
     }
   `).then(results =>
-    results.data.allCaseStudiesYaml.edges.map(edge => edge.node),
+    results.data.allCaseStudiesYaml.edges.map(edge => edge.node)
   );
 }
 
@@ -51,11 +51,11 @@ function createCaseStudyPages(graphql, createPage, config) {
         component: path.resolve(
           __dirname,
           '../src/',
-          config.templates.caseStudy.component,
+          config.templates.caseStudy.component
         ),
         context: {
-          slug: caseStudy.slug,
-        },
+          slug: caseStudy.slug
+        }
       });
     });
 
@@ -76,11 +76,11 @@ function createBlogPostPages(graphql, createPage, config) {
         component: path.resolve(
           __dirname,
           '../src/',
-          config.templates.blogPost.component,
+          config.templates.blogPost.component
         ),
         context: {
-          slug: post.slug,
-        },
+          slug: post.slug
+        }
       };
 
       createPage(pageConfig);

@@ -5,7 +5,7 @@ export default function applyGlobalStyles() {
   injectGlobal`
     ${reset}
 
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 
     html {
       box-sizing: border-box;
@@ -19,7 +19,7 @@ export default function applyGlobalStyles() {
     /* Target the application container */
 
     #___gatsby {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: 1.5;

@@ -13,7 +13,7 @@ test('components/PageSection snapshot with description', () => {
     <PageSection
       title="Hello, world!"
       description="This is some support copy"
-    />,
+    />
   );
 
   expect(wrapper).toMatchSnapshot();

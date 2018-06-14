@@ -1,20 +1,41 @@
 import React, { Fragment } from 'react';
-import Helmet from 'react-helmet';
+// import PropTypes from 'prop-types';
+// import Helmet from 'react-helmet';
+// import { mapProps } from 'recompose';
 
-import AboutUs from './../compositions/pages/AboutUs';
+import AboutUsPage from 'compositions/pages/AboutUs';
 
-const Services = () => (
+export default ({ page }) => (
   <Fragment>
-    <Helmet
-      title="YLD | About Us"
-      meta={[
-        { name: 'description', content: 'YLD Services' },
-        { name: 'keywords', content: 'sample, something' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      ]}
-    />
-    <AboutUs />
+    {/* <Helmet title={page.title} meta={page.metadata} /> */}
+    <AboutUsPage />
   </Fragment>
 );
 
-export default Services;
+// AboutUs.propTypes = {
+//   page: PropTypes.shape({
+//     title: PropTypes.string.isRequired,
+//     metadata: PropTypes.arrayOf(
+//       PropTypes.shape({
+//         name: PropTypes.string,
+//         content: PropTypes.string
+//       })
+//     ).isRequired
+//   }).isRequired
+// };
+
+// export default mapProps(props => ({
+//   page: props.data.contentfulPage
+// }))(AboutUs);
+
+// export const pageQuery = graphql`
+//   query ServicesPageQuery {
+//     contentfulPage(identifier: { eq: "about-us" }) {
+//       title
+//       metadata {
+//         name
+//         content
+//       }
+//     }
+//   }
+// `;

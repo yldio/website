@@ -13,7 +13,7 @@ describe('components/Post', () => {
     image: 'https://placekitten.com/128/128',
     sourceLink: '/people/nuno-job',
     sourceText: 'Nuno Job',
-    title: 'We’re Hiring! YLD on the look out for Front-End Devs and DevOps.',
+    title: 'We’re Hiring! YLD on the look out for Front-End Devs and DevOps.'
   };
 
   test('snapshot', () => {

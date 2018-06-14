@@ -6,7 +6,7 @@ test('components/Logo snapshot', () => {
   const metrics = {
     sub: 'some text',
     main: 'some text here as well',
-    content: [{ parameter: 'test', value: '20.00', change: '20%' }],
+    content: [{ parameter: 'test', value: '20.00', change: '20%' }]
   };
   const wrapper = shallow(<Metrics {...metrics} />);
 

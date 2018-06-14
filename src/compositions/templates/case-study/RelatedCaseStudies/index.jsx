@@ -9,7 +9,7 @@ import {
   TileContentTitle,
   TileContentBody,
   Right,
-  Left,
+  Left
 } from './styled';
 
 const RelatedCaseStudies = ({ caseStudies }) => {
@@ -53,13 +53,13 @@ RelatedCaseStudies.propTypes = {
       client: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       clientLogo: PropTypes.shape({
-        childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
+        childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired
       }).isRequired,
       clientAppImage: PropTypes.shape({
-        childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired,
-      }).isRequired,
-    }),
-  ).isRequired,
+        childImageSharp: PropTypes.shape(GatsbyImage.propTypes).isRequired
+      }).isRequired
+    })
+  ).isRequired
 };
 
 export default RelatedCaseStudies;

@@ -22,5 +22,5 @@ export const Description = styled.p`
   color: ${textLighter};
   font-size: 1.25rem;
   line-height: 1.55;
-  max-width: ${gridWidth * 1 / 2}px;
+  max-width: ${(gridWidth * 1) / 2}px;
 `;

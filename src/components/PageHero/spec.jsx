@@ -5,7 +5,7 @@ import PageHero from './index';
 describe('components/PageHero', () => {
   test('basic snapshot', () => {
     const wrapper = shallow(
-      <PageHero title="Hello, world!">I am the page hero body</PageHero>,
+      <PageHero title="Hello, world!">I am the page hero body</PageHero>
     );
 
     expect(wrapper).toMatchSnapshot();
@@ -15,7 +15,7 @@ describe('components/PageHero', () => {
     const children = 'I am the page hero body';
 
     const wrapper = shallow(
-      <PageHero title="Hello, world!">{children}</PageHero>,
+      <PageHero title="Hello, world!">{children}</PageHero>
     );
 
     expect(
@@ -23,7 +23,7 @@ describe('components/PageHero', () => {
         .children()
         .find('styled__Main')
         .children()
-        .text(),
+        .text()
     ).toEqual(children);
   });
 

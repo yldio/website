@@ -1,21 +1,34 @@
 import React from 'react';
-import { H2, H5, Copy } from 'components/Typography';
-import Container from 'components/Container';
+import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
-import breakpoints from 'styles/breakpoints';
 import remcalc from 'remcalc';
+
+import PageSection from 'components/PageSection';
+import { H2, H4, Copy } from 'components/Typography';
+
+import BaseDivider from '../Divider';
 import design from '../assets/design-header.png';
 
-export const DesignHeader = styled.section`
-    background: url('${design}');
-    background-position: left top;
-    background-size: cover;
-    height: ${remcalc(460)};
-    padding-top: ${remcalc(300)};
-    margin-bottom: ${remcalc(80)};
+const Divider = styled(BaseDivider)`
+  padding: 0 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: stretch;
 `;
 
-export const Row = styled.div`
+const Section = styled(PageSection)`
+  padding-top: 0;
+`;
+
+const Subtitle = H4.extend`
+  margin-top: 86px;
+  margin-bottom: 86px;
+`;
+
+export const Articles = styled.div`
   display: flex;
   margin: ${remcalc(80)} 0;
   justify-content: space-between;
@@ -24,86 +37,86 @@ export const Row = styled.div`
   & > * {
     width: 100%;
     flex-shrink: 0;
-
-    ${breakpoints.tablet`
-        width: 45%;
-  `};
   }
 `;
 
-const Design = () => (
-  <section data-selector="services:design">
-    <DesignHeader>
-      <Container>
-        <H2 white slim>
-          Design & Product
-        </H2>
-      </Container>
-    </DesignHeader>
-    <Container>
-      <H5 noBorder>
-        A great company continuously finds better solutions to its customers
-        biggest problems. Design is the bridge between the two. Great design
-        goes deeper than just how something looks, it’s why and how it works,
-        for your customers and for your business.
-      </H5>
+const Item = styled(Copy)`
+  margin-bottom: 31px;
+  color: #5e5cb2;
+`;
+
+const Description = styled(Copy)`
+  margin-bottom: 56px;
+  color: #433a4f;
+`;
+
+export default () => (
+  <Section data-selector="services:help">
+    <Divider bg={design}>
+      <Grid>
+        <Row>
+          <Col xs={12} sm={6}>
+            <H2 lighter>Design & Product</H2>
+          </Col>
+        </Row>
+      </Grid>
+    </Divider>
+    <Grid>
       <Row>
-        <article>
-          <Copy blue uppercase>
-            Design Leadership
-          </Copy>
-          <Copy>
+        <Col xs={12} sm={10}>
+          <Subtitle>
+            A great company continuously finds better solutions to its customers
+            biggest problems. Design is the bridge between the two. Great design
+            goes deeper than just how something looks, it’s why and how it
+            works, for your customers and for your business.
+          </Subtitle>
+        </Col>
+      </Row>
+      <Row between="xs">
+        <Col xs={12} sm={5}>
+          <Item uppercase>Design Leadership</Item>
+          <Description>
             Design Leadership helps build this voice at the centre of your
             companies process, enabling Design Thinking to drive innovation and
             quality across your organisation.
-          </Copy>
-        </article>
-        <article>
-          <Copy blue uppercase>
-            Design Systems & DesignOps
-          </Copy>
-          <Copy>
+          </Description>
+        </Col>
+        <Col xs={12} sm={5}>
+          <Item uppercase>Design Systems & DesignOps</Item>
+          <Description>
             For teams to deliver a great experience continuously, it’s necessary
             to have a toolset that enables an organisation to answer customer
             problems quickly, at high-quality and iterate rapidly. Design
             Systems put a powerful product design toolset at the centre of every
             team.
-          </Copy>
-        </article>
-        <article>
-          <Copy blue uppercase>
-            Design Sprints
-          </Copy>
-          <Copy>
+          </Description>
+        </Col>
+        <Col xs={12} sm={5}>
+          <Item uppercase>Design Sprints</Item>
+          <Description>
             Design Sprints enable us to build a deep understanding of the
             customer problems teams are facing, and to move quickly into
             prototyping and testing assumptions and original ideas quickly.
-          </Copy>
-        </article>
-        <article>
-          <Copy blue uppercase>
-            User Interface Design & Branding
-          </Copy>
-          <Copy>
+          </Description>
+        </Col>
+        <Col xs={12} sm={5}>
+          <Item uppercase>User Interface Design & Branding</Item>
+          <Description>
             Great UI design connects your users with your product. It’s the most
             tactile, direct interaction people will have with your brand, your
             services, and your customer experience.
-          </Copy>
-        </article>
-        <article>
-          <Copy blue uppercase>
-            Research, Usability and User Experience
-          </Copy>
-          <Copy>
+          </Description>
+        </Col>
+        <Col xs={12} sm={5}>
+          <Item uppercase>Research, Usability and User Experience</Item>
+          <Description>
             Knowing that you’re solving the right customer problems, and with
             the right user experience is key to growing your product. Great
             products dont just look good, they enable their users to achieve
             their goals effortlessly.
-          </Copy>
-        </article>
+          </Description>
+        </Col>
       </Row>
-    </Container>
-  </section>
+    </Grid>
+  </Section>
 );
-
-export default Design;

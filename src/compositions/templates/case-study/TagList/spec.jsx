@@ -4,7 +4,7 @@ import TagList from './index';
 
 test('snapshot', () => {
   const wrapper = shallow(
-    <TagList tags={['engineering', 'devops', 'backend']} />,
+    <TagList tags={['engineering', 'devops', 'backend']} />
   );
 
   expect(wrapper).toMatchSnapshot();

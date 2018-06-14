@@ -30,13 +30,13 @@ export const List = styled.ul`
 `;
 
 export const Link = styled(BaseLink)`
-  color: ${textLight};
+  color: #ffffff;
   display: inline-block;
   font-size: 1.125rem;
   font-weight: 400;
   padding-bottom: ${spacing()};
-  padding-left: ${spacing(1.5)};
-  padding-right: ${paddedRight(spacing(3), spacing(1.5))};
+  padding-left: ${spacing(2.3)};
+  padding-right: ${paddedRight(spacing(3), spacing(2.3))};
   padding-top: ${spacing()};
   position: relative;
   text-decoration: none;
@@ -47,7 +47,7 @@ export const Link = styled(BaseLink)`
 
   &:after {
     bottom: 0;
-    background-color: ${highlight};
+    background-color: rgba(255, 255, 255, 0.6);
     content: '';
     opacity: 0;
     height: 2px;
@@ -57,8 +57,8 @@ export const Link = styled(BaseLink)`
     width: calc(100% - ${paddedRight(spacing(4.5), spacing(3))});
 
     ${is('dark')`
-    background-color: white;
-  `};
+      background-color: white;
+    `};
   }
 
   &:hover {

@@ -15,9 +15,9 @@ export default function Header({ dark }) {
 }
 
 Header.propTypes = {
-  dark: PropTypes.bool,
+  dark: PropTypes.bool
 };
 
 Header.defaultProps = {
-  dark: false,
+  dark: false
 };

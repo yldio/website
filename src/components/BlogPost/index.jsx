@@ -17,17 +17,17 @@ const BlogPost = ({ title, body, author }) => (
 
 BlogPost.propTypes = {
   title: PropTypes.shape({
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
   }).isRequired,
   body: PropTypes.shape({
-    body: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired
   }).isRequired,
   author: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+      id: PropTypes.string.isRequired
+    })
+  ).isRequired
 };
 
 export default BlogPost;

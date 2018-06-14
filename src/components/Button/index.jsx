@@ -11,12 +11,12 @@ const Button = ({ component, ...props }) => {
 Button.propTypes = {
   component: PropTypes.oneOfType([
     PropTypes.func,
-    PropTypes.oneOf(['a', 'button']),
-  ]),
+    PropTypes.oneOf(['a', 'button'])
+  ])
 };
 
 Button.defaultProps = {
-  component: 'a',
+  component: 'a'
 };
 
 export default Button;

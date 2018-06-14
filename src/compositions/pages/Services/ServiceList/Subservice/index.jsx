@@ -13,11 +13,11 @@ const Subservice = ({ children, name }) => (
 
 Subservice.propTypes = {
   children: PropTypes.node,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
 };
 
 Subservice.defaultProps = {
-  children: [],
+  children: []
 };
 
 export default Subservice;

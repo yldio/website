@@ -28,7 +28,8 @@
       {
         "allowTaggedTemplates": true
       }
-    ]
+    ],
+    "react/jsx-filename-extension": 0
   },
   "plugins": ["eslint-plugin-import", "prettier"],
   "overrides": [

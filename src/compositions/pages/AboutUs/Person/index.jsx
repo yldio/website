@@ -32,5 +32,5 @@ Picture.propTypes = {
   picture: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   twitter: PropTypes.string.isRequired,
-  linkedin: PropTypes.string.isRequired,
+  linkedin: PropTypes.string.isRequired
 };

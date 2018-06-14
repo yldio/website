@@ -18,14 +18,14 @@ IndexPage.propTypes = {
     metadata: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string,
-        content: PropTypes.string,
-      }),
-    ).isRequired,
-  }).isRequired,
+        content: PropTypes.string
+      })
+    ).isRequired
+  }).isRequired
 };
 
 export default mapProps(props => ({
-  page: props.data.contentfulPage,
+  page: props.data.contentfulPage
 }))(IndexPage);
 
 export const pageQuery = graphql`
