@@ -39,18 +39,18 @@ const logos = [
   Solera,
   Skype,
   Tes,
-  Perform,
   Lamassu,
+  Perform,
 ];
 
-const ClientsLogos = () => (
+const ClientsLogos = index => (
   <PageSection>
     <Header>Who we work with</Header>
     <Line />
     <Grid>
       {logos.map(logo => (
         <LogoWrapper>
-          <Image alt="" src={logo} />
+          <Image alt="" key={index} src={logo} />
         </LogoWrapper>
       ))}
     </Grid>

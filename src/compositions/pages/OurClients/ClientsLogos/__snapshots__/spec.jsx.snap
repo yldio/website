@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/OurClients/ClientsLogos snapshot 1`] = `
+<PageSection>
+  <styled__Header>
+    Who we work with
+  </styled__Header>
+  <styled__Line />
+  <styled__Grid>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/hive.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/economist.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/tate.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/discovery.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/canon.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/samsung-joyent.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/kingfisher.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/trainline.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/conde-nas.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/microsoft.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/newsuk.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/google.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/thomascook.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/compare-market.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/solera.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/skype.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/tes.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/perform.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/lamassu.png"
+      />
+    </styled__LogoWrapper>
+  </styled__Grid>
+</PageSection>
+`;
