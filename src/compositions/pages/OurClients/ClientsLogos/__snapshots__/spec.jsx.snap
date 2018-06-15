@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/OurClients/ClientsLogos snapshot 1`] = `
+<PageSection>
+  <styled__Header>
+    Who we work with
+  </styled__Header>
+  <styled__Line />
+  <styled__Grid>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/hive.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/economist.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/tate.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/discovery.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/canon.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/samsung-joyent.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/kingfisher.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/trainline.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/conde-nas.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/microsoft.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/newsuk.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/google.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/thomascookLogo.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/compare-market.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/solera.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/skype.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/tes.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/lamassu.png"
+      />
+    </styled__LogoWrapper>
+    <styled__LogoWrapper>
+      <styled__Image
+        alt=""
+        key="[object Object]"
+        src="/src/assets/perform.png"
+      />
+    </styled__LogoWrapper>
+  </styled__Grid>
+</PageSection>
+`;
