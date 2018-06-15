@@ -25,7 +25,7 @@ const Link = Copy.withComponent(BaseLink).extend`
 export default () => (
   <Section dark>
     <Grid>
-      <Padding top={50} bottom={50}>
+      <Padding top={{ xs: 15, sm: 50 }} bottom={{ xs: 15, sm: 50 }}>
         <Row between="xs">
           <Col xs={6}>
             <H4 whiter>Contact</H4>
@@ -37,7 +37,7 @@ export default () => (
               Portugal: +351 21 000 0000
             </ListLink>
           </Col>
-          <Col xs={3}>
+          <Col xs={6} sm={3}>
             <H4 whiter>Get Around</H4>
             <ListLink to="/">Home</ListLink>
             <ListLink to="/services">Services</ListLink>
@@ -45,7 +45,7 @@ export default () => (
             <ListLink to="/about-us">About Us</ListLink>
             <ListLink to="/join-us">Join Us</ListLink>
           </Col>
-          <Col xs={3}>
+          <Col xs={6} sm={3}>
             <H4 whiter>Follow Us</H4>
             <ListLink to="https://twitter.com/yldio">Twitter</ListLink>
             <ListLink to="https://github.com/yldio">Github</ListLink>

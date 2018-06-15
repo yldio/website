@@ -7,12 +7,12 @@ import Section from 'components/section';
 
 export default () => (
   <Section>
-    <Padding top={32} bottom={65}>
+    <Padding top={{ xs: 15, sm: 32 }} bottom={{ xs: 15, sm: 65 }}>
       <Grid>
         <Row>
           <Col xs={12}>
             <Margin bottom={30}>
-              <H3 decorated>Our Team</H3>
+              <H3 decorated>Contact Us</H3>
             </Margin>
           </Col>
           <Col xs={12}>

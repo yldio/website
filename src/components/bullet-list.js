@@ -1,10 +1,18 @@
 import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 import remcalc from 'remcalc';
+import is from 'styled-is';
 
 import { Copy } from 'components/typography';
 
 export default styled.ul`
-  margin-top: ${remcalc(31)};
+  ${is('first')`
+    margin-top: ${remcalc(31)};
+  `};
+
+  ${breakpoint('sm')`
+    margin-top: ${remcalc(31)};
+  `};
 `;
 
 export const Item = Copy.withComponent('li').extend`

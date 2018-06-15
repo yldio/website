@@ -9,7 +9,7 @@ import Button from 'components/button';
 export default () => (
   <Section blue>
     <Grid>
-      <Padding top={35} bottom={30} inline>
+      <Padding top={{ xs: 15, sm: 35 }} bottom={{ xs: 15, sm: 35 }} inline>
         <Row middle="xs" between="xs">
           <Col xs={12}>
             <Margin bottom={12}>
@@ -25,9 +25,11 @@ export default () => (
           <Col xs={12} sm={4}>
             <Row center="xs">
               <Col xs={12}>
-                <Button transparent white>
-                  View openings
-                </Button>
+                <Margin top={{ xs: 15, sm: 0 }}>
+                  <Button transparent white>
+                    View openings
+                  </Button>
+                </Margin>
               </Col>
             </Row>
           </Col>

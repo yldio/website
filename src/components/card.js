@@ -9,8 +9,8 @@ const CardWrapper = styled.div`
   border-bottom: ${remcalc(4)} solid ${props => props.theme.colors.deeppink};
   box-shadow: ${remcalc(10)} ${remcalc(12)} ${remcalc(40)} ${remcalc(5)}
     rgba(25, 5, 52, 0.15);
-  width: ${remcalc(305)};
-  min-height: ${remcalc(240)};
+  width: ${props => remcalc(props.width ? props.width : 305)};
+  min-height: ${props => remcalc(props.height ? props.height : 240)};
   background: white;
   margin-bottom: ${remcalc(20)};
 `;
@@ -35,11 +35,14 @@ const Item = Copy.withComponent('li').extend`
   }
 `;
 
-export default ({ title, points }) => (
-  <CardWrapper>
+export default ({ title, points, children, ...props }) => (
+  <CardWrapper {...props}>
     <Title blue uppercase>
       {title}
     </Title>
-    <ul>{points && points.map(point => <Item key={point}>{point}</Item>)}</ul>
+    {points ? (
+      <ul>{points && points.map(point => <Item key={point}>{point}</Item>)}</ul>
+    ) : null}
+    {children}
   </CardWrapper>
 );

@@ -38,7 +38,7 @@ export default () => (
                 strategy, design and custom software engineering.
               </Copy>
             </Margin>
-            <Margin bottom={111}>
+            <Margin bottom={{ xs: 16, md: 111 }}>
               <Button white to="/services">
                 Our Services
               </Button>
@@ -49,41 +49,34 @@ export default () => (
     </Hero>
     <Section>
       <Grid>
-        <Row around="xs" top="xs">
+        <Row center="xs" around="xs" top="xs">
           <Col xs={12} sm={12} md={4}>
-            <Margin top={-39} inline>
-              <Card
-                title="Private Training"
-                points={[
-                  'Hands-on learning experience, in-person classes',
-                  'Tailoried training program delivered on-site to suit your needs',
-                  'Ensures your software engineers share a baseline'
-                ]}
-              />
+            <Margin top={{ xs: 11, md: -39 }} inline>
+              <Card title="Technology" height="255" width="100%">
+                <Copy>
+                  Driving innovation through digital transformation to build
+                  relentlessly relevant companies
+                </Copy>
+              </Card>
             </Margin>
           </Col>
           <Col xs={12} sm={12} md={4}>
-            <Margin top={-39} inline>
-              <Card
-                title="Private Training"
-                points={[
-                  'Hands-on learning experience, in-person classes',
-                  'Tailoried training program delivered on-site to suit your needs',
-                  'Ensures your software engineers share a baseline'
-                ]}
-              />
+            <Margin top={{ xs: 11, md: -39 }} inline>
+              <Card title="Culture" height="255" width="100%">
+                <Copy>
+                  Creating enduring cultures of engineering & design innovation
+                </Copy>
+              </Card>
             </Margin>
           </Col>
           <Col xs={12} sm={12} md={4}>
-            <Margin top={-39} inline>
-              <Card
-                title="Private Training"
-                points={[
-                  'Hands-on learning experience, in-person classes',
-                  'Tailoried training program delivered on-site to suit your needs',
-                  'Ensures your software engineers share a baseline'
-                ]}
-              />
+            <Margin top={{ xs: 11, md: -39 }} inline>
+              <Card title="Training" height="255" width="100%">
+                <Copy>
+                  Originators who train your talent through skills transfer and
+                  pair programming
+                </Copy>
+              </Card>
             </Margin>
           </Col>
         </Row>
@@ -127,8 +120,8 @@ export default () => (
             <Col xs={12}>
               <Checklist>
                 <Row between="xs">
-                  <Col xs={6}>
-                    <Padding right={23}>
+                  <Col xs={12} sm={6}>
+                    <Padding right={{ xs: 0, sm: 23 }}>
                       <CheckItem>
                         Transform, innovate and differentiate at speed
                       </CheckItem>
@@ -141,8 +134,8 @@ export default () => (
                       </CheckItem>
                     </Padding>
                   </Col>
-                  <Col xs={6}>
-                    <Padding right={23}>
+                  <Col xs={12} sm={6}>
+                    <Padding right={{ xs: 0, sm: 23 }}>
                       <CheckItem>
                         Grow capability inside your organisation - consulting,
                         training, pairing and education
