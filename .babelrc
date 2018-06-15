@@ -1,14 +1,7 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "browsers": ["last 2 versions"]
-        }
-      }
-    ],
-    "react"
+  "plugins": [
+    ["module-resolver", { "root": ["./src"] }],
+    ["babel-plugin-styled-components", { "displayName": true }]
   ],
   "env": {
     "production": {
@@ -22,9 +15,5 @@
         ]
       ]
     }
-  },
-  "plugins": [
-    ["module-resolver", { "root": ["./src"] }],
-    ["babel-plugin-styled-components", { "displayName": true }]
-  ]
+  }
 }
