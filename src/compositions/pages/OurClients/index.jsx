@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react';
 import PageHero from 'components/PageHero';
 import Container from 'components/Container';
+import CaseStudyItem from '../../../components/CaseStudyItem';
 
 import { Section } from './styled';
 import ClientsLogos from './ClientsLogos';
+
+const caseStudiesArray = require('./case-studies');
 
 const OurClients = () => (
   <Fragment>
@@ -17,6 +20,22 @@ const OurClients = () => (
       </Container>
     </Section>
     <ClientsLogos />
+    {caseStudiesArray.map(item => (
+      <CaseStudyItem
+        key={item.name}
+        name={item.name}
+        objective={item.objective}
+        imagePath={item.imagePath}
+        imageAlt={item.imageAlt}
+        headlineBgColour={item.headlineBgColour}
+        headlineTextColour={item.headlineTextColour}
+        tagline={item.tagline}
+        challenges={item.challenges}
+        results={item.results}
+        video={item.video}
+        videoPath={item.videoPath}
+      />
+    ))}
   </Fragment>
 );
 

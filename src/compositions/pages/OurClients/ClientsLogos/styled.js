@@ -6,6 +6,11 @@ export const Grid = styled.ul`
   display: grid;
   position: relative;
   grid-template-columns: 25% 25% 25% 25%;
+
+  &last-child {
+    width: 500px;
+    background-color: #5e5cb2;
+  }
   ${breakpoints.mobile`
   grid-template-columns: 33% 33% 33%;
   `};
@@ -31,12 +36,9 @@ export const Line = styled.p`
 `;
 
 export const LogoWrapper = styled.div`
-  margin-bottom: 158px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
   ${breakpoints.mobile`
-    margin-right: 24px;
     margin-bottom: 32px;
   `};
 `;
@@ -46,4 +48,5 @@ export const Image = styled.img`
   top: 0;
   bottom: 0;
   margin: auto;
+  width: 90%;
 `;

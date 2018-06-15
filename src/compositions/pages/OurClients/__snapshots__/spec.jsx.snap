@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compositions/pages/OurClients snapshot 1`] = `
+<React.Fragment>
+  <styled__Section
+    data-selector="our-clients:hero"
+  >
+    <Container>
+      <PageHero
+        before="Our Clients"
+        big={true}
+        white={true}
+      >
+        We’re proud to work with some amazing clients who are as passionate about their industries as we are about helping them build their technology futures.
+      </PageHero>
+    </Container>
+  </styled__Section>
+  <ClientsLogos />
+  <CaseStudyItem
+    challenges={
+      Array [
+        "Trainline were looking for a partner to onboard node as part an ongoing project to rebuild their online web experience.",
+        "About 8 million customers a month come to the website and mobile app to purchase tickets. As part of the ongoing project to rebuild their online web experience, Trainline were looking for help on-boarding node and building up new skill sets and capabilities within their team to create a world class development organisation able to meet new demands.",
+      ]
+    }
+    headlineBgColour="#56c0a8"
+    headlineTextColour="#ffffff"
+    imageAlt="Trainline screenshots"
+    imagePath="/src/assets/trainline-screen.png"
+    key="Trainline"
+    name="Trainline"
+    objective="A Platform update & Improved User Experience"
+    results={
+      Array [
+        "Trainline had a legacy platform in urgent need of an updated interface, YLD wrapped the legacy platform in a Node.js layer that’s efficient, and most of all easy to use. Working in an integrated way with the team to build up node capabilities, YLD restructured the shopping basket and payment page to make it more user-friendly.",
+        "Trainline have benefited from a significant increase in conversion rates on the site and an upskilled team with an entirely new skill-set and capabilities.",
+      ]
+    }
+    tagline="Europe’s independent leader in the sale of train and coach tickets and the number one ticket reseller in the UK"
+    video={true}
+    videoPath="placeholder :)"
+  />
+  <CaseStudyItem
+    challenges={
+      Array [
+        "Technology is a core part of the way the business is run and an integral part of the storytelling industry, but the old The Economist website was hard to maintain and not a mobile first experience and in need of a redesign. The Economist wanted to improve their architecture and work with node and React to achieve a more flexible solution.",
+        "The Economist needed a redesign and implementation of existing blogs sites with server-side rendering. In addition to this they needed to divert web traffic from a legacy CMS to a new set of micro-services.",
+      ]
+    }
+    headlineBgColour="#383e42"
+    headlineTextColour="#ffffff"
+    imageAlt="The Economist screenshots"
+    imagePath="/src/assets/economist-screens.png"
+    key="The Economist"
+    name="The Economist"
+    objective="Website Redesign & Improved User Experience"
+    results={
+      Array [
+        "YLD partnered with The Economist team to build a vision and introduced a team of dedicated and experienced engineers working together to seamlessly create a better reading experience. YLD helped construct a NodeJS and ReactJS system that decreased visitors’ perceived webpage load times. Over 12 months, YLD replaced all Economist.com user facing pages, replacing every piece of Html and using Node and React technologies to update the systems and the way they talk to each and deliver a content centric approach and more flexible solution.  Today, shared codebase reduces front- and back-end maintenance cost. Integration with new RESTful micro service tier resulted in faster response times requiring less hardware.",
+      ]
+    }
+    tagline="A world renowned international current affairs, politics and news magazine"
+    video={true}
+    videoPath="placeholder :)"
+  />
+  <CaseStudyItem
+    challenges={
+      Array [
+        "The Thomas Cook Group is the oldest and best known name in leisure travel with a history of innovation that started in 1841. Now serving 19 million customers, Thomas Cook is focused on transforming their business to deliver better their holiday dreams.",
+      ]
+    }
+    headlineBgColour="#ffb92d"
+    headlineTextColour="#013a5c"
+    imageAlt="Thomas Cook screenshots"
+    imagePath="/src/assets/thomas-cook-screens.png"
+    key="Thomas Cook"
+    name="Thomas Cook"
+    objective="Faster Release Cycles & Improved User Experience"
+    results={
+      Array [
+        "Some of the key results achieved were faster release cycles and quicker turnaround of new features, with improved performance and speed. From a mobile user perspective, there was a uplift of 30%, of which 20% was due to technology and responsive design for mobile.  ",
+      ]
+    }
+    tagline="The Thomas Cook Group is the oldest and best known name in leisure travel with a history of innovation that started in 1841. Now serving 19 million customers, Thomas Cook is focused on transforming their business to deliver better their holiday dreams."
+    video={true}
+    videoPath="placeholder :)"
+  />
+  <CaseStudyItem
+    challenges={
+      Array [
+        "xxx",
+      ]
+    }
+    headlineBgColour="#3b4aaf"
+    headlineTextColour="#ffffff"
+    imageAlt="Joyent screenshots"
+    imagePath="/src/assets/joyent-screens.png"
+    key="Joyent"
+    name="Joyent"
+    objective="xxx"
+    results={
+      Array [
+        "xxx",
+      ]
+    }
+    tagline="xxx"
+    video={false}
+    videoPath=""
+  />
+  <CaseStudyItem
+    challenges={
+      Array [
+        "The company needed an overhaul of their middle layer service that integrates the KF services and their C&C project (the mobile app for Kingfisher stores)",
+        "Required expert micro services",
+        "Creation of an internal NodeJS team",
+      ]
+    }
+    headlineBgColour="#3c3c3c"
+    headlineTextColour="#ffffff"
+    imageAlt="Kingfisher screenshots"
+    imagePath="/src/assets/kinfisher-screens.png"
+    key="Kingfisher"
+    name="Kingfisher"
+    objective="Integrating new services & in-store mobile app"
+    results={
+      Array [
+        "Using the best practises YLD helped build secure, scalable, and fast RESTful services.",
+        "YLD used pair programming to upskill KF development team, to help them continue to implement new changes even after the contract term ended. ",
+      ]
+    }
+    tagline="Kingfisher plc is an international home improvement company offering DIY and home improvement products and services."
+    video={false}
+    videoPath=""
+  />
+</React.Fragment>
+`;

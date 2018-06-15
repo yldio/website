@@ -1,9 +1,17 @@
+import TrainlineScreenshots from '../../../assets/trainline-screen.png';
+import TheEconomistScreenshots from '../../../assets/economist-screens.png';
+import ThomasCookScreenshots from '../../../assets/thomas-cook-screens.png';
+import JoyentScreenshots from '../../../assets/joyent-screens.png';
+import KingfisherScreenshots from '../../../assets/kinfisher-screens.png';
+
 module.exports = [
   {
     name: 'Trainline',
     objective: 'A Platform update & Improved User Experience',
-    imagePath: 'src/assets/trainline-screen.png',
+    imagePath: TrainlineScreenshots,
     imageAlt: 'Trainline screenshots',
+    headlineBgColour: '#56c0a8',
+    headlineTextColour: '#ffffff',
     tagline:
       'Europe’s independent leader in the sale of train and coach tickets and the number one ticket reseller in the UK',
     challenges: [
@@ -20,8 +28,10 @@ module.exports = [
   {
     name: 'The Economist',
     objective: 'Website Redesign & Improved User Experience',
-    imagePath: 'src/assets/economist-screens.png',
+    imagePath: TheEconomistScreenshots,
     imageAlt: 'The Economist screenshots',
+    headlineBgColour: '#383e42',
+    headlineTextColour: '#ffffff',
     tagline:
       'A world renowned international current affairs, politics and news magazine',
     challenges: [
@@ -37,8 +47,10 @@ module.exports = [
   {
     name: 'Thomas Cook',
     objective: 'Faster Release Cycles & Improved User Experience',
-    imagePath: 'src/assets/thomas-cook-screens.png',
+    imagePath: ThomasCookScreenshots,
     imageAlt: 'Thomas Cook screenshots',
+    headlineBgColour: '#ffb92d',
+    headlineTextColour: '#013a5c',
     tagline:
       'The Thomas Cook Group is the oldest and best known name in leisure travel with a history of innovation that started in 1841. Now serving 19 million customers, Thomas Cook is focused on transforming their business to deliver better their holiday dreams.',
     challenges: [
@@ -53,8 +65,10 @@ module.exports = [
   {
     name: 'Joyent',
     objective: 'xxx',
-    imagePath: 'src/assets/joyent-screens.png',
+    imagePath: JoyentScreenshots,
     imageAlt: 'Joyent screenshots',
+    headlineBgColour: '#3b4aaf',
+    headlineTextColour: '#ffffff',
     tagline: 'xxx',
     challenges: ['xxx'],
     results: ['xxx'],
@@ -63,8 +77,10 @@ module.exports = [
   {
     name: 'Kingfisher',
     objective: 'Integrating new services & in-store mobile app',
-    imagePath: 'src/assets/kinfisher-screens.png',
+    imagePath: KingfisherScreenshots,
     imageAlt: 'Kingfisher screenshots',
+    headlineBgColour: '#3c3c3c',
+    headlineTextColour: '#ffffff',
     tagline:
       'Kingfisher plc is an international home improvement company offering DIY and home improvement products and services.',
     challenges: [
@@ -86,6 +102,8 @@ module.exports = [
 //   objective: '',
 //   imagePath: '',
 // imageAlt: 'xxx screenshots',
+// headlineBgColour: ,
+// headlineTextColour:,
 //   tagline:
 //     '',
 //   challenges: [
