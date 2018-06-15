@@ -3,6 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
+import breakpoints from 'styles/breakpoints';
 
 import { H2, Copy } from 'components/Typography';
 import Container from 'components/Container';
@@ -18,13 +19,26 @@ const List = styled.ul`
   flex-wrap: wrap;
 
   li {
-    width: 33%;
-    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    ${breakpoints.tablet`
+      width: 33%;
+      box-sizing: border-box;
+      align-items: flex-start;
+  `};
 
     &:not(:last-child) {
       padding-right: 40px;
     }
   }
+`;
+
+const ImageWrapper = styled.div`
+  height: ${remcalc(56)};
+  display: flex;
+  align-items: flex-end;
 `;
 
 const Bar = styled.div`
@@ -46,12 +60,14 @@ const Challenges = () => (
       </Copy>
       <List>
         <li>
-          <img
-            src={require('../../../../assets/pair.svg')}
-            alt="Customer experience"
-            width="49px"
-            height="41px"
-          />
+          <ImageWrapper>
+            <img
+              src={require('../../../../assets/pair.svg')}
+              alt="Customer experience"
+              width="49px"
+              height="41px"
+            />
+          </ImageWrapper>
           <Copy white uppercase>
             Customer experience
           </Copy>
@@ -63,12 +79,14 @@ const Challenges = () => (
           </Copy>
         </li>
         <li>
-          <img
-            src={require('../../../../assets/teams.svg')}
-            alt="Disruptive technology"
-            width="55px"
-            height="49px"
-          />
+          <ImageWrapper>
+            <img
+              src={require('../../../../assets/teams.svg')}
+              alt="Disruptive technology"
+              width="55px"
+              height="49px"
+            />
+          </ImageWrapper>
           <Copy white uppercase>
             Disruptive technology
           </Copy>
@@ -83,12 +101,14 @@ const Challenges = () => (
           </Copy>
         </li>
         <li>
-          <img
-            src={require('../../../../assets/blog.svg')}
-            alt="Skills Gap"
-            width="49px"
-            height="41px"
-          />
+          <ImageWrapper>
+            <img
+              src={require('../../../../assets/blog.svg')}
+              alt="Skills Gap"
+              width="49px"
+              height="41px"
+            />
+          </ImageWrapper>
           <Copy white uppercase>
             Skills Gap
           </Copy>

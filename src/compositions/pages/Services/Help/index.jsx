@@ -25,7 +25,7 @@ const Wrapper = styled(Container)`
   flex-wrap: wrap;
   justify-content: space-between;
   ${isNot('noMargin')`
-    margin-top: ${remcalc(-140)};
+    margin-top: ${remcalc(-150)};
   `}
   margin-bottom: ${remcalc(70)};
 

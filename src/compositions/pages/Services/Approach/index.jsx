@@ -3,6 +3,7 @@ import { H2, H5, Copy } from 'components/Typography';
 import Container from 'components/Container';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
+import breakpoints from 'styles/breakpoints';
 import approach from '../assets/approach.png';
 
 export const ApproachHeader = styled.section`
@@ -16,9 +17,18 @@ export const ApproachHeader = styled.section`
 export const Row = styled.div`
   display: flex;
   margin: ${remcalc(80)} 0;
+  flex-direction: column;
+
+  ${breakpoints.tablet`
+      flex-direction: row;
+  `};
 
   & > * {
-    width: 50%;
+    width: 100%;
+
+    ${breakpoints.tablet`
+        width: 50%;
+  `};
   }
 `;
 

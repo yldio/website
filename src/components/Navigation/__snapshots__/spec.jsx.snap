@@ -4,7 +4,7 @@ exports[`components/Navigation snapshot 1`] = `
 <nav
   data-selector="component:navigation"
 >
-  <ul>
+  <styled__List>
     <styled__Item>
       <styled__Link
         dark={false}
@@ -33,11 +33,10 @@ exports[`components/Navigation snapshot 1`] = `
       <styled__Link
         dark={false}
         href="/about-us"
-        padRight={true}
       >
         About Us
       </styled__Link>
     </styled__Item>
-  </ul>
+  </styled__List>
 </nav>
 `;
