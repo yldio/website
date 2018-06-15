@@ -24,7 +24,7 @@ Cypress.Commands.add('getComponent', selector => {
 });
 
 /*
-  cy.pathEq(String path)
+  Cy.pathEq(String path)
 
   Assert that the current pathName equals $path
 
@@ -40,7 +40,7 @@ Cypress.Commands.add('pathEq', path => {
 });
 
 /*
-  cy.awaitRender()
+  Cy.awaitRender()
 
   Sometimes when interacting with elements, Cypress will actually perform an interaction
   before React has mounted, which will make the test fail as the dom element has changed between

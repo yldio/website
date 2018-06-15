@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`components/Button anchor snapshot 1`] = `<styled />`;
-
-exports[`components/Button basic snapshot 1`] = `<styled />`;
-
-exports[`components/Button button snapshot 1`] = `<styled />`;
-
-exports[`components/Button custom component snapshot 1`] = `<styled />`;

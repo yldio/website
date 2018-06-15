@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "xo-space/browser",
+    "xo-space/esnext",
+    "xo-react",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "new-cap": 0
+  }
+}
