@@ -17,6 +17,7 @@ const Headline = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   margin: ${remcalc(80)} 0;
 
   & > * {
@@ -82,24 +83,30 @@ const CaseStudyItem = ({
   videoPath,
 }) => (
   <Fragment>
-    <Container>
-      <Headline
-        headlineBgColour={headlineBgColour}
-        headlineTextColour={headlineTextColour}
-      >
+    <Headline
+      headlineBgColour={headlineBgColour}
+      headlineTextColour={headlineTextColour}
+    >
+      <Container style={{ height: '100%' }}>
         <Row>
-          <Column>
+          <Column style={{ height: '100%' }}>
             <PageSection>
               <H1>{name}</H1>
               {objective}
             </PageSection>
           </Column>
-          <Column>
-            <img src={imagePath} alt={imageAlt} />
+          <Column style={{ display: 'flex', height: '100%' }}>
+            <img
+              src={imagePath}
+              alt={imageAlt}
+              style={{
+                'align-self': 'flex-end',
+              }}
+            />
           </Column>
         </Row>
-      </Headline>
-    </Container>
+      </Container>
+    </Headline>
 
     <PageSection>
       {tagline}
