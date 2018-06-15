@@ -11,84 +11,84 @@ exports[`compositions/pages/OurClients/ClientsLogos snapshot 1`] = `
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/hive.png"
+        src="/src/assets/hive.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/economist.png"
+        src="/src/assets/economist.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/tate.png"
+        src="/src/assets/tate.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/discovery.png"
+        src="/src/assets/discovery.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/canon.png"
+        src="/src/assets/canon.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/samsung-joyent.png"
+        src="/src/assets/samsung-joyent.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/kingfisher.png"
+        src="/src/assets/kingfisher.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/trainline.png"
+        src="/src/assets/trainline.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/conde-nas.png"
+        src="/src/assets/conde-nas.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/microsoft.png"
+        src="/src/assets/microsoft.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/newsuk.png"
+        src="/src/assets/newsuk.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/google.png"
+        src="/src/assets/google.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
@@ -102,42 +102,42 @@ exports[`compositions/pages/OurClients/ClientsLogos snapshot 1`] = `
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/compare-market.png"
+        src="/src/assets/compare-market.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/solera.png"
+        src="/src/assets/solera.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/skype.png"
+        src="/src/assets/skype.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/tes.png"
+        src="/src/assets/tes.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/lamassu.png"
+        src="/src/assets/lamassu.png"
       />
     </styled__LogoWrapper>
     <styled__LogoWrapper>
       <styled__Image
         alt=""
         key="[object Object]"
-        src="/src/compositions/pages/OurClients/ClientsLogos/Logos/perform.png"
+        src="/src/assets/perform.png"
       />
     </styled__LogoWrapper>
   </styled__Grid>
