@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 import Link from 'gatsby-link';
 import remcalc from 'remcalc';
 import is from 'styled-is';
@@ -12,6 +13,8 @@ export default styled(Link)`
   padding: ${remcalc(10)} ${remcalc(40)};
   position: relative;
   display: inline-block;
+  width: 100%;
+  text-align: center;
 
   text-decoration: none;
   line-height: ${remcalc(25)};
@@ -27,5 +30,10 @@ export default styled(Link)`
   ${is('transparent')`
     background-color: transparent;
     color: ${props => props.theme.colors.white};
+  `};
+
+  ${breakpoint('md')`
+    width: inherit;
+    text-align: inherit;
   `};
 `;

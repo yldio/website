@@ -19,7 +19,7 @@ const Person = ({ name, role, children }) => (
 export default () => (
   <Fragment>
     <Section dark>
-      <Padding top={50} bottom={50}>
+      <Padding top={{ xs: 15, sm: 50 }} bottom={{ xs: 15, sm: 50 }}>
         <Grid>
           <Row>
             <Col xs={12} sm={4}>
@@ -32,8 +32,8 @@ export default () => (
               <Row>
                 <Col xs={12}>
                   <Row>
-                    <Col xs={6}>
-                      <BulletList>
+                    <Col xs={12} sm={6}>
+                      <BulletList first>
                         <BulletListItem white>Think differently</BulletListItem>
                         <BulletListItem white>Clients win</BulletListItem>
                         <BulletListItem white>
@@ -47,7 +47,7 @@ export default () => (
                         </BulletListItem>
                       </BulletList>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12} sm={6}>
                       <BulletList>
                         <BulletListItem white>
                           Everyone sweeps the floor
@@ -73,7 +73,7 @@ export default () => (
       </Padding>
     </Section>
     <Section>
-      <Padding top={50} bottom={34}>
+      <Padding top={{ xs: 15, sm: 50 }} bottom={{ xs: 0, sm: 34 }}>
         <Grid>
           <Margin bottom={40}>
             <Row>

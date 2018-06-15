@@ -3,7 +3,6 @@ import Flex, { FlexItem } from 'styled-flex-component';
 import styled from 'styled-components';
 import BaseLink from 'gatsby-link';
 import remcalc from 'remcalc';
-import is from 'styled-is';
 
 import Logo from 'components/logo';
 import { Copy } from 'components/typography';
@@ -18,14 +17,30 @@ const Li = Copy.withComponent('li').extend`
 `;
 
 const Link = styled(BaseLink)`
-  color: ${props => props.theme.colors.midnightblue};
+  color: ${props => props.theme.colors.white};
   display: inline-block;
   position: relative;
   text-decoration: none;
 
-  ${is('dark')`
-    color: ${props => props.theme.colors.white};
-  `};
+  &:after {
+    background-color: rgba(255, 255, 255, 0.5);
+    content: '';
+    opacity: 0;
+    height: ${remcalc(2)};
+    width: ${remcalc(50)};
+    display: block;
+    position: absolute;
+    left: calc(50% - ${remcalc(25)});
+    bottom: ${remcalc(-2)};
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover:after,
+  &.${props => props.activeClassName}:after {
+    opacity: 1;
+  }
 `;
 
 const Container = styled.header`
@@ -37,32 +52,32 @@ const Container = styled.header`
   margin: 0 auto;
 `;
 
-export default ({ dark = false }) => (
+export default () => (
   <Container>
     <Flex justifyBetween alignCenter>
       <FlexItem>
-        <Logo fill={dark ? 'white' : 'midnightblue'} />
+        <Logo fill="white" />
       </FlexItem>
       <FlexItem>
         <nav>
           <Ul>
             <Li>
-              <Link dark={dark} to="/">
+              <Link activeClassName="__active" to="/" exact>
                 Home
               </Link>
             </Li>
             <Li>
-              <Link dark={dark} to="/services">
+              <Link activeClassName="__active" to="/services" exact>
                 Services
               </Link>
             </Li>
             <Li>
-              <Link dark={dark} to="/our-clients">
+              <Link activeClassName="__active" to="/our-clients" exact>
                 Our Clients
               </Link>
             </Li>
             <Li>
-              <Link dark={dark} to="/about-us">
+              <Link activeClassName="__active" to="/about-us" exact>
                 About Us
               </Link>
             </Li>

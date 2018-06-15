@@ -28,7 +28,7 @@ export default () => (
             </Margin>
           </Col>
           <Col xs={12} sm={8}>
-            <Margin bottom={35}>
+            <Margin bottom={{ xs: 15, sm: 35 }}>
               <Copy whiter>
                 Curious thinkers, technology pioneers and custom software
                 engineers. Our teams are people who want to use technology to
