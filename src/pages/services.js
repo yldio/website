@@ -23,7 +23,7 @@ import Footer from 'sections/footer';
 
 export default () => (
   <Fragment>
-    <Hero height="400">
+    <Hero>
       <Margin bottom={28}>
         <Header dark />
       </Margin>

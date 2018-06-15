@@ -16,7 +16,12 @@ export default styled.ul`
 `;
 
 export const Item = Copy.withComponent('li').extend`
-  margin-bottom: ${remcalc(31)};
+  margin-bottom: ${remcalc(12)};
+
+  ${breakpoint('sm')`
+    margin-bottom: ${remcalc(31)};
+  `};
+
 
   &:before {
     content: '•';

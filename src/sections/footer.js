@@ -25,7 +25,7 @@ const Link = Copy.withComponent(BaseLink).extend`
 export default () => (
   <Section dark>
     <Grid>
-      <Padding top={{ xs: 15, sm: 50 }} bottom={{ xs: 15, sm: 50 }}>
+      <Padding top={{ xs: 15, sm: 26 }} bottom={{ xs: 15, sm: 36 }}>
         <Row between="xs">
           <Col xs={6}>
             <H4 whiter>Contact</H4>

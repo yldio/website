@@ -6,14 +6,14 @@ import { H3, Copy } from 'components/typography';
 import Section from 'components/section';
 import Hero from 'components/hero';
 
-import KnowForBg from 'assets/know-for-bg.png';
+import KnowForBg from 'assets/known-for-bg.png';
 
 export default () => (
   <Fragment>
-    <Hero bg={KnowForBg} height="467" />
+    <Hero bg={KnowForBg} />
     <Section dark>
       <Grid>
-        <Margin top={{ xs: 15, sm: 50 }} bottom={{ xs: 15, sm: 50 }} inline>
+        <Margin top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }} inline>
           <Row>
             <Col xs={12} sm={6}>
               <H3 whiter decorated>

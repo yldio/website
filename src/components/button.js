@@ -36,4 +36,16 @@ export default styled(Link)`
     width: inherit;
     text-align: inherit;
   `};
+
+  ${is('background')`
+    background-color: ${props => props.theme.colors[props.background]};;
+  `};
+
+  ${is('color')`
+    color: ${props => props.theme.colors[props.color]};;
+  `};
+
+  ${is('border')`
+    border-color: ${props => props.theme.colors[props.border]};;
+  `};
 `;

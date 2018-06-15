@@ -19,7 +19,7 @@ const Person = ({ name, role, children }) => (
 export default () => (
   <Fragment>
     <Section dark>
-      <Padding top={{ xs: 15, sm: 50 }} bottom={{ xs: 15, sm: 50 }}>
+      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
         <Grid>
           <Row>
             <Col xs={12} sm={4}>
@@ -73,7 +73,7 @@ export default () => (
       </Padding>
     </Section>
     <Section>
-      <Padding top={{ xs: 15, sm: 50 }} bottom={{ xs: 0, sm: 34 }}>
+      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 0, sm: 36 }}>
         <Grid>
           <Margin bottom={40}>
             <Row>

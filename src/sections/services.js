@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import Flex, { FlexItem } from 'styled-flex-component';
-import { Padding } from 'styled-components-spacing';
+import { Margin, Padding } from 'styled-components-spacing';
 import remcalc from 'remcalc';
 
 import {
@@ -34,26 +34,28 @@ const ServiceIcon = Flex.extend`
 `;
 
 const Service = ({ icon, children, ...props }) => (
-  <Col xs={2} {...props}>
-    <ServiceIcon>
-      <FlexItem>{icon}</FlexItem>
-    </ServiceIcon>
-    {children}
+  <Col xs={6} sm={2} {...props}>
+    <Margin bottom={{ xs: 15, sm: 0 }}>
+      <ServiceIcon>
+        <FlexItem>{icon}</FlexItem>
+      </ServiceIcon>
+      {children}
+    </Margin>
   </Col>
 );
 
 export default () => (
   <Section>
-    <Padding top={25} bottom={25}>
+    <Padding top={25} bottom={{ xs: 0, sm: 36 }}>
       <Grid>
-        <Row between="xs">
+        <Row between="xs" center="xs">
           <Service icon={<Resource />}>
             <ServiceTitle>Strategy</ServiceTitle>
             <ServiceItem>Digital Transformation</ServiceItem>
             <ServiceItem>Engineering Consultancy</ServiceItem>
             <ServiceItem>Product Consultancy</ServiceItem>
           </Service>
-          <Service xs={3} icon={<Design />}>
+          <Service sm={3} icon={<Design />}>
             <ServiceTitle>Design & Product</ServiceTitle>
             <ServiceItem>Design Systems &amp; Design Operations</ServiceItem>
             <ServiceItem>Design Sprints</ServiceItem>

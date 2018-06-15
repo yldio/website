@@ -7,7 +7,7 @@ import Section from 'components/section';
 
 export default () => (
   <Section>
-    <Padding top={{ xs: 15, sm: 41 }} bottom={{ xs: 15, sm: 50 }}>
+    <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
       <Grid>
         <Row>
           <Col xs={12} sm={6} />

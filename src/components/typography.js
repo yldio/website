@@ -83,7 +83,15 @@ export const H3 = styled.h3`
       width: ${remcalc(100)};
       display: block;
       margin-top: ${remcalc(25)};
+      position: relative;
     }
+
+    ${is('center')`
+      &:after {
+        left: calc(50% - 50px);
+        position: absolute;
+      }
+    `};
   `};
 `;
 
@@ -97,6 +105,25 @@ export const H4 = styled.h4`
   ${color};
   ${weight};
   ${alignment};
+
+  ${is('decorated')`
+    &:after {
+      background-color: ${props => props.theme.colors.slateblue};
+      content: '';
+      height: ${remcalc(4)};
+      width: ${remcalc(100)};
+      display: block;
+      margin-top: ${remcalc(25)};
+      position: relative;
+    }
+
+    ${is('center')`
+      &:after {
+        left: calc(50% - 50px);
+        position: absolute;
+      }
+    `};
+  `};
 `;
 
 export const H5 = styled.h5`

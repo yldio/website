@@ -12,28 +12,42 @@ import node from 'assets/node.png';
 
 export default () => (
   <Section>
-    <Padding bottom={43} top={40}>
+    <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 0, sm: 36 }}>
       <Grid>
         <Row>
           <Col xs={12}>
-            <Margin bottom={30}>
+            <Margin bottom={{ xs: 15, sm: 24 }}>
               <H4 decorated>Our technology partners</H4>
             </Margin>
           </Col>
         </Row>
-        <Row around="xs">
-          <Col xs={11}>
-            <Flex justifyBetween alignCenter>
-              <FlexItem>
-                <img src={docker} alt="docker" width="176" height="140" />
-              </FlexItem>
-              <FlexItem>
-                <img src={aws} alt="aws" width="126" height="75" />
-              </FlexItem>
-              <FlexItem>
-                <img src={node} alt="node" width="223" height="79" />
-              </FlexItem>
-            </Flex>
+        <Row middle="xs">
+          <Col xs={12} sm={4}>
+            <Margin bottom={{ xs: 15, sm: 0 }}>
+              <Flex justifyCenter alignCenter>
+                <FlexItem>
+                  <img src={docker} />
+                </FlexItem>
+              </Flex>
+            </Margin>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Margin bottom={{ xs: 15, sm: 0 }}>
+              <Flex justifyCenter alignCenter>
+                <FlexItem>
+                  <img src={aws} />
+                </FlexItem>
+              </Flex>
+            </Margin>
+          </Col>
+          <Col xs={12} sm={4}>
+            <Margin bottom={{ xs: 15, sm: 0 }}>
+              <Flex justifyCenter alignCenter>
+                <FlexItem selfCenter>
+                  <img src={node} />
+                </FlexItem>
+              </Flex>
+            </Margin>
           </Col>
         </Row>
       </Grid>

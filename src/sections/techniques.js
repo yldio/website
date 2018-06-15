@@ -25,11 +25,11 @@ export default () => (
       </Padding>
     </Hero>
     <Section dark>
-      <Padding bottom={50}>
+      <Padding bottom={{ xs: 9, sm: 36 }}>
         <Grid>
           <Row around="xs" top="xs">
             <Col xs={12} sm={12} md={4}>
-              <Margin top={-39} inline>
+              <Margin top={{ xs: 15, sm: -39 }} inline>
                 <Card
                   title="YLD Delivers"
                   points={['Mean culture', 'Micro-services']}
@@ -37,7 +37,7 @@ export default () => (
               </Margin>
             </Col>
             <Col xs={12} sm={12} md={4}>
-              <Margin top={-39} inline>
+              <Margin top={{ xs: 15, sm: -39 }} inline>
                 <Card
                   title="Leveraging"
                   points={['Vertical teams', 'Open source software']}
@@ -45,7 +45,7 @@ export default () => (
               </Margin>
             </Col>
             <Col xs={12} sm={12} md={4}>
-              <Margin top={-39} inline>
+              <Margin top={{ xs: 15, sm: -39 }} inline>
                 <Card
                   title="Enabling"
                   points={[
@@ -56,7 +56,7 @@ export default () => (
               </Margin>
             </Col>
           </Row>
-          <Margin top={48} inline>
+          <Margin top={{ xs: 15, sm: 36 }} inline>
             <Row>
               <Col xs={12}>
                 <H3 whiter decorated>
@@ -65,8 +65,8 @@ export default () => (
               </Col>
               <Col xs={12}>
                 <Row>
-                  <Col xs={3}>
-                    <BulletList>
+                  <Col xs={12} sm={3}>
+                    <BulletList first>
                       <BulletListItem white>
                         Utilise disruptive technology
                       </BulletListItem>
@@ -75,13 +75,13 @@ export default () => (
                       </BulletListItem>
                     </BulletList>
                   </Col>
-                  <Col xs={3}>
+                  <Col xs={12} sm={3}>
                     <BulletList>
                       <BulletListItem white>Transform</BulletListItem>
                       <BulletListItem white>Innovate</BulletListItem>
                     </BulletList>
                   </Col>
-                  <Col xs={3}>
+                  <Col xs={12} sm={3}>
                     <BulletList>
                       <BulletListItem white>
                         Speed of delivery and efficiency
@@ -91,7 +91,7 @@ export default () => (
                       </BulletListItem>
                     </BulletList>
                   </Col>
-                  <Col xs={3}>
+                  <Col xs={12} sm={3}>
                     <BulletList>
                       <BulletListItem white>Mitigate risk</BulletListItem>
                       <BulletListItem white>Lower cost</BulletListItem>

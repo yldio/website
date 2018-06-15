@@ -22,12 +22,13 @@ export default () => (
       </Padding>
     </Section>
     <Section>
-      <Padding bottom={50}>
+      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
         <Grid>
           <Row between="xs">
             <Col xs={12} sm={4}>
-              <Margin top={-38} inline>
+              <Margin top={{ xs: 15, sm: -73 }} inline>
                 <Card
+                  height="439"
                   title="Private Training"
                   points={[
                     'Hands-on learning experience, in-person classes',
@@ -38,8 +39,9 @@ export default () => (
               </Margin>
             </Col>
             <Col xs={12} sm={4}>
-              <Margin top={-38} inline>
+              <Margin top={{ xs: 15, sm: -73 }} inline>
                 <Card
+                  height="439"
                   title="Pairing"
                   points={[
                     'Ongoing tutoring that covers all aspect of tech and product delivery',
@@ -50,8 +52,9 @@ export default () => (
               </Margin>
             </Col>
             <Col xs={12} sm={4}>
-              <Margin top={-38} inline>
+              <Margin top={{ xs: 15, sm: -73 }} inline>
                 <Card
+                  height="439"
                   title="Certification"
                   points={[
                     'Gain recognition for expertise and ability to employ best practices',
@@ -65,14 +68,16 @@ export default () => (
       </Padding>
     </Section>
     <Section>
-      <Padding bottom={50}>
+      <Padding bottom={{ xs: 15, sm: 36 }}>
         <Grid>
           <Row between="xs">
             <Col xs={12} sm={6}>
-              <H4 decorated>
-                Our goal is never to just deliver but always to also upskill
-                your whole team.
-              </H4>
+              <Margin bottom={15}>
+                <H4 decorated>
+                  Our goal is never to just deliver but always to also upskill
+                  your whole team.
+                </H4>
+              </Margin>
             </Col>
             <Col xs={12} sm={6}>
               <Copy>
