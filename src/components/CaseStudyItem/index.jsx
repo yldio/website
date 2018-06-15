@@ -82,11 +82,11 @@ const CaseStudyItem = ({
   videoPath,
 }) => (
   <Fragment>
-    <Container>
-      <Headline
-        headlineBgColour={headlineBgColour}
-        headlineTextColour={headlineTextColour}
-      >
+    <Headline
+      headlineBgColour={headlineBgColour}
+      headlineTextColour={headlineTextColour}
+    >
+      <Container>
         <Row>
           <Column>
             <PageSection>
@@ -94,12 +94,11 @@ const CaseStudyItem = ({
               {objective}
             </PageSection>
           </Column>
-          <Column>
-            <img src={imagePath} alt={imageAlt} />
-          </Column>
+
+          <img src={imagePath} alt={imageAlt} width="100%" />
         </Row>
-      </Headline>
-    </Container>
+      </Container>
+    </Headline>
 
     <PageSection>
       {tagline}
