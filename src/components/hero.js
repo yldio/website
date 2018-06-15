@@ -6,11 +6,16 @@ import BG from 'assets/page-hero.png';
 
 export default Section.extend`
   background: url('${props => (props.bg ? props.bg : BG)}');
-  background-position: left top;
-  background-size: cover;
-  min-height: ${props => remcalc(props.height ? props.height : '470')};
+  background-position: ${props =>
+    props.position ? props.position : 'right top'};
+  background-repeat: no-repeat;
+  background-size: ${props => (props.size ? props.size : 'cover')};
   max-width: 100%;
   z-index: 0;
+
+  ${is('height')`
+    min-height: ${props => remcalc(props.height)};
+  `};
 
   ${is('center')`
     display: flex;

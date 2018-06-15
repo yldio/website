@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
+import breakpoint from 'styled-components-breakpoint';
 import Flex, { FlexItem } from 'styled-flex-component';
 import { Margin, Padding } from 'styled-components-spacing';
 import remcalc from 'remcalc';
@@ -12,32 +13,42 @@ import Section from 'components/section';
 const ChallengeIcon = Flex.extend`
   width: ${remcalc(50)};
   height: ${remcalc(50)};
-  margin-bottom: ${remcalc(15)};
+  margin-bottom: ${remcalc(6)};
+
+  ${breakpoint('sm')`
+    margin-bottom: ${remcalc(12)};
+  `};
 `;
 
 const ChallengeItem = Copy.extend`
   color: ${props => props.theme.colors.thistle};
-  margin-bottom: ${remcalc(15)};
+  margin-bottom: ${remcalc(6)};
+
+  ${breakpoint('sm')`
+    margin-bottom: ${remcalc(12)};
+  `};
 `;
 
 const Challenge = ({ icon, title, children, ...props }) => (
-  <Col xs={4} {...props}>
+  <Col xs={12} sm={4} {...props}>
     <ChallengeIcon>
       <FlexItem>{icon}</FlexItem>
     </ChallengeIcon>
-    <Margin bottom={15}>{title}</Margin>
-    {children}
+    <Margin bottom={9}>{title}</Margin>
+    <Margin bottom={{ xs: 15, sm: 0 }}>{children}</Margin>
   </Col>
 );
 
 export default () => (
   <Section dark>
-    <Padding top={50} bottom={50}>
+    <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 0, sm: 36 }}>
       <Grid>
-        <Margin bottom={50}>
+        <Margin bottom={{ xs: 15, sm: 36 }}>
           <Row>
             <Col xs={12}>
-              <H3 whiter>Common client challenges</H3>
+              <H3 decorated whiter>
+                Common client challenges
+              </H3>
               <Copy white>
                 We help you future proof your business through a new style of
                 consulting, ground up.

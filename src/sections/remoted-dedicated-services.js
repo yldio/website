@@ -7,9 +7,11 @@ import Section from 'components/section';
 import Card from 'components/card';
 import Hero from 'components/hero';
 
+import addCodeBg from 'assets/addcode-bg.png';
+
 export default () => (
   <Fragment>
-    <Hero height="460">
+    <Hero bg={addCodeBg}>
       <Padding top={175} bottom={25}>
         <Grid>
           <Row>
@@ -21,7 +23,7 @@ export default () => (
       </Padding>
     </Hero>
     <Section>
-      <Padding top={50} bottom={50}>
+      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
         <Grid>
           <Row between="xs">
             <Col xs={12} sm={6}>
@@ -36,7 +38,7 @@ export default () => (
               </Copy>
             </Col>
             <Col xs={12} sm={4}>
-              <Margin top={-88} inline>
+              <Margin top={{ xs: 15, sm: -88 }} inline>
                 <Card
                   title="AddCode Brings You"
                   points={[

@@ -1,15 +1,11 @@
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
-import { Margin, Padding } from 'styled-components-spacing';
-import remcalc from 'remcalc';
+import { Margin } from 'styled-components-spacing';
 
-import { H1, H3, H4, Copy } from 'components/typography';
-import Checklist, { Item as CheckItem } from 'components/checklist';
+import { H1, H4, Copy } from 'components/typography';
 import Section from 'components/section';
 import Hero from 'components/hero';
 import Button from 'components/button';
-import Card from 'components/card';
 import Hr from 'components/hr';
 
 import WhatDoWeDo from 'sections/what-we-do';
@@ -19,20 +15,12 @@ import JoinUs from 'sections/join-us';
 import Header from 'sections/header';
 import Footer from 'sections/footer';
 
-import KnowForBg from 'assets/know-for-bg.png';
 import UnexpectedBg from 'assets/unexpected-bg.png';
-
-const VideoBox = styled.div`
-  width: ${remcalc(465)};
-  height: ${remcalc(288)};
-  background-image: linear-gradient(219deg, #6a7277, #4f565b),
-    linear-gradient(#383e42, #383e42);
-  box-shadow: 10.3px 12.3px 40px 5px rgba(25, 5, 51, 0.15);
-`;
+import InnovationBg from 'assets/innovation-core-bg.png';
 
 export default () => (
   <Fragment>
-    <Hero dark>
+    <Hero bg={InnovationBg}>
       <Margin bottom={38}>
         <Header dark />
       </Margin>
@@ -63,30 +51,12 @@ export default () => (
     <WhatDoWeDo />
     <Section>
       <Grid>
-        <Row>
-          <Col xs={12} md={6}>
-            <VideoBox />
-          </Col>
-          <Col xs={12} md={6}>
-            <VideoBox />
-          </Col>
-          <Col xs={12} md={6}>
-            <VideoBox />
-          </Col>
-          <Col xs={12} md={6}>
-            <VideoBox />
-          </Col>
-        </Row>
-      </Grid>
-    </Section>
-    <Section>
-      <Grid>
         <Hr />
       </Grid>
     </Section>
     <WhatWeEnable />
     <KnownFor />
-    <Hero bg={UnexpectedBg} height="513" center>
+    <Hero bg={UnexpectedBg} center>
       <Grid>
         <Row center="xs" middle="xs">
           <Col xs={12} sm={9}>

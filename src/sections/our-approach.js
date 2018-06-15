@@ -5,8 +5,10 @@ import { Padding } from 'styled-components-spacing';
 import { H3 } from 'components/typography';
 import Hero from 'components/hero';
 
+import ourApproachBg from 'assets/our-approach-bg.png';
+
 export default () => (
-  <Hero>
+  <Hero bg={ourApproachBg}>
     <Grid>
       <Padding top={172} bottom={32}>
         <Grid>

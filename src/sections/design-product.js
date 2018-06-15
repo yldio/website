@@ -6,16 +6,18 @@ import { H3, H4, H5, Copy } from 'components/typography';
 import Section from 'components/section';
 import Hero from 'components/hero';
 
+import designProductBg from 'assets/design-product-bg.png';
+
 const Item = ({ title, children }) => (
   <Col xs={12} sm={5}>
-    <Margin bottom={10}>{title}</Margin>
-    <Margin bottom={30}>{children}</Margin>
+    <Margin bottom={{ xs: 6, sm: 9 }}>{title}</Margin>
+    <Margin bottom={{ xs: 24, sm: 36 }}>{children}</Margin>
   </Col>
 );
 
 export default () => (
   <Fragment>
-    <Hero height="460">
+    <Hero bg={designProductBg}>
       <Padding top={175} bottom={25}>
         <Grid>
           <Row>
@@ -27,11 +29,11 @@ export default () => (
       </Padding>
     </Hero>
     <Section>
-      <Padding top={50} bottom={50}>
+      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 0, sm: 36 }}>
         <Grid>
           <Row>
             <Col xs={12} sm={10}>
-              <Margin bottom={30}>
+              <Margin bottom={{ xs: 9, sm: 24 }}>
                 <H4>
                   A great company continuously finds better solutions to its
                   customers biggest problems. Design is the bridge between the

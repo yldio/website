@@ -56,3 +56,4 @@ _env*
 *.toml
 *.yml
 *.example
+*.mp4

@@ -13,7 +13,7 @@ export default () => ({
   },
   flexboxgrid: {
     gridSize: 12, // Columns
-    gutterWidth: 1, // Rem
+    gutterWidth: 2, // Rem
     outerMargin: 2, // Rem
     mediaQuery: 'only screen',
     container: {
