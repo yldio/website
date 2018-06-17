@@ -5,6 +5,24 @@ import { Margin, Padding } from 'styled-components-spacing';
 import { H3, H5, Copy } from 'components/typography';
 import BulletList, { Item as BulletListItem } from 'components/bullet-list';
 import Section from 'components/section';
+import Video from 'components/video';
+import Image from 'components/image';
+import Hr from 'components/hr';
+
+import AboutUs1 from 'assets/about-us-1.png';
+import AboutUs2 from 'assets/about-us-2.png';
+import AboutUs3 from 'assets/about-us-3.png';
+import AboutUs4 from 'assets/about-us-4.png';
+import AboutUs5 from 'assets/about-us-5.png';
+import AboutUs6 from 'assets/about-us-6.png';
+
+const AboutUsImage = ({ src }) => (
+  <Col xs={6}>
+    <Margin bottom={15}>
+      <Image src={src} />
+    </Margin>
+  </Col>
+);
 
 const Person = ({ name, role, children }) => (
   <Col xs={12} md={4}>
@@ -16,10 +34,10 @@ const Person = ({ name, role, children }) => (
   </Col>
 );
 
-export default () => (
+export default ({ video }) => (
   <Fragment>
     <Section dark>
-      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
+      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 47, md: 92, lg: 130 }}>
         <Grid>
           <Row>
             <Col xs={12} md={4}>
@@ -71,6 +89,30 @@ export default () => (
           </Row>
         </Grid>
       </Padding>
+    </Section>
+    <Section>
+      <Padding bottom={{ xs: 0, md: 21 }}>
+        <Grid>
+          <Row>
+            <Col xs={12}>
+              <Margin top={{ xs: -37, md: -82, lg: -120 }} bottom={24}>
+                <Video src={video.file.url} controls preload="metadata" />
+              </Margin>
+            </Col>
+            <AboutUsImage src={AboutUs1} />
+            <AboutUsImage src={AboutUs2} />
+            <AboutUsImage src={AboutUs3} />
+            <AboutUsImage src={AboutUs4} />
+            <AboutUsImage src={AboutUs5} />
+            <AboutUsImage src={AboutUs6} />
+          </Row>
+        </Grid>
+      </Padding>
+    </Section>
+    <Section>
+      <Grid>
+        <Hr />
+      </Grid>
     </Section>
     <Section>
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>

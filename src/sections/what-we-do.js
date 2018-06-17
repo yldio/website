@@ -12,13 +12,9 @@ import Section from 'components/section';
 import Card from 'components/card';
 import Button from 'components/button';
 import Video from 'components/video';
+import Image from 'components/image';
 
 import JoyentPoster from 'assets/joyent-poster.png';
-
-const Image = styled.img`
-  box-shadow: 10.3px 12.3px 40px 5px rgba(25, 5, 51, 0.15);
-  width: 100%;
-`;
 
 const Tagline = H4.extend`
   font-size: ${remcalc(21)};
