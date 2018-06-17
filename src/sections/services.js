@@ -34,8 +34,8 @@ const ServiceIcon = Flex.extend`
 `;
 
 const Service = ({ icon, children, ...props }) => (
-  <Col xs={6} sm={2} {...props}>
-    <Margin bottom={{ xs: 15, sm: 0 }}>
+  <Col xs={6} md={2} {...props}>
+    <Margin bottom={{ xs: 15, md: 0 }}>
       <ServiceIcon>
         <FlexItem>{icon}</FlexItem>
       </ServiceIcon>
@@ -46,7 +46,7 @@ const Service = ({ icon, children, ...props }) => (
 
 export default () => (
   <Section>
-    <Padding top={25} bottom={{ xs: 0, sm: 36 }}>
+    <Padding top={25} bottom={{ xs: 0, md: 36 }}>
       <Grid>
         <Row between="xs" center="xs">
           <Service icon={<Resource />}>
@@ -55,7 +55,7 @@ export default () => (
             <ServiceItem>Engineering Consultancy</ServiceItem>
             <ServiceItem>Product Consultancy</ServiceItem>
           </Service>
-          <Service sm={3} icon={<Design />}>
+          <Service md={3} icon={<Design />}>
             <ServiceTitle>Design & Product</ServiceTitle>
             <ServiceItem>Design Systems &amp; Design Operations</ServiceItem>
             <ServiceItem>Design Sprints</ServiceItem>

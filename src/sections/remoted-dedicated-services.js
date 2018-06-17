@@ -23,10 +23,10 @@ export default () => (
       </Padding>
     </Hero>
     <Section>
-      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
+      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row between="xs">
-            <Col xs={12} sm={6}>
+            <Col xs={12} md={6}>
               <Copy>
                 If you are looking for iterative and Agile development
                 strategies; cooperative development procedures; fast and easy
@@ -37,8 +37,8 @@ export default () => (
                 standpoint, and in its risk-averseness.
               </Copy>
             </Col>
-            <Col xs={12} sm={4}>
-              <Margin top={{ xs: 15, sm: -88 }} inline>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 15, md: -74 }}>
                 <Card
                   title="AddCode Brings You"
                   points={[

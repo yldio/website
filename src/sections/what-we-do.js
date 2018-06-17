@@ -5,6 +5,7 @@ import { Padding, Margin } from 'styled-components-spacing';
 import BaseLink from 'gatsby-link';
 import remcalc from 'remcalc';
 import ParamCase from 'param-case';
+import find from 'lodash.find';
 
 import { H3, H4, Copy } from 'components/typography';
 import Section from 'components/section';
@@ -12,9 +13,6 @@ import Card from 'components/card';
 import Button from 'components/button';
 import Video from 'components/video';
 
-import TrainlineVideo from 'assets/trainline.mp4';
-import TheEconomistVideo from 'assets/economist.mp4';
-import ThomasCookVideo from 'assets/thomascook.mp4';
 import JoyentPoster from 'assets/joyent-poster.png';
 
 const Image = styled.img`
@@ -35,12 +33,14 @@ const Link = styled(BaseLink)`
 
 const CaseStudy = ({ video, image, name, tagline }) => (
   <Col xs={12} md={6}>
-    <Margin bottom={{ xs: 15, sm: 24 }} top={{ xs: 15, sm: 24 }} inline>
+    <Margin bottom={{ xs: 0, md: 24 }} top={{ xs: 15, md: 24 }} inline>
       <Row>
         <Col xs={12}>
           <Margin bottom={16}>
             {image ? <Image src={image} /> : null}
-            {video ? <Video src={video} controls preload="metadata" /> : null}
+            {video ? (
+              <Video src={video.file.url} controls preload="metadata" />
+            ) : null}
           </Margin>
         </Col>
         <Col xs={12}>
@@ -49,12 +49,12 @@ const CaseStudy = ({ video, image, name, tagline }) => (
           </Margin>
         </Col>
         <Col xs={12}>
-          <Margin bottom={{ xs: 9, sm: 15 }}>
+          <Margin bottom={{ xs: 9, md: 15 }}>
             <Tagline>{tagline}</Tagline>
           </Margin>
         </Col>
         <Col xs={12}>
-          <Margin bottom={{ xs: 9, sm: 15 }}>
+          <Margin bottom={{ xs: 9, md: 15 }}>
             <Link to={`/our-clients#${ParamCase(name)}`}>Learn more</Link>
           </Margin>
         </Col>
@@ -63,13 +63,13 @@ const CaseStudy = ({ video, image, name, tagline }) => (
   </Col>
 );
 
-export default () => (
+export default ({ videos = [] }) => (
   <Fragment>
     <Section>
       <Grid>
         <Row center="xs" around="xs" top="xs">
-          <Col xs={12} sm={12} md={4}>
-            <Margin top={{ xs: 11, md: -39 }} inline>
+          <Col xs={12} md={4}>
+            <Margin top={{ xs: 11, md: -39 }}>
               <Card title="Technology" height="255" width="100%">
                 <Copy>
                   Driving innovation through digital transformation to build
@@ -78,8 +78,8 @@ export default () => (
               </Card>
             </Margin>
           </Col>
-          <Col xs={12} sm={12} md={4}>
-            <Margin top={{ xs: 11, md: -39 }} inline>
+          <Col xs={12} md={4}>
+            <Margin top={{ xs: 11, md: -39 }}>
               <Card title="Culture" height="255" width="100%">
                 <Copy>
                   Creating enduring cultures of engineering & design innovation
@@ -87,8 +87,8 @@ export default () => (
               </Card>
             </Margin>
           </Col>
-          <Col xs={12} sm={12} md={4}>
-            <Margin top={{ xs: 11, md: -39 }} inline>
+          <Col xs={12} md={4}>
+            <Margin top={{ xs: 11, md: -39 }}>
               <Card title="Training" height="255" width="100%">
                 <Copy>
                   Originators who train your talent through skills transfer and
@@ -98,7 +98,7 @@ export default () => (
             </Margin>
           </Col>
         </Row>
-        <Margin top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }} inline>
+        <Margin top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }} inline>
           <Row>
             <Col xs={12} md={6}>
               <H3 decorated>What do we do</H3>
@@ -122,21 +122,21 @@ export default () => (
       </Grid>
     </Section>
     <Section>
-      <Padding bottom={{ xs: 15, sm: 36 }}>
+      <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row middle="xs" between="xs">
             <CaseStudy
-              video={TrainlineVideo}
+              video={find(videos, ['title', 'trainline'])}
               name="Trainline"
               tagline="A Platform update & Improved User Experience"
             />
             <CaseStudy
-              video={TheEconomistVideo}
+              video={find(videos, ['title', 'economist'])}
               name="Trainline"
               tagline="A Platform update & Improved User Experience"
             />
             <CaseStudy
-              video={ThomasCookVideo}
+              video={find(videos, ['title', 'thomascook'])}
               name="Trainline"
               tagline="A Platform update & Improved User Experience"
             />

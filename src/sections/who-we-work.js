@@ -49,8 +49,8 @@ const logos = [
 ];
 
 const Logo = ({ img }) => (
-  <Col xs={12} sm={6} md={4} lg={3}>
-    <Margin bottom={{ xs: 15, sm: 24 }}>
+  <Col xs={12} md={6} lg={3}>
+    <Margin bottom={{ xs: 15, md: 24 }}>
       <Flex justifyCenter alignCenter>
         <FlexItem>
           <img src={img} />
@@ -62,7 +62,7 @@ const Logo = ({ img }) => (
 
 export default () => (
   <Section>
-    <Padding top={{ xs: 15, sm: 41 }} bottom={{ xs: 15, sm: 30 }}>
+    <Padding top={{ xs: 15, md: 41 }} bottom={{ xs: 15, md: 30 }}>
       <Grid>
         <Row>
           <Col xs={12}>

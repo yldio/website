@@ -22,11 +22,11 @@ export default () => (
       </Padding>
     </Section>
     <Section>
-      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
+      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row between="xs">
-            <Col xs={12} sm={4}>
-              <Margin top={{ xs: 15, sm: -73 }} inline>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 15, md: -73 }}>
                 <Card
                   height="439"
                   title="Private Training"
@@ -38,8 +38,8 @@ export default () => (
                 />
               </Margin>
             </Col>
-            <Col xs={12} sm={4}>
-              <Margin top={{ xs: 15, sm: -73 }} inline>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 15, md: -73 }}>
                 <Card
                   height="439"
                   title="Pairing"
@@ -51,8 +51,8 @@ export default () => (
                 />
               </Margin>
             </Col>
-            <Col xs={12} sm={4}>
-              <Margin top={{ xs: 15, sm: -73 }} inline>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 15, md: -73 }}>
                 <Card
                   height="439"
                   title="Certification"
@@ -68,10 +68,10 @@ export default () => (
       </Padding>
     </Section>
     <Section>
-      <Padding bottom={{ xs: 15, sm: 36 }}>
+      <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row between="xs">
-            <Col xs={12} sm={6}>
+            <Col xs={12} md={6}>
               <Margin bottom={15}>
                 <H4 decorated>
                   Our goal is never to just deliver but always to also upskill
@@ -79,7 +79,7 @@ export default () => (
                 </H4>
               </Margin>
             </Col>
-            <Col xs={12} sm={6}>
+            <Col xs={12} md={6}>
               <Copy>
                 We are an agile, flexible and passionate team consisting of
                 strategy, design and engineering.<br />

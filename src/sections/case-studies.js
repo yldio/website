@@ -4,6 +4,7 @@ import { Padding, Margin } from 'styled-components-spacing';
 import breakpoint from 'styled-components-breakpoint';
 import styled from 'styled-components';
 import ParamCase from 'param-case';
+import find from 'lodash.find';
 
 import { H2, H4, H5, Copy } from 'components/typography';
 import BulletList, { Item as BulletListItem } from 'components/bullet-list';
@@ -12,11 +13,8 @@ import BaseHero from 'components/hero';
 import Video from 'components/video';
 
 import TrainlineScreenshots from 'assets/trainline-screen.png';
-import TrainlineVideo from 'assets/trainline.mp4';
 import TheEconomistScreenshots from 'assets/economist-screens.png';
-import TheEconomistVideo from 'assets/economist.mp4';
 import ThomasCookScreenshots from 'assets/thomas-cook-screens.png';
-import ThomasCookVideo from 'assets/thomascook.mp4';
 import KingfisherScreenshots from 'assets/kinfisher-screens.png';
 
 const Hero = BaseHero.extend`
@@ -39,7 +37,6 @@ const studies = [
   {
     name: 'Trainline',
     objective: 'A Platform update & Improved User Experience',
-    video: TrainlineVideo,
     bg: TrainlineScreenshots,
     img: (
       <Col xs={12} lg={false}>
@@ -73,7 +70,6 @@ const studies = [
   {
     name: 'The Economist',
     objective: 'Website Redesign & Improved User Experience',
-    video: TheEconomistVideo,
     bg: TheEconomistScreenshots,
     img: (
       <Col xs={12} lg={false}>
@@ -106,7 +102,6 @@ const studies = [
   {
     name: 'Thomas Cook',
     objective: 'Faster Release Cycles & Improved User Experience',
-    video: ThomasCookVideo,
     bg: ThomasCookScreenshots,
     img: (
       <Col xs={12} lg={false}>
@@ -236,7 +231,7 @@ const CaseStudy = ({
       </Grid>
     </Hero>
     <Section>
-      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
+      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row>
             <Col xs={12}>
@@ -255,11 +250,11 @@ const CaseStudy = ({
     </Section>
     {video ? (
       <Section>
-        <Padding bottom={{ xs: 15, sm: 36 }}>
+        <Padding bottom={{ xs: 15, md: 36 }}>
           <Grid>
             <Row>
               <Col xs={12}>
-                <Video src={video} controls preload="metadata" />
+                <Video src={video.file.url} controls preload="metadata" />
               </Col>
             </Row>
           </Grid>
@@ -269,8 +264,13 @@ const CaseStudy = ({
   </Fragment>
 );
 
-export default () => {
+export default ({ videos = [] }) => {
   return studies.map(({ name, ...study }) => (
-    <CaseStudy key={name} name={name} {...study} />
+    <CaseStudy
+      key={name}
+      video={find(videos, ['title', ParamCase(name)])}
+      name={name}
+      {...study}
+    />
   ));
 };

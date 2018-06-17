@@ -9,9 +9,9 @@ import Hero from 'components/hero';
 import engineeringLeadershipBg from 'assets/engineering-leadership-bg.png';
 
 const Item = ({ title, children }) => (
-  <Col xs={12} sm={5}>
-    <Margin bottom={{ xs: 6, sm: 9 }}>{title}</Margin>
-    <Margin bottom={{ xs: 24, sm: 36 }}>{children}</Margin>
+  <Col xs={12} md={5}>
+    <Margin bottom={{ xs: 6, md: 9 }}>{title}</Margin>
+    <Margin bottom={{ xs: 24, md: 36 }}>{children}</Margin>
   </Col>
 );
 
@@ -21,7 +21,7 @@ export default () => (
       <Padding top={175} bottom={25}>
         <Grid>
           <Row>
-            <Col xs={12} sm={6}>
+            <Col xs={12} md={6}>
               <H3 whiter>Engineering Leadership</H3>
             </Col>
           </Row>
@@ -29,11 +29,11 @@ export default () => (
       </Padding>
     </Hero>
     <Section>
-      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 0, sm: 36 }}>
+      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>
         <Grid>
           <Row>
-            <Col xs={12} sm={10}>
-              <Margin bottom={{ xs: 9, sm: 24 }}>
+            <Col xs={12} md={10}>
+              <Margin bottom={{ xs: 9, md: 24 }}>
                 <H4>
                   We want to empower organisations to become technology
                   companies, that leverage engineering to accelerate their

@@ -13,14 +13,14 @@ export default () => (
     <Hero bg={KnowForBg} />
     <Section dark>
       <Grid>
-        <Margin top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }} inline>
+        <Margin top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }} inline>
           <Row>
-            <Col xs={12} sm={6}>
+            <Col xs={12} md={6}>
               <H3 whiter decorated>
                 What are we known for?
               </H3>
             </Col>
-            <Col xs={12} sm={6}>
+            <Col xs={12} md={6}>
               <Copy white>
                 We help clients rethink their approach for the digital age,
                 together creating a new style of technology leadership.<br />

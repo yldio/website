@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
+import { mapProps } from 'recompose';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Margin } from 'styled-components-spacing';
+import Helmet from 'react-helmet';
 
 import { H1, H4, Copy } from 'components/typography';
 import Section from 'components/section';
@@ -18,20 +20,21 @@ import Footer from 'sections/footer';
 import UnexpectedBg from 'assets/unexpected-bg.png';
 import InnovationBg from 'assets/innovation-core-bg.png';
 
-export default () => (
+const Index = ({ page, videos = [] }) => (
   <Fragment>
+    <Helmet title={page.title} meta={page.metadata} />
     <Hero bg={InnovationBg}>
       <Margin bottom={38}>
         <Header dark />
       </Margin>
       <Grid>
         <Row>
-          <Col xs={12} sm={7}>
+          <Col xs={12} md={7}>
             <Margin bottom={12}>
               <H1 whiter>Innovation at the core, together</H1>
             </Margin>
           </Col>
-          <Col xs={12} sm={6}>
+          <Col xs={12} md={6}>
             <Margin bottom={12}>
               <Copy whiter>
                 We enable the worlds leading enterprises to drive digital
@@ -48,7 +51,7 @@ export default () => (
         </Row>
       </Grid>
     </Hero>
-    <WhatDoWeDo />
+    <WhatDoWeDo videos={videos} />
     <Section>
       <Grid>
         <Hr />
@@ -59,11 +62,13 @@ export default () => (
     <Hero bg={UnexpectedBg} center>
       <Grid>
         <Row center="xs" middle="xs">
-          <Col xs={12} sm={9}>
-            <H4 whiter decorated center>
-              Sometimes doing the unexpected. Helping you to disrupt, mitigate
-              risks and successfully reinvent.
-            </H4>
+          <Col xs={12} md={9}>
+            <Margin top={94} bottom={94}>
+              <H4 whiter decorated center>
+                Sometimes doing the unexpected. Helping you to disrupt, mitigate
+                risks and successfully reinvent.
+              </H4>
+            </Margin>
           </Col>
         </Row>
       </Grid>
@@ -72,3 +77,38 @@ export default () => (
     <Footer />
   </Fragment>
 );
+
+export default mapProps(props => ({
+  page: props.data.contentfulPage,
+  videos: props.data.videos.edges.map(({ node }) => node)
+}))(Index);
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    contentfulPage(identifier: { eq: "index" }) {
+      title
+      metadata {
+        name
+        content
+      }
+    }
+
+    videos: allContentfulAsset(
+      filter: { file: { contentType: { eq: "video/mp4" } } }
+    ) {
+      edges {
+        node {
+          id
+          internal {
+            type
+          }
+          title
+          file {
+            url
+            contentType
+          }
+        }
+      }
+    }
+  }
+`;

@@ -10,7 +10,7 @@ export default styled.ul`
     margin-top: ${remcalc(31)};
   `};
 
-  ${breakpoint('sm')`
+  ${breakpoint('md')`
     margin-top: ${remcalc(31)};
   `};
 `;
@@ -18,7 +18,7 @@ export default styled.ul`
 export const Item = Copy.withComponent('li').extend`
   margin-bottom: ${remcalc(12)};
 
-  ${breakpoint('sm')`
+  ${breakpoint('md')`
     margin-bottom: ${remcalc(31)};
   `};
 

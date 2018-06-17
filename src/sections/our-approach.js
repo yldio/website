@@ -13,7 +13,7 @@ export default () => (
       <Padding top={172} bottom={32}>
         <Grid>
           <Row>
-            <Col xs={12} sm={6}>
+            <Col xs={12} md={6}>
               <H3 whiter>Our Approach</H3>
             </Col>
           </Row>

@@ -9,5 +9,8 @@
   "rules": {
     "react/prop-types": 0,
     "new-cap": 0
+  },
+  "globals": {
+    "graphql": true
   }
 }

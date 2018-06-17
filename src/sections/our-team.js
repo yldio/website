@@ -7,7 +7,7 @@ import BulletList, { Item as BulletListItem } from 'components/bullet-list';
 import Section from 'components/section';
 
 const Person = ({ name, role, children }) => (
-  <Col xs={12} sm={4}>
+  <Col xs={12} md={4}>
     <H5>{name}</H5>
     <Copy>{role}</Copy>
     <Margin top={11} bottom={32}>
@@ -19,20 +19,20 @@ const Person = ({ name, role, children }) => (
 export default () => (
   <Fragment>
     <Section dark>
-      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
+      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row>
-            <Col xs={12} sm={4}>
+            <Col xs={12} md={4}>
               <H3 whiter decorated>
                 Our Team
               </H3>
             </Col>
-            <Col xs={12} sm={8}>
+            <Col xs={12} md={8}>
               <H5>Our mindset</H5>
               <Row>
                 <Col xs={12}>
                   <Row>
-                    <Col xs={12} sm={6}>
+                    <Col xs={12} md={6}>
                       <BulletList first>
                         <BulletListItem white>Think differently</BulletListItem>
                         <BulletListItem white>Clients win</BulletListItem>
@@ -47,7 +47,7 @@ export default () => (
                         </BulletListItem>
                       </BulletList>
                     </Col>
-                    <Col xs={12} sm={6}>
+                    <Col xs={12} md={6}>
                       <BulletList>
                         <BulletListItem white>
                           Everyone sweeps the floor
@@ -73,14 +73,14 @@ export default () => (
       </Padding>
     </Section>
     <Section>
-      <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 0, sm: 36 }}>
+      <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>
         <Grid>
           <Margin bottom={40}>
             <Row>
-              <Col xs={12} sm={6}>
+              <Col xs={12} md={6}>
                 <H3 decorated>Our Exec. Team</H3>
               </Col>
-              <Col xs={12} sm={6}>
+              <Col xs={12} md={6}>
                 <Copy>
                   We are people who like to work out new ways of doing things
                   together. We value teamwork over the individual, and our
