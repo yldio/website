@@ -16,7 +16,7 @@ import ContactUs from 'sections/contact-us';
 import JoinUs from 'sections/join-us';
 import Footer from 'sections/footer';
 
-const AboutUs = ({ page }) => (
+const AboutUs = ({ page, video }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
     <Hero height="400">
@@ -44,7 +44,7 @@ const AboutUs = ({ page }) => (
       </Grid>
     </Hero>
     <Stats />
-    <OurTeam />
+    <OurTeam video={video} />
     <Section>
       <Grid>
         <Hr />
@@ -57,7 +57,8 @@ const AboutUs = ({ page }) => (
 );
 
 export default mapProps(props => ({
-  page: props.data.contentfulPage
+  page: props.data.contentfulPage,
+  video: props.data.video
 }))(AboutUs);
 
 export const pageQuery = graphql`
@@ -67,6 +68,13 @@ export const pageQuery = graphql`
       metadata {
         name
         content
+      }
+    }
+
+    video: contentfulAsset(title: { eq: "get-together" }) {
+      file {
+        url
+        contentType
       }
     }
   }
