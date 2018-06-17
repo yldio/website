@@ -131,19 +131,19 @@ export default ({ videos = [] }) => (
               tagline="A Platform update & Improved User Experience"
             />
             <CaseStudy
-              video={find(videos, ['title', 'economist'])}
-              name="Trainline"
-              tagline="A Platform update & Improved User Experience"
+              video={find(videos, ['title', 'the-economist'])}
+              name="The Economist"
+              tagline="Website Redesign & Improved User Experience"
             />
             <CaseStudy
-              video={find(videos, ['title', 'thomascook'])}
-              name="Trainline"
+              video={find(videos, ['title', 'thomas-cook'])}
+              name="Thomas Cook"
               tagline="A Platform update & Improved User Experience"
             />
             <CaseStudy
               image={JoyentPoster}
-              name="Trainline"
-              tagline="A Platform update & Improved User Experience"
+              name="Joyent"
+              tagline="Bringing Application Awareness to Cloud infrastructure"
             />
           </Row>
           <Row middle="xs" center="xs">
