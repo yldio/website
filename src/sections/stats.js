@@ -7,11 +7,11 @@ import Section from 'components/section';
 
 export default () => (
   <Section>
-    <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 15, sm: 36 }}>
+    <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
       <Grid>
         <Row>
-          <Col xs={12} sm={6} />
-          <Col xs={12} sm={6}>
+          <Col xs={12} md={6} />
+          <Col xs={12} md={6}>
             <Copy>
               YLD brings together a team of many different people - engineers,
               designers and creative thinkers – who come together to build

@@ -15,7 +15,7 @@ const ChallengeIcon = Flex.extend`
   height: ${remcalc(50)};
   margin-bottom: ${remcalc(6)};
 
-  ${breakpoint('sm')`
+  ${breakpoint('md')`
     margin-bottom: ${remcalc(12)};
   `};
 `;
@@ -24,26 +24,26 @@ const ChallengeItem = Copy.extend`
   color: ${props => props.theme.colors.thistle};
   margin-bottom: ${remcalc(6)};
 
-  ${breakpoint('sm')`
+  ${breakpoint('md')`
     margin-bottom: ${remcalc(12)};
   `};
 `;
 
 const Challenge = ({ icon, title, children, ...props }) => (
-  <Col xs={12} sm={4} {...props}>
+  <Col xs={12} md={4} {...props}>
     <ChallengeIcon>
       <FlexItem>{icon}</FlexItem>
     </ChallengeIcon>
     <Margin bottom={9}>{title}</Margin>
-    <Margin bottom={{ xs: 15, sm: 0 }}>{children}</Margin>
+    <Margin bottom={{ xs: 15, md: 0 }}>{children}</Margin>
   </Col>
 );
 
 export default () => (
   <Section dark>
-    <Padding top={{ xs: 15, sm: 36 }} bottom={{ xs: 0, sm: 36 }}>
+    <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>
       <Grid>
-        <Margin bottom={{ xs: 15, sm: 36 }}>
+        <Margin bottom={{ xs: 15, md: 36 }}>
           <Row>
             <Col xs={12}>
               <H3 decorated whiter>

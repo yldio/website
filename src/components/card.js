@@ -1,4 +1,5 @@
 import React from 'react';
+import Flex, { FlexItem } from 'styled-flex-component';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 
@@ -36,13 +37,19 @@ const Item = Copy.withComponent('li').extend`
 `;
 
 export default ({ title, points, children, ...props }) => (
-  <CardWrapper {...props}>
-    <Title blue uppercase>
-      {title}
-    </Title>
-    {points ? (
-      <ul>{points && points.map(point => <Item key={point}>{point}</Item>)}</ul>
-    ) : null}
-    {children}
-  </CardWrapper>
+  <Flex justifyCenter alignCenter>
+    <FlexItem>
+      <CardWrapper {...props}>
+        <Title blue uppercase>
+          {title}
+        </Title>
+        {points ? (
+          <ul>
+            {points && points.map(point => <Item key={point}>{point}</Item>)}
+          </ul>
+        ) : null}
+        {children}
+      </CardWrapper>
+    </FlexItem>
+  </Flex>
 );

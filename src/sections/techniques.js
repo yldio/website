@@ -25,27 +25,27 @@ export default () => (
       </Padding>
     </Hero>
     <Section dark>
-      <Padding bottom={{ xs: 9, sm: 36 }}>
+      <Padding bottom={{ xs: 9, md: 36 }}>
         <Grid>
           <Row around="xs" top="xs">
-            <Col xs={12} sm={12} md={4}>
-              <Margin top={{ xs: 15, sm: -39 }} inline>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 15, md: -39 }}>
                 <Card
                   title="YLD Delivers"
                   points={['Mean culture', 'Micro-services']}
                 />
               </Margin>
             </Col>
-            <Col xs={12} sm={12} md={4}>
-              <Margin top={{ xs: 15, sm: -39 }} inline>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 15, md: -39 }}>
                 <Card
                   title="Leveraging"
                   points={['Vertical teams', 'Open source software']}
                 />
               </Margin>
             </Col>
-            <Col xs={12} sm={12} md={4}>
-              <Margin top={{ xs: 15, sm: -39 }} inline>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 15, md: -39 }}>
                 <Card
                   title="Enabling"
                   points={[
@@ -56,7 +56,7 @@ export default () => (
               </Margin>
             </Col>
           </Row>
-          <Margin top={{ xs: 15, sm: 36 }} inline>
+          <Margin top={{ xs: 15, md: 36 }} inline>
             <Row>
               <Col xs={12}>
                 <H3 whiter decorated>
@@ -65,7 +65,7 @@ export default () => (
               </Col>
               <Col xs={12}>
                 <Row>
-                  <Col xs={12} sm={3}>
+                  <Col xs={12} md={3}>
                     <BulletList first>
                       <BulletListItem white>
                         Utilise disruptive technology

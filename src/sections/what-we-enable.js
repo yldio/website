@@ -9,7 +9,7 @@ import Section from 'components/section';
 export default () => (
   <Section>
     <Grid>
-      <Margin top={{ xs: 15, sm: 45 }} bottom={{ xs: 15, sm: 45 }}>
+      <Margin top={{ xs: 15, md: 45 }} bottom={{ xs: 15, md: 45 }}>
         <Row>
           <Col xs={12}>
             <H3 decorated>What we enable you to do</H3>
@@ -17,8 +17,8 @@ export default () => (
           <Col xs={12}>
             <Checklist>
               <Row between="xs">
-                <Col xs={12} sm={6}>
-                  <Padding right={{ xs: 0, sm: 23 }}>
+                <Col xs={12} md={6}>
+                  <Padding right={{ xs: 0, md: 23 }}>
                     <CheckItem>
                       Transform, innovate and differentiate at speed
                     </CheckItem>
@@ -31,8 +31,8 @@ export default () => (
                     </CheckItem>
                   </Padding>
                 </Col>
-                <Col xs={12} sm={6}>
-                  <Padding right={{ xs: 0, sm: 23 }}>
+                <Col xs={12} md={6}>
+                  <Padding right={{ xs: 0, md: 23 }}>
                     <CheckItem>
                       Grow capability inside your organisation - consulting,
                       training, pairing and education

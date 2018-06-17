@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
+import { mapProps } from 'recompose';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Margin } from 'styled-components-spacing';
+import Helmet from 'react-helmet';
 
 import { H2, Copy } from 'components/typography';
 import Hero from 'components/hero';
@@ -21,20 +23,21 @@ import Partners from 'sections/partners';
 import JoinUs from 'sections/join-us';
 import Footer from 'sections/footer';
 
-export default () => (
+const ServicesPage = ({ page }) => (
   <Fragment>
+    <Helmet title={page.title} meta={page.metadata} />
     <Hero>
       <Margin bottom={28}>
         <Header dark />
       </Margin>
       <Grid>
         <Row>
-          <Col xs={12} sm={7}>
+          <Col xs={12} md={7}>
             <Margin bottom={9}>
               <H2 whiter>Services</H2>
             </Margin>
           </Col>
-          <Col xs={12} sm={8}>
+          <Col xs={12} md={8}>
             <Margin bottom={35}>
               <Copy whiter>
                 We enable your organisation to deliver world-class technology
@@ -65,3 +68,19 @@ export default () => (
     <Footer />
   </Fragment>
 );
+
+export default mapProps(props => ({
+  page: props.data.contentfulPage
+}))(ServicesPage);
+
+export const pageQuery = graphql`
+  query ServicesPageQuery {
+    contentfulPage(identifier: { eq: "services" }) {
+      title
+      metadata {
+        name
+        content
+      }
+    }
+  }
+`;
