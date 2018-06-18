@@ -184,7 +184,14 @@ export default ({ video }) => (
               </Copy>
             </Person>
             <Person name="Bradley Stott" role="CCO">
-              <Copy>XXX</Copy>
+              <Copy>
+                Bradley is the CCO of YLD and overseas client relationships,
+                business development, partnerships and the talent function of
+                YLD. Previously he was managing teams in the technology
+                recruitment world focussing on cutting edge technologies where
+                he helped build many highly skilled software engineering teams
+                across London. Enjoys nearly all sports, especially football.
+              </Copy>
             </Person>
             <Person name="Tracey Bianchi-Maisuria" role="CFO">
               <Copy>
