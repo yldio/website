@@ -32,7 +32,7 @@ export default () => (
                   title="Private Training"
                   points={[
                     'Hands-on learning experience, in-person classes',
-                    'Tailoried training program delivered on-site to suit your needs',
+                    'Tailored training program delivered on-site to suit your needs',
                     'Ensures your software engineers share a baseline'
                   ]}
                 />
@@ -46,7 +46,7 @@ export default () => (
                   points={[
                     'Ongoing tutoring that covers all aspect of tech and product delivery',
                     'Seasoned YLD engineers and designers available to answer questions at all times',
-                    'Experienced supervisio for code review'
+                    'Experienced supervision for code review'
                   ]}
                 />
               </Margin>

@@ -49,20 +49,20 @@ const studies = [
     ),
     color: '#56c0a8',
     tagline:
-      'Europe’s independent leader in the sale of train and coach tickets and the number one ticket reseller in the UK',
+      'Europe’s leading independent train and coach platform, working with 180+ train and coach companies to offer travel to thousands of destinations across 36 countries.',
     topics: [
       {
         title: 'challenges',
         items: [
-          'Trainline were looking for a partner to onboard node as part an ongoing project to rebuild their online web experience.',
-          'About 8 million customers a month come to the website and mobile app to purchase tickets. As part of the ongoing project to rebuild their online web experience, Trainline were looking for help on-boarding node and building up new skill sets and capabilities within their team to create a world class development organisation able to meet new demands.'
+          'Trainline were looking for a partner to onboard Node.js as part an ongoing project to enhance their online web experience.',
+          'Trainline’s platforms attract more than 60 million visits per month.',
+          'As part of the ongoing project to enhance their online web experience, Trainline were looking for help on-boarding Node.js and to build up new skill sets and capabilities within their team to create a world class development organisation able to meet new demands.'
         ]
       },
       {
         title: 'results',
         items: [
-          'Trainline had a legacy platform in urgent need of an updated interface, YLD wrapped the legacy platform in a Node.js layer that’s efficient, and most of all easy to use. Working in an integrated way with the team to build up node capabilities, YLD restructured the shopping basket and payment page to make it more user-friendly.',
-          'Trainline have benefited from a significant increase in conversion rates on the site and an upskilled team with an entirely new skill-set and capabilities.'
+          'Trainline had a platform in urgent need of an updated interface. YLD wrapped the platform in a Node.js layer that’s efficient and easy to use. Working in an integrated way with the team to build up its development capabilities, YLD helped the Trainline team restructure the entire user journey to make it more responsive and user-friendly. '
         ]
       }
     ]
@@ -101,7 +101,7 @@ const studies = [
   },
   {
     name: 'Thomas Cook',
-    objective: 'Faster Release Cycles & Improved User Experience',
+    objective: 'Faster Release Cycles and an improved customer experience',
     bg: ThomasCookScreenshots,
     img: (
       <Col xs={12} lg={false}>
@@ -114,18 +114,19 @@ const studies = [
     ),
     color: '#ffb92d',
     tagline:
-      'The Thomas Cook Group is the oldest and best known name in leisure travel with a history of innovation that started in 1841. Now serving 19 million customers, Thomas Cook is focused on transforming their business to deliver better their holiday dreams.',
+      'Thomas Cook Group plc is a British global travel company and the oldest and best known name in leisure travel with a history of innovation.',
     topics: [
       {
         title: 'challenges',
         items: [
-          'The Thomas Cook Group is the oldest and best known name in leisure travel with a history of innovation that started in 1841. Now serving 19 million customers, Thomas Cook is focused on transforming their business to deliver better their holiday dreams.'
+          'The Thomascook.com website was slow, hard to maintain and creating lots of downtime which was impacting stability and the customer experience.  The project had a tight deadline, with the goal of building a stable modern infrastructure ahead of the holiday peak booking season. Using Node.js and Angular.js YLD delivered a strengthened front-end and faster release cycle to provide ultimate user-experience.'
         ]
       },
       {
         title: 'results',
         items: [
-          'Some of the key results achieved were faster release cycles and quicker turnaround of new features, with improved performance and speed. From a mobile user perspective, there was a uplift of 30%, of which 20% was due to technology and responsive design for mobile.  '
+          'Thomas Cook reached out on the grounds of outdated infrastructure and slow time-to-market features. YLD worked with the Thomas Cook team to deliver a strengthened front-end, enabling a much faster turnaround of new features and release cycles, from months to weeks. The new infrastructure improved performance and speed and created a stronger more responsive customer experience. Overall conversion went up and from a mobile user perspective, there was an uplift of 30%, of which 20% was due to technology and responsive design for mobile.',
+          'YLD partnered with Thomas Cook to create a culture change across engineering by helping upskill existing teams and sharing expertise and a passion for ‘making it happen’.'
         ]
       }
     ]
@@ -161,16 +162,16 @@ const studies = [
       {
         title: 'challenges',
         items: [
-          'The company needed an overhaul of their middle layer service that integrates the KF services and their C&C project (the mobile app for Kingfisher stores)',
-          'Required expert micro services',
-          'Creation of an internal NodeJS team'
+          'The client needed an overhaul of a middle layer service that integrates the Kingfisher services with their Store Colleague project (the mobile app for Kingfisher stores).',
+          'Required expert microservices',
+          'Creation of an internal Node.js team'
         ]
       },
       {
         title: 'results',
         items: [
           'Using the best practises YLD helped build secure, scalable, and fast RESTful services.',
-          'YLD used pair programming to upskill KF development team, to help them continue to implement new changes even after the contract term ended. '
+          'YLD used pair programming to upskill the Kingfisher development team, to help them continue to implement new changes even after the contract term ended.'
         ]
       }
     ]

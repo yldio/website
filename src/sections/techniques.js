@@ -32,7 +32,7 @@ export default () => (
               <Margin top={{ xs: 15, md: -39 }}>
                 <Card
                   title="YLD Delivers"
-                  points={['Mean culture', 'Micro-services']}
+                  points={['Lean culture', 'Micro-services']}
                 />
               </Margin>
             </Col>
