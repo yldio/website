@@ -217,7 +217,7 @@ export default ({ video }) => (
                 in Computer Science, specialising in Formal Methods.
               </Copy>
             </Person>
-            <Person name="Gareth XXX" role="Associate Partner">
+            <Person name="Gareth Scrivens" role="Associate Partner">
               <Copy>
                 Gareth is YLD’s first Associate Partner and leads our
                 Principals. He brings 20 years’ experience in the delivery of
