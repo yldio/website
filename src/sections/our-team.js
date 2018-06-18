@@ -61,7 +61,7 @@ export default ({ video }) => (
                           Begin again, never give up
                         </BulletListItem>
                         <BulletListItem white>
-                          Strong convictions, weaklyheld
+                          Strong convictions, weakly held
                         </BulletListItem>
                       </BulletList>
                     </Col>
@@ -136,14 +136,14 @@ export default ({ video }) => (
             <Person name="Nuno Job" role="Founder + Director">
               <Copy>
                 Nuno Job (YLD, MCS) is the CEO of YLD, our top tier technology
-                consultancy that helps top CIOs/CTOs to respond to the Innovator
-                &apos;s Dilemma. Previously he was Chief Commercial at Nodejitsu
-                where he was responsible for the world &apos;s largest Node.js
-                cloud and provided extensive contributions to the success of
-                Node.js as an enterprise-ready technology. Nuno &apos;s
-                formative work years were spent in the U.S. at IBM Research and
-                MarkLogic. He is a proud Sequoia alumni and a big advocate and
-                enabler of open-source software.
+                consultancy that helps top CIOs/CTOs to respond to the
+                Innovator&apos;s Dilemma. Previously he was Chief Commercial at
+                Nodejitsu where he was responsible for the world&apos;s largest
+                Node.js cloud and provided extensive contributions to the
+                success of Node.js as an enterprise-ready technology.
+                Nuno&apos;s formative work years were spent in the U.S. at IBM
+                Research and MarkLogic. He is a proud Sequoia alumni and a big
+                advocate and enabler of open-source software.
               </Copy>
             </Person>
             <Person name="Anthony Mann" role="Founder + Director">
@@ -178,7 +178,7 @@ export default ({ video }) => (
                 senior executive who brings 25 years of experience in both
                 strategy and global director positions at Adobe, Facebook,
                 Microsoft and spent 12 years in publishing, leading commercial
-                teams at News Corp and the FT. Henley business school trained
+                teams at News Corp and the FT. Henley Business School trained
                 with a degree in Accountancy. Hema is a mentor at the Microsoft
                 Accelerator and a passionate sailor.
               </Copy>
@@ -212,6 +212,19 @@ export default ({ video }) => (
             </Person>
             <Person name="Gareth XXX" role="Associate Partner">
               <Copy>
+                Gareth is YLD’s first Associate Partner and leads our
+                Principals. He brings 20 years’ experience in the delivery of
+                technology strategies and solutions for high profile
+                international clients including Nike and Heineken. He most
+                recently led growth of the Interactive Development teams at IBM
+                iX. Prior to this, he was Group Technical director at AKQA
+                London, for many years through to their exit. Gareth also brings
+                consulting experience from Cap Gemini and software engineering
+                expertise.
+              </Copy>
+            </Person>
+            <Person name="Danielle Leach" role="CMO">
+              <Copy>
                 Danielle is the CMO of YLD. She is responsible for leading the
                 marketing team across marketing strategy, PR & communications
                 and customer-facing events support. Danielle brings over 25
@@ -223,19 +236,6 @@ export default ({ video }) => (
                 Communication Certificate and attended Ashridge Centre for
                 Business and Society gaining certification in Managing Corporate
                 Community Investment.
-              </Copy>
-            </Person>
-            <Person name="Danielle Leach" role="CMO">
-              <Copy>
-                Gareth is YLD’s first Associate Partner and leads our
-                Principals. He brings 20 years’ experience in the delivery of
-                technology strategies and solutions for high profile
-                international clients including Nike and Heineken. He most
-                recently led growth of the Interactive Development teams at IBM
-                iX. Prior to this, he was Group Technical director at AKQA
-                London, for many years through to their exit. Gareth also brings
-                consulting experience from Cap Gemini and software engineering
-                expertise.
               </Copy>
             </Person>
           </Row>
