@@ -26,7 +26,7 @@ export default () => (
             <Row center="xs">
               <Col xs={12}>
                 <Margin top={{ xs: 15, md: 0 }}>
-                  <Button transparent white>
+                  <Button transparent white to="https://jobs.lever.co/yld">
                     View openings
                   </Button>
                 </Margin>
