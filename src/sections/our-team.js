@@ -184,7 +184,14 @@ export default ({ video }) => (
               </Copy>
             </Person>
             <Person name="Bradley Stott" role="CCO">
-              <Copy>XXX</Copy>
+              <Copy>
+                Bradley is the CCO of YLD and overseas client relationships,
+                business development, partnerships and the talent function of
+                YLD. Previously he was managing teams in the technology
+                recruitment world focussing on cutting edge technologies where
+                he helped build many highly skilled software engineering teams
+                across London. Enjoys nearly all sports, especially football.
+              </Copy>
             </Person>
             <Person name="Tracey Bianchi-Maisuria" role="CFO">
               <Copy>
@@ -210,7 +217,7 @@ export default ({ video }) => (
                 in Computer Science, specialising in Formal Methods.
               </Copy>
             </Person>
-            <Person name="Gareth XXX" role="Associate Partner">
+            <Person name="Gareth Scrivens" role="Associate Partner">
               <Copy>
                 Gareth is YLD’s first Associate Partner and leads our
                 Principals. He brings 20 years’ experience in the delivery of
