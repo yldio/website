@@ -65,7 +65,7 @@ export default () => (
               </Col>
               <Col xs={12}>
                 <Row>
-                  <Col xs={12} md={3}>
+                  <Col xs={12} md={6} lg={3}>
                     <BulletList first>
                       <BulletListItem white>
                         Utilise disruptive technology
@@ -75,13 +75,13 @@ export default () => (
                       </BulletListItem>
                     </BulletList>
                   </Col>
-                  <Col xs={12} sm={3}>
+                  <Col xs={12} md={6} lg={3}>
                     <BulletList>
                       <BulletListItem white>Transform</BulletListItem>
                       <BulletListItem white>Innovate</BulletListItem>
                     </BulletList>
                   </Col>
-                  <Col xs={12} sm={3}>
+                  <Col xs={12} md={6} lg={3}>
                     <BulletList>
                       <BulletListItem white>
                         Speed of delivery and efficiency
@@ -91,7 +91,7 @@ export default () => (
                       </BulletListItem>
                     </BulletList>
                   </Col>
-                  <Col xs={12} sm={3}>
+                  <Col xs={12} md={6} lg={3}>
                     <BulletList>
                       <BulletListItem white>Mitigate risk</BulletListItem>
                       <BulletListItem white>Lower cost</BulletListItem>
