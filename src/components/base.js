@@ -11,7 +11,7 @@ export default class extends PureComponent {
 
       body, html {
         font-size: 16px;
-        font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica, sans-serif;
+        font-family: "Roboto", Helvetica, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         line-height: 1.5;
