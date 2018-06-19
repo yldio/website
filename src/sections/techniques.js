@@ -28,24 +28,24 @@ export default () => (
       <Padding bottom={{ xs: 9, md: 36 }}>
         <Grid>
           <Row around="xs" top="xs">
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 15, md: -39 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 15, lg: -39 }}>
                 <Card
                   title="YLD Delivers"
                   points={['Lean culture', 'Micro-services']}
                 />
               </Margin>
             </Col>
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 15, md: -39 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 15, lg: -39 }}>
                 <Card
                   title="Leveraging"
                   points={['Vertical teams', 'Open source software']}
                 />
               </Margin>
             </Col>
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 15, md: -39 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 15, lg: -39 }}>
                 <Card
                   title="Enabling"
                   points={[
