@@ -25,8 +25,8 @@ export default () => (
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row between="xs">
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 15, md: -73 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 15, lg: -73 }}>
                 <Card
                   height="439"
                   title="Private Training"
@@ -38,8 +38,8 @@ export default () => (
                 />
               </Margin>
             </Col>
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 15, md: -73 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 15, lg: -73 }}>
                 <Card
                   height="439"
                   title="Pairing"
@@ -51,8 +51,8 @@ export default () => (
                 />
               </Margin>
             </Col>
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 15, md: -73 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 15, lg: -73 }}>
                 <Card
                   height="439"
                   title="Certification"
