@@ -34,8 +34,8 @@ export default () => (
               <ListLink to="tel:+4402035144678">
                 UK: +44 (0) 203 514 4678
               </ListLink>
-              <ListLink to="tel:+351210000000">
-                Portugal: +351 21 000 0000
+              <ListLink to="tel:+351211356149">
+                Portugal: +351 211 356 149
               </ListLink>
             </Padding>
           </Col>
