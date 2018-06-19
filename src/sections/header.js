@@ -92,6 +92,11 @@ export default () => (
               </Link>
             </Li>
             <Li>
+              <Link activeClassName="__active" to="/community" exact>
+                Community
+              </Link>
+            </Li>
+            <Li>
               <Link activeClassName="__active" to="/about-us" exact>
                 About Us
               </Link>
