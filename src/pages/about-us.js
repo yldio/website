@@ -33,9 +33,9 @@ const AboutUs = ({ page, video }) => (
           <Col xs={12} md={8}>
             <Margin bottom={{ xs: 15, md: 35 }}>
               <Copy whiter>
-                Curious thinkers, technology pioneers and custom software
-                engineers. Our teams are people who want to use technology to
-                build, to create digital transformation. We innovate by doing,
+                Curious thinkers, technology pioneers and software engineers.
+                Our teams are people who want to use technology to build, to
+                create capabilities in our clients. We innovate by doing,
                 working lean and sharing knowledge so everyone grows.
               </Copy>
             </Margin>
