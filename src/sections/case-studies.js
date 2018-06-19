@@ -217,17 +217,19 @@ const CaseStudy = ({
     >
       <Grid>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} lg={6}>
             <Margin top={{ xs: 15, lg: 94 }}>
               <H2 whiter>{name}</H2>
             </Margin>
-          </Col>
-          <Col xs={12}>
+
             <Margin bottom={{ xs: 9, lg: 78 }}>
               <Copy whiter>{objective}</Copy>
             </Margin>
           </Col>
-          {img}
+
+          <Col style={{ width: '100%' }} xs={12} lg={6}>
+            {img}
+          </Col>
         </Row>
       </Grid>
     </Hero>
