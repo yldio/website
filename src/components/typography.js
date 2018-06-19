@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 import is from 'styled-is';
 import remcalc from 'remcalc';
@@ -41,10 +42,15 @@ const alignment = css`
 
 export const H1 = styled.h1`
   color: ${props => props.theme.colors.midnightblue};
-  line-height: ${remcalc(80)};
-  font-size: ${remcalc(72)};
+  font-size: ${remcalc(46)};
+  line-height: 1.07;
   font-weight: 900;
   position: relative;
+
+  ${breakpoint('sm')`
+    line-height: ${remcalc(80)};
+    font-size: ${remcalc(72)};
+  `};
 
   ${color};
   ${weight};
