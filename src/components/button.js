@@ -41,7 +41,7 @@ export default styled(Link)`
 
   text-decoration: none;
   line-height: ${remcalc(25)};
-  font-size: ${remcalc(18)};
+  font-size: 100%;
   font-weight: 400;
 
   ${is('white')`
