@@ -1,5 +1,6 @@
 import React from 'react';
 import Flex, { FlexItem } from 'styled-flex-component';
+import breakpoint from 'styled-components-breakpoint';
 import styled from 'styled-components';
 import BaseLink from 'gatsby-link';
 import remcalc from 'remcalc';
@@ -13,7 +14,21 @@ const Ul = styled.ul`
 
 const Li = Copy.withComponent('li').extend`
   display: inline;
-  margin-left: ${remcalc(45)};
+  margin-right: ${remcalc(20)};
+
+  ${breakpoint('sm')`
+    margin-left: ${remcalc(45)};
+  `};
+`;
+
+const Wrapper = styled(Flex)`
+  flex-direction: column;
+  align-items: flex-start;
+
+  ${breakpoint('md')`
+    flex-direction: row;
+    align-items: center;
+  `};
 `;
 
 const Link = styled(BaseLink)`
@@ -54,7 +69,7 @@ const Container = styled.header`
 
 export default () => (
   <Container>
-    <Flex justifyBetween alignCenter>
+    <Wrapper justifyBetween alignCenter>
       <FlexItem>
         <Logo fill="white" />
       </FlexItem>
@@ -84,6 +99,6 @@ export default () => (
           </Ul>
         </nav>
       </FlexItem>
-    </Flex>
+    </Wrapper>
   </Container>
 );
