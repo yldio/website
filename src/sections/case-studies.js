@@ -39,7 +39,7 @@ const studies = [
     objective: 'A Platform update & Improved User Experience',
     bg: TrainlineScreenshots,
     img: (
-      <Col style={{ width: '100%' }} xs={12} lg={6}>
+      <Col xs={12} lg={false}>
         <Margin bottom={{ xs: -6 }}>
           <Row middle="xs" center="xs">
             <Img src={TrainlineScreenshots} />
@@ -217,7 +217,7 @@ const CaseStudy = ({
     >
       <Grid>
         <Row>
-          <Col xs={12} xl={6}>
+          <Col xs={12} lg={6}>
             <Margin top={{ xs: 15, lg: 94 }}>
               <H2 whiter>{name}</H2>
             </Margin>
