@@ -16,13 +16,13 @@ export default () => (
               <H4 whiter>Join Us</H4>
             </Margin>
           </Col>
-          <Col xs={12} md={8}>
+          <Col xs={12} md={7}>
             <Copy whiter>
               If you share a similar vision, or a passion for design, software
               engineering and open source, we would love to hear from you.
             </Copy>
           </Col>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={5}>
             <Row center="xs">
               <Col xs={12}>
                 <Margin top={{ xs: 15, md: 0 }}>
