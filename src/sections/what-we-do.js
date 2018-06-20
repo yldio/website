@@ -9,7 +9,7 @@ import find from 'lodash.find';
 
 import { H3, H4, Copy } from 'components/typography';
 import Section from 'components/section';
-import Card from 'components/card';
+import Card, { CardsList } from 'components/card';
 import Button from 'components/button';
 import Video from 'components/video';
 import Image from 'components/image';
@@ -63,37 +63,40 @@ export default ({ videos = [] }) => (
   <Fragment>
     <Section>
       <Grid>
-        <Row center="xs" around="xs" top="xs">
-          <Col xs={12} md={4}>
-            <Margin top={{ xs: 11, md: -39 }}>
-              <Card title="Technology" height="255" width="100%">
-                <Copy>
-                  Driving innovation through digital transformation to build
-                  relentlessly relevant companies
-                </Copy>
-              </Card>
-            </Margin>
-          </Col>
-          <Col xs={12} md={4}>
-            <Margin top={{ xs: 11, md: -39 }}>
-              <Card title="Culture" height="255" width="100%">
-                <Copy>
-                  Creating enduring cultures of engineering & design innovation
-                </Copy>
-              </Card>
-            </Margin>
-          </Col>
-          <Col xs={12} md={4}>
-            <Margin top={{ xs: 11, md: -39 }}>
-              <Card title="Training" height="255" width="100%">
-                <Copy>
-                  Originators who train your talent through skills transfer and
-                  pair programming
-                </Copy>
-              </Card>
-            </Margin>
-          </Col>
-        </Row>
+        <CardsList>
+          <Row center="xs" around="xs" top="xs">
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 11, md: -39 }}>
+                <Card title="Technology" height="255" width="100%">
+                  <Copy>
+                    Driving innovation through digital transformation to build
+                    relentlessly relevant companies
+                  </Copy>
+                </Card>
+              </Margin>
+            </Col>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 11, md: -39 }}>
+                <Card title="Culture" height="255" width="100%">
+                  <Copy>
+                    Creating enduring cultures of engineering & design
+                    innovation
+                  </Copy>
+                </Card>
+              </Margin>
+            </Col>
+            <Col xs={12} md={4}>
+              <Margin top={{ xs: 11, md: -39 }}>
+                <Card title="Training" height="255" width="100%">
+                  <Copy>
+                    Originators who train your talent through skills transfer
+                    and pair programming
+                  </Copy>
+                </Card>
+              </Margin>
+            </Col>
+          </Row>
+        </CardsList>
         <Margin top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }} inline>
           <Row>
             <Col xs={12} md={6}>
