@@ -44,9 +44,11 @@ export class CardsList extends PureComponent {
     this.state = {
       cards: {}
     };
+
+    this.handleResize = this.handleResize.bind(this);
   }
 
-  handleReize(id, height) {
+  handleResize(id, height) {
     const cards = {
       // eslint-disable-next-line no-access-state-in-setstate
       ...this.state.cards,
@@ -64,9 +66,9 @@ export class CardsList extends PureComponent {
   render() {
     const { children } = this.props;
     const { tallest: height } = this.state;
-    const { handleReize } = this;
+    const { handleResize } = this;
 
-    return <Provider value={{ height, handleReize }}>{children}</Provider>;
+    return <Provider value={{ height, handleResize }}>{children}</Provider>;
   }
 }
 
@@ -78,8 +80,8 @@ class Card extends PureComponent {
   }
 
   componentDidMount() {
-    const { handleReize } = this.props;
-    handleReize(this.div.clientHeight);
+    const { handleResize } = this.props;
+    handleResize(this.div.clientHeight);
   }
 
   render() {
@@ -111,7 +113,11 @@ class Card extends PureComponent {
 
 export default ({ title, points, children, ...props }) => (
   <Consumer>
-    {({ handleReize, height }) => <Card {...props}>{children}</Card>}
+    {value => (
+      <Card {...props} {...value}>
+        {children}
+      </Card>
+    )}
   </Consumer>
 );
 
