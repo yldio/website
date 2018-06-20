@@ -80,7 +80,6 @@ class Card extends PureComponent {
 
   componentDidMount() {
     const { id, handleResize } = this.props;
-    console.log({ id });
 
     if (handleResize) {
       // If Card is not inside a CardsList, it wont get an handleResize
