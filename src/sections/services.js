@@ -45,7 +45,7 @@ const Service = ({ icon, children, ...props }) => (
 );
 
 export default () => (
-  <Section>
+  <Section data-selector="services">
     <Padding top={25} bottom={{ xs: 0, md: 36 }}>
       <Grid>
         <Row between="xs" center="xs">

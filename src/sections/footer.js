@@ -23,7 +23,7 @@ const Link = Copy.withComponent(BaseLink).extend`
 `;
 
 export default () => (
-  <Section dark>
+  <Section dark data-selector="footer">
     <Grid>
       <Padding top={{ xs: 15, md: 26 }} bottom={{ xs: 15, md: 36 }}>
         <Row between="xs">

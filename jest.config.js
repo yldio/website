@@ -1,14 +1,35 @@
 module.exports = {
-  setupFiles: ['./spec/jest-enzyme-helper.js'],
-  setupTestFrameworkScriptFile: './spec/jest-setup-tests.js',
-  snapshotSerializers: ['enzyme-to-json/serializer'],
+  collectCoverageFrom: ['src/**/*.{js,jsx,mjs}'],
+  setupTestFrameworkScriptFile: '<rootDir>/spec/setup.js',
   testMatch: [
-    '<rootDir>/__tests__/**/*.{js,jsx}',
-    '<rootDir>/src/**/*spec.{js,jsx}'
+    '<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}',
+    '<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}'
   ],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/public/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.cache/'],
+  modulePaths: ['src'],
+  moduleNameMapper: {
+    '\\.(scss|svg|png|jpg)$': '<rootDir>/spec/mock.js'
+  },
+  moduleFileExtensions: ['jsx', 'js'],
+  coverageReporters: ['lcov', 'text', 'html'],
+  testEnvironment: 'node',
   transform: {
-    '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.(svg|png|jpe?g)$': '<rootDir>/spec/jest-transform-asset'
-  }
+    '.(js|jsx)': 'babel-jest'
+  },
+  snapshotSerializers: ['enzyme-to-json/serializer']
 };
+
+// ,
+//   "jest": {
+//     "testMatch": [
+//       "**/__tests__/**/*.js?(x)",
+//       "**/?(*.)+(spec|test).js?(x)"
+//     ],
+//     "setupTestFrameworkScriptFile": "./spec/setup-test.js",
+//     "snapshotSerializers": [
+//       "enzyme-to-json/serializer"
+//     ],
+//     "transform": {
+//       "^.+\\.js?$": "babel-jest"
+//     }
+//   }

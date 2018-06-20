@@ -19,7 +19,7 @@ import Footer from 'sections/footer';
 const AboutUs = ({ page, video }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
-    <Hero height="400">
+    <Hero height="400" data-selector="about-us:intro">
       <Margin bottom={28}>
         <Header dark />
       </Margin>

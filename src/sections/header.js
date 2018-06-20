@@ -68,7 +68,7 @@ const Container = styled.header`
 `;
 
 export default () => (
-  <Container>
+  <Container data-selector="header">
     <Wrapper justifyBetween alignCenter>
       <FlexItem>
         <Logo fill="white" />

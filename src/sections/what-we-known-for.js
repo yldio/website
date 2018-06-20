@@ -11,7 +11,7 @@ import KnowForBg from 'assets/known-for-bg.png';
 export default () => (
   <Fragment>
     <Hero bg={KnowForBg} />
-    <Section dark>
+    <Section dark data-selector="known-for">
       <Grid>
         <Margin top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }} inline>
           <Row>

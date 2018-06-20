@@ -23,7 +23,7 @@ import InnovationBg from 'assets/innovation-core-bg.png';
 const Index = ({ page, videos = [] }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
-    <Hero bg={InnovationBg}>
+    <Hero bg={InnovationBg} data-selector="home:intro">
       <Margin bottom={38}>
         <Header dark />
       </Margin>
@@ -59,7 +59,7 @@ const Index = ({ page, videos = [] }) => (
     </Section>
     <WhatWeEnable />
     <KnownFor />
-    <Hero bg={UnexpectedBg} center>
+    <Hero bg={UnexpectedBg} center data-selector="home:call-out">
       <Grid>
         <Row center="xs" middle="xs">
           <Col xs={12} md={9}>

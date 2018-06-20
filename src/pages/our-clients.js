@@ -16,7 +16,7 @@ import Footer from 'sections/footer';
 const OurClients = ({ page, videos = [] }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
-    <Hero height="400">
+    <Hero height="400" data-selector="our-clients:intro">
       <Margin bottom={28}>
         <Header dark />
       </Margin>

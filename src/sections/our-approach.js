@@ -8,7 +8,7 @@ import Hero from 'components/hero';
 import ourApproachBg from 'assets/our-approach-bg.png';
 
 export default () => (
-  <Hero bg={ourApproachBg}>
+  <Hero bg={ourApproachBg} data-selector="our-approach">
     <Grid>
       <Padding top={172} bottom={32}>
         <Grid>

@@ -6,7 +6,7 @@ import { H3, H4 } from 'components/typography';
 import Section from 'components/section';
 
 export default () => (
-  <Section>
+  <Section data-selector="contact-us">
     <Padding top={{ xs: 15, md: 32 }} bottom={{ xs: 15, md: 65 }}>
       <Grid>
         <Row>

@@ -8,7 +8,7 @@ import Card, { CardsList } from 'components/card';
 
 export default () => (
   <Fragment>
-    <Section dark>
+    <Section dark data-selector="knowledge-transfer:intro">
       <Padding top={56} bottom={70}>
         <Grid>
           <Row>
@@ -21,7 +21,7 @@ export default () => (
         </Grid>
       </Padding>
     </Section>
-    <Section>
+    <Section data-selector="knowledge-transfer:topics">
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <CardsList>
@@ -69,7 +69,7 @@ export default () => (
         </Grid>
       </Padding>
     </Section>
-    <Section>
+    <Section data-selector="knowledge-transfer:description">
       <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row between="xs">

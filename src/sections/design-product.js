@@ -17,7 +17,7 @@ const Item = ({ title, children }) => (
 
 export default () => (
   <Fragment>
-    <Hero bg={designProductBg}>
+    <Hero bg={designProductBg} data-selector="design:intro">
       <Padding top={175} bottom={25}>
         <Grid>
           <Row>
@@ -28,7 +28,7 @@ export default () => (
         </Grid>
       </Padding>
     </Hero>
-    <Section>
+    <Section data-selector="design:description">
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>
         <Grid>
           <Row>

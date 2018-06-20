@@ -36,7 +36,7 @@ const Person = ({ name, role, children }) => (
 
 export default ({ video }) => (
   <Fragment>
-    <Section dark>
+    <Section dark data-selector="our-team:intro">
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 47, md: 92, lg: 130 }}>
         <Grid>
           <Row>
@@ -90,7 +90,7 @@ export default ({ video }) => (
         </Grid>
       </Padding>
     </Section>
-    <Section>
+    <Section data-selector="our-team:gallery">
       <Padding bottom={{ xs: 0, md: 21 }}>
         <Grid>
           <Row>
@@ -114,7 +114,7 @@ export default ({ video }) => (
         <Hr />
       </Grid>
     </Section>
-    <Section>
+    <Section data-selector="our-team:people">
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>
         <Grid>
           <Margin bottom={40}>

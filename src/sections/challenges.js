@@ -40,7 +40,7 @@ const Challenge = ({ icon, title, children, ...props }) => (
 );
 
 export default () => (
-  <Section dark>
+  <Section dark data-selector="challenges">
     <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>
       <Grid>
         <Margin bottom={{ xs: 15, md: 36 }}>

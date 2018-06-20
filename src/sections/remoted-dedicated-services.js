@@ -11,7 +11,7 @@ import addCodeBg from 'assets/addcode-bg.png';
 
 export default () => (
   <Fragment>
-    <Hero bg={addCodeBg}>
+    <Hero bg={addCodeBg} data-selector="addcode:intro">
       <Padding top={175} bottom={25}>
         <Grid>
           <Row>
@@ -22,7 +22,7 @@ export default () => (
         </Grid>
       </Padding>
     </Hero>
-    <Section>
+    <Section data-selector="addcode:description">
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row between="xs">
