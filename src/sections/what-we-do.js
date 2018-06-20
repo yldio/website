@@ -65,8 +65,8 @@ export default ({ videos = [] }) => (
       <Grid>
         <CardsList>
           <Row center="xs" around="xs" top="xs">
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 11, md: -39 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 11, lg: -39 }}>
                 <Card id="technology-card" title="Technology" width="100%">
                   <Copy>
                     Driving innovation through digital transformation to build
@@ -75,8 +75,8 @@ export default ({ videos = [] }) => (
                 </Card>
               </Margin>
             </Col>
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 11, md: -39 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 11, lg: -39 }}>
                 <Card id="culture-card" title="Culture" width="100%">
                   <Copy>
                     Creating enduring cultures of engineering & design
@@ -85,8 +85,8 @@ export default ({ videos = [] }) => (
                 </Card>
               </Margin>
             </Col>
-            <Col xs={12} md={4}>
-              <Margin top={{ xs: 11, md: -39 }}>
+            <Col xs={12} md={6} lg={4}>
+              <Margin top={{ xs: 11, lg: -39 }}>
                 <Card id="training-card" title="Training" width="100%">
                   <Copy>
                     Originators who train your talent through skills transfer
