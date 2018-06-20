@@ -4,8 +4,7 @@ import { Padding, Margin } from 'styled-components-spacing';
 
 import { H3, H4, Copy } from 'components/typography';
 import Section from 'components/section';
-import Card from 'components/card';
-import CardsList from '../components/card';
+import Card, { CardsList } from 'components/card';
 
 export default () => (
   <Fragment>
@@ -30,7 +29,7 @@ export default () => (
               <Col xs={12} md={6} lg={4}>
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
-                    id="yld-delivers-card"
+                    id="private-training-card"
                     height="439"
                     title="Private Training"
                     points={[
@@ -44,7 +43,7 @@ export default () => (
               <Col xs={12} md={6} lg={4}>
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
-                    id="yld-delivers-card"
+                    id="pairing-card"
                     height="439"
                     title="Pairing"
                     points={[
@@ -58,7 +57,7 @@ export default () => (
               <Col xs={12} md={6} lg={4}>
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
-                    id="yld-delivers-card"
+                    id="certification-card"
                     height="439"
                     title="Certification"
                     points={[
