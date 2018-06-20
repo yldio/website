@@ -27,7 +27,7 @@ const Meetups = ({ video, image, name, description }) => (
   <Col xs={12} md={12}>
     <Margin bottom={{ xs: 0, md: 24 }} top={{ xs: 15, md: 24 }} inline>
       <Row>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <Margin bottom={16}>
             {image ? <Image src={image} /> : null}
             {video ? (
@@ -35,7 +35,7 @@ const Meetups = ({ video, image, name, description }) => (
             ) : null}
           </Margin>
         </Col>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <Margin bottom={6}>
             <H4>{name}</H4>
           </Margin>

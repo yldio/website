@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { mapProps } from 'recompose';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Margin } from 'styled-components-spacing';
-//import Helmet from 'react-helmet';
+// Import Helmet from 'react-helmet';
 
 import { H2, Copy } from 'components/typography';
 import Hero from 'components/hero';

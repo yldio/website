@@ -8,6 +8,7 @@ import Section from 'components/section';
 import designProductBg from 'assets/design-product-bg.png';
 import Meetups from './meetups';
 import Conferences from './conferences';
+import TechTalks from './tech-talks';
 
 export default ({ videos }) => (
   <Fragment>
@@ -52,5 +53,25 @@ export default ({ videos }) => (
       </Padding>
     </Hero>
     <Conferences />
+    {/* <Hero height="350" dark>
+      <Padding top={50}>
+        <Grid>
+          <Row>
+            <Col xs={12} sm={6}>
+              <H4 whiter decorated>
+                Tech Talks YLD
+              </H4>
+            </Col>
+            <Col>
+              <H3>
+                Tech Talks YLD #TTY is the ultimate channel for talks from YLD
+                run events and YLDers speaking at other conferences.
+              </H3>
+            </Col>
+          </Row>
+        </Grid>
+      </Padding>
+    </Hero> */}
+    <TechTalks />
   </Fragment>
 );
