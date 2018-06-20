@@ -4,7 +4,7 @@ import { Margin, Padding } from 'styled-components-spacing';
 
 import { H3, H4 } from 'components/typography';
 import Section from 'components/section';
-import Card from 'components/card';
+import Card, { CardsList } from 'components/card';
 import BulletList, { Item as BulletListItem } from 'components/bullet-list';
 import Hero from 'components/hero';
 
@@ -27,35 +27,37 @@ export default () => (
     <Section dark>
       <Padding bottom={{ xs: 9, md: 36 }}>
         <Grid>
-          <Row around="xs" top="xs">
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 15, lg: -39 }}>
-                <Card
-                  title="YLD Delivers"
-                  points={['Lean culture', 'Micro-services']}
-                />
-              </Margin>
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 15, lg: -39 }}>
-                <Card
-                  title="Leveraging"
-                  points={['Vertical teams', 'Open source software']}
-                />
-              </Margin>
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 15, lg: -39 }}>
-                <Card
-                  title="Enabling"
-                  points={[
-                    'Experimentation',
-                    'Continuous delivery with zero downtime'
-                  ]}
-                />
-              </Margin>
-            </Col>
-          </Row>
+          <CardsList>
+            <Row around="xs" top="xs">
+              <Col xs={12} md={6} lg={4}>
+                <Margin top={{ xs: 15, lg: -39 }}>
+                  <Card
+                    title="YLD Delivers"
+                    points={['Lean culture', 'Micro-services']}
+                  />
+                </Margin>
+              </Col>
+              <Col xs={12} md={6} lg={4}>
+                <Margin top={{ xs: 15, lg: -39 }}>
+                  <Card
+                    title="Leveraging"
+                    points={['Vertical teams', 'Open source software']}
+                  />
+                </Margin>
+              </Col>
+              <Col xs={12} md={6} lg={4}>
+                <Margin top={{ xs: 15, lg: -39 }}>
+                  <Card
+                    title="Enabling"
+                    points={[
+                      'Experimentation',
+                      'Continuous delivery with zero downtime'
+                    ]}
+                  />
+                </Margin>
+              </Col>
+            </Row>
+          </CardsList>
           <Margin top={{ xs: 15, md: 36 }} inline>
             <Row>
               <Col xs={12}>
