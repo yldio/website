@@ -7,7 +7,7 @@ import breakpoint from 'styled-components-breakpoint';
 
 export default Section.extend`
   background: url('${props => (props.bg ? props.bg : BG)}');
-  background-position: center bottom;
+  background-position: ${props => (props.bg ? 'right top' : 'center bottom')};
   background-repeat: no-repeat;
   background-size: ${props => (props.size ? props.size : 'cover')};
   max-width: 100%;
