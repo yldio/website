@@ -67,7 +67,12 @@ export default ({ videos = [] }) => (
           <Row center="xs" around="xs" top="xs">
             <Col xs={12} md={4}>
               <Margin top={{ xs: 11, md: -39 }}>
-                <Card title="Technology" height="255" width="100%">
+                <Card
+                  id="technology-card"
+                  title="Technology"
+                  height="255"
+                  width="100%"
+                >
                   <Copy>
                     Driving innovation through digital transformation to build
                     relentlessly relevant companies
@@ -77,7 +82,12 @@ export default ({ videos = [] }) => (
             </Col>
             <Col xs={12} md={4}>
               <Margin top={{ xs: 11, md: -39 }}>
-                <Card title="Culture" height="255" width="100%">
+                <Card
+                  id="culture-card"
+                  title="Culture"
+                  height="255"
+                  width="100%"
+                >
                   <Copy>
                     Creating enduring cultures of engineering & design
                     innovation
@@ -87,7 +97,12 @@ export default ({ videos = [] }) => (
             </Col>
             <Col xs={12} md={4}>
               <Margin top={{ xs: 11, md: -39 }}>
-                <Card title="Training" height="255" width="100%">
+                <Card
+                  id="training-card"
+                  title="Training"
+                  height="255"
+                  width="100%"
+                >
                   <Copy>
                     Originators who train your talent through skills transfer
                     and pair programming

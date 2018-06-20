@@ -41,28 +41,25 @@ export class CardsList extends PureComponent {
   constructor(props) {
     super(props);
 
-    this.state = {
-      cards: {}
-    };
+    this.cards = {};
+    this.state = {};
 
     this.handleResize = this.handleResize.bind(this);
   }
 
   handleResize(id, height) {
-    const cards = {
+    this.cards = {
       // eslint-disable-next-line no-access-state-in-setstate
-      ...this.state.cards,
+      ...this.cards,
       [id]: height
     };
 
-    console.log(cards);
-
-    const tallest = Object.keys(cards).reduce(
-      (height, id) => (cards[id] > height ? cards[id] : height),
+    const tallest = Object.keys(this.cards).reduce(
+      (height, id) => (this.cards[id] > height ? this.cards[id] : height),
       0
     );
 
-    this.setState({ tallest, cards });
+    this.setState({ tallest });
   }
 
   render() {
@@ -82,12 +79,12 @@ class Card extends PureComponent {
   }
 
   componentDidMount() {
-    console.log(id);
     const { id, handleResize } = this.props;
+    console.log({ id });
 
     if (handleResize) {
       // If Card is not inside a CardsList, it wont get an handleResize
-      handleResize(id, this.div.clientHeight);
+      handleResize(id, this.div.current.clientHeight);
     }
   }
 
@@ -95,10 +92,10 @@ class Card extends PureComponent {
     const { height, title, points, children, props } = this.props;
 
     return (
-      <div ref={this.div} height={height}>
+      <div ref={this.div}>
         <Flex justifyCenter alignCenter>
           <FlexItem>
-            <CardWrapper {...props}>
+            <CardWrapper height={`${height}px`} {...props}>
               <Title blue uppercase>
                 {title}
               </Title>
