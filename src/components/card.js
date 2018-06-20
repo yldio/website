@@ -55,6 +55,8 @@ export class CardsList extends PureComponent {
       [id]: height
     };
 
+    console.log(cards);
+
     const tallest = Object.keys(cards).reduce(
       (height, id) => (cards[id] > height ? cards[id] : height),
       0
@@ -80,16 +82,18 @@ class Card extends PureComponent {
   }
 
   componentDidMount() {
-    const { handleResize } = this.props;
+    console.log(id);
+    const { id, handleResize } = this.props;
 
     if (handleResize) {
       // If Card is not inside a CardsList, it wont get an handleResize
-      handleResize(this.div.clientHeight);
+      handleResize(id, this.div.clientHeight);
     }
   }
 
   render() {
     const { height, title, points, children, props } = this.props;
+
     return (
       <div ref={this.div} height={height}>
         <Flex justifyCenter alignCenter>
@@ -118,7 +122,7 @@ class Card extends PureComponent {
 export default ({ title, points, children, ...props }) => (
   <Consumer>
     {value => (
-      <Card {...props} {...value}>
+      <Card {...props} {...value} title={title} points={points}>
         {children}
       </Card>
     )}
