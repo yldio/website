@@ -61,7 +61,7 @@ const CaseStudy = ({ video, image, name, tagline }) => (
 
 export default ({ videos = [] }) => (
   <Fragment>
-    <Section>
+    <Section data-selector="what-do-we-do:intro">
       <Grid>
         <CardsList>
           <Row center="xs" around="xs" top="xs">
@@ -120,7 +120,7 @@ export default ({ videos = [] }) => (
         </Margin>
       </Grid>
     </Section>
-    <Section>
+    <Section data-selector="what-do-we-do:clients">
       <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row middle="xs" between="xs">

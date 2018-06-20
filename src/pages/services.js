@@ -26,7 +26,7 @@ import Footer from 'sections/footer';
 const ServicesPage = ({ page }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
-    <Hero>
+    <Hero data-selector="services:intro">
       <Margin bottom={28}>
         <Header dark />
       </Margin>

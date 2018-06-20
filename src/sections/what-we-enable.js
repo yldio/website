@@ -7,7 +7,7 @@ import Checklist, { Item as CheckItem } from 'components/checklist';
 import Section from 'components/section';
 
 export default () => (
-  <Section>
+  <Section data-selector="what-do-we-enable">
     <Grid>
       <Margin top={{ xs: 15, md: 45 }} bottom={{ xs: 15, md: 45 }}>
         <Row>

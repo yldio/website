@@ -4,6 +4,9 @@
     ["babel-plugin-styled-components", { "displayName": true }]
   ],
   "env": {
+    "test": {
+      "presets": ["es2015", "react"]
+    },
     "production": {
       "plugins": [
         ["babel-plugin-styled-components", { "displayName": false }],

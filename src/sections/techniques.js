@@ -10,7 +10,7 @@ import Hero from 'components/hero';
 
 export default () => (
   <Fragment>
-    <Hero height="350">
+    <Hero height="350" data-selector="techniques:intro">
       <Padding top={50}>
         <Grid>
           <Row>
@@ -24,7 +24,7 @@ export default () => (
         </Grid>
       </Padding>
     </Hero>
-    <Section dark>
+    <Section dark data-selector="techniques:description">
       <Padding bottom={{ xs: 9, md: 36 }}>
         <Grid>
           <CardsList>

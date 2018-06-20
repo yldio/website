@@ -11,7 +11,7 @@ import aws from 'assets/aws.png';
 import node from 'assets/node.png';
 
 export default () => (
-  <Section>
+  <Section data-selector="partners">
     <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 0, md: 36 }}>
       <Grid>
         <Row>

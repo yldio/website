@@ -6,17 +6,18 @@ describe('features/homepage', () => {
 
   it('shows a navigation menu', () => {
     cy.visit('/');
-    cy.getComponent('component:navigation');
+    cy.getComponent('header');
   });
 
   it('shows relevant homepage sections', () => {
     cy.visit('/');
-    cy.getComponent('home:build-better');
-    cy.getComponent('home:case-studies');
-    cy.getComponent('home:industries');
-    cy.getComponent('home:we-enable');
-    cy.getComponent('home:how-we-do-it');
-    cy.getComponent('home:community');
-    cy.getComponent('home:services-about-us');
+    cy.getComponent('home:intro');
+    cy.getComponent('what-do-we-do:intro');
+    cy.getComponent('what-do-we-do:clients');
+    cy.getComponent('what-do-we-enable');
+    cy.getComponent('known-for');
+    cy.getComponent('home:call-out');
+    cy.getComponent('join-us');
+    cy.getComponent('footer');
   });
 });

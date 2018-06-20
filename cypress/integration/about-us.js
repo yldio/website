@@ -1,4 +1,4 @@
-describe('features/homepage', () => {
+describe('features/about-us', () => {
   it('can land on the About Us', () => {
     cy.visit('/about-us');
     cy.title().should('eq', 'YLD | About Us');
@@ -6,15 +6,18 @@ describe('features/homepage', () => {
 
   it('shows a navigation menu', () => {
     cy.visit('/about-us');
-    cy.getComponent('component:navigation');
+    cy.getComponent('header');
   });
 
   it('shows relevant About Us sections', () => {
     cy.visit('/about-us');
-    cy.getComponent('about-us:hero');
-    cy.getComponent('about-us:our-team');
-    cy.getComponent('about-us:team');
-    cy.getComponent('about-us:our-values');
-    cy.getComponent('about-us:work-width-us');
+    cy.getComponent('about-us:intro');
+    cy.getComponent('our-team:intro');
+    cy.getComponent('our-team:gallery');
+    cy.getComponent('our-team:people');
+    cy.getComponent('stats');
+    cy.getComponent('contact-us');
+    cy.getComponent('join-us');
+    cy.getComponent('footer');
   });
 });

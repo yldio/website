@@ -7,7 +7,7 @@ import Section from 'components/section';
 import Button from 'components/button';
 
 export default () => (
-  <Section blue>
+  <Section blue data-selector="join-us">
     <Grid>
       <Padding top={{ xs: 15, md: 35 }} bottom={{ xs: 15, md: 35 }} inline>
         <Row middle="xs" between="xs">

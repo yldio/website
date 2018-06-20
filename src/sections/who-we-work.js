@@ -61,7 +61,7 @@ const Logo = ({ img }) => (
 );
 
 export default () => (
-  <Section>
+  <Section data-selector="who-we-work-with">
     <Padding top={{ xs: 15, md: 41 }} bottom={{ xs: 15, md: 30 }}>
       <Grid>
         <Row>

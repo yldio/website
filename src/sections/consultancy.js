@@ -6,7 +6,7 @@ import { H3, Copy } from 'components/typography';
 import Section from 'components/section';
 
 export default () => (
-  <Section>
+  <Section data-selector="consultancy">
     <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
       <Grid>
         <Row>

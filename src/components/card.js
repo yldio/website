@@ -81,7 +81,7 @@ class Card extends PureComponent {
   componentDidMount() {
     const { id, handleResize } = this.props;
 
-    if (handleResize) {
+    if (handleResize && this.div && this.div.current) {
       // If Card is not inside a CardsList, it wont get an handleResize
       handleResize(id, this.div.current.clientHeight);
     }
@@ -113,8 +113,6 @@ class Card extends PureComponent {
   }
 }
 
-// ==========================
-
 export default ({ title, points, children, ...props }) => (
   <Consumer>
     {value => (
@@ -124,22 +122,3 @@ export default ({ title, points, children, ...props }) => (
     )}
   </Consumer>
 );
-
-// Original card
-// export default ({ title, points, children, ...props }) => (
-//   <Flex justifyCenter alignCenter>
-//     <FlexItem>
-//       <CardWrapper {...props}>
-//         <Title blue uppercase>
-//           {title}
-//         </Title>
-//         {points ? (
-//           <ul>
-//             {points && points.map(point => <Item key={point}>{point}</Item>)}
-//           </ul>
-//         ) : null}
-//         {children}
-//       </CardWrapper>
-//     </FlexItem>
-//   </Flex>
-// );

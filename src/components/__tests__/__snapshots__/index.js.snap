@@ -1,0 +1,1153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot components/bullet-list 1`] = `
+Array [
+  .c0 {
+  margin-top: 1.9375rem;
+}
+
+.c1 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+.c1:before {
+  content: '•';
+  margin-right: 1.125rem;
+  color: #E60073;
+  display: inline-block;
+}
+
+@media (min-width:45em) {
+  .c0 {
+    margin-top: 1.9375rem;
+  }
+}
+
+@media (min-width:45em) {
+  .c1 {
+    margin-bottom: 1.9375rem;
+  }
+}
+
+<ul
+    className="c0"
+  >
+    <li
+      className="c1"
+    >
+      Think differently
+    </li>
+    <li
+      className="c1"
+    >
+      Clients win
+    </li>
+  </ul>,
+  .c1 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+
+.c1:before {
+  content: '•';
+  margin-right: 1.125rem;
+  color: #E60073;
+  display: inline-block;
+}
+
+@media (min-width:45em) {
+  .c0 {
+    margin-top: 1.9375rem;
+  }
+}
+
+@media (min-width:45em) {
+  .c1 {
+    margin-bottom: 1.9375rem;
+  }
+}
+
+<ul
+    className="c0"
+  >
+    <li
+      className="c1"
+    >
+      Everyone sweeps the floor
+    </li>
+    <li
+      className="c1"
+    >
+      Good enough to be dangerous
+    </li>
+    <li
+      className="c1"
+    >
+      Ask for forgiveness, not permission
+    </li>
+  </ul>,
+]
+`;
+
+exports[`snapshot components/button 1`] = `
+.c0 {
+  background: transparent;
+  color: #190533;
+  border: solid 0.125rem #190533;
+  border-radius: 2.0625rem;
+  height: 3.125rem;
+  padding: 0.625rem 2.5rem;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  line-height: 1.5625rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #5E5CB2;
+  border-color: #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+@media (min-width:45em) {
+  .c0 {
+    width: inherit;
+    text-align: inherit;
+  }
+}
+
+<a
+  className="c0"
+  href="https://jobs.lever.co/yld"
+  transparent={true}
+  white={true}
+>
+  View openings
+</a>
+`;
+
+exports[`snapshot components/card 1`] = `
+Array [
+  .c4 {
+  color: #5E5CB2;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  display: block;
+}
+
+.c2 {
+  padding: 1.875rem;
+  border-bottom: 0.25rem solid #E60073;
+  box-shadow: 0.625rem 0.75rem 2.5rem 0.3125rem rgba(25,5,52,0.15);
+  width: 19.0625rem;
+  min-height: NaNrem;
+  background: white;
+  margin-bottom: 1.25rem;
+}
+
+.c3 {
+  border-bottom: 0.0625rem solid #DCD9EA;
+  color: 0.0625rem solid #5E5CB2;
+  padding-bottom: 0.9375rem;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
+.c5 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+}
+
+.c5::before {
+  content: '•';
+  margin-right: 1.25rem;
+  color: #E60073;
+}
+
+.c5:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+<div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+          height="undefinedpx"
+        >
+          <h5
+            className="c3 c4"
+          >
+            card one title
+          </h5>
+          <ul>
+            <li
+              className="c5"
+            >
+              card one, point one
+            </li>
+            <li
+              className="c5"
+            >
+              card one, point two
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c4 {
+  color: #5E5CB2;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  display: block;
+}
+
+.c2 {
+  padding: 1.875rem;
+  border-bottom: 0.25rem solid #E60073;
+  box-shadow: 0.625rem 0.75rem 2.5rem 0.3125rem rgba(25,5,52,0.15);
+  width: 19.0625rem;
+  min-height: NaNrem;
+  background: white;
+  margin-bottom: 1.25rem;
+}
+
+.c3 {
+  border-bottom: 0.0625rem solid #DCD9EA;
+  color: 0.0625rem solid #5E5CB2;
+  padding-bottom: 0.9375rem;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
+.c5 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+}
+
+.c5::before {
+  content: '•';
+  margin-right: 1.25rem;
+  color: #E60073;
+}
+
+.c5:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+<div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+          height="undefinedpx"
+        >
+          <h5
+            className="c3 c4"
+          >
+            card two title
+          </h5>
+          <ul>
+            <li
+              className="c5"
+            >
+              card two, point one
+            </li>
+            <li
+              className="c5"
+            >
+              card two, point two
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c4 {
+  color: #5E5CB2;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  display: block;
+}
+
+.c2 {
+  padding: 1.875rem;
+  border-bottom: 0.25rem solid #E60073;
+  box-shadow: 0.625rem 0.75rem 2.5rem 0.3125rem rgba(25,5,52,0.15);
+  width: 19.0625rem;
+  min-height: NaNrem;
+  background: white;
+  margin-bottom: 1.25rem;
+}
+
+.c3 {
+  border-bottom: 0.0625rem solid #DCD9EA;
+  color: 0.0625rem solid #5E5CB2;
+  padding-bottom: 0.9375rem;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
+.c5 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+}
+
+.c5::before {
+  content: '•';
+  margin-right: 1.25rem;
+  color: #E60073;
+}
+
+.c5:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+<div>
+    <div
+      className="c0"
+    >
+      <div
+        className="c1"
+      >
+        <div
+          className="c2"
+          height="undefinedpx"
+        >
+          <h5
+            className="c3 c4"
+          >
+            card three title
+          </h5>
+          <ul>
+            <li
+              className="c5"
+            >
+              card three, point one
+            </li>
+            <li
+              className="c5"
+            >
+              card three, point two
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`snapshot components/checklist 1`] = `
+.c2 {
+  color: #08d1bb;
+  font-size: 2rem;
+  margin-right: 1.875rem;
+}
+
+.c1 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 1.25rem;
+  margin: 1.75rem 0 0 0;
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+<ul
+  className="c0"
+>
+  <li
+    className="c1"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-check-circle fa-w-16 c2"
+      data-icon="check-circle"
+      data-prefix="fas"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+     
+    check item one
+  </li>
+  <li
+    className="c1"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-check-circle fa-w-16 c2"
+      data-icon="check-circle"
+      data-prefix="fas"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+     
+    check item two
+  </li>
+  <li
+    className="c1"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-check-circle fa-w-16 c2"
+      data-icon="check-circle"
+      data-prefix="fas"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+     
+    check item three
+  </li>
+</ul>
+`;
+
+exports[`snapshot components/hr 1`] = `
+.c0 {
+  display: block;
+  height: 0.0625rem;
+  border: 0;
+  border-top: 1px solid #DCD9EA;
+  margin: 0;
+  padding: 0;
+}
+
+<hr
+  className="c0"
+/>
+`;
+
+exports[`snapshot components/section 1`] = `
+Array [
+  .c0 {
+  background-color: #FFFFFF;
+  position: relative;
+  display: block;
+  background-color: #5E5CB2;
+}
+
+<section
+    className="c0"
+  />,
+  .c0 {
+  background-color: #FFFFFF;
+  position: relative;
+  display: block;
+  background-color: #190533;
+}
+
+<section
+    className="c0"
+  />,
+  .c0 {
+  background-color: #FFFFFF;
+  position: relative;
+  display: block;
+}
+
+<section
+    className="c0"
+  />,
+]
+`;
+
+exports[`snapshot components/typography 1`] = `
+Array [
+  .c0 {
+  color: #190533;
+  font-size: 2.875rem;
+  line-height: 1.07;
+  font-weight: 900;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width:30em) {
+  .c0 {
+    line-height: 5rem;
+    font-size: 4.5rem;
+  }
+}
+
+<h1
+    className="c0"
+  >
+    H1
+  </h1>,
+  .c0 {
+  color: #190533;
+  font-size: 2.875rem;
+  line-height: 1.07;
+  font-weight: 900;
+  position: relative;
+  color: #B4AFC8;
+  font-weight: 900;
+  text-align: left;
+  text-align: right;
+}
+
+@media (min-width:30em) {
+  .c0 {
+    line-height: 5rem;
+    font-size: 4.5rem;
+  }
+}
+
+<h1
+    className="c0"
+  >
+    H1
+  </h1>,
+  .c0 {
+  color: #190533;
+  font-size: 2.875rem;
+  line-height: 1.07;
+  font-weight: 900;
+  position: relative;
+  color: #FFFFFF;
+  text-align: left;
+  text-align: center;
+}
+
+@media (min-width:30em) {
+  .c0 {
+    line-height: 5rem;
+    font-size: 4.5rem;
+  }
+}
+
+<h1
+    className="c0"
+  >
+    H1
+  </h1>,
+  .c0 {
+  color: #190533;
+  font-size: 2.875rem;
+  line-height: 1.07;
+  font-weight: 900;
+  position: relative;
+  text-align: left;
+  text-align: justify;
+}
+
+@media (min-width:30em) {
+  .c0 {
+    line-height: 5rem;
+    font-size: 4.5rem;
+  }
+}
+
+<h1
+    className="c0"
+  >
+    H1
+  </h1>,
+  .c0 {
+  color: #190533;
+  line-height: 4.5rem;
+  font-size: 3.75rem;
+  font-weight: 900;
+  position: relative;
+  color: #B4AFC8;
+  font-weight: 900;
+  text-align: left;
+  text-align: right;
+}
+
+<h2
+    className="c0"
+  >
+    H2
+  </h2>,
+  .c0 {
+  color: #190533;
+  line-height: 4.5rem;
+  font-size: 3.75rem;
+  font-weight: 900;
+  position: relative;
+  text-align: left;
+}
+
+<h2
+    className="c0"
+  >
+    H2
+  </h2>,
+  .c0 {
+  color: #190533;
+  line-height: 4.5rem;
+  font-size: 3.75rem;
+  font-weight: 900;
+  position: relative;
+  color: #FFFFFF;
+  text-align: left;
+  text-align: center;
+}
+
+<h2
+    className="c0"
+  >
+    H2
+  </h2>,
+  .c0 {
+  color: #190533;
+  line-height: 4.5rem;
+  font-size: 3.75rem;
+  font-weight: 900;
+  position: relative;
+  text-align: left;
+  text-align: justify;
+}
+
+<h2
+    className="c0"
+  >
+    H2
+  </h2>,
+  .c0 {
+  color: #190533;
+  line-height: 3.125rem;
+  font-size: 2.25rem;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 1.5625rem;
+  text-align: left;
+}
+
+<h3
+    className="c0"
+  >
+    H3
+  </h3>,
+  .c0 {
+  color: #190533;
+  line-height: 3.125rem;
+  font-size: 2.25rem;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 1.5625rem;
+  color: #B4AFC8;
+  font-weight: 900;
+  text-align: left;
+  text-align: right;
+}
+
+.c0:after {
+  background-color: #5E5CB2;
+  content: '';
+  height: 0.25rem;
+  width: 6.25rem;
+  display: block;
+  margin-top: 1.5625rem;
+  position: relative;
+}
+
+<h3
+    className="c0"
+  >
+    H3
+  </h3>,
+  .c0 {
+  color: #190533;
+  line-height: 3.125rem;
+  font-size: 2.25rem;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 1.5625rem;
+  color: #FFFFFF;
+  text-align: left;
+  text-align: center;
+}
+
+.c0:after {
+  background-color: #5E5CB2;
+  content: '';
+  height: 0.25rem;
+  width: 6.25rem;
+  display: block;
+  margin-top: 1.5625rem;
+  position: relative;
+}
+
+.c0:after {
+  left: calc(50% - 50px);
+  position: absolute;
+}
+
+<h3
+    className="c0"
+  >
+    H3
+  </h3>,
+  .c0 {
+  color: #190533;
+  line-height: 3.125rem;
+  font-size: 2.25rem;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 1.5625rem;
+  text-align: left;
+  text-align: justify;
+}
+
+<h3
+    className="c0"
+  >
+    H3
+  </h3>,
+  .c0 {
+  color: #190533;
+  line-height: 2.6875rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+}
+
+<h4
+    className="c0"
+  >
+    H4
+  </h4>,
+  .c0 {
+  color: #190533;
+  line-height: 2.6875rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  position: relative;
+  color: #B4AFC8;
+  font-weight: 900;
+  text-align: left;
+  text-align: right;
+}
+
+.c0:after {
+  background-color: #5E5CB2;
+  content: '';
+  height: 0.25rem;
+  width: 6.25rem;
+  display: block;
+  margin-top: 1.5625rem;
+  position: relative;
+}
+
+<h4
+    className="c0"
+  >
+    H4
+  </h4>,
+  .c0 {
+  color: #190533;
+  line-height: 2.6875rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  position: relative;
+  color: #FFFFFF;
+  text-align: left;
+  text-align: center;
+}
+
+.c0:after {
+  background-color: #5E5CB2;
+  content: '';
+  height: 0.25rem;
+  width: 6.25rem;
+  display: block;
+  margin-top: 1.5625rem;
+  position: relative;
+}
+
+.c0:after {
+  left: calc(50% - 50px);
+  position: absolute;
+}
+
+<h4
+    className="c0"
+  >
+    H4
+  </h4>,
+  .c0 {
+  color: #190533;
+  line-height: 2.6875rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  text-align: justify;
+}
+
+<h4
+    className="c0"
+  >
+    H4
+  </h4>,
+  .c0 {
+  color: #5E5CB2;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+<h5
+    className="c0"
+  >
+    H5
+  </h5>,
+  .c0 {
+  color: #5E5CB2;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  color: #B4AFC8;
+  font-weight: 900;
+  text-align: left;
+  text-align: right;
+}
+
+<h5
+    className="c0"
+  >
+    H5
+  </h5>,
+  .c0 {
+  color: #5E5CB2;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: left;
+  text-align: center;
+}
+
+<h5
+    className="c0"
+  >
+    H5
+  </h5>,
+  .c0 {
+  color: #5E5CB2;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+  text-align: justify;
+}
+
+<h5
+    className="c0"
+  >
+    H5
+  </h5>,
+  .c0 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+}
+
+<p
+    className="c0"
+  >
+    Copy
+  </p>,
+  .c0 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  color: #B4AFC8;
+  font-weight: 900;
+  text-align: left;
+  text-align: right;
+}
+
+<p
+    className="c0"
+  >
+    Copy
+  </p>,
+  .c0 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  color: #FFFFFF;
+  text-align: left;
+  text-align: center;
+}
+
+<p
+    className="c0"
+  >
+    Copy
+  </p>,
+  .c0 {
+  color: #433a4f;
+  line-height: 1.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  text-align: justify;
+}
+
+<p
+    className="c0"
+  >
+    Copy
+  </p>,
+]
+`;
+
+exports[`snapshot components/video 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(219deg,#6a7277,#4f565b), linear-gradient(#383e42,#383e42);
+  box-shadow: 10.3px 12.3px 40px 5px rgba(25,5,51,0.15);
+}
+
+<video
+  className="c0"
+/>
+`;
