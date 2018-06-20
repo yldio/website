@@ -30,6 +30,7 @@ export default () => (
               <Col xs={12} md={6} lg={4}>
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
+                    id="yld-delivers-card"
                     height="439"
                     title="Private Training"
                     points={[
@@ -43,6 +44,7 @@ export default () => (
               <Col xs={12} md={6} lg={4}>
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
+                    id="yld-delivers-card"
                     height="439"
                     title="Pairing"
                     points={[
@@ -56,6 +58,7 @@ export default () => (
               <Col xs={12} md={6} lg={4}>
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
+                    id="yld-delivers-card"
                     height="439"
                     title="Certification"
                     points={[
