@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Flex, { FlexItem } from 'styled-flex-component';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
+const { Provider, Consumer } = React.createContext();
 
 import { H5, Copy } from 'components/typography';
 
@@ -36,20 +37,99 @@ const Item = Copy.withComponent('li').extend`
   }
 `;
 
+export class CardsList extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      cards: {}
+    };
+  }
+
+  handleReize(id, height) {
+    const cards = {
+      // eslint-disable-next-line no-access-state-in-setstate
+      ...this.state.cards,
+      [id]: height
+    };
+
+    const tallest = Object.keys(cards).reduce(
+      (height, id) => (cards[id] > height ? cards[id] : height),
+      0
+    );
+
+    this.setState({ tallest, cards });
+  }
+
+  render() {
+    const { children } = this.props;
+    const { tallest: height } = this.state;
+    const { handleReize } = this;
+
+    return <Provider value={{ height, handleReize }}>{children}</Provider>;
+  }
+}
+
+class Card extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.div = React.createRef();
+  }
+
+  componentDidMount() {
+    const { handleReize } = this.props;
+    handleReize(this.div.clientHeight);
+  }
+
+  render() {
+    const { height, title, points, children, props } = this.props;
+    return (
+      <div ref={this.div} height={height}>
+        <Flex justifyCenter alignCenter>
+          <FlexItem>
+            <CardWrapper {...props}>
+              <Title blue uppercase>
+                {title}
+              </Title>
+              {points ? (
+                <ul>
+                  {points &&
+                    points.map(point => <Item key={point}>{point}</Item>)}
+                </ul>
+              ) : null}
+              {children}
+            </CardWrapper>
+          </FlexItem>
+        </Flex>
+      </div>
+    );
+  }
+}
+
+// ==========================
+
 export default ({ title, points, children, ...props }) => (
-  <Flex justifyCenter alignCenter>
-    <FlexItem>
-      <CardWrapper {...props}>
-        <Title blue uppercase>
-          {title}
-        </Title>
-        {points ? (
-          <ul>
-            {points && points.map(point => <Item key={point}>{point}</Item>)}
-          </ul>
-        ) : null}
-        {children}
-      </CardWrapper>
-    </FlexItem>
-  </Flex>
+  <Consumer>
+    {({ handleReize, height }) => <Card {...props}>{children}</Card>}
+  </Consumer>
 );
+
+// Original card
+// export default ({ title, points, children, ...props }) => (
+//   <Flex justifyCenter alignCenter>
+//     <FlexItem>
+//       <CardWrapper {...props}>
+//         <Title blue uppercase>
+//           {title}
+//         </Title>
+//         {points ? (
+//           <ul>
+//             {points && points.map(point => <Item key={point}>{point}</Item>)}
+//           </ul>
+//         ) : null}
+//         {children}
+//       </CardWrapper>
+//     </FlexItem>
+//   </Flex>
+// );

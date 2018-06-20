@@ -5,6 +5,7 @@ import { Padding, Margin } from 'styled-components-spacing';
 import { H3, H4, Copy } from 'components/typography';
 import Section from 'components/section';
 import Card from 'components/card';
+import CardsList from '../components/card';
 
 export default () => (
   <Fragment>
@@ -24,46 +25,48 @@ export default () => (
     <Section>
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
-          <Row between="xs">
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 15, lg: -73 }}>
-                <Card
-                  height="439"
-                  title="Private Training"
-                  points={[
-                    'Hands-on learning experience, in-person classes',
-                    'Tailored training program delivered on-site to suit your needs',
-                    'Ensures your software engineers share a baseline'
-                  ]}
-                />
-              </Margin>
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 15, lg: -73 }}>
-                <Card
-                  height="439"
-                  title="Pairing"
-                  points={[
-                    'Ongoing tutoring that covers all aspect of tech and product delivery',
-                    'Seasoned YLD engineers and designers available to answer questions at all times',
-                    'Experienced supervision for code review'
-                  ]}
-                />
-              </Margin>
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 15, lg: -73 }}>
-                <Card
-                  height="439"
-                  title="Certification"
-                  points={[
-                    'Gain recognition for expertise and ability to employ best practices',
-                    'Assess engineering candidates expertise and compare the results with your team’s performance'
-                  ]}
-                />
-              </Margin>
-            </Col>
-          </Row>
+          <CardsList>
+            <Row between="xs">
+              <Col xs={12} md={6} lg={4}>
+                <Margin top={{ xs: 15, lg: -73 }}>
+                  <Card
+                    height="439"
+                    title="Private Training"
+                    points={[
+                      'Hands-on learning experience, in-person classes',
+                      'Tailored training program delivered on-site to suit your needs',
+                      'Ensures your software engineers share a baseline'
+                    ]}
+                  />
+                </Margin>
+              </Col>
+              <Col xs={12} md={6} lg={4}>
+                <Margin top={{ xs: 15, lg: -73 }}>
+                  <Card
+                    height="439"
+                    title="Pairing"
+                    points={[
+                      'Ongoing tutoring that covers all aspect of tech and product delivery',
+                      'Seasoned YLD engineers and designers available to answer questions at all times',
+                      'Experienced supervision for code review'
+                    ]}
+                  />
+                </Margin>
+              </Col>
+              <Col xs={12} md={6} lg={4}>
+                <Margin top={{ xs: 15, lg: -73 }}>
+                  <Card
+                    height="439"
+                    title="Certification"
+                    points={[
+                      'Gain recognition for expertise and ability to employ best practices',
+                      'Assess engineering candidates expertise and compare the results with your team’s performance'
+                    ]}
+                  />
+                </Margin>
+              </Col>
+            </Row>
+          </CardsList>
         </Grid>
       </Padding>
     </Section>
