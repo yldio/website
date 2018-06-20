@@ -30,7 +30,6 @@ export default () => (
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
                     id="private-training-card"
-                    height="439"
                     title="Private Training"
                     points={[
                       'Hands-on learning experience, in-person classes',
@@ -44,7 +43,6 @@ export default () => (
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
                     id="pairing-card"
-                    height="439"
                     title="Pairing"
                     points={[
                       'Ongoing tutoring that covers all aspect of tech and product delivery',
@@ -58,7 +56,6 @@ export default () => (
                 <Margin top={{ xs: 15, lg: -73 }}>
                   <Card
                     id="certification-card"
-                    height="439"
                     title="Certification"
                     points={[
                       'Gain recognition for expertise and ability to employ best practices',
