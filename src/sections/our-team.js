@@ -95,7 +95,7 @@ export default ({ video }) => (
         <Grid>
           <Row>
             <Col xs={12}>
-              <Margin top={{ xs: -37, md: -82, lg: -120 }} bottom={24}>
+              <Margin top={{ xs: 15, md: -82, lg: -120 }} bottom={24}>
                 <Video src={video.file.url} controls preload="metadata" />
               </Margin>
             </Col>
