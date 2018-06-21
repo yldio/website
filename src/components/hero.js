@@ -18,6 +18,7 @@ export default Section.extend`
       props.position ? props.position : 'right top'};
   `};
 
+
   ${is('height')`
     min-height: ${props => remcalc(props.height)};
   `};
