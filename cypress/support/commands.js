@@ -35,6 +35,7 @@ Cypress.Commands.add('getComponent', selector => {
 
 Cypress.Commands.add('pathEq', path => {
   cy.location().should(loc => {
+    // eslint-disable-next-line jest/valid-expect
     expect(loc.pathname).to.eq(path);
   });
 });

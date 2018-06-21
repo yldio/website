@@ -4,7 +4,8 @@
     "xo-space/esnext",
     "xo-react",
     "prettier",
-    "prettier/react"
+    "prettier/react",
+    "plugin:jest/recommended"
   ],
   "rules": {
     "react/prop-types": 0,
@@ -12,5 +13,8 @@
   },
   "globals": {
     "graphql": true
+  },
+  "env": {
+    "jest": true
   }
 }
