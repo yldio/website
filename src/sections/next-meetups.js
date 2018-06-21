@@ -6,13 +6,13 @@ import remcalc from 'remcalc';
 
 // Import BaseLink from 'gatsby-link';
 import Section from 'components/section';
-import { H5 } from 'components/typography';
+import { H5, Copy } from 'components/typography';
 
-const Wrapper = styled.div`
-  color: ${props => props.theme.colors.darkslategrey};
-  line-height: 1.72;
-  padding-top: 22px;
-`;
+// const Wrapper = styled.div`
+//   color: ${props => props.theme.colors.darkslategrey};
+//   line-height: 1.72;
+//   padding-top: 22px;
+// `;
 
 const DataWrapper = styled.div`
   background-color: ${props => props.theme.colors.deeppink};
@@ -79,17 +79,17 @@ export default ({ futureMeetups }) => (
                 </DataWrapper>
               </Col>
               <Col xs={5} md={5}>
-                <Wrapper>
-                  <MeeupTitle ania>{futureMeetup.title}</MeeupTitle>
+                <Copy>
+                  <MeeupTitle darker>{futureMeetup.title}</MeeupTitle>
                   <p>{futureMeetup.description}</p>
                   <Link>{futureMeetup.linkB}</Link>
-                </Wrapper>
+                </Copy>
               </Col>
               <Col xs={4} md={4}>
-                <Wrapper>
-                  <Hour ania>{futureMeetup.hour}</Hour>
+                <Copy>
+                  <Hour darker>{futureMeetup.hour}</Hour>
                   <p>{futureMeetup.address}</p>
-                </Wrapper>
+                </Copy>
               </Col>
             </Row>
           </MeetupsDetails>

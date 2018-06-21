@@ -148,7 +148,7 @@ export const H5 = styled.h5`
   ${weight};
   ${alignment};
 
-  ${is('ania')`
+  ${is('darker')`
       color:${props => props.theme.colors.darkslategrey};
       text-transform: lowercase;
       font-weight: 500;
