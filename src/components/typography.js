@@ -147,6 +147,12 @@ export const H5 = styled.h5`
   ${color};
   ${weight};
   ${alignment};
+
+  ${is('ania')`
+      color:${props => props.theme.colors.darkslategrey};
+      text-transform: lowercase;
+      font-weight: 500;
+  `};
 `;
 
 export const Copy = styled.p`

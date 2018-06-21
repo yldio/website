@@ -9,6 +9,7 @@ import designProductBg from 'assets/design-product-bg.png';
 import Meetups from './meetups';
 import Conferences from './conferences';
 import TechTalks from './tech-talks';
+import NextMeetups from './next-meetups';
 
 export default ({ videos }) => (
   <Fragment>
@@ -73,5 +74,6 @@ export default ({ videos }) => (
       </Padding>
     </Hero> */}
     <TechTalks />
+    <NextMeetups futureMeetups={[]} />
   </Fragment>
 );
