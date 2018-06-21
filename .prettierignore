@@ -25,6 +25,7 @@ license
 yarn.lock
 Dockerfile.*
 Dockerfile
+public/*
 
 _env*
 .env.*

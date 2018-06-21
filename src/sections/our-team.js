@@ -166,6 +166,7 @@ export default ({ video }) => (
                 25 years of experience in both strategy and global director
                 positions at Adobe, Facebook, Microsoft and spent 12 years in
                 publishing, leading commercial teams at News Corp and the FT.
+                Mentor at Microsoft Accelerator.
               </Copy>
             </Person>
             <Person name="Bradley Stott" role="CCO">
