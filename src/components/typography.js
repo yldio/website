@@ -12,6 +12,10 @@ const color = css`
   ${is('whiter')`
     color: ${props => props.theme.colors.white};
   `};
+
+  ${is('brand')`
+    color: ${props => props.fontColor};
+  `};
 `;
 
 const weight = css`

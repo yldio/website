@@ -48,6 +48,7 @@ const studies = [
       </Col>
     ),
     color: '#56c0a8',
+    fontColor: '#ffffff',
     tagline:
       'Europe’s leading independent train and coach platform, working with 180+ train and coach companies to offer travel to thousands of destinations across 36 countries.',
     topics: [
@@ -81,6 +82,7 @@ const studies = [
       </Col>
     ),
     color: '#383e42',
+    fontColor: '#ffffff',
     tagline:
       'A world renowned international current affairs, politics and news magazine',
     topics: [
@@ -113,6 +115,7 @@ const studies = [
       </Col>
     ),
     color: '#ffb92d',
+    fontColor: '#013a5c',
     tagline:
       'Thomas Cook Group plc is a British global travel company and the oldest and best known name in leisure travel with a history of innovation.',
     topics: [
@@ -156,6 +159,7 @@ const studies = [
       </Col>
     ),
     color: '#3c3c3c',
+    fontColor: '#ffffff',
     tagline:
       'Kingfisher plc is an international home improvement company offering DIY and home improvement products and services.',
     topics: [
@@ -202,6 +206,7 @@ const CaseStudy = ({
   bg,
   video,
   color = '#56c0a8',
+  fontColor,
   name = '',
   objective = '',
   tagline = '',
@@ -213,17 +218,22 @@ const CaseStudy = ({
       position="bottom 0 left 50vw"
       size="initial"
       color={color}
+      fontColor={fontColor}
       id={ParamCase(name)}
     >
       <Grid>
         <Row>
           <Col xs={12} lg={6}>
             <Margin top={{ xs: 15, lg: 94 }}>
-              <H2 whiter>{name}</H2>
+              <H2 brand fontColor={fontColor}>
+                {name}
+              </H2>
             </Margin>
 
             <Margin bottom={{ xs: 9, lg: 78 }}>
-              <Copy whiter>{objective}</Copy>
+              <Copy brand fontColor={fontColor}>
+                {objective}
+              </Copy>
             </Margin>
           </Col>
 
