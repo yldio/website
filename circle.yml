@@ -50,6 +50,34 @@ jobs:
       - persist_to_workspace:
           root: .
           paths: public
+  unit-tests:
+    <<: *defaults
+    environment:
+      - BABEL_ENV: test
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Build Application
+          command: yarn ci:unit-tests
+      - persist_to_workspace:
+          root: .
+          paths: public
+  feature-tests:
+    <<: *defaults
+    environment:
+      - BABEL_ENV: test
+    steps:
+      - checkout
+      - restore_cache:
+          <<: *restore-cache
+      - run:
+          name: Build Application
+          command: yarn ci:feature-tests
+      - persist_to_workspace:
+          root: .
+          paths: public
 
 workflows:
   version: 2
