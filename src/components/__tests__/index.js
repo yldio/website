@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
-// import { shallow } from 'enzyme';
 
 import Button from 'components/button';
 import { H1, H2, H3, H4, H5, Copy } from 'components/typography';
 import Checklist, { Item as CheckItem } from 'components/checklist';
 import BulletList, { Item as BulletListItem } from 'components/bullet-list';
 import Card, { CardsList } from 'components/card';
-import Hero from 'components/hero';
+// Import Hero from 'components/hero';
 import Section from 'components/section';
 import Hr from 'components/hr';
 import Video from 'components/video';
@@ -115,7 +114,7 @@ test('snapshot components/checklist', () => {
   ).toMatchSnapshot();
 });
 
-// test('snapshot components/hero', () => {
+// Test('snapshot components/hero', () => {
 //   return expect(
 //     renderer
 //       .create(
