@@ -210,7 +210,7 @@ const CaseStudy = ({
   <Fragment>
     <Hero
       bg={bg}
-      position="bottom right"
+      position="bottom 0 left 50vw"
       size="initial"
       color={color}
       id={ParamCase(name)}
