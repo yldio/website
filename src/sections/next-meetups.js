@@ -4,15 +4,8 @@ import { Margin } from 'styled-components-spacing';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 
-// Import BaseLink from 'gatsby-link';
 import Section from 'components/section';
 import { H5, Copy } from 'components/typography';
-
-// const Wrapper = styled.div`
-//   color: ${props => props.theme.colors.darkslategrey};
-//   line-height: 1.72;
-//   padding-top: 22px;
-// `;
 
 const DataWrapper = styled.div`
   background-color: ${props => props.theme.colors.deeppink};
