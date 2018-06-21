@@ -80,7 +80,7 @@ export default () => (
           </Service>
           <Service icon={<Rocket />}>
             <ServiceTitle>Addcode</ServiceTitle>
-            <ServiceItem>Remote Teams</ServiceItem>
+            <ServiceItem>Remote Dedicated Teams</ServiceItem>
             <ServiceItem>Geography - same time zone</ServiceItem>
             <ServiceItem>Scalability</ServiceItem>
             <ServiceItem>Talent</ServiceItem>

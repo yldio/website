@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Flex, { FlexItem } from 'styled-flex-component';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
+const { Provider, Consumer } = React.createContext();
 
 import { H5, Copy } from 'components/typography';
 
@@ -36,20 +37,109 @@ const Item = Copy.withComponent('li').extend`
   }
 `;
 
+export class CardsList extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.cards = {};
+    this.state = {};
+
+    this.handleResize = this.handleResize.bind(this);
+  }
+
+  handleResize(id, height) {
+    this.cards = {
+      // eslint-disable-next-line no-access-state-in-setstate
+      ...this.cards,
+      [id]: height
+    };
+
+    const tallest = Object.keys(this.cards).reduce(
+      (height, id) => (this.cards[id] > height ? this.cards[id] : height),
+      0
+    );
+
+    this.setState({ tallest });
+  }
+
+  render() {
+    const { children } = this.props;
+    const { tallest: height } = this.state;
+    const { handleResize } = this;
+
+    return <Provider value={{ height, handleResize }}>{children}</Provider>;
+  }
+}
+
+class Card extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.div = React.createRef();
+  }
+
+  componentDidMount() {
+    const { id, handleResize } = this.props;
+
+    if (handleResize) {
+      // If Card is not inside a CardsList, it wont get an handleResize
+      handleResize(id, this.div.current.clientHeight);
+    }
+  }
+
+  render() {
+    const { height, title, points, children, props } = this.props;
+
+    return (
+      <div ref={this.div}>
+        <Flex justifyCenter alignCenter>
+          <FlexItem>
+            <CardWrapper height={`${height}px`} {...props}>
+              <Title blue uppercase>
+                {title}
+              </Title>
+              {points ? (
+                <ul>
+                  {points &&
+                    points.map(point => <Item key={point}>{point}</Item>)}
+                </ul>
+              ) : null}
+              {children}
+            </CardWrapper>
+          </FlexItem>
+        </Flex>
+      </div>
+    );
+  }
+}
+
+// ==========================
+
 export default ({ title, points, children, ...props }) => (
-  <Flex justifyCenter alignCenter>
-    <FlexItem>
-      <CardWrapper {...props}>
-        <Title blue uppercase>
-          {title}
-        </Title>
-        {points ? (
-          <ul>
-            {points && points.map(point => <Item key={point}>{point}</Item>)}
-          </ul>
-        ) : null}
+  <Consumer>
+    {value => (
+      <Card {...props} {...value} title={title} points={points}>
         {children}
-      </CardWrapper>
-    </FlexItem>
-  </Flex>
+      </Card>
+    )}
+  </Consumer>
 );
+
+// Original card
+// export default ({ title, points, children, ...props }) => (
+//   <Flex justifyCenter alignCenter>
+//     <FlexItem>
+//       <CardWrapper {...props}>
+//         <Title blue uppercase>
+//           {title}
+//         </Title>
+//         {points ? (
+//           <ul>
+//             {points && points.map(point => <Item key={point}>{point}</Item>)}
+//           </ul>
+//         ) : null}
+//         {children}
+//       </CardWrapper>
+//     </FlexItem>
+//   </Flex>
+// );

@@ -38,8 +38,8 @@ const Index = ({ page, videos = [] }) => (
             <Margin bottom={12}>
               <Copy whiter>
                 We enable the worlds leading enterprises to drive digital
-                transformation and define their technology future through
-                strategy, design and custom software engineering.
+                transformation and create their technology future through
+                culture, design and software engineering.
               </Copy>
             </Margin>
             <Margin bottom={{ xs: 16, md: 111 }}>
