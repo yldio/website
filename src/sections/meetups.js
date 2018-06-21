@@ -11,6 +11,7 @@ import { H4 } from 'components/typography';
 import Section from 'components/section';
 import Video from 'components/video';
 import Image from 'components/image';
+import NextMeetups from './next-meetups';
 
 const Description = H4.extend`
   font-size: ${remcalc(18)};
@@ -62,6 +63,21 @@ export default ({ videos = [] }) => (
               name="React.JS Girls London"
               description="ReactJS Girls is a community meetup voicing female engineers who want to learn and teach their experience using React. Although the meetup is aimed to at women in tech community, attendees of all genders are welcome to attend."
             />
+            <NextMeetups
+              futureMeetups={[
+                {
+                  data: '19',
+                  month: 'JUNE',
+                  title: 'ReactJS Girls #10 - Talking the Talk',
+                  description:
+                    'We are thrilled to bring Sophie Koonin (Johh Lewis) and Kimberley Cook (Hive) hosted by Hive.',
+                  linkB: 'FEFFFF',
+                  hour: '6:00 PM to 8:30 PM',
+                  address:
+                    '@WeWork Aldwych House 71 - 91 Aldwych WC2B 4HN London'
+                }
+              ]}
+            />
             <Meetups
               video={find(videos, ['title', 'trainline'])}
               name="London Node.JS Meetup"
@@ -76,6 +92,21 @@ export default ({ videos = [] }) => (
               video={find(videos, ['title', 'trainline'])}
               name="Manchester Frontend Meetup"
               description="Manchester Frontend Meetup is a group of web developers who are passionate about sharing knowledge and promoting best practices. Each month, we will present 2-3 speakers who will discuss topics covering all things frontend."
+            />
+            <NextMeetups
+              futureMeetups={[
+                {
+                  data: '20',
+                  month: 'JUNE',
+                  title: 'Manchester Frontend Meetup #1',
+                  description:
+                    'We are thrilled to bring Sophie Koonin (Johh Lewis) and Kimberley Cook (Hive) hosted by Hive.',
+                  linkB: 'FEFFFF',
+                  hour: '6:00 PM to 10:00 PM',
+                  address:
+                    '@AO.com Riverside, Baskerville House Browncross Street West  Salford'
+                }
+              ]}
             />
             <Meetups
               video={find(videos, ['title', 'trainline'])}
