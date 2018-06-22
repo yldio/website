@@ -5,6 +5,8 @@ import breakpoint from 'styled-components-breakpoint';
 import styled from 'styled-components';
 import ParamCase from 'param-case';
 import find from 'lodash.find';
+import graphql from 'graphql-tag';
+import { mapProps } from 'recompose';
 
 import { H2, H4, H5, Copy } from 'components/typography';
 import BulletList, { Item as BulletListItem } from 'components/bullet-list';
@@ -275,7 +277,18 @@ const CaseStudy = ({
   </Fragment>
 );
 
-export default ({ videos = [] }) => {
+// Export default ({ videos = [] }) => {
+//   return studies.map(({ name, ...study }) => (
+//     <CaseStudy
+//       key={name}
+//       video={find(videos, ['title', ParamCase(name)])}
+//       name={name}
+//       {...study}
+//     />
+//   ));
+// };
+
+const CaseStudies = ({ videos = [] }) => {
   return studies.map(({ name, ...study }) => (
     <CaseStudy
       key={name}
@@ -285,3 +298,36 @@ export default ({ videos = [] }) => {
     />
   ));
 };
+
+export default mapProps(props => ({}))(CaseStudies);
+
+// Edges is a list of case study objects
+export const caseStudyQuery = graphql`
+  {
+    query
+    CaseStudiesQuery {
+      allContentfulCaseStudy {
+        edges {
+          node {
+            clientName
+            objective {
+              objective
+            }
+            screenshotForHeadline {
+              id
+            }
+            brandBackgroundColour
+            brandFontColour
+            tagline {
+              tagline
+            }
+            topics {
+              results
+              challenges
+            }
+          }
+        }
+      }
+    }
+  }
+`;
