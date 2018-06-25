@@ -72,6 +72,9 @@ export const pageQuery = graphql`
           }
           screenshotForHeadline {
             id
+            file {
+              url
+            }
           }
           brandBackgroundColour
           brandFontColour
