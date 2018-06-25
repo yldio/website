@@ -5,8 +5,6 @@ import breakpoint from 'styled-components-breakpoint';
 import styled from 'styled-components';
 import ParamCase from 'param-case';
 import find from 'lodash.find';
-import graphql from 'graphql-tag';
-import { mapProps } from 'recompose';
 
 import { H2, H4, H5, Copy } from 'components/typography';
 import BulletList, { Item as BulletListItem } from 'components/bullet-list';
@@ -35,7 +33,7 @@ const Img = styled.img`
   width: 100%;
 `;
 
-const studies = [
+const studies2 = [
   {
     name: 'Trainline',
     objective: 'A Platform update & Improved User Experience',
@@ -204,42 +202,44 @@ const Topic = ({ title = '', items = [] }) => (
 );
 
 const CaseStudy = ({
-  img,
+  props,
+  // Img,
   bg,
   video,
-  color = '#56c0a8',
-  fontColor,
+  // Color = '#56c0a8',
+  // fontColor,
   name = '',
   objective = '',
   tagline = '',
-  topics = []
+  topics = [],
+  studyDetails
 }) => (
   <Fragment>
     <Hero
       bg={bg}
       position="bottom 0 left 50vw"
       size="initial"
-      color={color}
-      fontColor={fontColor}
-      id={ParamCase(name)}
+      color={studyDetails.brandBackgroundColour}
+      fontColor={studyDetails.brandFontColour}
+      id={ParamCase(studyDetails.clientName)}
     >
       <Grid>
         <Row>
           <Col xs={12} lg={6}>
             <Margin top={{ xs: 15, lg: 94 }}>
-              <H2 brand fontColor={fontColor}>
-                {name}
+              <H2 brand fontColor={studyDetails.brandFontColour}>
+                {studyDetails.clientName}
               </H2>
             </Margin>
 
             <Margin bottom={{ xs: 9, lg: 78 }}>
-              <Copy brand fontColor={fontColor}>
+              <Copy brand fontColor={studyDetails.brandFontColour}>
                 {objective}
               </Copy>
             </Margin>
           </Col>
 
-          {img}
+          {/* {img} */}
         </Row>
       </Grid>
     </Hero>
@@ -277,57 +277,15 @@ const CaseStudy = ({
   </Fragment>
 );
 
-// Export default ({ videos = [] }) => {
-//   return studies.map(({ name, ...study }) => (
-//     <CaseStudy
-//       key={name}
-//       video={find(videos, ['title', ParamCase(name)])}
-//       name={name}
-//       {...study}
-//     />
-//   ));
-// };
+// Const studies = props.caseStudies;
 
-const CaseStudies = ({ videos = [] }) => {
+export default ({ studies, videos = [] }) => {
   return studies.map(({ name, ...study }) => (
     <CaseStudy
       key={name}
       video={find(videos, ['title', ParamCase(name)])}
       name={name}
-      {...study}
+      studyDetails={study.node}
     />
   ));
 };
-
-export default mapProps(props => ({}))(CaseStudies);
-
-// Edges is a list of case study objects
-export const caseStudyQuery = graphql`
-  {
-    query
-    CaseStudiesQuery {
-      allContentfulCaseStudy {
-        edges {
-          node {
-            clientName
-            objective {
-              objective
-            }
-            screenshotForHeadline {
-              id
-            }
-            brandBackgroundColour
-            brandFontColour
-            tagline {
-              tagline
-            }
-            topics {
-              results
-              challenges
-            }
-          }
-        }
-      }
-    }
-  }
-`;
