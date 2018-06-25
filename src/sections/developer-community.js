@@ -17,7 +17,7 @@ export default ({ videos }) => (
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row>
-            <Col xs={12}>
+            <Col xs={12} md={8}>
               <Margin bottom={24}>
                 <H4 decorated>
                   We define ourselves by the people who represent us. Our
