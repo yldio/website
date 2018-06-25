@@ -14,7 +14,7 @@ import CaseStudies from 'sections/case-studies';
 import JoinUs from 'sections/join-us';
 import Footer from 'sections/footer';
 
-const OurClients = ({ page, caseStudies, videos = [] }) => (
+const OurClients = ({ page, caseStudies, logos, videos = [] }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
     <Hero height="400" data-selector="our-clients:intro">
@@ -40,7 +40,7 @@ const OurClients = ({ page, caseStudies, videos = [] }) => (
         </Row>
       </Grid>
     </Hero>
-    <WhoWeWorkWith />
+    <WhoWeWorkWith logos={logos} />
     <CaseStudies videos={videos} studies={caseStudies} />
     <JoinUs />
     <Footer />
@@ -50,7 +50,8 @@ const OurClients = ({ page, caseStudies, videos = [] }) => (
 export default mapProps(props => ({
   page: props.data.contentfulPage,
   videos: props.data.videos.edges.map(({ node }) => node),
-  caseStudies: props.data.allContentfulCaseStudy.edges
+  caseStudies: props.data.allContentfulCaseStudy.edges,
+  logos: props.data.allContentfulLogoForGrid.edges
 }))(OurClients);
 
 export const pageQuery = graphql`
@@ -84,6 +85,19 @@ export const pageQuery = graphql`
           topics {
             results
             challenges
+          }
+        }
+      }
+    }
+
+    allContentfulLogoForGrid {
+      edges {
+        node {
+          clientName
+          logoImage {
+            file {
+              url
+            }
           }
         }
       }
