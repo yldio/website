@@ -31,10 +31,6 @@ const Month = styled.div`
   font-size: 18px;
 `;
 
-const Hour = H5.extend`
-  padding-bottom: 20px;
-`;
-
 const Link = styled.div`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(31)};
@@ -42,12 +38,11 @@ const Link = styled.div`
 `;
 
 const MeetupsDetails = styled.div`
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -9px #777;
+  box-shadow: 10.3px 12.3px 40px 5px rgba(25, 5, 51, 0.15);
 `;
 
-const MeeupTitle = H5.extend`
+const Header = H5.extend`
+  padding-top: 22px;
   padding-bottom: 20px;
 `;
 
@@ -73,14 +68,14 @@ export default ({ futureMeetups }) => (
               </Col>
               <Col xs={5} md={5}>
                 <Copy>
-                  <MeeupTitle darker>{futureMeetup.title}</MeeupTitle>
+                  <Header darker>{futureMeetup.title}</Header>
                   <p>{futureMeetup.description}</p>
                   <Link>{futureMeetup.linkB}</Link>
                 </Copy>
               </Col>
               <Col xs={4} md={4}>
                 <Copy>
-                  <Hour darker>{futureMeetup.hour}</Hour>
+                  <Header darker>{futureMeetup.hour}</Header>
                   <p>{futureMeetup.address}</p>
                 </Copy>
               </Col>

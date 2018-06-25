@@ -4,14 +4,19 @@ import { Padding, Margin } from 'styled-components-spacing';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 import ParamCase from 'param-case';
-import find from 'lodash.find';
 
 import BaseLink from 'gatsby-link';
 import { H4 } from 'components/typography';
 import Section from 'components/section';
-import Video from 'components/video';
-import Image from 'components/image';
 import NextMeetups from './next-meetups';
+
+import YouTube from 'react-youtube';
+import TensorFlow from 'assets/tensor-flow.png';
+import ManchesterFrontend from 'assets/manchester-frontend.png';
+
+const Image = styled.img`
+  width: 100%;
+`;
 
 const Description = H4.extend`
   font-size: ${remcalc(18)};
@@ -24,16 +29,30 @@ const Link = styled(BaseLink)`
   color: ${props => props.theme.colors.deeppink};
 `;
 
-const Meetups = ({ video, image, name, description }) => (
+const opts = {
+  display: 'inline-block',
+  position: 'relative',
+  height: '286,7',
+  width: '100%'
+};
+
+const Meetups = ({ image, name, description, videoId }) => (
   <Col xs={12} md={12}>
     <Margin bottom={{ xs: 0, md: 24 }} top={{ xs: 15, md: 24 }} inline>
       <Row>
         <Col xs={12} md={6}>
           <Margin bottom={16}>
-            {image ? <Image src={image} /> : null}
-            {video ? (
-              <Video src={video.file.url} controls preload="metadata" />
-            ) : null}
+            {image ? (
+              <Image src={image} />
+            ) : (
+              <YouTube
+                videoId={videoId}
+                autoplay="0"
+                rel="0"
+                modest="1"
+                opts={opts}
+              />
+            )}
           </Margin>
         </Col>
         <Col xs={12} md={6}>
@@ -52,14 +71,14 @@ const Meetups = ({ video, image, name, description }) => (
   </Col>
 );
 
-export default ({ videos = [] }) => (
+export default () => (
   <Fragment>
     <Section>
       <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row middle="xs" between="xs">
             <Meetups
-              video={find(videos, ['title', 'trainline'])}
+              videoId="jRs1HaSwIP4"
               name="React.JS Girls London"
               description="ReactJS Girls is a community meetup voicing female engineers who want to learn and teach their experience using React. Although the meetup is aimed to at women in tech community, attendees of all genders are welcome to attend."
             />
@@ -79,17 +98,17 @@ export default ({ videos = [] }) => (
               ]}
             />
             <Meetups
-              video={find(videos, ['title', 'trainline'])}
+              videoId="sbe_2N5urMs"
               name="London Node.JS Meetup"
               description="The #LNM is for the Node.JS beginners and advanced enthusiasts keen to dive into latest Node trends and have fun with growing tech community!"
             />
             <Meetups
-              video={find(videos, ['title', 'trainline'])}
+              image={TensorFlow}
               name="London TensorFlow Meetup"
               description="#LTM is for beginners and experienced software engineers, open source enthusiasts, and scientists interested in using TensorFlow, have fun with technology and explore growing community around it!"
             />
             <Meetups
-              video={find(videos, ['title', 'trainline'])}
+              image={ManchesterFrontend}
               name="Manchester Frontend Meetup"
               description="Manchester Frontend Meetup is a group of web developers who are passionate about sharing knowledge and promoting best practices. Each month, we will present 2-3 speakers who will discuss topics covering all things frontend."
             />
@@ -109,7 +128,7 @@ export default ({ videos = [] }) => (
               ]}
             />
             <Meetups
-              video={find(videos, ['title', 'trainline'])}
+              videoId="Ypb6m8ml4ZA"
               name="Digital Product London"
               description="Digital Product London gathers top digital product minds to explore, explain and discuss challenging concepts, from product design to engineering culture."
             />

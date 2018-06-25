@@ -5,7 +5,8 @@ import Hero from 'components/hero';
 
 import { H3, H4 } from 'components/typography';
 import Section from 'components/section';
-import designProductBg from 'assets/design-product-bg.png';
+import meetupsBg from 'assets/meetups-bg.png';
+import conferencesBg from 'assets/conferences-bg.png';
 import Meetups from './meetups';
 import Conferences from './conferences';
 import TechTalks from './tech-talks';
@@ -29,7 +30,7 @@ export default ({ videos }) => (
         </Grid>
       </Padding>
     </Section>
-    <Hero bg={designProductBg}>
+    <Hero bg={meetupsBg}>
       <Padding top={175} bottom={25}>
         <Grid>
           <Row>
@@ -41,7 +42,7 @@ export default ({ videos }) => (
       </Padding>
     </Hero>
     <Meetups videos={videos} />
-    <Hero bg={designProductBg}>
+    <Hero bg={conferencesBg}>
       <Padding top={175} bottom={25}>
         <Grid>
           <Row>
