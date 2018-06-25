@@ -182,36 +182,21 @@ const studies2 = [
   }
 ];
 
-const Topic = ({ title = '', items = [] }) => (
-  <Col xs={12} md={6}>
-    <Row>
-      <Col xs={12}>
-        <H5>{title}</H5>
-      </Col>
-    </Row>
-    <Row>
-      <Col xs={12}>
-        <BulletList>
-          {items.map(item => (
-            <BulletListItem key={item}>{item}</BulletListItem>
-          ))}
-        </BulletList>
-      </Col>
-    </Row>
-  </Col>
+const List = ({ items = [] }) => (
+  <Row>
+    <Col xs={12}>
+      <BulletList>
+        {items.map(item => <BulletListItem key={item}>{item}</BulletListItem>)}
+      </BulletList>
+    </Col>
+  </Row>
 );
 
 const CaseStudy = ({
-  props,
   // Img,
   bg,
   video,
-  // Color = '#56c0a8',
-  // fontColor,
-  name = '',
-  objective = '',
-  tagline = '',
-  topics = [],
+
   studyDetails
 }) => (
   <Fragment>
@@ -234,7 +219,7 @@ const CaseStudy = ({
 
             <Margin bottom={{ xs: 9, lg: 78 }}>
               <Copy brand fontColor={studyDetails.brandFontColour}>
-                {objective}
+                {studyDetails.objective.objective}
               </Copy>
             </Margin>
           </Col>
@@ -249,14 +234,30 @@ const CaseStudy = ({
           <Row>
             <Col xs={12}>
               <Margin bottom={24}>
-                <H4>{tagline}</H4>
+                <H4>{studyDetails.tagline.tagline}</H4>
               </Margin>
             </Col>
           </Row>
           <Row between="xs">
-            {topics.map(({ title, items }) => (
+            {/* {topics.map(({ title, items }) => (
               <Topic key={title} title={title} items={items} />
-            ))}
+            ))} */}
+            <Col xs={12} md={6}>
+              <Row>
+                <Col xs={12}>
+                  <H5>Challenges</H5>
+                </Col>
+              </Row>
+              <List items={studyDetails.topics.challenges} />
+            </Col>
+            <Col xs={12} md={6}>
+              <Row>
+                <Col xs={12}>
+                  <H5>Results</H5>
+                </Col>
+              </Row>
+              <List items={studyDetails.topics.results} />
+            </Col>
           </Row>
         </Grid>
       </Padding>
