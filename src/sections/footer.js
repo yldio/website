@@ -48,6 +48,7 @@ export default () => (
                   <ListLink to="/services">Services</ListLink>
 
                   <ListLink to="/our-clients">Our Clients</ListLink>
+                  <ListLink to="/community">Community</ListLink>
                 </Col>
                 <Col xs={6} md={6} lg={12}>
                   <ListLink to="/about-us">About Us</ListLink>
