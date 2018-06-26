@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 
+jest.mock('gatsby-link');
+
 import Button from 'components/button';
 import { H1, H2, H3, H4, H5, Copy } from 'components/typography';
 import Checklist, { Item as CheckItem } from 'components/checklist';
@@ -12,8 +14,6 @@ import Section from 'components/section';
 import Hr from 'components/hr';
 import Video from 'components/video';
 import theme from '../../theme';
-
-jest.mock('gatsby-link');
 
 test('snapshot components/bullet-list', () => {
   return expect(

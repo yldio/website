@@ -109,7 +109,7 @@ export default ({ videos = [] }) => (
                 relevant brands.<br />
                 <br />Comfortable with digital change, we know how to create a
                 lasting engineering culture of experimentation, to make sure our
-                clients are too.​<br />
+                clients are too.<br />
                 <br />We thrive in enabling our clients to unlock the potential
                 of their talent through up-skilling and pair programming,
                 empowering them to stay ahead of the competition and improve
