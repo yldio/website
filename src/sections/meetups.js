@@ -11,8 +11,7 @@ import Section from 'components/section';
 import NextMeetups from './next-meetups';
 
 import YouTube from 'react-youtube';
-import TensorFlow from 'assets/tensor-flow.png';
-import ManchesterFrontend from 'assets/manchester-frontend.png';
+import MeetupsPlaceholder from 'assets/meetups-placeholder.png';
 
 const Image = styled.img`
   width: 100%;
@@ -103,12 +102,12 @@ export default () => (
               description="The #LNM is for the Node.JS beginners and advanced enthusiasts keen to dive into latest Node trends and have fun with growing tech community!"
             />
             <Meetups
-              image={TensorFlow}
+              image={MeetupsPlaceholder}
               name="London TensorFlow Meetup"
               description="#LTM is for beginners and experienced software engineers, open source enthusiasts, and scientists interested in using TensorFlow, have fun with technology and explore growing community around it!"
             />
             <Meetups
-              image={ManchesterFrontend}
+              image={MeetupsPlaceholder}
               name="Manchester Frontend Meetup"
               description="Manchester Frontend Meetup is a group of web developers who are passionate about sharing knowledge and promoting best practices. Each month, we will present 2-3 speakers who will discuss topics covering all things frontend."
             />

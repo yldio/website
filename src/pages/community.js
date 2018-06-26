@@ -3,7 +3,7 @@ import { mapProps } from 'recompose';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Margin } from 'styled-components-spacing';
 import Helmet from 'react-helmet';
-
+import graphql from 'graphql-tag';
 import { H2, Copy } from 'components/typography';
 import Hero from 'components/hero';
 
