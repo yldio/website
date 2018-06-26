@@ -90,3 +90,9 @@ workflows:
       - build:
           requires:
             - install
+      - unit-tests:
+          requires:
+            - install
+      - feature-tests:
+          requires:
+            - build
