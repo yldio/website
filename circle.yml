@@ -6,10 +6,10 @@ defaults: &defaults
 restore-cache: &restore-cache
   name: Restore Yarn Package Cache
   keys:
-    - v2-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
-    - v2-yarn-packages-{{ .Branch }}-
-    - v2-yarn-packages-master-
-    - v2-yarn-packages-
+    - v3-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+    - v3-yarn-packages-{{ .Branch }}-
+    - v3-yarn-packages-master-
+    - v3-yarn-packages-
 
 version: 2
 jobs:
@@ -24,7 +24,7 @@ jobs:
           command: yarn
       - save_cache:
           name: Save Yarn Package Cache
-          key: v2-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v3-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
             - ~/.cache/Cypress
