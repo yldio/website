@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Padding, Margin } from 'styled-components-spacing';
+import Flex, { FlexItem } from 'styled-flex-component';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 import ParamCase from 'param-case';
@@ -55,7 +56,7 @@ const Meetups = ({ image, name, description, videoId }) => (
           </Margin>
         </Col>
         <Col xs={12} md={6}>
-          <Margin bottom={6}>
+          {/* <Margin bottom={6}>
             <H4>{name}</H4>
           </Margin>
           <Margin bottom={{ xs: 9, md: 15 }}>
@@ -63,6 +64,19 @@ const Meetups = ({ image, name, description, videoId }) => (
           </Margin>
           <Margin bottom={{ xs: 9, md: 15 }}>
             <Link to={`/our-clients#${ParamCase(name)}`}>Learn more</Link>
+          </Margin> */}
+          <Margin bottom={6}>
+            <Flex column alignStretch contentStretch justifyBetween full>
+              <FlexItem>
+                <H4>{name}</H4>
+              </FlexItem>
+              <FlexItem>
+                <Description>{description}</Description>
+              </FlexItem>
+              <FlexItem>
+                <Link to={`/our-clients#${ParamCase(name)}`}>Learn more</Link>
+              </FlexItem>
+            </Flex>
           </Margin>
         </Col>
       </Row>
