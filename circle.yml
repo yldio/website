@@ -72,7 +72,9 @@ jobs:
           <<: *restore-cache
       - run:
           name: Symlink Cypress Cache
-          command: ln -s /home/circleci/.cache/Cypress /root/.cache/Cypress
+          command: |
+            mkdir -p /root/.cache
+            ln -s /home/circleci/.cache/Cypress /root/.cache/Cypress
       - run:
           name: Start application server
           command: yarn ci:start-server
