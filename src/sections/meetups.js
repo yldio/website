@@ -39,7 +39,7 @@ const opts = {
 
 const Meetups = ({ image, name, description, videoId }) => (
   <Col xs={12} md={12}>
-    <Margin bottom={{ xs: 0, md: 35 }} top={{ xs: 15, md: 35 }} inline>
+    <Margin bottom={{ xs: 15, md: 35 }} top={{ xs: 15, md: 35 }} inline>
       <Row>
         <Col xs={12} md={6}>
           {image ? (
@@ -93,7 +93,7 @@ export default () => (
                   title: 'ReactJS Girls #10 - Talking the Talk',
                   description:
                     'We are thrilled to bring Sophie Koonin (Johh Lewis) and Kimberley Cook (Hive) hosted by Hive.',
-                  linkB: 'FEFFFF',
+                  SignUpLink: 'Sign Up',
                   hour: '6:00 PM to 8:30 PM',
                   address:
                     '@WeWork Aldwych House 71 - 91 Aldwych WC2B 4HN London'
@@ -132,7 +132,7 @@ export default () => (
                   title: 'Manchester Frontend Meetup #1',
                   description:
                     'We are thrilled to bring Sophie Koonin (Johh Lewis) and Kimberley Cook (Hive) hosted by Hive.',
-                  linkB: 'FEFFFF',
+                  SignUpLink: 'Sign Up',
                   hour: '6:00 PM to 10:00 PM',
                   address:
                     '@AO.com Riverside, Baskerville House Browncross Street West  Salford'
