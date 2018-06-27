@@ -24,7 +24,7 @@ jobs:
           command: yarn
       - save_cache:
           name: Save Yarn Package Cache
-          key: v1-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v2-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
             - ~/.cache
