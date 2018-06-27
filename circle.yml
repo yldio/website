@@ -27,6 +27,7 @@ jobs:
           key: v1-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
+            - ~/.cache
   lint:
     <<: *defaults
     steps:
@@ -69,9 +70,6 @@ jobs:
           at: .
       - restore_cache:
           <<: *restore-cache
-      - run:
-          name: Force Cypress Install
-          command: npm i cypress
       - run:
           name: Start application server
           command: yarn ci:start-server
