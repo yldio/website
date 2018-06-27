@@ -27,7 +27,7 @@ jobs:
           key: v2-yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
-            - ~/.cache
+            - ~/.cache/Cypress
   lint:
     <<: *defaults
     steps:
