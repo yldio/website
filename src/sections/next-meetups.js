@@ -6,8 +6,9 @@ import remcalc from 'remcalc';
 
 import Section from 'components/section';
 import { H5, Copy } from 'components/typography';
+import Flex, { FlexItem } from 'styled-flex-component';
 
-const DataWrapper = styled.div`
+const DataWrapper = Flex.extend`
   background-color: ${props => props.theme.colors.deeppink};
   color: ${props => props.theme.colors.white};
   text-align: center;
@@ -15,8 +16,7 @@ const DataWrapper = styled.div`
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
-  padding-top: 42px;
-  padding-bottom: 30px;
+  height: 100%;
 `;
 
 const Day = styled.div`
@@ -50,7 +50,7 @@ export default ({ futureMeetups }) => (
   <Fragment>
     <Section>
       <Col xs={12}>
-        <Margin bottom={{ xs: 15, md: 24 }}>
+        <Margin bottom={{ xs: 15, md: 15 }}>
           <H5>Next Meetup</H5>
         </Margin>
       </Col>
@@ -59,27 +59,33 @@ export default ({ futureMeetups }) => (
       {futureMeetups.map(futureMeetup => (
         <Col key={`next-meetups-row-${futureMeetup.id}`} xs={12} md={12}>
           <MeetupsDetails>
-            <Row>
-              <Col xs={3} md={3} height>
-                <DataWrapper>
-                  <Day>{futureMeetup.data}</Day>
-                  <Month>{futureMeetup.month}</Month>
-                </DataWrapper>
-              </Col>
-              <Col xs={5} md={5}>
-                <Copy>
-                  <Header darker>{futureMeetup.title}</Header>
-                  <p>{futureMeetup.description}</p>
-                  <Link>{futureMeetup.linkB}</Link>
-                </Copy>
-              </Col>
-              <Col xs={4} md={4}>
-                <Copy>
-                  <Header darker>{futureMeetup.hour}</Header>
-                  <p>{futureMeetup.address}</p>
-                </Copy>
-              </Col>
-            </Row>
+            <Margin bottom={{ xs: 15, md: 35 }}>
+              <Row>
+                <Col xs={3} md={3} height>
+                  <DataWrapper column alignCenter justifyAround>
+                    <FlexItem>
+                      <Day>{futureMeetup.data}</Day>
+                    </FlexItem>
+                    <FlexItem>
+                      <Month>{futureMeetup.month}</Month>
+                    </FlexItem>
+                  </DataWrapper>
+                </Col>
+                <Col xs={5} md={5}>
+                  <Copy>
+                    <Header darker>{futureMeetup.title}</Header>
+                    <p>{futureMeetup.description}</p>
+                    <Link>{futureMeetup.linkB}</Link>
+                  </Copy>
+                </Col>
+                <Col xs={4} md={4}>
+                  <Copy>
+                    <Header darker>{futureMeetup.hour}</Header>
+                    <p>{futureMeetup.address}</p>
+                  </Copy>
+                </Col>
+              </Row>
+            </Margin>
           </MeetupsDetails>
         </Col>
       ))}
