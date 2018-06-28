@@ -70,12 +70,26 @@ const Meetups = ({ image, name, description, videoId }) => (
   </Col>
 );
 
-export default () => (
+export default ({ meetupCommunities }) => (
   <Fragment>
     <Section>
       <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row middle="xs" between="xs">
+            {meetupCommunities.map(({ ...community }) => (
+              <Meetups
+                key={community.node.meetupCommunityName}
+                videoId={
+                  community.node.videoYouTubeId
+                    ? community.node.videoYouTubeId
+                    : 0
+                }
+                image={community.node.videoYouTubeId ? 0 : MeetupsPlaceholder}
+                name={community.node.meetupCommunityName}
+                description={community.node.description.description}
+              />
+            ))}
+
             <Meetups
               videoId="jRs1HaSwIP4"
               name="React.JS Girls London"
@@ -95,41 +109,6 @@ export default () => (
                     '@WeWork Aldwych House 71 - 91 Aldwych WC2B 4HN London'
                 }
               ]}
-            />
-            <Meetups
-              videoId="sbe_2N5urMs"
-              name="London Node.JS Meetup"
-              description="The #LNM is for the Node.JS beginners and advanced enthusiasts keen to dive into latest Node trends and have fun with growing tech community!"
-            />
-            <Meetups
-              image={MeetupsPlaceholder}
-              name="London TensorFlow Meetup"
-              description="#LTM is for beginners and experienced software engineers, open source enthusiasts, and scientists interested in using TensorFlow, have fun with technology and explore growing community around it!"
-            />
-            <Meetups
-              image={MeetupsPlaceholder}
-              name="Manchester Frontend Meetup"
-              description="Manchester Frontend Meetup is a group of web developers who are passionate about sharing knowledge and promoting best practices. Each month, we will present 2-3 speakers who will discuss topics covering all things frontend."
-            />
-            <NextMeetups
-              futureMeetups={[
-                {
-                  data: '20',
-                  month: 'JUNE',
-                  title: 'Manchester Frontend Meetup #1',
-                  description:
-                    'We are thrilled to bring Sophie Koonin (Johh Lewis) and Kimberley Cook (Hive) hosted by Hive.',
-                  linkB: 'FEFFFF',
-                  hour: '6:00 PM to 10:00 PM',
-                  address:
-                    '@AO.com Riverside, Baskerville House Browncross Street West  Salford'
-                }
-              ]}
-            />
-            <Meetups
-              videoId="Ypb6m8ml4ZA"
-              name="Digital Product London"
-              description="Digital Product London gathers top digital product minds to explore, explain and discuss challenging concepts, from product design to engineering culture."
             />
           </Row>
         </Grid>
