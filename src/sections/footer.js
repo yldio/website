@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Padding } from 'styled-components-spacing';
+import styled from 'styled-components';
 import BaseLink from 'gatsby-link';
 import remcalc from 'remcalc';
 
@@ -20,6 +21,17 @@ const Link = Copy.withComponent(BaseLink).extend`
   line-height: ${remcalc(33)};
   text-decoration: none;
   margin-left: ${remcalc(15)};
+`;
+
+const SocialLink = styled.a`
+  text-decoration: none;
+  display: block;
+  color: ${props => props.theme.colors.thistle};
+  text-decoration: none;
+  margin-top: ${remcalc(15)};
+  line-height: ${remcalc(31)};
+  font-size: ${remcalc(18)};
+  font-weight: 400;
 `;
 
 export default () => (
@@ -62,15 +74,24 @@ export default () => (
             <H4 whiter>Follow Us</H4>
             <Row>
               <Col xs={4} md={2} lg={12}>
-                <ListLink to="https://twitter.com/yldio">Twitter</ListLink>
+                <SocialLink href="https://twitter.com/yldio" target="_blank">
+                  Twitter
+                </SocialLink>
               </Col>
 
               <Col xs={4} md={2} lg={12}>
-                <ListLink to="https://github.com/yldio">Github</ListLink>
+                <SocialLink href="https://github.com/yldio" target="_blank">
+                  Github
+                </SocialLink>
               </Col>
 
               <Col xs={4} md={2} lg={12}>
-                <ListLink to="https://youtube.com">Youtube</ListLink>
+                <SocialLink
+                  href="https://www.youtube.com/channel/UCpWRY48zuZFzHxIZ28mFacQ"
+                  target="_blank"
+                >
+                  Youtube
+                </SocialLink>
               </Col>
             </Row>
           </Col>
