@@ -5,9 +5,7 @@ import Flex, { FlexItem } from 'styled-flex-component';
 import Hr from 'components/hr';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
-import ParamCase from 'param-case';
 
-import BaseLink from 'gatsby-link';
 import { H4 } from 'components/typography';
 import Section from 'components/section';
 import NextMeetups from './next-meetups';
@@ -24,7 +22,7 @@ const Description = H4.extend`
   line-height: ${remcalc(31)};
 `;
 
-const Link = styled(BaseLink)`
+const Link = styled.a`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(31)};
   color: ${props => props.theme.colors.deeppink};
@@ -38,7 +36,7 @@ const opts = {
   width: '100%'
 };
 
-const Meetups = ({ image, name, description, videoId }) => (
+const Meetups = ({ image, name, description, videoId, href }) => (
   <Col xs={12} md={12}>
     <Margin bottom={{ xs: 15, md: 35 }} top={{ xs: 15, md: 35 }} inline>
       <Row>
@@ -66,7 +64,9 @@ const Meetups = ({ image, name, description, videoId }) => (
               <Description>{description}</Description>
             </FlexItem>
             <FlexItem>
-              <Link to={`/our-clients#${ParamCase(name)}`}>Learn more</Link>
+              <Link href={href} target="_blank">
+                Learn more
+              </Link>
             </FlexItem>
           </Flex>
         </Col>
@@ -85,6 +85,7 @@ export default () => (
               videoId="jRs1HaSwIP4"
               name="React.JS Girls London"
               description="ReactJS Girls is a community meetup voicing female engineers who want to learn and teach their experience using React. Although the meetup is aimed to at women in tech community, attendees of all genders are welcome to attend."
+              href="https://www.meetup.com/ReactJS-Girls-London/"
             />
             <NextMeetups
               futureMeetups={[
@@ -108,6 +109,7 @@ export default () => (
               videoId="sbe_2N5urMs"
               name="London Node.JS Meetup"
               description="The #LNM is for the Node.JS beginners and advanced enthusiasts keen to dive into latest Node trends and have fun with growing tech community!"
+              href="https://www.meetup.com/LNM-London-Node-JS-Meetup/"
             />
             <Grid>
               <Hr />
@@ -116,6 +118,7 @@ export default () => (
               image={MeetupsPlaceholder}
               name="London TensorFlow Meetup"
               description="#LTM is for beginners and experienced software engineers, open source enthusiasts, and scientists interested in using TensorFlow, have fun with technology and explore growing community around it!"
+              href="https://www.meetup.com/London-TensorFlow-Meetup/"
             />
             <Grid>
               <Hr />
@@ -124,6 +127,7 @@ export default () => (
               image={MeetupsPlaceholder}
               name="Manchester Frontend Meetup"
               description="Manchester Frontend Meetup is a group of web developers who are passionate about sharing knowledge and promoting best practices. Each month, we will present 2-3 speakers who will discuss topics covering all things frontend."
+              href="https://www.meetup.com/Manchester-Web-Meetup/"
             />
             <NextMeetups
               futureMeetups={[
@@ -147,6 +151,7 @@ export default () => (
               videoId="Ypb6m8ml4ZA"
               name="Digital Product London"
               description="Digital Product London gathers top digital product minds to explore, explain and discuss challenging concepts, from product design to engineering culture."
+              href="https://www.meetup.com/Digital-Product-London/"
             />
           </Row>
         </Grid>
