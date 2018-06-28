@@ -25,6 +25,7 @@ const Link = styled(BaseLink)`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(27)};
   color: ${props => props.theme.colors.deeppink};
+  text-underline-position: under;
 `;
 
 const CaseStudy = ({ video, image, name, tagline }) => (
