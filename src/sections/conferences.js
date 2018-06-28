@@ -2,18 +2,18 @@ import React, { Fragment } from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Margin, Padding } from 'styled-components-spacing';
 import styled from 'styled-components';
-import remcalc from 'remcalc';
-
 import { H5, Copy } from 'components/typography';
 import Section from 'components/section';
+import remcalc from 'remcalc';
 
 import ReactFest from 'assets/react-fest.png';
 import DesignSystemsLondon from 'assets/design-systems-london.png';
 
-const Link = styled.div`
+const Link = styled.a`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(31)};
   color: ${props => props.theme.colors.deeppink};
+  text-underline-position: under;
 `;
 const Image = styled.img`
   width: 100%;
@@ -46,7 +46,9 @@ export default () => (
                 </Copy>
               </Margin>
               <Margin bottom={{ xs: 9, md: 15 }}>
-                <Link>Learn more</Link>
+                <Link href="https://reactfest.uk/" target="_blank">
+                  Learn more
+                </Link>
               </Margin>
             </Col>
             <Col xs={12} sm={6}>
@@ -62,7 +64,9 @@ export default () => (
                 </Copy>
               </Margin>
               <Margin bottom={{ xs: 9, md: 15 }}>
-                <Link>Coming Soon</Link>
+                <Link href="https://reactfest.uk/" target="_blank">
+                  Coming Soon
+                </Link>
               </Margin>
             </Col>
           </Row>

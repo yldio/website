@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Padding, Margin } from 'styled-components-spacing';
+import Flex, { FlexItem } from 'styled-flex-component';
+// Import Hr from 'components/hr';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
-import ParamCase from 'param-case';
 
-import BaseLink from 'gatsby-link';
 import { H4 } from 'components/typography';
 import Section from 'components/section';
 import NextMeetups from './next-meetups';
@@ -22,10 +22,11 @@ const Description = H4.extend`
   line-height: ${remcalc(31)};
 `;
 
-const Link = styled(BaseLink)`
+const Link = styled.a`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(31)};
   color: ${props => props.theme.colors.deeppink};
+  text-underline-position: under;
 `;
 
 const opts = {
@@ -35,35 +36,39 @@ const opts = {
   width: '100%'
 };
 
-const Meetups = ({ image, name, description, videoId }) => (
+const Meetups = ({ image, name, description, videoId, href }) => (
   <Col xs={12} md={12}>
-    <Margin bottom={{ xs: 0, md: 24 }} top={{ xs: 15, md: 24 }} inline>
+    <Margin bottom={{ xs: 15, md: 35 }} top={{ xs: 15, md: 35 }} inline>
       <Row>
         <Col xs={12} md={6}>
-          <Margin bottom={16}>
-            {image ? (
-              <Image src={image} />
-            ) : (
-              <YouTube
-                videoId={videoId}
-                autoplay="0"
-                rel="0"
-                modest="1"
-                opts={opts}
-              />
-            )}
-          </Margin>
+          {image ? (
+            <Image src={image} />
+          ) : (
+            <YouTube
+              videoId={videoId}
+              autoplay="0"
+              rel="0"
+              modest="1"
+              opts={opts}
+            />
+          )}
         </Col>
         <Col xs={12} md={6}>
-          <Margin bottom={6}>
-            <H4>{name}</H4>
-          </Margin>
-          <Margin bottom={{ xs: 9, md: 15 }}>
-            <Description>{description}</Description>
-          </Margin>
-          <Margin bottom={{ xs: 9, md: 15 }}>
-            <Link to={`/our-clients#${ParamCase(name)}`}>Learn more</Link>
-          </Margin>
+          <Flex column alignStretch contentStretch justifyBetween full>
+            <Margin bottom={6}>
+              <FlexItem>
+                <H4>{name}</H4>
+              </FlexItem>
+            </Margin>
+            <FlexItem grow="1" basis="auto">
+              <Description>{description}</Description>
+            </FlexItem>
+            <FlexItem>
+              <Link href={href} target="_blank">
+                Learn more
+              </Link>
+            </FlexItem>
+          </Flex>
         </Col>
       </Row>
     </Margin>
@@ -94,6 +99,7 @@ export default ({ meetupCommunities }) => (
               videoId="jRs1HaSwIP4"
               name="React.JS Girls London"
               description="ReactJS Girls is a community meetup voicing female engineers who want to learn and teach their experience using React. Although the meetup is aimed to at women in tech community, attendees of all genders are welcome to attend."
+              href="https://www.meetup.com/ReactJS-Girls-London/"
             />
             <NextMeetups
               futureMeetups={[
@@ -103,7 +109,7 @@ export default ({ meetupCommunities }) => (
                   title: 'ReactJS Girls #10 - Talking the Talk',
                   description:
                     'We are thrilled to bring Sophie Koonin (Johh Lewis) and Kimberley Cook (Hive) hosted by Hive.',
-                  linkB: 'FEFFFF',
+                  SignUpLink: 'Sign Up',
                   hour: '6:00 PM to 8:30 PM',
                   address:
                     '@WeWork Aldwych House 71 - 91 Aldwych WC2B 4HN London'

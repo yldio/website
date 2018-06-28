@@ -150,7 +150,7 @@ export const H5 = styled.h5`
 
   ${is('darker')`
       color:${props => props.theme.colors.darkslategrey};
-      text-transform: lowercase;
+      text-transform: none;
       font-weight: 500;
   `};
 `;
