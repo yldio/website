@@ -28,6 +28,7 @@ const Link = styled(BaseLink)`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(31)};
   color: ${props => props.theme.colors.deeppink};
+  text-underline-position: under;
 `;
 
 const opts = {

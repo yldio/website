@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Row, Col } from 'react-styled-flexboxgrid';
 import { Margin, Padding } from 'styled-components-spacing';
+import breakpoint from 'styled-components-breakpoint';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 import BaseLink from 'gatsby-link';
@@ -27,12 +28,16 @@ const Month = styled.div`
   color: ${props => props.theme.colors.white};
   font-weight: 400;
   font-size: 18px;
+
+  ${breakpoint('xs')`
+  margin-bottom: ${remcalc(21)};`};
 `;
 
 const Link = styled(BaseLink)`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(31)};
   color: ${props => props.theme.colors.deeppink};
+  text-underline-position: under;
 `;
 
 const MeetupsDetails = styled.div`
@@ -42,14 +47,23 @@ const MeetupsDetails = styled.div`
 const Header = H5.extend`
   padding-top: 22px;
   padding-bottom: 20px;
+  padding-left: 10px;
+  display: inline-block;
+`;
+
+const HeaderMeetup = H5.extend`
+  padding-top: 22px;
+  padding-bottom: 20px;
+  display: inline-block;
 `;
 
 const DetailsWrapper = Copy.extend`
   padding-bottom: 22px;
 `;
 
-const ClockIcon = styled.div`
-  width: 100%;
+const Address = styled.div`
+  padding-left: 30px;
+  padding-right: 11px;
 `;
 
 export default ({ futureMeetups }) => (
@@ -76,20 +90,22 @@ export default ({ futureMeetups }) => (
                   </DataWrapper>
                 </Col>
                 <Col xs={12} md={5}>
-                  <Padding left={{ xs: 20 }} right={{ xs: 20 }}>
+                  <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
                     <DetailsWrapper>
-                      <Header darker>{futureMeetup.title}</Header>
+                      <HeaderMeetup darker>{futureMeetup.title}</HeaderMeetup>
                       <p>{futureMeetup.description}</p>
                       <Link>{futureMeetup.SignUpLink}</Link>
                     </DetailsWrapper>
                   </Padding>
                 </Col>
                 <Col xs={12} md={4}>
-                  <Padding left={{ xs: 20 }} right={{ xs: 20 }}>
+                  <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
                     <DetailsWrapper>
-                      <ClockIcon icon={<Clock />} />
-                      <Header darker>{futureMeetup.hour}</Header>
-                      <p>{futureMeetup.address}</p>
+                      <Flex alignCenter>
+                        <Clock />
+                        <Header darker>{futureMeetup.hour}</Header>
+                      </Flex>
+                      <Address>{futureMeetup.address}</Address>
                     </DetailsWrapper>
                   </Padding>
                 </Col>
