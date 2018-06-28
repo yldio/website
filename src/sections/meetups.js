@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Padding, Margin } from 'styled-components-spacing';
 import Flex, { FlexItem } from 'styled-flex-component';
-// Import Hr from 'components/hr';
+import Hr from 'components/hr';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
 
@@ -81,18 +81,24 @@ export default ({ meetupCommunities }) => (
       <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
           <Row middle="xs" between="xs">
-            {meetupCommunities.map(({ ...community }) => (
-              <Meetups
-                key={community.node.meetupCommunityName}
-                videoId={
-                  community.node.videoYouTubeId
-                    ? community.node.videoYouTubeId
-                    : 0
-                }
-                image={community.node.videoYouTubeId ? 0 : MeetupsPlaceholder}
-                name={community.node.meetupCommunityName}
-                description={community.node.description.description}
-              />
+            {meetupCommunities.map(({ ...community }, index) => (
+              <Fragment key={community.node.meetupCommunityName}>
+                <Meetups
+                  videoId={
+                    community.node.videoYouTubeId
+                      ? community.node.videoYouTubeId
+                      : 0
+                  }
+                  image={community.node.videoYouTubeId ? 0 : MeetupsPlaceholder}
+                  name={community.node.meetupCommunityName}
+                  description={community.node.description.description}
+                />
+                {index < meetupCommunities.length - 1 && (
+                  <Grid>
+                    <Hr />
+                  </Grid>
+                )}
+              </Fragment>
             ))}
 
             <Meetups

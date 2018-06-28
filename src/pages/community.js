@@ -86,6 +86,7 @@ export const pageQuery = graphql`
       edges {
         node {
           meetupCommunityName
+          meetupUrlName
           learnMoreLink
           description {
             description
