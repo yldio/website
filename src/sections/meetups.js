@@ -75,7 +75,7 @@ const Meetups = ({ image, name, description, videoId, href }) => (
   </Col>
 );
 
-export default ({ meetupCommunities }) => (
+export default ({ meetupCommunities, events }) => (
   <Fragment>
     <Section>
       <Padding bottom={{ xs: 15, md: 36 }}>
@@ -93,6 +93,18 @@ export default ({ meetupCommunities }) => (
                   name={community.node.meetupCommunityName}
                   description={community.node.description.description}
                 />
+                {events.filter(
+                  event =>
+                    event.node.meetupUrlName === community.node.meetupUrlName
+                ).length > 0 && (
+                  <NextMeetups
+                    futureMeetups={events.filter(
+                      event =>
+                        event.node.meetupUrlName ===
+                        community.node.meetupUrlName
+                    )}
+                  />
+                )}
                 {index < meetupCommunities.length - 1 && (
                   <Grid>
                     <Hr />
