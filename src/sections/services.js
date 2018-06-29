@@ -2,7 +2,9 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import Flex, { FlexItem } from 'styled-flex-component';
 import { Margin, Padding } from 'styled-components-spacing';
+import styled from 'styled-components';
 import remcalc from 'remcalc';
+import BaseLink from 'gatsby-link';
 
 import {
   Resource,
@@ -14,6 +16,13 @@ import {
 
 import { H4, Copy } from 'components/typography';
 import Section from 'components/section';
+
+const Link = styled(BaseLink)`
+  font-size: ${remcalc(18)};
+  line-height: ${remcalc(27)};
+  color: ${props => props.theme.colors.deeppink};
+  text-underline-position: under;
+`;
 
 const ServiceTitle = H4.extend`
   line-height: ${remcalc(25)};
@@ -90,5 +99,8 @@ export default () => (
         </Row>
       </Grid>
     </Padding>
+    <Section>
+      <Link to="/additional-services/">AdditionalServices </Link>
+    </Section>
   </Section>
 );
