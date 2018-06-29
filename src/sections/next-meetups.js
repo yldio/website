@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import remcalc from 'remcalc';
 import BaseLink from 'gatsby-link';
 import Section from 'components/section';
+import months from 'months';
 import { H5, Copy } from 'components/typography';
 import Flex, { FlexItem } from 'styled-flex-component';
 import { Clock } from 'components/icons';
@@ -83,24 +84,40 @@ export default ({ futureMeetups }) => {
       </Section>
       <Section>
         {futureMeetups.map(futureMeetup => (
-          <Col key={`next-meetups-row-${futureMeetup.node}`} xs={12} md={12}>
+          <Col
+            key={`next-meetups-row-${futureMeetup.node.thisMeetupCode}`}
+            xs={12}
+            md={12}
+          >
             <MeetupsDetails>
               <Margin bottom={{ xs: 15, md: 35 }}>
                 <Row>
                   <Col xs={12} md={3} height>
                     <DataWrapper column alignCenter justifyCenter>
                       <FlexItem>
-                        <Day>{futureMeetup.data}</Day>
-                        <Month>{futureMeetup.month}</Month>
+                        <Day>
+                          {new Date(futureMeetup.node.startTime).getDate()}
+                        </Day>
+                        <Month>
+                          {
+                            months[
+                              new Date(futureMeetup.node.startTime).getMonth()
+                            ]
+                          }
+                        </Month>
                       </FlexItem>
                     </DataWrapper>
                   </Col>
                   <Col xs={12} md={5}>
                     <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
                       <DetailsWrapper>
-                        <HeaderMeetup darker>{futureMeetup.title}</HeaderMeetup>
+                        <HeaderMeetup darker>
+                          {futureMeetup.node.title}
+                        </HeaderMeetup>
                         <p>{futureMeetup.description}</p>
-                        <Link>{futureMeetup.SignUpLink}</Link>
+                        <Link href={futureMeetup.node.linkToEvent}>
+                          Learn more
+                        </Link>
                       </DetailsWrapper>
                     </Padding>
                   </Col>
@@ -109,9 +126,42 @@ export default ({ futureMeetups }) => {
                       <DetailsWrapper>
                         <Flex alignCenter>
                           <Clock />
-                          <Header darker>{futureMeetup.hour}</Header>
+                          {/* The lengthy conditionals are there to add an extra zero - getMinutes() returns an integer, and we want to display 18:00 and not 18:0 */}
+                          <Header darker>{`${new Date(
+                            futureMeetup.node.startTime
+                          ).getHours()}
+                          :
+                          ${
+                            new Date(futureMeetup.node.startTime).getMinutes() <
+                            10
+                              ? '0' +
+                                new Date(
+                                  futureMeetup.node.startTime
+                                ).getMinutes()
+                              : new Date(
+                                  futureMeetup.node.startTime
+                                ).getMinutes()
+                          } - ${new Date(futureMeetup.node.endTime).getHours()}
+                          :
+                          ${
+                            new Date(futureMeetup.node.endTime).getMinutes() <
+                            10
+                              ? '0' +
+                                new Date(futureMeetup.node.endTime).getMinutes()
+                              : new Date(futureMeetup.node.endTime).getMinutes()
+                          }
+
+
+                          `}</Header>
                         </Flex>
-                        <Address>{futureMeetup.address}</Address>
+                        <Address>
+                          {futureMeetup.node.address.address
+                            .split('&&')
+                            .filter(line => line.length > 0)
+                            .map(line => (
+                              <p key={`address-line-${line}`}>{line}</p>
+                            ))}
+                        </Address>
                       </DetailsWrapper>
                     </Padding>
                   </Col>

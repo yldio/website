@@ -113,7 +113,7 @@ export default ({ meetupCommunities, events }) => (
               </Fragment>
             ))}
 
-            <Meetups
+            {/* <Meetups
               videoId="jRs1HaSwIP4"
               name="React.JS Girls London"
               description="ReactJS Girls is a community meetup voicing female engineers who want to learn and teach their experience using React. Although the meetup is aimed to at women in tech community, attendees of all genders are welcome to attend."
@@ -133,7 +133,7 @@ export default ({ meetupCommunities, events }) => (
                     '@WeWork Aldwych House 71 - 91 Aldwych WC2B 4HN London'
                 }
               ]}
-            />
+            /> */}
           </Row>
         </Grid>
       </Padding>
