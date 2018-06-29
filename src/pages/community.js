@@ -78,6 +78,7 @@ export const pageQuery = graphql`
           }
           thisMeetupCode
           meetupUrlName
+          eventTitle
         }
       }
     }

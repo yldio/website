@@ -68,11 +68,6 @@ const Address = styled.div`
 `;
 
 export default ({ futureMeetups }) => {
-  console.log({ futureMeetups });
-  console.log(
-    futureMeetups.map(futureMeetup => futureMeetup.node.thisMeetupCode)
-  );
-
   return (
     <Fragment>
       <Section>
@@ -112,7 +107,7 @@ export default ({ futureMeetups }) => {
                     <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
                       <DetailsWrapper>
                         <HeaderMeetup darker>
-                          {futureMeetup.node.title}
+                          {futureMeetup.node.eventTitle}
                         </HeaderMeetup>
                         <p>{futureMeetup.description}</p>
                         <Link href={futureMeetup.node.linkToEvent}>
