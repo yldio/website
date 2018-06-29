@@ -66,54 +66,61 @@ const Address = styled.div`
   padding-right: 11px;
 `;
 
-export default ({ futureMeetups }) => (
-  <Fragment>
-    <Section>
-      <Col xs={12}>
-        <Margin bottom={{ xs: 15, md: 15 }}>
-          <H5>Next Meetup</H5>
-        </Margin>
-      </Col>
-    </Section>
-    <Section>
-      {futureMeetups.map(futureMeetup => (
-        <Col key={`next-meetups-row-${futureMeetup.id}`} xs={12} md={12}>
-          <MeetupsDetails>
-            <Margin bottom={{ xs: 15, md: 35 }}>
-              <Row>
-                <Col xs={12} md={3} height>
-                  <DataWrapper column alignCenter justifyCenter>
-                    <FlexItem>
-                      <Day>{futureMeetup.data}</Day>
-                      <Month>{futureMeetup.month}</Month>
-                    </FlexItem>
-                  </DataWrapper>
-                </Col>
-                <Col xs={12} md={5}>
-                  <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
-                    <DetailsWrapper>
-                      <HeaderMeetup darker>{futureMeetup.title}</HeaderMeetup>
-                      <p>{futureMeetup.description}</p>
-                      <Link>{futureMeetup.SignUpLink}</Link>
-                    </DetailsWrapper>
-                  </Padding>
-                </Col>
-                <Col xs={12} md={4}>
-                  <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
-                    <DetailsWrapper>
-                      <Flex alignCenter>
-                        <Clock />
-                        <Header darker>{futureMeetup.hour}</Header>
-                      </Flex>
-                      <Address>{futureMeetup.address}</Address>
-                    </DetailsWrapper>
-                  </Padding>
-                </Col>
-              </Row>
-            </Margin>
-          </MeetupsDetails>
+export default ({ futureMeetups }) => {
+  console.log({ futureMeetups });
+  console.log(
+    futureMeetups.map(futureMeetup => futureMeetup.node.thisMeetupCode)
+  );
+
+  return (
+    <Fragment>
+      <Section>
+        <Col xs={12}>
+          <Margin bottom={{ xs: 15, md: 15 }}>
+            <H5>Next Meetup</H5>
+          </Margin>
         </Col>
-      ))}
-    </Section>
-  </Fragment>
-);
+      </Section>
+      <Section>
+        {futureMeetups.map(futureMeetup => (
+          <Col key={`next-meetups-row-${futureMeetup.node}`} xs={12} md={12}>
+            <MeetupsDetails>
+              <Margin bottom={{ xs: 15, md: 35 }}>
+                <Row>
+                  <Col xs={12} md={3} height>
+                    <DataWrapper column alignCenter justifyCenter>
+                      <FlexItem>
+                        <Day>{futureMeetup.data}</Day>
+                        <Month>{futureMeetup.month}</Month>
+                      </FlexItem>
+                    </DataWrapper>
+                  </Col>
+                  <Col xs={12} md={5}>
+                    <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
+                      <DetailsWrapper>
+                        <HeaderMeetup darker>{futureMeetup.title}</HeaderMeetup>
+                        <p>{futureMeetup.description}</p>
+                        <Link>{futureMeetup.SignUpLink}</Link>
+                      </DetailsWrapper>
+                    </Padding>
+                  </Col>
+                  <Col xs={12} md={4}>
+                    <Padding left={{ xs: 20, md: 2 }} right={{ xs: 20, md: 2 }}>
+                      <DetailsWrapper>
+                        <Flex alignCenter>
+                          <Clock />
+                          <Header darker>{futureMeetup.hour}</Header>
+                        </Flex>
+                        <Address>{futureMeetup.address}</Address>
+                      </DetailsWrapper>
+                    </Padding>
+                  </Col>
+                </Row>
+              </Margin>
+            </MeetupsDetails>
+          </Col>
+        ))}
+      </Section>
+    </Fragment>
+  );
+};
