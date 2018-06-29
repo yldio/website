@@ -109,7 +109,7 @@ export default ({ futureMeetups }) => {
                         <HeaderMeetup darker>
                           {futureMeetup.node.eventTitle}
                         </HeaderMeetup>
-                        <p>{futureMeetup.description}</p>
+                        <p>{futureMeetup.node.blurb.blurb}</p>
                         <Link href={futureMeetup.node.linkToEvent}>
                           Learn more
                         </Link>
@@ -124,9 +124,7 @@ export default ({ futureMeetups }) => {
                           {/* The lengthy conditionals are there to add an extra zero - getMinutes() returns an integer, and we want to display 18:00 and not 18:0 */}
                           <Header darker>{`${new Date(
                             futureMeetup.node.startTime
-                          ).getHours()}
-                          :
-                          ${
+                          ).getHours()}:${
                             new Date(futureMeetup.node.startTime).getMinutes() <
                             10
                               ? '0' +
@@ -136,9 +134,9 @@ export default ({ futureMeetups }) => {
                               : new Date(
                                   futureMeetup.node.startTime
                                 ).getMinutes()
-                          } - ${new Date(futureMeetup.node.endTime).getHours()}
-                          :
-                          ${
+                          } - ${new Date(
+                            futureMeetup.node.endTime
+                          ).getHours()}:${
                             new Date(futureMeetup.node.endTime).getMinutes() <
                             10
                               ? '0' +
