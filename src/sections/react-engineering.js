@@ -2,8 +2,30 @@ import React, { Fragment } from 'react';
 import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Margin } from 'styled-components-spacing';
 
-import { H4, H5, Copy } from 'components/typography';
+import { H2, H4, H5, Copy } from 'components/typography';
+import Hero from 'components/hero';
 import Section from 'components/section';
+import Header from 'sections/header';
+
+const ServicesHeader = ({ header, description }) => (
+  <Hero height="400">
+    <Margin bottom={28}>
+      <Header dark />
+    </Margin>
+    <Grid>
+      <Col xs={12} md={10}>
+        <Margin bottom={9}>
+          <H2 whiter>{header}</H2>
+        </Margin>
+      </Col>
+      <Col xs={12} md={6}>
+        <Margin bottom={35}>
+          <Copy whiter>{description}</Copy>
+        </Margin>
+      </Col>
+    </Grid>
+  </Hero>
+);
 
 const ServicesDescription = ({
   title,
@@ -41,6 +63,13 @@ const ServicesDescription = ({
 
 export default () => (
   <Fragment>
+    <Section>
+      <ServicesHeader
+        header="React software engineering"
+        description="React is regarded as the premier way to build big, fast Web apps
+      with JavaScript."
+      />
+    </Section>
     <Section>
       <Grid>
         <ServicesDescription
