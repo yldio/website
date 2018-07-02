@@ -7,7 +7,7 @@ import Hero from 'components/hero';
 import Section from 'components/section';
 import Header from 'sections/header';
 
-// const ServicesDescription = ({
+// Const ServicesDescription = ({
 //   ServicesTitle,
 //   ServicesDescription,
 //   subTitleLeft,
