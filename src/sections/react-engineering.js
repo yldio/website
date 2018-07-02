@@ -7,83 +7,100 @@ import Hero from 'components/hero';
 import Section from 'components/section';
 import Header from 'sections/header';
 
-const ServicesHeader = ({ header, description }) => (
-  <Hero height="400">
-    <Margin bottom={28}>
-      <Header dark />
-    </Margin>
-    <Grid>
-      <Col xs={12} md={10}>
-        <Margin bottom={9}>
-          <H2 whiter>{header}</H2>
-        </Margin>
-      </Col>
-      <Col xs={12} md={6}>
-        <Margin bottom={35}>
-          <Copy whiter>{description}</Copy>
-        </Margin>
-      </Col>
-    </Grid>
-  </Hero>
-);
+// const ServicesDescription = ({
+//   ServicesTitle,
+//   ServicesDescription,
+//   subTitleLeft,
+//   subTitleRight,
+//   subDescriptionLeft,
+//   subDescriptionRight
+// }) => (
+//   <Grid>
+//     <Row>
+//       <Col xs={12} md={10}>
+//         <Margin bottom={{ xs: 9, md: 24 }}>
+//           <H5>{ServicesTitle}</H5>
+//           <H4>{ServicesDescription}</H4>
+//         </Margin>
+//       </Col>
+//     </Row>
+//     <Row>
+//       <Col xs={12} md={6}>
+//         <Margin bottom={{ xs: 9, md: 24 }}>
+//           <H5>{subTitleLeft}</H5>
+//           <Copy>{subDescriptionLeft}</Copy>
+//         </Margin>
+//       </Col>
+//       <Col xs={12} md={6}>
+//         <Margin bottom={{ xs: 9, md: 24 }}>
+//           <H5>{subTitleRight}</H5>
+//           <Copy>{subDescriptionRight}</Copy>
+//         </Margin>
+//       </Col>
+//     </Row>
+//   </Grid>
+// );
 
-const ServicesDescription = ({
-  title,
-  description,
-  subTitleLeft,
-  subTitleRight,
-  subDescriptionLeft,
-  subDescriptionRight
-}) => (
-  <Grid>
-    <Row>
-      <Col xs={12} md={10}>
-        <Margin bottom={{ xs: 9, md: 24 }}>
-          <H5>{title}</H5>
-          <H4>{description}</H4>
-        </Margin>
-      </Col>
-    </Row>
-    <Row>
-      <Col xs={12} md={6}>
-        <Margin bottom={{ xs: 9, md: 24 }}>
-          <H5>{subTitleLeft}</H5>
-          <Copy>{subDescriptionLeft}</Copy>
-        </Margin>
-      </Col>
-      <Col xs={12} md={6}>
-        <Margin bottom={{ xs: 9, md: 24 }}>
-          <H5>{subTitleRight}</H5>
-          <Copy>{subDescriptionRight}</Copy>
-        </Margin>
-      </Col>
-    </Row>
-  </Grid>
-);
-
-export default () => (
+export default ({ additionalServices }) => (
   <Fragment>
     <Section>
-      <ServicesHeader
-        header="React software engineering"
-        description="React is regarded as the premier way to build big, fast Web apps
-      with JavaScript."
-      />
+      <Hero height="400">
+        <Margin bottom={28}>
+          <Header dark />
+        </Margin>
+        <Grid>
+          <Col xs={12} md={10}>
+            <Margin bottom={9}>
+              <H2 whiter>{additionalServices[0].node.headerTitle}</H2>
+            </Margin>
+          </Col>
+          <Col xs={12} md={6}>
+            <Margin bottom={35}>
+              <Copy whiter>{additionalServices[0].node.headerSubtitle}</Copy>
+            </Margin>
+          </Col>
+        </Grid>
+      </Hero>
     </Section>
     <Section>
       <Grid>
-        <ServicesDescription
-          title="WHY REACT?"
-          description="Regard is regarded as the premier way to build big, fast Web
-        apps with JavaScript."
-          subTitleLeft="HIGH ROI"
-          subTitleRight="LOW TCO"
-          subDescriptionLeft="React’s component-based approach ensures high code reusability,
-        improving the overall productivity of the development team."
-          subDescriptionRight="With its move into native application development, smaller
-        development teams are now able to deliver from back to front and
-        to ensure-user devices."
-        />
+        <Row>
+          <Col xs={12} md={10}>
+            <Margin bottom={{ xs: 9, md: 24 }}>
+              <H5>{additionalServices[0].node.servicesTitle}</H5>
+              <H4>
+                {
+                  additionalServices[0].node.servicesDescription
+                    .servicesDescription
+                }
+              </H4>
+            </Margin>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} md={6}>
+            <Margin bottom={{ xs: 9, md: 24 }}>
+              <H5>{additionalServices[0].node.subtitleLeft}</H5>
+              <Copy>
+                {
+                  additionalServices[0].node.subdescriptionLeft
+                    .subdescriptionLeft
+                }
+              </Copy>
+            </Margin>
+          </Col>
+          <Col xs={12} md={6}>
+            <Margin bottom={{ xs: 9, md: 24 }}>
+              <H5>{additionalServices[0].node.subtitleRight}</H5>
+              <Copy>
+                {
+                  additionalServices[0].node.subdescriptionRight
+                    .subdescriptionRight
+                }
+              </Copy>
+            </Margin>
+          </Col>
+        </Row>
       </Grid>
     </Section>
   </Fragment>
