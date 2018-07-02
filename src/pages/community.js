@@ -13,7 +13,7 @@ import Footer from 'sections/footer';
 
 import DeveloperCommunity from 'sections/developer-community';
 
-const Community = ({ page, videos = [] }) => (
+const Community = ({ page, events, meetupCommunities, videos = [] }) => (
   <Fragment>
     <Helmet title={page.title} meta={page.metadata} />
     <Hero height="400">
@@ -39,7 +39,11 @@ const Community = ({ page, videos = [] }) => (
         </Row>
       </Grid>
     </Hero>
-    <DeveloperCommunity videos={videos} />
+    <DeveloperCommunity
+      videos={videos}
+      events={events}
+      meetupCommunities={meetupCommunities}
+    />
     <JoinUs />
     <Footer />
   </Fragment>
@@ -47,7 +51,9 @@ const Community = ({ page, videos = [] }) => (
 
 export default mapProps(props => ({
   page: props.data.contentfulPage,
-  videos: props.data.videos.edges.map(({ node }) => node)
+  videos: props.data.videos.edges.map(({ node }) => node),
+  events: props.data.allContentfulMeetupEvent.edges,
+  meetupCommunities: props.data.allContentfulMeetupCommunity.edges
 }))(Community);
 
 export const pageQuery = graphql`
@@ -57,6 +63,40 @@ export const pageQuery = graphql`
       metadata {
         name
         content
+      }
+    }
+
+    allContentfulMeetupEvent {
+      edges {
+        node {
+          date
+          startTime
+          endTime
+          linkToEvent
+          address {
+            address
+          }
+          thisMeetupCode
+          meetupUrlName
+          eventTitle
+          blurb {
+            blurb
+          }
+        }
+      }
+    }
+
+    allContentfulMeetupCommunity {
+      edges {
+        node {
+          meetupCommunityName
+          meetupUrlName
+          learnMoreLink
+          description {
+            description
+          }
+          videoYouTubeId
+        }
       }
     }
 
