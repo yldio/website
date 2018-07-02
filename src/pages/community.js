@@ -86,7 +86,7 @@ export const pageQuery = graphql`
       }
     }
 
-    allContentfulMeetupCommunity {
+    allContentfulMeetupCommunity(sort: { fields: [createdAt], order: ASC }) {
       edges {
         node {
           meetupCommunityName
