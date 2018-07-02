@@ -11,7 +11,6 @@ import Section from 'components/section';
 import NextMeetups from './next-meetups';
 
 import YouTube from 'react-youtube';
-import MeetupsPlaceholder from 'assets/meetups-placeholder.png';
 
 const Image = styled.img`
   width: 100%;
@@ -41,9 +40,7 @@ const Meetups = ({ image, name, description, videoId, href }) => (
     <Margin bottom={{ xs: 15, md: 35 }} top={{ xs: 15, md: 35 }} inline>
       <Row>
         <Col xs={12} md={6}>
-          {image ? (
-            <Image src={image} />
-          ) : (
+          {videoId ? (
             <YouTube
               videoId={videoId}
               autoplay="0"
@@ -51,6 +48,8 @@ const Meetups = ({ image, name, description, videoId, href }) => (
               modest="1"
               opts={opts}
             />
+          ) : (
+            <Image src={image} />
           )}
         </Col>
         <Col xs={12} md={6}>
@@ -89,7 +88,7 @@ export default ({ meetupCommunities, events }) => (
                       ? community.node.videoYouTubeId
                       : 0
                   }
-                  image={community.node.videoYouTubeId ? 0 : MeetupsPlaceholder}
+                  image={community.node.placeholderImage.file.url}
                   name={community.node.meetupCommunityName}
                   description={community.node.description.description}
                 />

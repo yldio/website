@@ -96,6 +96,11 @@ export const pageQuery = graphql`
             description
           }
           videoYouTubeId
+          placeholderImage {
+            file {
+              url
+            }
+          }
         }
       }
     }
