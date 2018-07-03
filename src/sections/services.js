@@ -82,7 +82,9 @@ export default () => (
           <Service icon={<Training />}>
             <ServiceTitle>Training</ServiceTitle>
             <ServiceItem>Node Training</ServiceItem>
-            <ServiceItem>React Training</ServiceItem>
+            <Link to="/react-fundamenta">
+              <ServiceItem>React Training</ServiceItem>
+            </Link>
             <ServiceItem>Design Systems Training</ServiceItem>
             <ServiceItem>UX Research Training</ServiceItem>
             <ServiceItem>UX Design Training</ServiceItem>
