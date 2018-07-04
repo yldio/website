@@ -86,7 +86,7 @@ export const pageQuery = graphql`
       }
     }
 
-    allContentfulMeetupCommunity {
+    allContentfulMeetupCommunity(sort: { fields: [createdAt], order: ASC }) {
       edges {
         node {
           meetupCommunityName
@@ -96,6 +96,11 @@ export const pageQuery = graphql`
             description
           }
           videoYouTubeId
+          placeholderImage {
+            file {
+              url
+            }
+          }
         }
       }
     }
