@@ -20,8 +20,7 @@ import Section from 'components/section';
 const Link = styled(BaseLink)`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(27)};
-  color: ${props => props.theme.colors.deeppink};
-  text-underline-position: under;
+  text-decoration: none;
 `;
 
 const ServiceTitle = H4.extend`
