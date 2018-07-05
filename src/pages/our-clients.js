@@ -64,7 +64,7 @@ export const pageQuery = graphql`
       }
     }
 
-    allContentfulCaseStudy {
+    allContentfulCaseStudy(sort: { fields: [createdAt], order: ASC }) {
       edges {
         node {
           clientName
@@ -90,7 +90,7 @@ export const pageQuery = graphql`
       }
     }
 
-    allContentfulLogoForGrid {
+    allContentfulLogoForGrid(sort: { fields: [createdAt], order: ASC }) {
       edges {
         node {
           clientName

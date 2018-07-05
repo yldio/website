@@ -11,7 +11,7 @@ import Meetups from './meetups';
 import Conferences from './conferences';
 import TechTalks from './tech-talks';
 
-export default ({ videos }) => (
+export default ({ videos, events, meetupCommunities }) => (
   <Fragment>
     <Section>
       <Padding top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }}>
@@ -41,7 +41,11 @@ export default ({ videos }) => (
         </Grid>
       </Padding>
     </Hero>
-    <Meetups videos={videos} />
+    <Meetups
+      videos={videos}
+      events={events}
+      meetupCommunities={meetupCommunities}
+    />
     <Hero bg={conferencesBg}>
       <Padding top={175} bottom={25}>
         <Grid>
