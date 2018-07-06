@@ -39,6 +39,7 @@
     "gatsby-transformer-sharp": "^1.6.27",
     "graphql-tag": "^2.9.2",
     "lodash.find": "^4.6.0",
+    "months": "^2.0.0",
     "param-case": "^2.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
