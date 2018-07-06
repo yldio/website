@@ -10,6 +10,7 @@ import Hero from 'components/hero';
 import Section from 'components/section';
 import Hr from 'components/hr';
 
+import Map from 'sections/map';
 import Header from 'sections/header';
 import Stats from 'sections/stats';
 import OurTeam from 'sections/our-team';
@@ -51,6 +52,7 @@ const AboutUs = ({ page, video }) => (
         <Hr />
       </Grid>
     </Section>
+    <Map />
     <ContactUs />
     <JoinUs />
     <Footer />
