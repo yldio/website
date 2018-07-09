@@ -5,7 +5,7 @@ import Section from 'components/section';
 const Info = ({ text }) => <div>{text}</div>;
 
 export default class Map extends Component {
-  //   static propTypes = {
+  //   Static propTypes = {
   //     center: { lat: 51.5210954, lng: -0.0986382 },
   //     zoom: 11
   //   };
