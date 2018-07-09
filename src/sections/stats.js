@@ -5,14 +5,7 @@ import Flex, { FlexItem } from 'styled-flex-component';
 
 import { Copy, H5 } from 'components/typography';
 import Section from 'components/section';
-import breakpoint from 'styled-components-breakpoint';
 import { RevenueGrowth, Grow, X2, Crown } from 'components/icons';
-
-const Wrapper = Flex.extend`
-  ${breakpoint('md')`
-  align-items: center;
-  `};
-`;
 
 export default () => (
   <Section data-selector="stats">
@@ -20,7 +13,7 @@ export default () => (
       <Grid>
         <Row>
           <Col xs={12} md={6}>
-            <Wrapper column alignStart contentStretch justifyBetween full>
+            <Flex column alignStart contentStretch justifyBetween full>
               <Padding bottom={{ xs: 20 }}>
                 <FlexItem>
                   <RevenueGrowth />
@@ -47,7 +40,7 @@ export default () => (
                   <H5 darker>World class engineers</H5>
                 </FlexItem>
               </Padding>
-            </Wrapper>
+            </Flex>
           </Col>
           <Col xs={12} md={6}>
             <Copy>
