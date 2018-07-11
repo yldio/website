@@ -25,8 +25,8 @@ const MapWrapper = styled.div`
 
 const Address = styled.div`
   background-color: ${props => props.theme.colors.white};
-  padding: 34px 20px 20px 51px;
-  min-height: 150px;
+  padding: 34px 20px 45px 51px;
+  min-height: 202px;
 `;
 const Link = styled.a`
   text-decoration: none;
@@ -60,7 +60,7 @@ export default () => (
                   <Address>
                     <H5>London</H5>
                     <Copy>
-                      124 Aldersgate Street, EC1A 4JQ +44 (0) 203 514 4678
+                      124 Aldersgate Street, EC1A 4JQ <br />+44 (0) 203 514 4678
                     </Copy>
                   </Address>
                 </MapWrapper>
@@ -75,7 +75,9 @@ export default () => (
                   </Link>
                   <Address>
                     <H5>Manchester</H5>
-                    <Copy>231-233 Deansgate, Manchester M3 4EN,</Copy>
+                    <Copy>
+                      231-233 Deansgate, Manchester <br /> M3 4EN
+                    </Copy>
                   </Address>
                 </MapWrapper>
               </Col>
@@ -97,21 +99,25 @@ export default () => (
                 </Link>
                 <Address>
                   <H5>Lisbon</H5>
-                  <Copy>Rua Ramalho Ortigão 8, 3rd floor left 1070-230</Copy>
+                  <Copy>
+                    Rua Ramalho Ortigão 8, 3rd floor left <br /> 1070-230
+                  </Copy>
                 </Address>
               </MapWrapper>
             </Col>
             <Col xs={12} md={6}>
               <MapWrapper xs={12} md={6}>
                 <Link
-                  href="https://www.google.co.uk/search?q=Rua+do+Infante+D.+Henrique+73+4050-492+Porto&rlz=1C5CHFA_enGB795GB795&oq=Rua+do+Infante+D.+Henrique+73+4050-492+Porto+&aqs=chrome..69i57.1305j0j4&sourceid=chrome&ie=UTF-8"
+                  href="https://www.google.co.uk/maps/place/Rua+do+Infante+D.+Henrique+73,+4050-253+Porto,+Portugal/@41.1408672,-8.6169731,17z/data=!3m1!4b1!4m5!3m4!1s0xd2464e03794e77d:0xd5ad73bdf0a80cfc!8m2!3d41.1408672!4d-8.6147844"
                   target="_blank"
                 >
                   <MapsCity src={PortoMap} />
                 </Link>
                 <Address>
                   <H5>Porto </H5>
-                  <Copy>Rua do Infante D. Henrique 73 4050-492 Porto</Copy>
+                  <Copy>
+                    Rua do Infante D. Henrique 73 <br /> 4050-492 Porto
+                  </Copy>
                 </Address>
               </MapWrapper>
             </Col>
