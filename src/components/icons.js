@@ -332,8 +332,8 @@ export const RevenueGrowth = withTheme(() => (
 
 export const Grow = withTheme(() => (
   <svg
-    width="75px"
-    height="75px"
+    width="65px"
+    height="65px"
     viewBox="0 0 75 75"
     version="1.1"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -371,8 +371,8 @@ export const Grow = withTheme(() => (
 
 export const X2 = withTheme(() => (
   <svg
-    width="107px"
-    height="75px"
+    width="87px"
+    height="55px"
     viewBox="0 0 74 55"
     version="1.1"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -404,8 +404,8 @@ export const X2 = withTheme(() => (
 
 export const Crown = withTheme(() => (
   <svg
-    width="96px"
-    height="84px"
+    width="86px"
+    height="74px"
     viewBox="0 0 76 64"
     version="1.1"
     xmlnsXlink="http://www.w3.org/1999/xlink"
