@@ -23,14 +23,16 @@ export default () => (
               <Padding bottom={{ xs: 20 }}>
                 <FlexItem>
                   <Grow />
-                  <H5 darker>One of the fastest growing companies in the UK</H5>
+                  <H5 darker>
+                    One of the fastest growing <br /> companies in the UK
+                  </H5>
                 </FlexItem>
               </Padding>
               <Padding bottom={{ xs: 20 }}>
                 <FlexItem>
                   <X2 />
                   <H5 darker>
-                    Our engineering team has doubled in size year on year
+                    Our engineering team has <br /> doubled in size year on year
                   </H5>
                 </FlexItem>
               </Padding>

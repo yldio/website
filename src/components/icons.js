@@ -404,8 +404,8 @@ export const X2 = withTheme(() => (
 
 export const Crown = withTheme(() => (
   <svg
-    width="76px"
-    height="64px"
+    width="96px"
+    height="84px"
     viewBox="0 0 76 64"
     version="1.1"
     xmlnsXlink="http://www.w3.org/1999/xlink"
