@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-styled-flexboxgrid';
 import { Margin, Padding } from 'styled-components-spacing';
 import styled from 'styled-components';
 
+import breakpoint from 'styled-components-breakpoint';
 import { H3, H4, H5, Copy } from 'components/typography';
 import Section from 'components/section';
 import remcalc from 'remcalc';
@@ -26,7 +27,11 @@ const MapWrapper = styled.div`
 const Address = styled.div`
   background-color: ${props => props.theme.colors.white};
   padding: 34px 20px 45px 51px;
+  min-height: 102px;
+
+  ${breakpoint('md')`
   min-height: 202px;
+  `};
 `;
 const Link = styled.a`
   text-decoration: none;
