@@ -12,9 +12,10 @@ import { navigateTo } from 'gatsby-link';
 const AdditionalServices = ({ page, additionalServices }) => {
   const getParameterByName = name => {
     // Const url = window.location.href;
-    const windowGlobal = typeof window !== 'undefined' && window;
+    // const windowGlobal = typeof window !== 'undefined' && window;
+    // const url = windowGlobal.location.href;
     const test = canUseDOM
-      ? windowGlobal
+      ? window
       : {
           location: { href: 'http://localhost:3000/' }
         };
