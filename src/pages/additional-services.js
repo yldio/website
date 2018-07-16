@@ -7,19 +7,15 @@ import JoinUs from 'sections/join-us';
 import Footer from 'sections/footer';
 import { mapProps } from 'recompose';
 import AdditionalServicesDetails from 'sections/additional-services-details';
-// Import { navigateTo } from 'gatsby-link';
 
 const AdditionalServices = ({ page, additionalServices }) => {
   const getParameterByName = name => {
-    // Const url = window.location.href;
-    // const windowGlobal = typeof window !== 'undefined' && window;
-    // const url = windowGlobal.location.href;
-    const test = canUseDOM
+    const windowGlobal = canUseDOM
       ? window
       : {
           location: { href: 'http://localhost:3000/' }
         };
-    const url = test.location.href;
+    const url = windowGlobal.location.href;
     const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
     const results = regex.exec(url);
     if (!results) return null;
@@ -36,7 +32,7 @@ const AdditionalServices = ({ page, additionalServices }) => {
       '[additional-services] No additional service found for this page ref.',
       pageRef
     );
-    // NavigateTo('/services');
+
     return null;
   }
 
