@@ -7,7 +7,7 @@ import JoinUs from 'sections/join-us';
 import Footer from 'sections/footer';
 import { mapProps } from 'recompose';
 import AdditionalServicesDetails from 'sections/additional-services-details';
-import { navigateTo } from 'gatsby-link';
+// Import { navigateTo } from 'gatsby-link';
 
 const AdditionalServices = ({ page, additionalServices }) => {
   const getParameterByName = name => {
@@ -36,7 +36,7 @@ const AdditionalServices = ({ page, additionalServices }) => {
       '[additional-services] No additional service found for this page ref.',
       pageRef
     );
-    navigateTo('/services');
+    // NavigateTo('/services');
     return null;
   }
 
