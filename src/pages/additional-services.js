@@ -10,7 +10,8 @@ import { navigateTo } from 'gatsby-link';
 
 const AdditionalServices = ({ page, additionalServices }) => {
   const getParameterByName = name => {
-    const url = window.location.href;
+    const windowGlobal = typeof window !== 'undefined' && window;
+    const url = windowGlobal.location.href;
     const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
     const results = regex.exec(url);
     if (!results) return null;
