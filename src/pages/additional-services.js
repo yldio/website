@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import graphql from 'graphql-tag';
+import { canUseDOM } from 'exenv';
 
 import JoinUs from 'sections/join-us';
 import Footer from 'sections/footer';
@@ -10,8 +11,14 @@ import { navigateTo } from 'gatsby-link';
 
 const AdditionalServices = ({ page, additionalServices }) => {
   const getParameterByName = name => {
-    const windowGlobal = typeof window !== 'undefined' && window;
-    const url = windowGlobal.location.href;
+    // Const url = window.location.href;
+    // const windowGlobal = typeof window !== 'undefined' && window;
+    const test = canUseDOM
+      ? window
+      : {
+          location: { href: 'http://localhost:3000/' }
+        };
+    const url = test.location.href;
     const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
     const results = regex.exec(url);
     if (!results) return null;
