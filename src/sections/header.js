@@ -8,6 +8,9 @@ import remcalc from 'remcalc';
 import Logo from 'components/logo';
 import { Copy } from 'components/typography';
 
+import ArrowLeft from 'assets/arrow-left.png';
+import ArrowRight from 'assets/arrow-right.png';
+
 const Ul = styled.ul`
   list-style: none;
 `;
@@ -24,6 +27,9 @@ const Li = Copy.withComponent('li').extend`
 const Wrapper = styled(Flex)`
   flex-direction: column;
   align-items: flex-start;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
 
   ${breakpoint('md')`
     flex-direction: row;
@@ -67,6 +73,48 @@ const Container = styled.header`
   margin: 0 auto;
 `;
 
+const Nav = styled.nav`
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+`;
+
+const ArrowIcon = styled.img`
+  width: 50%;
+`;
+
+const ButtonLeft = styled.button`
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.3s;
+  width: 38px;
+
+  ${breakpoint('lg')`
+  display: none;
+  `};
+`;
+
+const ButtonRight = styled.button`
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: opacity 0.3s;
+  width: 38px;
+
+  ${breakpoint('lg')`
+      display: none;
+  `};
+`;
+
 export default () => (
   <Container data-selector="header">
     <Wrapper justifyBetween alignCenter>
@@ -74,7 +122,7 @@ export default () => (
         <Logo fill="white" />
       </FlexItem>
       <FlexItem>
-        <nav>
+        <Nav>
           <Ul>
             <Li>
               <Link activeClassName="__active" to="/" exact>
@@ -102,8 +150,14 @@ export default () => (
               </Link>
             </Li>
           </Ul>
-        </nav>
+        </Nav>
       </FlexItem>
+      <ButtonLeft>
+        <ArrowIcon src={ArrowLeft} />
+      </ButtonLeft>
+      <ButtonRight>
+        <ArrowIcon src={ArrowRight} />
+      </ButtonRight>
     </Wrapper>
   </Container>
 );
