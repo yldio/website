@@ -63,8 +63,12 @@ const DetailsWrapper = Copy.extend`
 `;
 
 const Address = styled.div`
+  padding-left: 0;
+
+  ${breakpoint('md')`
   padding-left: 30px;
   padding-right: 11px;
+  `};
 `;
 
 export default ({ futureMeetups }) => {
