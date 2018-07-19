@@ -8,9 +8,6 @@ import remcalc from 'remcalc';
 import Logo from 'components/logo';
 import { Copy } from 'components/typography';
 
-import ArrowLeft from 'assets/arrow-left.png';
-import ArrowRight from 'assets/arrow-right.png';
-
 const Ul = styled.ul`
   list-style: none;
 `;
@@ -18,10 +15,17 @@ const Ul = styled.ul`
 const Li = Copy.withComponent('li').extend`
   display: inline;
   margin-right: ${remcalc(20)};
+  font-size: ${remcalc(12)};
 
   ${breakpoint('sm')`
     margin-left: ${remcalc(45)};
+    font-size: ${remcalc(18)};
   `};
+
+  ${breakpoint('md')`
+    font-size: ${remcalc(18)};
+    margin-right: ${remcalc(10)};
+  `}
 `;
 
 const Wrapper = styled(Flex)`
@@ -79,42 +83,6 @@ const Nav = styled.nav`
   position: relative;
 `;
 
-const ArrowIcon = styled.img`
-  width: 50%;
-`;
-
-const ButtonLeft = styled.button`
-  background-color: transparent;
-  border-color: transparent;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  transition: opacity 0.3s;
-  width: 38px;
-
-  ${breakpoint('lg')`
-  display: none;
-  `};
-`;
-
-const ButtonRight = styled.button`
-  background-color: transparent;
-  border-color: transparent;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  transition: opacity 0.3s;
-  width: 38px;
-
-  ${breakpoint('lg')`
-      display: none;
-  `};
-`;
-
 export default () => (
   <Container data-selector="header">
     <Wrapper justifyBetween alignCenter>
@@ -152,12 +120,6 @@ export default () => (
           </Ul>
         </Nav>
       </FlexItem>
-      <ButtonLeft>
-        <ArrowIcon src={ArrowLeft} />
-      </ButtonLeft>
-      <ButtonRight>
-        <ArrowIcon src={ArrowRight} />
-      </ButtonRight>
     </Wrapper>
   </Container>
 );
