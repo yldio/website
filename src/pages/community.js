@@ -53,7 +53,7 @@ export default mapProps(props => ({
   page: props.data.contentfulPage,
   videos: props.data.videos.edges.map(({ node }) => node),
   events: props.data.allContentfulMeetupEvent.edges.filter(
-    item => item.node.startTime < new Date()
+    item => new Date(`${item.node.startTime}`).getTime() > new Date().getTime()
   ),
   meetupCommunities: props.data.allContentfulMeetupCommunity.edges
 }))(Community);
