@@ -4,7 +4,6 @@ import { Margin, Padding } from 'styled-components-spacing';
 import breakpoint from 'styled-components-breakpoint';
 import styled from 'styled-components';
 import remcalc from 'remcalc';
-import BaseLink from 'gatsby-link';
 import Section from 'components/section';
 import months from 'months';
 import { H5, Copy } from 'components/typography';
@@ -34,7 +33,7 @@ const Month = styled.div`
   margin-bottom: ${remcalc(21)};`};
 `;
 
-const Link = styled(BaseLink)`
+const Link = styled.a`
   font-size: ${remcalc(18)};
   line-height: ${remcalc(31)};
   color: ${props => props.theme.colors.deeppink};
@@ -110,7 +109,10 @@ export default ({ futureMeetups }) => {
                           {futureMeetup.node.eventTitle}
                         </HeaderMeetup>
                         <p>{futureMeetup.node.blurb.blurb}</p>
-                        <Link href={futureMeetup.node.linkToEvent}>
+                        <Link
+                          href={futureMeetup.node.linkToEvent}
+                          target="_blank"
+                        >
                           Learn more
                         </Link>
                       </DetailsWrapper>
