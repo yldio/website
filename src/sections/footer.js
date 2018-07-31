@@ -100,9 +100,7 @@ export default () => (
       <Margin bottom={15} inline>
         <Copy white>
           <Row>
-            <Col xs={12}>
-              © 2018 Made with love by YLD. All rights reservered
-            </Col>
+            <Col xs={12}>© 2018 Made with love by YLD. All rights reserved</Col>
             <Col>
               <Link white to="/privacy-policy">
                 Privacy
