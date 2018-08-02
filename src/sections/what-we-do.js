@@ -7,14 +7,16 @@ import remcalc from 'remcalc';
 import ParamCase from 'param-case';
 import find from 'lodash.find';
 
-import { H3, H4, Copy } from 'components/typography';
+import { H4 } from 'components/typography';
 import Section from 'components/section';
-import Card, { CardsList } from 'components/card';
 import Button from 'components/button';
 import Video from 'components/video';
 import Image from 'components/image';
 
 import JoyentPoster from 'assets/joyent-poster.png';
+import TrainlinePoster from 'assets/trainline-poster.png';
+import TheEconomistPoster from 'assets/economist-poster.png';
+import ThomasCookPoster from 'assets/thomascook-poster.png';
 
 const Tagline = H4.extend`
   font-size: ${remcalc(21)};
@@ -36,7 +38,18 @@ const CaseStudy = ({ video, image, name, tagline }) => (
           <Margin bottom={16}>
             {image ? <Image src={image} /> : null}
             {video ? (
-              <Video src={video.file.url} controls preload="metadata" />
+              <Video
+                poster={
+                  name === 'The Economist'
+                    ? TheEconomistPoster
+                    : name === 'Trainline'
+                      ? TrainlinePoster
+                      : ThomasCookPoster
+                }
+                src={video.file.url}
+                controls
+                preload="metadata"
+              />
             ) : null}
           </Margin>
         </Col>
@@ -62,65 +75,6 @@ const CaseStudy = ({ video, image, name, tagline }) => (
 
 export default ({ videos = [] }) => (
   <Fragment>
-    <Section data-selector="what-do-we-do:intro">
-      <Grid>
-        <CardsList>
-          <Row center="xs" around="xs" top="xs">
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 11, lg: -39 }}>
-                <Card id="technology-card" title="Technology" width="100%">
-                  <Copy>
-                    Driving innovation through digital transformation to build
-                    relentlessly relevant companies
-                  </Copy>
-                </Card>
-              </Margin>
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 11, lg: -39 }}>
-                <Card id="culture-card" title="Culture" width="100%">
-                  <Copy>
-                    Creating enduring cultures of engineering & design
-                    innovation
-                  </Copy>
-                </Card>
-              </Margin>
-            </Col>
-            <Col xs={12} md={6} lg={4}>
-              <Margin top={{ xs: 11, lg: -39 }}>
-                <Card id="training-card" title="Training" width="100%">
-                  <Copy>
-                    Originators who train your talent through skills transfer
-                    and pair programming
-                  </Copy>
-                </Card>
-              </Margin>
-            </Col>
-          </Row>
-        </CardsList>
-        <Margin top={{ xs: 15, md: 36 }} bottom={{ xs: 15, md: 36 }} inline>
-          <Row>
-            <Col xs={12} md={6}>
-              <H3 decorated>What do we do</H3>
-            </Col>
-            <Col xs={12} md={6}>
-              <Copy>
-                We help companies ignite radical technology innovation and
-                through digital transformation, build the most relentlessly
-                relevant brands.<br />
-                <br />Comfortable with digital change, we know how to create a
-                lasting engineering culture of experimentation, to make sure our
-                clients are too.<br />
-                <br />We thrive in enabling our clients to unlock the potential
-                of their talent through up-skilling and pair programming,
-                empowering them to stay ahead of the competition and improve
-                their bottom line.
-              </Copy>
-            </Col>
-          </Row>
-        </Margin>
-      </Grid>
-    </Section>
     <Section data-selector="what-do-we-do:clients">
       <Padding bottom={{ xs: 15, md: 36 }}>
         <Grid>
@@ -128,22 +82,22 @@ export default ({ videos = [] }) => (
             <CaseStudy
               video={find(videos, ['title', 'trainline'])}
               name="Trainline"
-              tagline="A Platform update & Improved User Experience"
+              tagline="Europe’s leading train and coach platform"
             />
             <CaseStudy
               video={find(videos, ['title', 'the-economist'])}
               name="The Economist"
-              tagline="Website Redesign & Improved User Experience"
+              tagline="World renowned current affairs magazine"
             />
             <CaseStudy
               video={find(videos, ['title', 'thomas-cook'])}
               name="Thomas Cook"
-              tagline="A Platform update & Improved User Experience"
+              tagline="FTSE listed global travel company"
             />
             <CaseStudy
               image={JoyentPoster}
               name="Joyent"
-              tagline="Bringing Application Awareness to Cloud infrastructure"
+              tagline="Cloud provider, part of Samsung"
             />
           </Row>
           <Row middle="xs" center="xs">

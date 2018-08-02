@@ -23,12 +23,10 @@ export default () => (
                       Transform, innovate and differentiate at speed
                     </CheckItem>
                     <CheckItem>
-                      Adopt cutting edge technologies - We’re pioneers in JS,
-                      Node.js, React and Design Systems
+                      Pioneers in Javascript, Node.js, React, React Native,
+                      Kubernetes, and Design Systems
                     </CheckItem>
-                    <CheckItem>
-                      Build custom software solutions that become your asset
-                    </CheckItem>
+                    <CheckItem>Adopt cutting edge technologies</CheckItem>
                   </Padding>
                 </Col>
                 <Col xs={12} md={6}>

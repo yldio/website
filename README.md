@@ -28,6 +28,8 @@ Shiny new website, built with [Gatsby].
 
 7.  If you encounter `Error: watch {path} ENOSPC`, run `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p` to fix the underlying issue (explained in a bit more detail [here](https://stackoverflow.com/questions/22475849/node-js-error-enospc/32600959#32600959))
 
+8.  This website has a task runner to update certain content (e.g. meetup, events). Please refer to the peer project https://github.com/yldio/website-contentful-data-transfer for more information
+
 ## Useful Commands
 
 - `yarn build` - create a static build
