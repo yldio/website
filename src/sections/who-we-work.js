@@ -6,12 +6,12 @@ import { Padding, Margin } from 'styled-components-spacing';
 import { H3 } from 'components/typography';
 import Section from 'components/section';
 
-const Logo = ({ img }) => (
+const Logo = ({ img, name }) => (
   <Col xs={12} md={6} lg={3}>
     <Margin bottom={{ xs: 15, md: 24 }}>
       <Flex justifyCenter alignCenter>
         <FlexItem>
-          <img src={img} />
+          <img src={img} alt={`${name} logo`} />
         </FlexItem>
       </Flex>
     </Margin>
@@ -36,6 +36,7 @@ export default ({ logos }) => (
             <Logo
               key={`${logo.node.clientName}-logo`}
               img={logo.node.logoImage.file.url}
+              name={logo.node.clientName}
             />
           ))}
         </Row>
