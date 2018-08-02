@@ -26,7 +26,7 @@ export default () => (
             <Margin bottom={{ xs: 15, md: 0 }}>
               <Flex justifyCenter alignCenter>
                 <FlexItem>
-                  <img src={docker} />
+                  <img src={docker} alt="Docker logo" />
                 </FlexItem>
               </Flex>
             </Margin>
@@ -35,7 +35,7 @@ export default () => (
             <Margin bottom={{ xs: 15, md: 0 }}>
               <Flex justifyCenter alignCenter>
                 <FlexItem>
-                  <img src={aws} />
+                  <img src={aws} alt="AWS logo" />
                 </FlexItem>
               </Flex>
             </Margin>
@@ -44,7 +44,7 @@ export default () => (
             <Margin bottom={{ xs: 15, md: 0 }}>
               <Flex justifyCenter alignCenter>
                 <FlexItem selfCenter>
-                  <img src={node} />
+                  <img src={node} alt="Node JS Foundation logo" />
                 </FlexItem>
               </Flex>
             </Margin>
