@@ -94,7 +94,7 @@ class Card extends PureComponent {
       <div ref={this.div}>
         <Flex justifyCenter alignCenter>
           <FlexItem>
-            <CardWrapper height={`${height}px`} {...props}>
+            <CardWrapper height={height} {...props}>
               <Title blue uppercase>
                 {title}
               </Title>
