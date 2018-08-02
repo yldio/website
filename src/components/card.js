@@ -19,7 +19,7 @@ const CardWrapper = styled.div`
 
 const Title = styled(H5)`
   border-bottom: ${remcalc(1)} solid ${props => props.theme.colors.lavender};
-  color: ${remcalc(1)} solid ${props => props.theme.colors.slateblue};
+  color: ${props => props.theme.colors.slateblue};
   padding-bottom: ${remcalc(15)};
   margin-bottom: ${remcalc(20)};
   margin-top: 0;
