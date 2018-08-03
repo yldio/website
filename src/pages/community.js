@@ -52,7 +52,9 @@ const Community = ({ page, events, meetupCommunities, videos = [] }) => (
 export default mapProps(props => ({
   page: props.data.contentfulPage,
   videos: props.data.videos.edges.map(({ node }) => node),
-  events: props.data.allContentfulMeetupEvent.edges,
+  events: props.data.allContentfulMeetupEvent.edges.filter(
+    item => new Date(`${item.node.startTime}`).getTime() > new Date().getTime()
+  ),
   meetupCommunities: props.data.allContentfulMeetupCommunity.edges
 }))(Community);
 

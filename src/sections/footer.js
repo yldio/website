@@ -98,24 +98,24 @@ export default () => (
         </Row>
       </Padding>
       <Margin bottom={15} inline>
-        <Copy white>
-          <Row>
-            <Col xs={12}>
+        <Row>
+          <Col xs={12}>
+            <Copy white>
               © 2018 Made with love by YLD. All rights reservered
-            </Col>
-            <Col>
-              <Link white to="/privacy-policy">
-                Privacy
-              </Link>
-              <Link white to="/terms">
-                Terms
-              </Link>
-              <Link white to="/sitemap">
-                Sitemap
-              </Link>
-            </Col>
-          </Row>
-        </Copy>
+            </Copy>
+          </Col>
+          <Col>
+            <Link white to="/privacy-policy">
+              Privacy
+            </Link>
+            <Link white to="/terms">
+              Terms
+            </Link>
+            <Link white to="/sitemap">
+              Sitemap
+            </Link>
+          </Col>
+        </Row>
       </Margin>
     </Grid>
   </Section>

@@ -1,7 +1,10 @@
 describe('features/homepage', () => {
   it('can land on the homepage', () => {
     cy.visit('/');
-    cy.title().should('eq', 'YLD | Home');
+    cy.title().should(
+      'eq',
+      'YLD | Technology Consultancy Specialised in Software Engineering. Node.js, React.js, Kubernetes, Design Systems, and React Native'
+    );
   });
 
   it('shows a navigation menu', () => {
