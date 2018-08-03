@@ -203,14 +203,14 @@ Array [
   border-bottom: 0.25rem solid #E60073;
   box-shadow: 0.625rem 0.75rem 2.5rem 0.3125rem rgba(25,5,52,0.15);
   width: 19.0625rem;
-  min-height: NaNrem;
+  min-height: 15rem;
   background: white;
   margin-bottom: 1.25rem;
 }
 
 .c3 {
   border-bottom: 0.0625rem solid #DCD9EA;
-  color: 0.0625rem solid #5E5CB2;
+  color: #5E5CB2;
   padding-bottom: 0.9375rem;
   margin-bottom: 1.25rem;
   margin-top: 0;
@@ -244,7 +244,6 @@ Array [
       >
         <div
           className="c2"
-          height="undefinedpx"
         >
           <h5
             className="c3 c4"
@@ -327,14 +326,14 @@ Array [
   border-bottom: 0.25rem solid #E60073;
   box-shadow: 0.625rem 0.75rem 2.5rem 0.3125rem rgba(25,5,52,0.15);
   width: 19.0625rem;
-  min-height: NaNrem;
+  min-height: 15rem;
   background: white;
   margin-bottom: 1.25rem;
 }
 
 .c3 {
   border-bottom: 0.0625rem solid #DCD9EA;
-  color: 0.0625rem solid #5E5CB2;
+  color: #5E5CB2;
   padding-bottom: 0.9375rem;
   margin-bottom: 1.25rem;
   margin-top: 0;
@@ -368,7 +367,6 @@ Array [
       >
         <div
           className="c2"
-          height="undefinedpx"
         >
           <h5
             className="c3 c4"
@@ -451,14 +449,14 @@ Array [
   border-bottom: 0.25rem solid #E60073;
   box-shadow: 0.625rem 0.75rem 2.5rem 0.3125rem rgba(25,5,52,0.15);
   width: 19.0625rem;
-  min-height: NaNrem;
+  min-height: 15rem;
   background: white;
   margin-bottom: 1.25rem;
 }
 
 .c3 {
   border-bottom: 0.0625rem solid #DCD9EA;
-  color: 0.0625rem solid #5E5CB2;
+  color: #5E5CB2;
   padding-bottom: 0.9375rem;
   margin-bottom: 1.25rem;
   margin-top: 0;
@@ -492,7 +490,6 @@ Array [
       >
         <div
           className="c2"
-          height="undefinedpx"
         >
           <h5
             className="c3 c4"
