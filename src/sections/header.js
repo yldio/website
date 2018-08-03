@@ -15,15 +15,25 @@ const Ul = styled.ul`
 const Li = Copy.withComponent('li').extend`
   display: inline;
   margin-right: ${remcalc(20)};
+  font-size: ${remcalc(12)};
 
   ${breakpoint('sm')`
     margin-left: ${remcalc(45)};
+    font-size: ${remcalc(18)};
   `};
+
+  ${breakpoint('md')`
+    font-size: ${remcalc(18)};
+    margin-right: ${remcalc(10)};
+  `}
 `;
 
 const Wrapper = styled(Flex)`
   flex-direction: column;
   align-items: flex-start;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
 
   ${breakpoint('md')`
     flex-direction: row;
@@ -67,6 +77,12 @@ const Container = styled.header`
   margin: 0 auto;
 `;
 
+const Nav = styled.nav`
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+`;
+
 export default () => (
   <Container data-selector="header">
     <Wrapper justifyBetween alignCenter>
@@ -74,7 +90,7 @@ export default () => (
         <Logo fill="white" />
       </FlexItem>
       <FlexItem>
-        <nav>
+        <Nav>
           <Ul>
             <Li>
               <Link activeClassName="__active" to="/" exact>
@@ -102,7 +118,7 @@ export default () => (
               </Link>
             </Li>
           </Ul>
-        </nav>
+        </Nav>
       </FlexItem>
     </Wrapper>
   </Container>
