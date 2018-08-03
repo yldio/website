@@ -31,7 +31,6 @@ const Li = Copy.withComponent('li').extend`
 const Wrapper = styled(Flex)`
   flex-direction: column;
   align-items: flex-start;
-  overflow: auto;
   white-space: nowrap;
   position: relative;
 
@@ -77,12 +76,6 @@ const Container = styled.header`
   margin: 0 auto;
 `;
 
-const Nav = styled.nav`
-  overflow: auto;
-  white-space: nowrap;
-  position: relative;
-`;
-
 export default () => (
   <Container data-selector="header">
     <Wrapper justifyBetween alignCenter>
@@ -90,7 +83,7 @@ export default () => (
         <Logo fill="white" />
       </FlexItem>
       <FlexItem>
-        <Nav>
+        <nav>
           <Ul>
             <Li>
               <Link activeClassName="__active" to="/" exact>
@@ -118,7 +111,7 @@ export default () => (
               </Link>
             </Li>
           </Ul>
-        </Nav>
+        </nav>
       </FlexItem>
     </Wrapper>
   </Container>
