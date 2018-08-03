@@ -91,6 +91,7 @@ export default ({ meetupCommunities, events }) => (
                   image={community.node.placeholderImage.file.url}
                   name={community.node.meetupCommunityName}
                   description={community.node.description.description}
+                  href={community.node.learnMoreLink}
                 />
                 {events.filter(
                   event =>
